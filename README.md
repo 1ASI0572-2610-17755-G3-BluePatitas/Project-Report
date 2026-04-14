@@ -258,6 +258,19 @@ Link del repositorio del reporte:
 </table>
 
 ## 1.2. Solution Profile
+
+Nuestra startup tiene como propósito mejorar la calidad de vida de los animales callejeros mediante una solución tecnológica que integra una aplicación web con dispositivos IoT implementados en refugios, permitiendo una gestión más eficiente, segura y monitoreada. Fundada por estudiantes de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas en Perú, busca desarrollar herramientas innovadoras que respondan a las necesidades más urgentes del bienestar animal.
+
+En colaboración con refugios, implementamos sensores de movimiento que detectan intentos de escape, así como sensores de temperatura y humedad que garantizan condiciones ambientales adecuadas. Asimismo, utilizamos sistemas de identificación para el seguimiento del estado de vacunación y cámaras térmicas para el monitoreo de la salud de los animales. La solución también incorpora bebederos inteligentes y sistemas de alimentación con sensores de peso, los cuales permiten supervisar el consumo y generar alertas ante posibles irregularidades.
+
+Además, a través de nuestra plataforma web, los usuarios pueden involucrarse activamente mediante donaciones económicas dirigidas a los refugios, contribuyendo de manera directa a su sostenibilidad y a la mejora de las condiciones de vida de los animales en situación de calle.
+
+| **Misión** | **Visión** | **Valores** |
+|------------|------------|-------------|
+| Nuestra misión es contribuir al bienestar de los animales callejeros mediante la integración de tecnologías IoT en refugios, optimizando su gestión y garantizando condiciones adecuadas. Brindamos una solución integral que conecta a los usuarios con refugios y clínicas veterinarias, promoviendo la adopción responsable y fomentando una comunidad comprometida contra el abandono animal. | Aspiramos a posicionarnos como líderes en Perú en soluciones tecnológicas para el bienestar animal. Visualizamos un futuro donde los refugios utilicen tecnologías IoT para asegurar el cuidado de los animales sin hogar, fortaleciendo la colaboración entre comunidades, refugios y profesionales, e inspirando a más personas a involucrarse en su protección. | ➤ Responsabilidad  
+➤ Colaboración  
+➤ Innovación |
+
 ### 1.2.1 Antecedentes y problemática
 ### 1.2.2 Lean UX Process
 #### 1.2.2.1. Lean UX Problem Statements
