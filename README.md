@@ -267,9 +267,7 @@ Además, a través de nuestra plataforma web, los usuarios pueden involucrarse a
 
 | **Misión** | **Visión** | **Valores** |
 |------------|------------|-------------|
-| Nuestra misión es contribuir al bienestar de los animales callejeros mediante la integración de tecnologías IoT en refugios, optimizando su gestión y garantizando condiciones adecuadas. Brindamos una solución integral que conecta a los usuarios con refugios y clínicas veterinarias, promoviendo la adopción responsable y fomentando una comunidad comprometida contra el abandono animal. | Aspiramos a posicionarnos como líderes en Perú en soluciones tecnológicas para el bienestar animal. Visualizamos un futuro donde los refugios utilicen tecnologías IoT para asegurar el cuidado de los animales sin hogar, fortaleciendo la colaboración entre comunidades, refugios y profesionales, e inspirando a más personas a involucrarse en su protección. | ➤ Responsabilidad  
-➤ Colaboración  
-➤ Innovación |
+| Nuestra misión es contribuir al bienestar de los animales callejeros mediante la integración de tecnologías IoT en refugios, optimizando su gestión y garantizando condiciones adecuadas. Brindamos una solución integral que conecta a los usuarios con refugios y clínicas veterinarias, promoviendo la adopción responsable y fomentando una comunidad comprometida contra el abandono animal. | Aspiramos a posicionarnos como líderes en Perú en soluciones tecnológicas para el bienestar animal. Visualizamos un futuro donde los refugios utilicen tecnologías IoT para asegurar el cuidado de los animales sin hogar, fortaleciendo la colaboración entre comunidades, refugios y profesionales, e inspirando a más personas a involucrarse en su protección. | ➤ Responsabilidad<br>➤ Colaboración<br>➤ Innovación |
 
 ### 1.2.1 Antecedentes y problemática
 ### 1.2.2 Lean UX Process
