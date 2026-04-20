@@ -271,9 +271,100 @@ Link del repositorio del reporte:
 
 # Capítulo II: Requirements Elicitation & Analysis
 
-## 2.1. Competidores
-### 2.1.1. Análisis competitivo
-### 2.1.2. Estrategias y tácticas frente a competidores
+## 2.1. Competidores 
+
+Para esta sección analizaremos y compararemos a diversos competidores que pudimos llegar a encontrar para así transferir conocimiento detectando las mejores opciones y prácticas que aplicar para nuestra aplicación.
+
+Los competidores se pueden dividir en varios tipos, como los que hacen exactamente lo mismo que nosotros, los que no hacen lo mismo pero pueden llegar a solucionarlo, los de mayor rango que serían los que consideramos que estamos muy lejos de alcanzarlos, etc. 
+
+Al terminar el análisis competitivo y teniendo en mente las ventajas y desventajas de nuestros competidores podremos emplear mejores estrategias contra ellos.
+
+Como competidores tenemos:
+* WUF
+* DogHero
+* Petfinder
+
+A continuación se presenta una tabla evaluando a estos competidores para la solución propuesta:
+
+| Nombre | Descripción | Características | Distribución |
+| :--- | :--- | :--- | :--- |
+| **WUF** | Organización sin fines de lucro en Perú dedicada a reducir el número de perros callejeros mediante campañas de esterilización, educación y promoción de la adopción. | Cuenta con una fuerte presencia local y una red establecida de voluntarios y aliados. Sin embargo, su enfoque se limita principalmente a los perros y tiene alta dependencia de donaciones externas. | Plataforma web y fuerte presencia en redes sociales (Facebook, Instagram) para campañas locales, recaudación de fondos y promoción de adopciones. |
+| **DogHero** | Plataforma en América Latina enfocada en servicios de cuidado de mascotas (como paseos y alojamiento) que también ofrece opciones para promover la adopción. | Posee una amplia red de usuarios en LATAM debido a la diversificación de sus servicios, aunque su enfoque principal no es la adopción, lo que enfrenta a la plataforma con un alto nivel de competencia. | Aplicación y plataforma digital disponible a nivel regional (Brasil y otros países de América Latina). |
+| **Petfinder** | Plataforma internacional para la adopción de mascotas que funciona como intermediario para conectar refugios y rescates con personas que buscan adoptar. | Tiene un alcance global y una base tecnológica muy fuerte que incluye funciones avanzadas de búsqueda y filtros, aunque su enfoque global dificulta la adaptación a necesidades locales. | Plataforma web a nivel global y distribución digital a gran escala. |
+
+### 2.1.1. Análisis competitivo 
+
+| **Competitive Analysis Landscape** | **Escriba en el recuadro la pregunta que busca responder o el objetivo de este análisis.** |
+| :---- | :---- |
+| ¿Por qué llevar a cabo este análisis?  | Deseamos analizar a nuestros competidores para buscar en qué puntos podemos mejorar, contra que nos estamos enfrentando en el mercado y como nos distinguimos de estos |
+
+| Categoría | Factores | **BluePatitas** | **WUF** | **DogHero** | **Petfinder** |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Perfil** | **Overview** | Startup peruana  que integra software y hardware IoT para automatizar el monitoreo de salud, seguridad y ambiente en refugios de animales. | ONG peruana dedicada a la promoción de la adopción responsable y la gestión de una plataforma de marketplace para financiar refugios. | Plataforma digital que conecta a dueños de mascotas con una red de anfitriones certificados para hospedaje, paseos y guardería. | El directorio de adopción de animales más grande a nivel global, facilitando la conexión entre miles de refugios y potenciales adoptantes. |
+| | **Ventaja competitiva** | • Monitoreo técnico en tiempo real mediante IoT.<br>• Alertas preventivas de salud y seguridad.<br>• Transparencia en donaciones vinculada al estado real del animal. | • Marca líder y reconocida en el mercado peruano.<br>• Alianzas estratégicas con empresas de retail y consumo masivo.<br>• Comunidad digital sólida y activa ("Wulovers"). | • Confianza basada en un sistema riguroso de reseñas y evaluaciones.<br>• Incluye "Garantía Veterinaria" en cada reserva.<br>• App móvil con UX optimizada para reservas rápidas. | • Base de datos masiva con integración de miles de organizaciones internacionales.<br>• Herramientas avanzadas de filtrado.<br>• Respaldo corporativo de Nestlé Purina. |
+| **Perfil de Marketing** | **Mercado objetivo** | Refugios de animales, organizaciones de bienestar animal y donantes que buscan trazabilidad tecnológica. | Personas en Perú interesadas en la adopción responsable y consumidores de productos con impacto social. | Dueños de mascotas de áreas urbanas que requieren cuidado personalizado por viajes o trabajo. | Público global interesado en la adopción y organizaciones de rescate que buscan visibilidad. |
+| | **Estrategias de marketing** | Demostración de eficiencia operativa en refugios, alianzas académicas y marketing de transparencia basado en datos. | Colaboraciones B2B, campañas de sensibilización emocional y eventos presenciales de adopción. | Marketing de influencers, sistemas de referidos y publicidad segmentada en redes sociales. | Optimización masiva en buscadores (SEO) para términos de adopción y patrocinios de marcas de alimentos. |
+| **Perfil de Producto** | **Productos & Servicios** | Aplicación web de gestión, sensores IoT (movimiento, temp/hum), cámaras térmicas, bebederos inteligentes y pasarela de donaciones. | Marketplace de accesorios, plataforma de adopción y programas de padrinazgo para albergues. | Servicios de hospedaje en casas particulares, paseos diarios, guardería y visitas a domicilio. | Directorio de búsqueda de mascotas, recursos educativos sobre cuidado animal y gestión de voluntarios. |
+| | **Precios & Costos** | Modelo de suscripción para refugios por implementación técnica y porcentaje por gestión de donaciones. | Productos con precios competitivos; las adopciones pueden incluir un costo administrativo o donación sugerida. | Tarifas flexibles establecidas por cada anfitrión (promedio S/ 30 - S/ 70 por noche). | Gratuito para adoptantes; ingresos vía publicidad y financiamiento corporativo. |
+| | **Canales de distribución** | Aplicación web (SaaS) e instalación física de dispositivos IoT en refugios aliados. | Plataforma web (e-commerce) y redes sociales. | App móvil nativa (iOS/Android) y sitio web interactivo. | Portal web global y aplicación móvil. |
+| **Análisis SWOT** | **Fortalezas** | • Única solución con monitoreo automatizado IoT.<br>• Capacidad de detección temprana de enfermedades mediante telemetría. | • Alta reputación y confianza en el mercado local.<br>• Red consolidada de albergues afiliados en todo el país. | • Modelo de negocio escalable con baja inversión en infraestructura física.<br>• Excelente sistema de atención al cliente y seguros. | • Dominio absoluto del tráfico de búsqueda internacional.<br>• Capacidad tecnológica avanzada para manejo de Big Data. |
+| | **Debilidades** | • Costos iniciales de hardware e implementación en refugios con pocos recursos.<br>• Etapa temprana de desarrollo (Startup). | • Dependencia directa de ventas de terceros y donaciones.<br>• Limitación geográfica al mercado nacional (Perú). | • Riesgos operativos inherentes al cuidado en hogares externos.<br>• Percepción de precios altos por las comisiones. | • Dificultad para verificar la actualización en tiempo real de refugios pequeños.<br>• Interfaz web saturada. |
+| | **Oportunidades** | • Expansión a clínicas veterinarias para hospitalización.<br>• Venta de data analítica sobre comportamiento animal. | • Implementación de servicios veterinarios digitales o telemedicina.<br>• Desarrollo de una línea de productos propia. | • Expansión hacia servicios de entrenamiento y salud preventiva.<br>• Alianzas con aerolíneas y hoteles. | • Integración de IA para el "match" perfecto de adopción.<br>• Expansión en mercados emergentes de Latam. |
+| | **Amenazas** | • Rápida evolución de componentes de hardware.<br>• Resistencia al cambio tecnológico por parte de refugios tradicionales. | • Volatilidad económica que afecte el consumo.<br>• Surgimiento de nuevas ONGs con modelos similares. | • Competencia directa de hoteles caninos y veterinarias.<br>• Cambios en regulaciones de hospedaje animal. | • Aparición de apps locales con enfoques más personalizados.<br>• Cambios en los algoritmos de búsqueda. |
+
+### 2.1.2. Estrategias y tácticas frente a competidores 
+
+#### **Estrategia 1: Diferenciación a través del monitoreo inteligente y transparencia de datos**
+
+ **Táctica 1.1: Implementación de un Dashboard IoT de monitoreo en tiempo real**
+
+-   Desarrollar una interfaz dentro de la plataforma web que permita a los administradores de refugios visualizar indicadores biométricos (temperatura, peso) y ambientales (humedad, calor) capturados por los sensores, facilitando una gestión basada en datos técnicos.
+    
+-   Configurar un sistema de alertas críticas automáticas que notifique instantáneamente vía web o móvil ante intentos de escape (sensores de movimiento) o irregularidades en la alimentación (sensores de peso en bebederos).
+    
+
+ **Táctica 1.2: Historial clínico digital e inteligente**
+
+-   Crear una base de datos centralizada que registre automáticamente la información recolectada por los identificadores y cámaras térmicas, proporcionando a los veterinarios un historial detallado del estado de salud del animal desde su ingreso.
+    
+-   Ofrecer a los donantes y futuros adoptantes un reporte de bienestar generado por el sistema, garantizando que el animal ha vivido en condiciones óptimas de temperatura y nutrición, lo que eleva el valor de confianza frente a la competencia.
+    
+
+----------
+
+#### **Estrategia 2: Fortalecimiento de la comunidad mediante el "Padrinazgo Tecnológico"**
+
+ **Táctica 2.1: Campañas de educación sobre Bienestar Animal 4.0**
+
+-   Lanzar campañas digitales para concienciar sobre cómo la tecnología IoT reduce las tasas de mortalidad en refugios, educando a la comunidad sobre la importancia de pasar de un cuidado manual a uno automatizado y preventivo.
+    
+-   Colaborar con estudiantes y facultades de ingeniería para promover el desarrollo de soluciones tecnológicas en favor de los animales, posicionando a BluePatitas como un referente de innovación social en el Perú.
+    
+
+**Táctica 2.2: Programa de transparencia para donantes**
+
+-   Implementar un sistema donde cada donación económica se vea reflejada en el sostenimiento de los sensores y dispositivos IoT del refugio, permitiendo al usuario sentir que su aporte tiene un impacto directo y medible en la seguridad del animal.
+    
+-   Organizar "Open Days" tecnológicos en los refugios aliados para que la comunidad vea en funcionamiento los bebederos inteligentes y sistemas de control ambiental, fortaleciendo el vínculo emocional y la credibilidad de la startup.
+    
+
+----------
+
+####  **Estrategia 3: Alianzas estratégicas para la sostenibilidad operativa**
+
+ **Táctica 3.1: Acuerdos exclusivos de soporte técnico con refugios y clínicas**
+
+-   Establecer convenios con refugios estratégicos en zonas críticas de Lima (como Lima Norte o Este) para ser su proveedor exclusivo de tecnología de monitoreo, asegurando una red de albergues "Smart" que superen la oferta de gestión básica de otras plataformas.
+    
+-   Integrar el acceso de las cámaras térmicas y datos de salud con clínicas veterinarias aliadas para permitir una telemetría básica antes de que el animal sea trasladado para atención presencial, optimizando tiempos y recursos.
+    
+
+ **Táctica 3.2: Escalabilidad y expansión basada en datos de impacto**
+
+-   Iniciar la fase piloto en los refugios con mayor índice de hacinamiento en Lima Metropolitana, recolectar métricas de éxito (reducción de escapes, mejora en tiempos de respuesta médica) y utilizar estos datos para atraer inversión y expandirse a provincias.
+    
+-   Evaluar la adaptación del hardware IoT para su implementación en hogares de acogida temporal, permitiendo que la red de voluntarios de BluePatitas tenga el mismo nivel de control y seguridad que un refugio profesional.
+
 
 ## 2.2. Entrevistas
 ### 2.2.1. Diseño de entrevistas
