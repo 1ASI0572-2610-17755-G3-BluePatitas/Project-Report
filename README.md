@@ -378,6 +378,65 @@ A continuación se presenta una tabla evaluando a estos competidores para la sol
 ### 2.3.4. Empathy Mapping
 
 ## 2.4. Big Picture EventStorming
+
+El diseño de la arquitectura y lógica de negocio de BluePatitas inició con una sesión colaborativa de EventStorming. Para llevar a cabo esta dinámica, el equipo siguió las fases recomendadas de la metodología, asegurando una exploración profunda de nuestro dominio, el cual combina la gestión operativa de un refugio con el procesamiento de telemetría de hardware IoT. A continuación, se detalla el desarrollo de la sesión:
+
+"Imagen"
+
+#### **Preparing the Room** 
+Para llevar a cabo nuestra sesión de EventStorming, decidimos reunirnos de manera virtual. Nos conectamos a un canal de voz en Discord el miércoles 22 a las 10:00 p.m., asegurándonos de que todos los miembros del equipo tuvieran acceso y permisos de edición al tablero de Miro, el cual configuramos previamente como nuestro lienzo infinito para la dinámica.
+
+"Imagen"
+
+#### **Energizing the Audience** 
+Antes de entrar de lleno a la creación técnica, tomamos unos minutos para "romper el hielo" y alinear la energía del equipo. Hablamos un poco sobre la carga de trabajos de la semana y compartimos anécdotas rápidas sobre nuestras propias mascotas. Este espacio nos sirvió para despejar la mente y entrar con la creatividad a tope antes de iniciar el trabajo duro.
+
+"Imagen"
+
+#### **Briefing and Presenting the Agenda** 
+Una vez concentrados, hicimos un repaso rápido del core de nuestra startup: BluePatitas busca automatizar y optimizar la gestión operativa y de salud en refugios animales mediante tecnología IoT (sensores de temperatura, cámaras térmicas, bebederos inteligentes), centralizando esta información en una plataforma web. La agenda de la noche era clara: mapear todo el flujo de nuestro sistema, desde que un animal es ingresado al albergue hasta que el personal del refugio o el veterinario utiliza los datos recolectados para asegurar su bienestar y registrar sus tratamientos.
+
+"Imagen"
+
+#### **Generating Domain Events** 
+Comenzamos la lluvia de ideas lanzando "Eventos de Dominio" (utilizando post-its naranjas y siempre redactados en tiempo pasado). Al principio salieron ideas muy variadas, abarcando tanto el software como el hardware. Surgieron eventos como: Animal ingresado al sistema, Alerta de escape generada, Temperatura crítica detectada, Tratamiento médico registrado, Historial clínico actualizado y Nivel bajo de agua registrado en bebedero.
+
+"Imagen"
+
+#### **Sorting Domain Events**
+ Con la pantalla llena de post-its naranjas, procedimos a ordenarlos de manera cronológica de izquierda a derecha. Nos dimos cuenta de que nuestro sistema seguía una línea de tiempo basada en cuatro grandes fases operativas:
+
+1.  La admisión del animal y la asignación de su identificador/hardware.
+    
+2.  El ciclo constante de monitoreo ambiental y biométrico (IoT).
+    
+3.  La respuesta operativa ante alertas de seguridad (como intentos de escape).
+    
+4.  El análisis de datos de salud y actualización del historial clínico por parte del personal.
+    
+"Imagen"
+
+#### **Adding Actors and External Systems** 
+En esta etapa, le dimos vida y contexto al tablero. Identificamos a nuestros actores principales (post-its amarillos): el Administrador del Refugio, el Voluntario/Cuidador y el Veterinario. Luego, añadimos las piezas clave de nuestra arquitectura, los Sistemas Externos (post-its lilas). Mapeamos un Servicio de Notificaciones (Email/SMS) para las alertas de emergencia y nuestros componentes de hardware, los cuales actúan de forma autónoma enviando comandos al sistema: Sensores de Movimiento, Módulo DHT11 (Temperatura/Humedad) y Cámaras Térmicas.
+
+"Imagen"
+
+#### **Storytelling** 
+Con el tablero estructurado, leímos la historia cronológicamente para validar el flujo del usuario y del dato. Contamos cómo el Administrador registra a un animal y le asigna un área, lo que activa el monitoreo de los sensores. Explicamos que, de manera automatizada, si la temperatura ambiental baja de un umbral seguro o si la cámara térmica detecta una anomalía, el hardware dispara un evento que el sistema convierte en una alerta. En paralelo, relatamos cómo la plataforma procesa esta telemetría y la traduce en un "Reporte de Bienestar" para que el Veterinario y el Administrador evalúen la evolución del animal y ajusten sus cuidados o alimentación.
+
+"Imagen"
+
+#### **Reverse Storytelling** 
+Para asegurar que no hubiéramos omitido ninguna regla de negocio, hicimos el ejercicio a la inversa. Nos posicionamos al final del tablero y nos preguntamos repetidamente: "¿Qué tuvo que pasar para que esto se desencadenara?". Por ejemplo, frente al evento 'Alerta de prevención de escape enviada al voluntario', notamos que nos faltaba el gatillador de hardware, por lo que actualizamos el tablero añadiendo el evento Movimiento inusual detectado en perímetro'.
+
+"Imagen"
+
+#### **Closing**
+Cerca de la medianoche, dimos por concluida la sesión. El equipo logró obtener una visión panorámica muy clara de cómo interactúa nuestra capa física (IoT) con nuestra capa lógica (plataforma web de gestión). Validamos que el flujo principal estaba completo, identificamos oportunidades de mejora en la comunicación con los veterinarios y definimos que el siguiente paso sería agrupar estos eventos por afinidad para construir nuestros Bounded Contexts.
+
+"Imagen"
+
+
 ## 2.5. Ubiquitous Language
 
 <br>
