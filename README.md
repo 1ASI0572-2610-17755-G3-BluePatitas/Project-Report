@@ -269,15 +269,56 @@ Además, a través de nuestra plataforma web, los usuarios pueden involucrarse a
 |------------|------------|-------------|
 | Nuestra misión es contribuir al bienestar de los animales callejeros mediante la integración de tecnologías IoT en refugios, optimizando su gestión y garantizando condiciones adecuadas. Brindamos una solución integral que conecta a los usuarios con refugios y clínicas veterinarias, promoviendo la adopción responsable y fomentando una comunidad comprometida contra el abandono animal. | Aspiramos a posicionarnos como líderes en Perú en soluciones tecnológicas para el bienestar animal. Visualizamos un futuro donde los refugios utilicen tecnologías IoT para asegurar el cuidado de los animales sin hogar, fortaleciendo la colaboración entre comunidades, refugios y profesionales, e inspirando a más personas a involucrarse en su protección. | ➤ Responsabilidad<br>➤ Colaboración<br>➤ Innovación |
 
-### 1.2.1 Antecedentes y problemática
+### 1.2.1. Antecedentes y problemática
+
+El bienestar de los animales callejeros en el Perú representa un desafío social y de salud pública crítico que ha sobrepasado la capacidad operativa de los refugios locales. A nivel de gestión, estudios de la Pontificia Universidad Católica del Perú (PUCP, 2025) revelan que el enfoque actual de bienestar animal se limita a la respuesta reactiva ante el sufrimiento, careciendo de herramientas técnicas que aseguren las "cinco libertades" del animal de forma constante. En Lima, donde se concentran 2 millones de perros en abandono, los refugios operan bajo un modelo de "acogida temporal" con recursos limitados, donde la supervisión de la salud y el comportamiento es puramente observacional y manual.
+
+####  What? 
+
+La problemática principal radica en la ineficiencia de los modelos de gestión tradicionales en los refugios de animales, los cuales dependen de procesos manuales para el monitoreo de salud, alimentación y seguridad. Según investigaciones en el ámbito de bienestar animal, la carencia de herramientas tecnológicas integradas (IoT) impide una supervisión constante y técnica, lo que incrementa los riesgos de mortalidad y dificulta la detección temprana de anomalías fisiológicas. Esta brecha tecnológica también obstaculiza la coordinación efectiva entre los albergues y las clínicas veterinarias, limitando la capacidad de respuesta ante emergencias.
+
+####  When? 
+
+El problema se manifiesta de forma continua durante la estancia del animal, pero se vuelve crítico cuando los refugios enfrentan una alta densidad de población. En situaciones de emergencia, como brotes de enfermedades contagiosas o intentos de escape, la falta de sistemas de alerta automatizados en tiempo real ralentiza las respuestas operativas, comprometiendo la integridad física y el bienestar de los animales.
+
+####  Where? 
+
+El problema se localiza físicamente en los refugios y albergues temporales, donde la supervisión se ve limitada por la infraestructura. Sin embargo, la problemática se extiende al entorno digital, donde los gestores, veterinarios y adoptantes carecen de una plataforma centralizada para monitorear sensores de movimiento, temperatura y alimentación, o para acceder a datos de cámaras térmicas e identificadores biométricos de forma remota.
+
+#### Who? 
+Esta situación afecta directamente a dos grupos principales:
+
+1.  **Rescatistas y voluntarios:** Quienes asumen una carga operativa excesiva y enfrentan dificultades para garantizar la seguridad y salud de los animales bajo métodos empíricos.
+    
+2.  **Organizaciones de bienestar animal:** Entidades que buscan escalar su impacto mediante la implementación de tecnologías avanzadas para optimizar el control ambiental y la gestión de recursos.
+    
+
+####  Why? 
+
+De acuerdo con Pinto (2021), la gestión deficiente de los refugios en el Perú es consecuencia de la escasez de recursos económicos y la ausencia de políticas públicas eficaces. A esto se suma una baja concienciación social sobre la adopción responsable. Desde una perspectiva técnica, la problemática persiste debido a la nula integración de tecnologías de seguimiento y control automatizado, lo que perpetúa modelos de cuidado reactivos en lugar de preventivos.
+
+#### How?
+
+Los distintos actores enfrentan este escenario interactuando a través de un ecosistema de productos digitales que transforma variables físicas en información procesable y visual. En las instalaciones, la recolección continua de parámetros ambientales y biométricos alimenta paneles de control interactivos e interfaces adaptables a cualquier dispositivo móvil o web.
+
+Esta interacción permite a los albergues anticipar emergencias y automatizar sus recursos diarios, a las clínicas veterinarias priorizar sus intervenciones basándose en cálculos y tendencias estadísticas del estado de los animales, y a los donantes explorar reportes cuantitativos que les muestran el impacto directo de su apoyo. De esta manera, el monitoreo físico evoluciona hacia una red colaborativa e inclusiva que mantiene a todas las partes sincronizadas en tiempo real
+
+####  How Much? 
+
+El impacto es severo y cuantificable. En el contexto regional, se estima que de los más de 286,000 perros y gatos recogidos anualmente por diversas entidades, un 15.6% no sobrevive debido a la precariedad en los cuidados y la falta de atención médica oportuna (Fundación Affinity, s.f.). Estas cifras subrayan la necesidad urgente de implementar soluciones tecnológicas que reduzcan la tasa de mortalidad y aseguren estándares de bienestar animal dignos.
+
 ### 1.2.2 Lean UX Process
 #### 1.2.2.1. Lean UX Problem Statements
 #### 1.2.2.2. Lean UX Assumptions
 #### 1.2.2.3. Lean UX Hypothesis Statements
 #### 1.2.2.4. Lean UX Canvas
 
-## 1.3. Segmentos objetivo
+## 1.3 Segmentos Objetivo
 
+| Segmento | Descripción | Características |
+|----------|-------------|-----------------|
+| **Segmento 1: Administradores de refugios** | Este segmento de usuarios es clave, ya que son los encargados de gestionar el cuidado y la adopción de animales callejeros. Necesitan herramientas para contabilizar los animales que tienen bajo su cuidado y aquellos que están listos para ser adoptados, además de la posibilidad de recibir apoyo financiero a través de donaciones. | - **Edades:** 20 a 50 años <br> - **Ubicación:** Perú <br> - **Motivaciones:** Alta preocupación por el bienestar animal y deseo de facilitar la adopción. <br> - **Intereses:** Protección y derechos de los animales, gestión de recursos y networking. <br> - **Comportamiento:** Proactivos en la búsqueda de apoyo; buscan plataformas que faciliten la visibilidad y recaudación. |
+| **Segmento 2: Veterinarios** | Este segmento incluye a las clínicas veterinarias que colaboran con los refugios para proporcionar atención médica a los animales. Las clínicas buscan optimizar su coordinación con los refugios y aprovechar el sistema de alertas y financiamiento que ofrece la plataforma para atender a los animales de manera más eficiente. | - **Edades:** 20 a 60 años <br> - **Ubicación:** Perú <br> - **Motivaciones:** Proporcionar atención de calidad y mejorar la coordinación con refugios. <br> - **Intereses:** Innovación en servicios, responsabilidad social empresarial y eficiencia operativa. <br> - **Comportamiento:** Buscan herramientas tecnológicas para optimizar su gestión, valorando los sistemas de alertas y financiamiento. |
 <br>
 
 # Capítulo II: Requirements Elicitation & Analysis
