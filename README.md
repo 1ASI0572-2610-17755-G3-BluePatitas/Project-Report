@@ -201,13 +201,15 @@ Link del repositorio del reporte:
   </tr>
 </table>
 
-<table align="center" border="1" cellspacing="0" cellpadding="8" style="width: 90%; border-collapse: collapse;">
-  <tr>
-    <td style="width: 250px; text-align: center;">
-      <img src="img/lluciana_img.png" width="150"></img>
+<table align="center" border="1" cellspacing="0" cellpadding="10" style="width: 90%; border-collapse: collapse;">
+  <tr>    
+    <td style="width: 200px; text-align: center;">
+      <img src="TU_IMAGEN.png" style="width: 180px; height: auto; border-radius: 10px;">
     </td>
     <td>
-      <p align="center"><strong>Luciana Carolina Choquehuanca Nuñez - U202319431</strong></p>
+      <p align="center">
+        <strong>Luciana Carolina Choquehuanca Núñez - U202319431</strong>
+      </p>    
       <p align="justify">
         Mi nombre es Luciana Carolina, soy estudiante de la carrera de Ingeniería de Software, actualmente cursando el séptimo ciclo, y tengo 20 años. Me considero una persona proactiva, con gran interés en participar en proyectos que impliquen adquirir nuevos conocimientos y seguir aprendiendo constantemente. Me gusta mantener el orden en mi trabajo, por lo que siempre busco entregar resultados que cumplan con los estándares requeridos. Además, disfruto aprender tanto de mis profesores como de mis compañeros, ya que considero que el aprendizaje colaborativo es clave para mi desarrollo profesional.
       </p>
