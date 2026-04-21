@@ -294,6 +294,24 @@ Link del repositorio del reporte:
 # Capítulo III: Requirements Specification
 
 ## 3.1. User Stories
+### Epics
+
+| Epic ID | Título | Descripción | US Asociadas |
+| :--- | :--- | :--- | :--- | 
+| **EP01** | Monitoreo y Control del Entorno en Refugios (IoT) | Como Administrador de Refugios, quiero utilizar tecnología para monitorear y controlar el ambiente del refugio, garantizando la seguridad y el bienestar de los animales  |
+| **EP02** | Monitoreo de Salud y Bienestar de los Animales | Como Veterinario, quiero utilizar la información recopilada por los dispositivos para monitorear la salud y el bienestar de los animales, permitiéndome tomar decisiones informadas y actuar rápidamente en caso de emergencias  |
+| **EP03** | Gestión Operativa y Coordinación de Voluntarios | Como Voluntario, quiero tener acceso a información actualizada sobre los animales del refugio, para poder contribuir de manera efectiva en su cuidado, atención y procesos de adopción |
+
+### User Stories
+
+|  Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
+| :--- | :--- | :--- | :--- | :--- |
+| **US01** | Control de movimiento en refugios | Como Administrador de Refugios, quiero sensores de movimiento para detectar si un animal intenta escapar del área designada, para garantizar su seguridad. | **Escenario 1 - Detección de escape exitosa:**<br>Dado que el Administrador de Refugios está monitoreando el área.<br>Cuando el sensor detecta movimiento fuera del área designada.<br>Entonces se generará una alerta visible en la plataforma.<br><br>**Escenario 2 - Alerta por escape prolongado:**<br>Dado que el Administrador de Refugios está revisando el sistema.<br>Cuando el movimiento continúa durante más de 5 minutos.<br>Entonces el sistema enviará una notificación al teléfono del Administrador. | EP01 |
+| **US02** | Monitoreo de temperatura ambiental | Como Administrador de Refugios, quiero monitorear la temperatura del ambiente en tiempo real para evitar que los animales se sofoquen. | **Escenario 1 - Activación automática de ventilación:**<br>Dado que el Administrador de Refugios está observando los datos del sistema.<br>Cuando la temperatura excede los 30°C.<br>Entonces el sistema activará automáticamente la ventilación.<br><br>**Escenario 2 - Notificación de emergencia por alta temperatura:**<br>Dado que el Administrador de Refugios está revisando los datos.<br>Cuando la temperatura supera los 35°C durante más de 10 minutos.<br>Entonces el sistema enviará una notificación de emergencia. | EP01 |
+| **US03** | Control de alimentación con sensores de peso | Como Administrador de Refugios, quiero monitorear la cantidad de alimento consumido por cada animal utilizando sensores de peso en los comederos. | **Escenario 1 - Registro de consumo de alimento:**<br>Dado que el Administrador de Refugios está revisando la alimentación.<br>Cuando un animal come de su comedero.<br>Entonces el sistema registrará la cantidad consumida basada en la diferencia de peso.<br><br>**Escenario 2 - Alerta por bajo consumo:**<br>Dado que el Administrador de Refugios monitorea la alimentación.<br>Cuando un animal consume menos del 70% de su ración diaria.<br>Entonces el sistema generará una alerta para revisión veterinaria. | EP01 |
+| **US04** | Notificaciones de emergencia veterinaria | Como veterinario, quiero recibir notificaciones automáticas cuando un animal requiere atención urgente, para poder actuar rápidamente. | **Escenario 1 - Alerta por signos vitales anormales:**<br>Dado que el veterinario está de guardia.<br>Cuando los sensores detectan signos vitales fuera de rango normal.<br>Entonces el sistema enviará una notificación de emergencia al veterinario.<br><br>**Escenario 2 - Priorización de casos urgentes:**<br>Dado que el veterinario recibe múltiples alertas.<br>Cuando el sistema detecta un caso de mayor gravedad.<br>Entonces priorizará y destacará esta alerta sobre las demás. | EP02 |
+| **US05** | Monitoreo de signos vitales en tiempo real | Como veterinario, quiero acceder a datos de salud en tiempo real de los animales, para tomar decisiones informadas durante la consulta. | **Escenario 1 - Visualización de signos vitales:**<br>Dado que el veterinario está examinando a un animal.<br>Cuando accede a la aplicación de monitoreo.<br>Entonces podrá ver los signos vitales actuales del animal en tiempo real.<br><br>**Escenario 2 - Alerta por cambios súbitos:**<br>Dado que el veterinario está monitoreando a un animal.<br>Cuando hay un cambio súbito en los signos vitales.<br>Entonces el sistema generará una alerta inmediata. | EP02 |
+
 ## 3.2. Impact Mapping
 ## 3.3. Product Backlog
 
