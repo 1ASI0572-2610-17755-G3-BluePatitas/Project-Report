@@ -204,7 +204,7 @@ Link del repositorio del reporte:
 <table align="center" border="1" cellspacing="0" cellpadding="10" style="width: 90%; border-collapse: collapse;">
   <tr>    
     <td style="width: 200px; text-align: center;">
-      <img src="lluciana_img.png" style="width: 180px; height: auto; border-radius: 10px;">
+      <img src="img/lluciana_img.png" style="width: 180px; height: auto; border-radius: 10px;">
     </td>
     <td>
       <p align="center">
