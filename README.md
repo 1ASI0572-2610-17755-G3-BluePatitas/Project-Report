@@ -369,8 +369,6 @@ A continuación se presenta una tabla evaluando a estos competidores para la sol
 ## 2.2. Entrevistas
 ### 2.2.1. Diseño de entrevistas
 
-Las entrevistas fueron diseñadas con el propósito de validar las necesidades, dificultades, procesos actuales y oportunidades de mejora de los segmentos objetivo vinculados con la propuesta de valor de BluePatitas. A través de estas preguntas, se busca comprender cómo administradores de refugios y veterinarios gestionan actualmente el monitoreo, cuidado, seguimiento y coordinación alrededor de los animales, a fin de identificar hallazgos relevantes para el planteamiento de la solución IoT propuesta.
-
 #### Segmento 1: Administradores de refugios
 
 ##### Preguntas generales
