@@ -282,6 +282,24 @@ Link del repositorio del reporte:
 
 ## 2.3. Needfinding
 ### 2.3.1. User Personas
+## User Persona
+
+En esta sección se encuentran los User Persona definidos para el proyecto, los cuales representan a los principales actores involucrados en el uso de la solución. Para su construcción, se consideraron aspectos clave como el contexto de trabajo, responsabilidades, motivaciones, objetivos y frustraciones, con el fin de comprender mejor sus necesidades y orientar el diseño del sistema.
+
+### Administrador del refugio
+
+En este segmento se definió el User Persona **Andrees Caseres**, considerando su experiencia en el cuidado y gestión de animales, así como su rol operativo dentro del refugio. Se tomaron en cuenta sus motivaciones orientadas a mejorar las condiciones de vida de los animales y optimizar la gestión diaria, junto con las dificultades que enfrenta en el monitoreo, organización y control de recursos.
+
+![User Persona Administrador del refugio](img/userpersona_1.png)
+
+
+
+### Veterinario
+
+En este segmento se definió el User Persona **Dr. Carlos Rivera**, tomando en cuenta su trayectoria profesional, entorno de trabajo y enfoque en la atención médica de animales. Se consideraron sus motivaciones relacionadas con brindar un servicio eficiente y de calidad, así como sus principales frustraciones asociadas a la coordinación de casos, la falta de información oportuna y la gestión de recursos limitados.
+
+![User Persona Veterinario](img/userpersona_2.png)
+
 ### 2.3.2. User Task Matrix
 ### 2.3.3. User Journey Mapping
 ### 2.3.4. Empathy Mapping
@@ -313,6 +331,21 @@ Link del repositorio del reporte:
 | **US05** | Monitoreo de signos vitales en tiempo real | Como veterinario, quiero acceder a datos de salud en tiempo real de los animales, para tomar decisiones informadas durante la consulta. | **Escenario 1 - Visualización de signos vitales:**<br>Dado que el veterinario está examinando a un animal.<br>Cuando accede a la aplicación de monitoreo.<br>Entonces podrá ver los signos vitales actuales del animal en tiempo real.<br><br>**Escenario 2 - Alerta por cambios súbitos:**<br>Dado que el veterinario está monitoreando a un animal.<br>Cuando hay un cambio súbito en los signos vitales.<br>Entonces el sistema generará una alerta inmediata. | EP02 |
 
 ## 3.2. Impact Mapping
+
+## Impact Mapping
+
+En esta sección se presenta el Impact Mapping del modelo de negocio digital, el cual permite visualizar la relación entre los objetivos del negocio, los actores involucrados, los impactos esperados en su comportamiento y las soluciones propuestas para alcanzarlos. Este enfoque facilita asegurar que cada funcionalidad desarrollada aporte valor real al objetivo principal del sistema.
+
+Para su elaboración, se definieron Business Goals siguiendo criterios SMART, junto con los principales actores identificados previamente en los User Persona, como el administrador del refugio y el veterinario. A partir de ello, se establecieron los impactos esperados, describiendo cómo se espera que estos usuarios actúen o cambien su comportamiento para contribuir al logro de los objetivos.
+
+Asimismo, se identificaron los deliverables como las soluciones tecnológicas del sistema, tales como monitoreo IoT, alertas, geolocalización y automatización de la alimentación. Finalmente, se formularon las User Stories, asegurando que cada funcionalidad esté orientada a generar valor y responder a necesidades reales de los usuarios.
+
+#### Impact Mapping – Administrador del refugio
+![Impact Mapping Administrador](img/Impact_map_Administradores_de_refugios)
+
+#### Impact Mapping – Veterinario
+![Impact Mapping Veterinario](img/Impact_map_Veterinarios.png)
+
 ## 3.3. Product Backlog
 
 <br>
