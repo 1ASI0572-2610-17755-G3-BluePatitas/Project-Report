@@ -1,4 +1,4 @@
-# <center>Project Report</center>
+﻿# <center>Project Report</center>
 
 <p align="center">
     <strong>Universidad Peruana de Ciencias Aplicadas</strong><br>
@@ -239,7 +239,7 @@ Link del repositorio del reporte:
     <td>
       <p align="center"><strong>María Patricia Hernández Uchuya - U202311258</strong></p>
       <p align="justify">
-        Estudio la carrera de Ingeniería de Software, tengo 20 años y actualmente me encuentro cursando el septimo ciclo de dicha carrera. Me considero una persona con responsabilidad, optimismo y honestidad, cualidades que considero fundamentales para una colaboración efectiva en equipo y un buen desarrollo en este proyecto.
+        Estudio la carrera de Ingeniería de Software, tengo 20 años y actualmente me encuentro cursando el séptimo ciclo de dicha carrera. Me considero una persona con responsabilidad, optimismo y honestidad, cualidades que considero fundamentales para una colaboración efectiva en equipo y un buen desarrollo en este proyecto.
       </p>
     </td>
   </tr>
@@ -261,66 +261,114 @@ Link del repositorio del reporte:
 
 ## 1.2. Solution Profile
 
-Nuestra startup tiene como propósito mejorar la calidad de vida de los animales callejeros mediante una solución tecnológica que integra una aplicación web con dispositivos IoT implementados en refugios, permitiendo una gestión más eficiente, segura y monitoreada. Fundada por estudiantes de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas en Perú, busca desarrollar herramientas innovadoras que respondan a las necesidades más urgentes del bienestar animal.
+BluePatitas es una propuesta de solución IoT orientada al monitoreo y cuidado de animales en refugios, desarrollada en el contexto del curso Desarrollo de Soluciones IoT. El proyecto plantea integrar una aplicación web con dispositivos de campo que permitan obtener información relevante del entorno y de eventos operativos, con el fin de fortalecer la supervisión diaria y apoyar la toma de decisiones de administradores de refugios y veterinarios.
 
-En colaboración con refugios, implementamos sensores de movimiento que detectan intentos de escape, así como sensores de temperatura y humedad que garantizan condiciones ambientales adecuadas. Asimismo, utilizamos sistemas de identificación para el seguimiento del estado de vacunación y cámaras térmicas para el monitoreo de la salud de los animales. La solución también incorpora bebederos inteligentes y sistemas de alimentación con sensores de peso, los cuales permiten supervisar el consumo y generar alertas ante posibles irregularidades.
+El MVP definido para el proyecto se concentra en cuatro componentes de alcance realista: una cámara para monitoreo visual del animal dentro de una zona delimitada, un dispositivo GPS para localización aproximada y geocerca, un sensor de temperatura y humedad para control ambiental, y un dispensador de comida para automatizar la alimentación según una programación semanal prescrita por el veterinario. Esta selección responde a restricciones de presupuesto y prioriza funciones con impacto directo en la seguridad, seguimiento y cuidado cotidiano dentro del refugio.
 
-Además, a través de nuestra plataforma web, los usuarios pueden involucrarse activamente mediante donaciones económicas dirigidas a los refugios, contribuyendo de manera directa a su sostenibilidad y a la mejora de las condiciones de vida de los animales en situación de calle.
+En ese sentido, BluePatitas no busca reemplazar la observación profesional ni emitir diagnósticos veterinarios automatizados, sino proporcionar soporte tecnológico para mejorar la visibilidad remota, la capacidad de respuesta ante alertas y la trazabilidad de eventos relevantes, especialmente aquellos vinculados con escapes, condiciones ambientales y alimentación programada.
 
 | **Misión** | **Visión** | **Valores** |
 |------------|------------|-------------|
-| Nuestra misión es contribuir al bienestar de los animales callejeros mediante la integración de tecnologías IoT en refugios, optimizando su gestión y garantizando condiciones adecuadas. Brindamos una solución integral que conecta a los usuarios con refugios y clínicas veterinarias, promoviendo la adopción responsable y fomentando una comunidad comprometida contra el abandono animal. | Aspiramos a posicionarnos como líderes en Perú en soluciones tecnológicas para el bienestar animal. Visualizamos un futuro donde los refugios utilicen tecnologías IoT para asegurar el cuidado de los animales sin hogar, fortaleciendo la colaboración entre comunidades, refugios y profesionales, e inspirando a más personas a involucrarse en su protección. | ➤ Responsabilidad<br>➤ Colaboración<br>➤ Innovación |
+| Nuestra misión es contribuir al bienestar de los animales en refugios mediante el uso de tecnologías IoT que apoyen el monitoreo, el control ambiental y la alimentación programada, fortaleciendo la gestión diaria de administradores y veterinarios. | Aspiramos a que los refugios incorporen soluciones tecnológicas accesibles y útiles para mejorar el cuidado, la supervisión y la capacidad de respuesta ante eventos que afecten la seguridad y bienestar de los animales. | Responsabilidad<br>Colaboración<br>Innovación |
 
 ### 1.2.1. Antecedentes y problemática
 
-El bienestar de los animales callejeros en el Perú representa un desafío social y de salud pública crítico que ha sobrepasado la capacidad operativa de los refugios locales. A nivel de gestión, estudios de la Pontificia Universidad Católica del Perú (PUCP, 2025) revelan que el enfoque actual de bienestar animal se limita a la respuesta reactiva ante el sufrimiento, careciendo de herramientas técnicas que aseguren las "cinco libertades" del animal de forma constante. En Lima, donde se concentran 2 millones de perros en abandono, los refugios operan bajo un modelo de "acogida temporal" con recursos limitados, donde la supervisión de la salud y el comportamiento es puramente observacional y manual.
+El cuidado de animales en refugios presenta retos operativos relevantes en el contexto peruano, especialmente cuando la cantidad de animales supera la capacidad del personal disponible para supervisarlos de manera continua. En este escenario, las tareas de monitoreo suelen ejecutarse mediante observación presencial, rondas manuales y registros no centralizados, lo cual dificulta mantener un seguimiento constante sobre la seguridad del animal, el estado del entorno y el cumplimiento de rutinas de alimentación.
 
 ####  What? 
 
-La problemática principal radica en la ineficiencia de los modelos de gestión tradicionales en los refugios de animales, los cuales dependen de procesos manuales para el monitoreo de salud, alimentación y seguridad. Según investigaciones en el ámbito de bienestar animal, la carencia de herramientas tecnológicas integradas (IoT) impide una supervisión constante y técnica, lo que incrementa los riesgos de mortalidad y dificulta la detección temprana de anomalías fisiológicas. Esta brecha tecnológica también obstaculiza la coordinación efectiva entre los albergues y las clínicas veterinarias, limitando la capacidad de respuesta ante emergencias.
+La problemática principal radica en la limitada capacidad de los refugios para monitorear, de forma oportuna y sistemática, eventos críticos del cuidado diario. Entre estos se encuentran los intentos de escape o salidas del área permitida, la pérdida de visibilidad del animal dentro de la zona observable, las variaciones de temperatura y humedad que puedan afectar su bienestar y la falta de trazabilidad sobre la alimentación programada. La ausencia de una solución integrada reduce la capacidad de reacción del personal y dificulta la coordinación con los veterinarios responsables.
 
 ####  When? 
 
-El problema se manifiesta de forma continua durante la estancia del animal, pero se vuelve crítico cuando los refugios enfrentan una alta densidad de población. En situaciones de emergencia, como brotes de enfermedades contagiosas o intentos de escape, la falta de sistemas de alerta automatizados en tiempo real ralentiza las respuestas operativas, comprometiendo la integridad física y el bienestar de los animales.
+El problema se manifiesta durante toda la permanencia del animal en el refugio, pero se vuelve más crítico en horarios de menor supervisión, durante jornadas con alta carga operativa o cuando un mismo cuidador debe atender a varios animales de manera simultánea. En esos momentos, la detección tardía de un escape, de una condición ambiental fuera de rango o de una falla en la rutina de alimentación puede comprometer el cuidado adecuado.
 
 ####  Where? 
 
-El problema se localiza físicamente en los refugios y albergues temporales, donde la supervisión se ve limitada por la infraestructura. Sin embargo, la problemática se extiende al entorno digital, donde los gestores, veterinarios y adoptantes carecen de una plataforma centralizada para monitorear sensores de movimiento, temperatura y alimentación, o para acceder a datos de cámaras térmicas e identificadores biométricos de forma remota.
+El problema se localiza principalmente en los refugios y albergues temporales, donde la infraestructura, la distribución de espacios y la disponibilidad de personal limitan la supervisión constante. No obstante, también se refleja en el entorno digital, ya que los administradores de refugios y veterinarios no siempre cuentan con una plataforma centralizada que les permita revisar alertas, condiciones ambientales, ubicación aproximada y eventos de dispensación de manera remota.
 
 #### Who? 
 Esta situación afecta directamente a dos grupos principales:
 
-1.  **Rescatistas y voluntarios:** Quienes asumen una carga operativa excesiva y enfrentan dificultades para garantizar la seguridad y salud de los animales bajo métodos empíricos.
-    
-2.  **Organizaciones de bienestar animal:** Entidades que buscan escalar su impacto mediante la implementación de tecnologías avanzadas para optimizar el control ambiental y la gestión de recursos.
-    
+1.  **Administradores de refugios:** Responsables de coordinar el cuidado diario, supervisar instalaciones y responder ante incidentes operativos relacionados con seguridad, ambiente y alimentación.
+
+2.  **Veterinarios:** Profesionales que requieren información oportuna sobre condiciones del entorno y cumplimiento de la dieta prescrita para apoyar el seguimiento del bienestar animal.
 
 ####  Why? 
 
-De acuerdo con Pinto (2021), la gestión deficiente de los refugios en el Perú es consecuencia de la escasez de recursos económicos y la ausencia de políticas públicas eficaces. A esto se suma una baja concienciación social sobre la adopción responsable. Desde una perspectiva técnica, la problemática persiste debido a la nula integración de tecnologías de seguimiento y control automatizado, lo que perpetúa modelos de cuidado reactivos en lugar de preventivos.
+La problemática persiste por una combinación de recursos limitados, infraestructura variable y procesos altamente manuales. Desde una perspectiva técnica, la falta de integración entre monitoreo visual, geocerca, control ambiental y trazabilidad de alimentación mantiene un modelo de supervisión reactivo, en el que el personal actúa cuando el incidente ya ocurrió o cuando la verificación presencial lo hace evidente.
 
 #### How?
 
-Los distintos actores enfrentan este escenario interactuando a través de un ecosistema de productos digitales que transforma variables físicas en información procesable y visual. En las instalaciones, la recolección continua de parámetros ambientales y biométricos alimenta paneles de control interactivos e interfaces adaptables a cualquier dispositivo móvil o web.
+Los actores enfrentan este escenario a través de actividades presenciales de observación y control que consumen tiempo y no siempre ofrecen visibilidad continua. La ausencia de alertas automatizadas y de registros consolidados obliga a depender de revisiones manuales para confirmar si el animal permanece en el área esperada, si el ambiente es adecuado o si la alimentación fue dispensada conforme a lo programado.
 
-Esta interacción permite a los albergues anticipar emergencias y automatizar sus recursos diarios, a las clínicas veterinarias priorizar sus intervenciones basándose en cálculos y tendencias estadísticas del estado de los animales, y a los donantes explorar reportes cuantitativos que les muestran el impacto directo de su apoyo. De esta manera, el monitoreo físico evoluciona hacia una red colaborativa e inclusiva que mantiene a todas las partes sincronizadas en tiempo real
+BluePatitas propone mejorar esta dinámica mediante una solución IoT que combine una cámara para monitoreo visual, un GPS con geocerca, un sensor de temperatura y humedad y un dispensador automático con registro de eventos. Con ello, administradores de refugios y veterinarios pueden acceder a información relevante de forma remota y responder con mayor rapidez ante situaciones que requieren intervención.
 
 ####  How Much? 
 
-El impacto es severo y cuantificable. En el contexto regional, se estima que de los más de 286,000 perros y gatos recogidos anualmente por diversas entidades, un 15.6% no sobrevive debido a la precariedad en los cuidados y la falta de atención médica oportuna (Fundación Affinity, s.f.). Estas cifras subrayan la necesidad urgente de implementar soluciones tecnológicas que reduzcan la tasa de mortalidad y aseguren estándares de bienestar animal dignos.
+El impacto de esta problemática se refleja en mayor carga operativa para el personal, menor capacidad de respuesta frente a incidentes y menor consistencia en actividades rutinarias de cuidado. Aunque el MVP no resuelve por sí solo toda la problemática del bienestar animal en refugios, sí apunta a reducir brechas concretas de monitoreo, control y trazabilidad que resultan críticas para una gestión más ordenada y oportuna.
 
 ### 1.2.2 Lean UX Process
 #### 1.2.2.1. Lean UX Problem Statements
-#### 1.2.2.2. Lean UX Assumptions
-#### 1.2.2.3. Lean UX Hypothesis Statements
-#### 1.2.2.4. Lean UX Canvas
+Los refugios de animales enfrentan limitaciones operativas para supervisar de forma continua el estado y la permanencia segura de los animales bajo su cuidado. En muchos casos, el monitoreo sigue dependiendo de rondas manuales, observación presencial y registros dispersos, lo que dificulta detectar a tiempo intentos de escape, cambios inusuales en el comportamiento dentro del área observable, condiciones ambientales inadecuadas y el cumplimiento de rutinas de alimentación.
 
-## 1.3 Segmentos Objetivo
+Esta situación genera respuesta tardía del personal ante incidentes críticos, baja visibilidad remota sobre lo que ocurre en el refugio y escasa trazabilidad de eventos relevantes para la gestión diaria. Para administradores de refugios y veterinarios, estas brechas reducen la capacidad de tomar decisiones oportunas y de mantener condiciones de cuidado consistentes, especialmente cuando los recursos humanos y el tiempo disponible son limitados.
+
+BluePatitas plantea abordar este problema mediante un MVP IoT distribuido compuesto por una cámara para monitoreo visual y apoyo a alertas, un dispositivo GPS para localización aproximada y geocerca, un sensor de temperatura y humedad para monitoreo ambiental, y un dispensador de comida para automatizar la alimentación según una dieta semanal prescrita por el veterinario y registrar cada evento de dispensación. De esta manera, la solución busca mejorar el monitoreo, el control operativo y la capacidad de respuesta del refugio sin reemplazar el criterio del personal responsable.
+
+En ese contexto, surge la siguiente pregunta problema: ¿Cómo mejorar el monitoreo, control y capacidad de respuesta de los refugios ante escapes, condiciones ambientales no seguras y eventos de alimentación, mediante una solución IoT accesible que permita supervisión remota y trazabilidad operativa?
+#### 1.2.2.2. Lean UX Assumptions
+**Assumptions Worksheet**
+
+- Los administradores de refugios necesitan visibilidad remota del estado de los animales y del entorno para complementar la supervisión presencial.
+- Los veterinarios requieren información básica y oportuna sobre condiciones ambientales y cumplimiento de alimentación para apoyar el seguimiento del bienestar animal.
+- Los refugios tienen restricciones de presupuesto, por lo que priorizan un conjunto reducido de dispositivos con valor operativo claro.
+- La conectividad en refugios puede ser variable, por lo que el sistema debe tolerar interrupciones parciales y registrar eventos relevantes cuando sea posible.
+- El mantenimiento de dispositivos debe ser simple, debido a que el personal disponible suele ser limitado y no necesariamente especializado en tecnología.
+- Las alertas son útiles solo si se enfocan en eventos accionables, como salida de geocerca, pérdida del rango visual de la cámara, condiciones ambientales fuera de rango y ejecución o ausencia de dispensación programada.
+
+**Business Outcomes**
+
+- Mejorar la capacidad operativa del refugio para supervisar animales de forma continua sin depender exclusivamente de rondas manuales.
+- Reducir incidentes asociados a escapes o detección tardía de situaciones anormales dentro del entorno monitoreado.
+- Fortalecer la trazabilidad de eventos clave, especialmente en alimentación programada y alertas relevantes para la gestión diaria.
+- Validar la viabilidad de una solución IoT de alcance realista y costo controlado para un contexto de refugios.
+
+**User Outcomes**
+
+- Los administradores de refugios podrán monitorear remotamente el área observable del animal y recibir alertas ante eventos que requieran intervención.
+- Los veterinarios podrán revisar información ambiental y registros de alimentación como soporte para el seguimiento del cuidado indicado.
+- El personal del refugio podrá responder con mayor rapidez ante salidas del área permitida o cambios del entorno que afecten el bienestar del animal.
+- Los responsables del cuidado tendrán un historial básico de eventos de dispensación que facilite el control de la dieta semanal prescrita.
+
+**Features**
+
+- Monitoreo visual del animal dentro de una zona delimitada mediante cámara.
+- Detección de salidas del rango visual observable y generación de alertas asociadas.
+- Localización aproximada mediante GPS y configuración de geocerca para identificar salidas del área permitida.
+- Monitoreo de temperatura y humedad dentro del refugio, con alertas cuando los valores salgan del rango seguro definido.
+- Dispensación automatizada de comida según una programación semanal indicada por el veterinario.
+- Registro de eventos de dispensación para asegurar trazabilidad operativa.
+- Visualización centralizada de alertas y eventos relevantes para administradores de refugios y veterinarios.
+#### 1.2.2.3. Lean UX Hypothesis Statements
+**Business Hypothesis**
+
+Creemos que, si BluePatitas integra monitoreo visual, geocerca, monitoreo ambiental y alimentación automatizada con registro de eventos, los refugios podrán reducir la ocurrencia o severidad de incidentes asociados a escapes, mejorar la supervisión remota y contar con evidencia básica para el seguimiento operativo. Sabremos que esta hipótesis es válida si, durante la evaluación inicial del MVP, se observa una disminución razonable de incidentes no detectados a tiempo, una mejora en los tiempos de respuesta del personal ante alertas y un mayor cumplimiento de la alimentación programada.
+
+**User Hypothesis**
+
+Creemos que los administradores de refugios y los veterinarios usarán BluePatitas si la solución les permite identificar con mayor rapidez cuando un animal sale del área permitida o deja de estar dentro del rango visual esperado, verificar si la temperatura y humedad del entorno permanecen dentro de límites seguros y revisar el registro de dispensación de comida. Sabremos que esta hipótesis es válida si los usuarios reportan una mejor capacidad de monitoreo remoto, demuestran uso recurrente de alertas y registros para tomar decisiones operativas, y perciben que el sistema facilita el control diario sin agregar una carga excesiva de mantenimiento.
+#### 1.2.2.4. Lean UX Canvas
+El Lean UX Canvas sintetiza el problema principal del proyecto, los usuarios involucrados, las hipótesis de valor, los beneficios esperados y la dirección inicial de la solución BluePatitas para el contexto de refugios. Este artefacto sirve como soporte visual del enfoque de análisis adoptado en la etapa AV1.
+
+![Lean UX Canvas](img/lean-ux-canvas-2.png)
+
+## 1.3 Segmentos objetivo
 
 | Segmento | Descripción | Características |
 |----------|-------------|-----------------|
-| **Segmento 1: Administradores de refugios** | Este segmento de usuarios es clave, ya que son los encargados de gestionar el cuidado y la adopción de animales callejeros. Necesitan herramientas para contabilizar los animales que tienen bajo su cuidado y aquellos que están listos para ser adoptados, además de la posibilidad de recibir apoyo financiero a través de donaciones. | - **Edades:** 20 a 50 años <br> - **Ubicación:** Perú <br> - **Motivaciones:** Alta preocupación por el bienestar animal y deseo de facilitar la adopción. <br> - **Intereses:** Protección y derechos de los animales, gestión de recursos y networking. <br> - **Comportamiento:** Proactivos en la búsqueda de apoyo; buscan plataformas que faciliten la visibilidad y recaudación. |
-| **Segmento 2: Veterinarios** | Este segmento incluye a las clínicas veterinarias que colaboran con los refugios para proporcionar atención médica a los animales. Las clínicas buscan optimizar su coordinación con los refugios y aprovechar el sistema de alertas y financiamiento que ofrece la plataforma para atender a los animales de manera más eficiente. | - **Edades:** 20 a 60 años <br> - **Ubicación:** Perú <br> - **Motivaciones:** Proporcionar atención de calidad y mejorar la coordinación con refugios. <br> - **Intereses:** Innovación en servicios, responsabilidad social empresarial y eficiencia operativa. <br> - **Comportamiento:** Buscan herramientas tecnológicas para optimizar su gestión, valorando los sistemas de alertas y financiamiento. |
+| **Segmento 1: Administradores de refugios** | Este segmento es prioritario porque asume la gestión operativa del cuidado diario de los animales en el refugio. Necesita herramientas que faciliten el monitoreo remoto, la recepción de alertas ante posibles escapes o eventos anormales, la supervisión de condiciones ambientales y la verificación del cumplimiento de la alimentación programada. | - **Edades:** 20 a 50 años <br> - **Ubicación:** Perú <br> - **Motivaciones:** Mejorar el cuidado de los animales y optimizar la capacidad de respuesta del refugio. <br> - **Intereses:** Bienestar animal, gestión operativa, supervisión remota y uso práctico de tecnología. <br> - **Comportamiento:** Valoran soluciones accesibles que reduzcan tareas manuales y centralicen información relevante para la toma de decisiones. |
+| **Segmento 2: Veterinarios** | Este segmento comprende a los profesionales que brindan seguimiento clínico y recomendaciones de cuidado para animales alojados en refugios. Requieren acceso a información confiable sobre condiciones ambientales, alertas relevantes y cumplimiento de la dieta semanal prescrita, de modo que puedan coordinar mejor con los administradores del refugio. | - **Edades:** 20 a 60 años <br> - **Ubicación:** Perú <br> - **Motivaciones:** Asegurar continuidad en el cuidado indicado y mejorar la coordinación con refugios. <br> - **Intereses:** Bienestar animal, seguimiento de condiciones de cuidado, eficiencia operativa e innovación aplicada. <br> - **Comportamiento:** Utilizan información sintetizada y registros de eventos como apoyo para emitir recomendaciones y priorizar intervenciones. |
 <br>
 
 # Capítulo II: Requirements Elicitation & Analysis
@@ -363,8 +411,6 @@ El impacto es severo y cuantificable. En el contexto regional, se estima que de 
 ### 4.1.2. Context Mapping
 ### 4.1.3. Software Architecture
 #### 4.1.3.1. Software Architecture System Landscape Diagram
-#### 4.1.3.2. Software Architecture Context Level Diagrams
-#### 4.1.3.3. Software Architecture Container Level Diagrams
 #### 4.1.3.4. Software Architecture Deployment Diagrams
 
 ## 4.2. Tactical-Level Domain-Driven Design
@@ -452,3 +498,4 @@ Link del Repositorio del Informe:
 Link del Repositorio del Backend: 
 Link del Repositorio del Frontend Aplicación Web: 
 Link del Repositorio del Frontend Aplicación Móvil: 
+
