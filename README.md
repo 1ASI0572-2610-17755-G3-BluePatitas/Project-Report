@@ -314,11 +314,274 @@ Link del repositorio del reporte:
 #### 4.1.3.4. Software Architecture Deployment Diagrams
 
 ## 4.2. Tactical-Level Domain-Driven Design
-### 4.2.X. Bounded Context: <Bounded Context Name>
-#### 4.2.X.1. Domain Layer
-#### 4.2.X.2. Interface Layer
-#### 4.2.X.3. Application Layer
-#### 4.2.X.4. Infrastructure Layer
+En esta sección veremos cómo se organiza la implementación del sistema siguiendo los principios de Domain-Driven Design a nivel táctico, dividiendo la solución en capas como Domain, Application, Interface e Infrastructure, para separar responsabilidades y mantener una arquitectura clara, mantenible y alineada con la lógica del negocio.
+
+### 4.2.1. Bounded Context: IAM (Identity and Access Management)
+
+#### 4.2.1.1. Domain Layer
+
+#### Entity: UserAccount
+
+**Descripción:**  
+Representa la cuenta de acceso y autorización del usuario.
+
+##### Attributes
+
+| Nombre        | Tipo de dato | Visibilidad | Descripción                                      |
+|--------------|-------------|------------|--------------------------------------------------|
+| id           | UUID        | Private    | Identificador único de la cuenta                |
+| email        | String      | Private    | Correo electrónico de acceso                    |
+| passwordHash | String      | Private    | Credencial de acceso encriptada                 |
+| roleId       | UUID        | Private    | Identificador del rol asignado                  |
+| isActive     | Boolean     | Private    | Estado actual de la cuenta                      |
+
+##### Methods
+
+| Nombre               | Tipo de retorno | Descripción                                      |
+|---------------------|----------------|--------------------------------------------------|
+| authenticate(String)| Boolean        | Valida las credenciales de la cuenta            |
+| assignRole(UUID)    | Void           | Actualiza el rol asignado al usuario            |
+| revokeAccess()      | Void           | Deshabilita el acceso de la cuenta al sistema   |
+
+---
+
+#### Entity: Role
+
+**Descripción:**  
+Representa un conjunto de permisos dentro del sistema.
+
+##### Attributes
+
+| Nombre      | Tipo de dato | Visibilidad | Descripción                                      |
+|------------|-------------|------------|--------------------------------------------------|
+| id         | UUID        | Private    | Identificador único del rol                     |
+| name       | String      | Private    | Nombre identificador del rol                    |
+| permissions| List        | Private    | Lista de permisos autorizados para el rol       |
+
+##### Methods
+
+| Nombre                   | Tipo de retorno | Descripción                                      |
+|--------------------------|----------------|--------------------------------------------------|
+| addPermission(String)    | Void           | Asigna un nuevo permiso al rol                  |
+| removePermission(String) | Void           | Revoca un permiso existente del rol             |
+| hasPermission(String)    | Boolean        | Evalúa si el rol posee un permiso específico    |
+
+---
+
+
+
+#### 4.2.1.1. Interface Layer
+
+#### Controller: AuthController
+
+| Ruta                   | Método | Descripción                                           |
+|------------------------|--------|-------------------------------------------------------|
+| /api/iam/auth/login    | POST   | Inicia sesión y genera las credenciales de acceso     |
+| /api/iam/auth/logout   | POST   | Invalida la sesión actual del usuario                 |
+
+---
+
+#### Controller: RoleController
+
+| Ruta                                   | Método | Descripción                                               |
+|----------------------------------------|--------|-----------------------------------------------------------|
+| /api/iam/roles                         | GET    | Obtiene el catálogo de roles disponibles                  |
+| /api/iam/roles/{id}/permissions        | PUT    | Actualiza los permisos de un rol específico               |
+| /api/iam/users/{id}/role               | PUT    | Asigna un nuevo rol a una cuenta de usuario               |
+
+---
+
+### 4.2.1.3. Application Layer
+
+#### Service: AuthService
+
+| Nombre                                           | Descripción                                               |
+|--------------------------------------------------|-----------------------------------------------------------|
+| authenticateUser(AuthenticateUserQuery)          | Procesa la validación de credenciales y acceso            |
+| disableUserAccount(DisableAccountCommand)        | Gestiona la inhabilitación de una cuenta                  |
+
+---
+
+#### Service: RoleService
+
+| Nombre                                           | Descripción                                               |
+|--------------------------------------------------|-----------------------------------------------------------|
+| assignRoleToUser(AssignUserRoleCommand)          | Ejecuta la asignación de roles a cuentas                  |
+| updateRolePermissions(UpdatePermissionsCommand)  | Gestiona la modificación de permisos de los roles         |
+
+---
+
+### 4.2.1.4. Infrastructure Layer
+
+| Nombre                          | Categoría                    | Implementa             | Descripción                                          |
+|---------------------------------|------------------------------|------------------------|------------------------------------------------------|
+| RelationalUserAccountRepository | Repository Implementation     | UserAccountRepository  | Persistencia de los datos de las cuentas             |
+| RelationalRoleRepository        | Repository Implementation     | RoleRepository         | Persistencia de los roles y la lista de permisos     |
+
+## 4.2.2. Bounded Context: Animals
+
+### 4.2.2.1. Domain Layer
+
+#### Entity: Animal
+
+**Descripción:**  
+Representa la identidad, estado biológico y ubicación asignada de un animal.
+
+##### Attributes
+
+| Nombre              | Tipo de dato | Visibilidad | Descripción                                                        |
+|--------------------|-------------|------------|--------------------------------------------------------------------|
+| id                 | UUID        | Private    | Identificador único del animal                                    |
+| name               | String      | Private    | Nombre de identificación                                          |
+| speciesDetails     | SpeciesInfo | Private    | Datos base (especie, raza, edad aproximada)                       |
+| healthCondition    | String      | Private    | Estado general de salud actual                                    |
+| assignedPerimeterId| UUID        | Private    | Identificador de la zona o perímetro seguro asignado              |
+
+##### Methods
+
+| Nombre                          | Tipo de retorno | Descripción                                                        |
+|---------------------------------|----------------|--------------------------------------------------------------------|
+| updateBaseProfile(SpeciesInfo)  | Void           | Actualiza los datos base e identidad del animal                   |
+| registerHealthCondition(String) | Void           | Modifica el estado general de salud (ej. en tratamiento, sano)    |
+| relocateToPerimeter(UUID)       | Void           | Asigna o reubica al animal en un nuevo perímetro delimitado       |
+
+---
+
+### 4.2.2.2. Interface Layer
+
+#### Controller: AnimalProfileController
+
+| Ruta                              | Método | Descripción                                                        |
+|----------------------------------|--------|--------------------------------------------------------------------|
+| /api/animals                     | POST   | Registra la identidad y datos base de un nuevo animal             |
+| /api/animals/{id}                | GET    | Obtiene el perfil completo y estado del animal                    |
+| /api/animals/{id}/health         | PUT    | Actualiza el estado general de salud                              |
+| /api/animals/{id}/perimeter      | PUT    | Asigna una nueva zona o perímetro al animal                       |
+
+---
+
+### 4.2.2.3. Application Layer
+
+#### Service: AnimalManagementService
+
+| Nombre                                              | Descripción                                                        |
+|-----------------------------------------------------|--------------------------------------------------------------------|
+| registerNewAnimal(RegisterAnimalCommand)            | Procesa la creación de la identidad y datos base                  |
+| updateAnimalHealth(UpdateHealthCommand)             | Gestiona la actualización del estado general del animal           |
+| assignAnimalPerimeter(AssignPerimeterCommand)       | Ejecuta la asignación del animal a una zona específica            |
+
+---
+
+### 4.2.2.4. Infrastructure Layer
+
+| Nombre                      | Categoría                    | Implementa        | Descripción                                                        |
+|-----------------------------|------------------------------|-------------------|--------------------------------------------------------------------|
+| RelationalAnimalRepository | Repository Implementation     | AnimalRepository  | Persistencia de la identidad, estado y asignación de zona         |
+
+## 4.2.3. Bounded Context: Monitoring
+
+### 4.2.3.1. Domain Layer
+
+#### Entity: TelemetryRecord
+
+**Descripción:**  
+Representa las lecturas ambientales y de monitoreo visual en un instante de tiempo.
+
+##### Attributes
+
+| Nombre              | Tipo de dato | Visibilidad | Descripción                                                        |
+|--------------------|-------------|------------|--------------------------------------------------------------------|
+| id                 | UUID        | Private    | Identificador único del registro                                  |
+| targetId           | UUID        | Private    | Identificador del sujeto monitoreado (animal)                     |
+| ambientTemperature | Decimal     | Private    | Lectura actual de temperatura                                     |
+| ambientHumidity    | Decimal     | Private    | Lectura actual de humedad                                         |
+| visualData         | String      | Private    | Referencia o metadatos del monitoreo por cámara                   |
+| recordedAt         | Date        | Private    | Fecha y hora exacta de la lectura                                 |
+
+##### Methods
+
+| Nombre                          | Tipo de retorno | Descripción                                                        |
+|---------------------------------|----------------|--------------------------------------------------------------------|
+| validateEnvironmentalThresholds() | Boolean        | Evalúa si la temperatura y humedad están en rangos seguros        |
+| hasVisualAnomalies()            | Boolean        | Analiza la data visual en busca de comportamientos inusuales      |
+
+---
+
+#### Entity: PerimeterAlert
+
+**Descripción:**  
+Representa una alerta generada por la salida de una zona asignada y su seguimiento.
+
+##### Attributes
+
+| Nombre             | Tipo de dato      | Visibilidad | Descripción                                                        |
+|--------------------|------------------|------------|--------------------------------------------------------------------|
+| id                 | UUID             | Private    | Identificador único de la alerta                                  |
+| targetId           | UUID             | Private    | Identificador del sujeto que generó la alerta                     |
+| isBreachConfirmed  | Boolean          | Private    | Confirmación de la salida del perímetro                           |
+| currentCoordinates | LocationContext  | Private    | Datos exactos de localización actual                              |
+| trackingActive     | Boolean          | Private    | Estado de la activación de localización continua                  |
+
+##### Methods
+
+| Nombre                       | Tipo de retorno | Descripción                                                        |
+|------------------------------|----------------|--------------------------------------------------------------------|
+| confirmBreach()              | Void           | Registra y confirma la detección de salida del perímetro          |
+| activateLocationTracking()   | Void           | Inicia la actualización constante de las coordenadas              |
+| resolveAlert()               | Void           | Cierra la alerta una vez gestionada la incidencia                 |
+
+---
+
+### 4.2.3.2. Interface Layer
+
+#### Controller: TelemetryController
+
+| Ruta                                      | Método | Descripción                                                        |
+|------------------------------------------|--------|--------------------------------------------------------------------|
+| /api/monitoring/telemetry                | POST   | Ingresa nuevas lecturas de temperatura, humedad y cámara          |
+| /api/monitoring/telemetry/{targetId}     | GET    | Obtiene el historial reciente de lecturas ambientales             |
+
+---
+
+#### Controller: AlertController
+
+| Ruta                                              | Método | Descripción                                                        |
+|--------------------------------------------------|--------|--------------------------------------------------------------------|
+| /api/monitoring/alerts                           | GET    | Obtiene la lista de alertas de perímetro generadas                |
+| /api/monitoring/alerts/{targetId}/tracking       | POST   | Activa la localización continua para un sujeto específico         |
+| /api/monitoring/alerts/{id}/resolve              | PUT    | Marca una alerta como resuelta                                    |
+
+---
+
+### 4.2.3.3. Application Layer
+
+#### Service: TelemetryAnalysisService
+
+| Nombre                                                  | Descripción                                                        |
+|----------------------------------------------------------|--------------------------------------------------------------------|
+| processIncomingTelemetry(ProcessTelemetryCommand)        | Registra las lecturas y evalúa umbrales de temperatura y humedad  |
+| analyzeVisualMonitoring(AnalyzeVisualDataQuery)          | Gestiona el procesamiento continuo de las entradas de cámara      |
+
+---
+
+#### Service: PerimeterAlertService
+
+| Nombre                                                  | Descripción                                                        |
+|----------------------------------------------------------|--------------------------------------------------------------------|
+| evaluatePerimeterBreach(EvaluateBreachCommand)           | Detecta salidas del perímetro y genera alertas automáticamente    |
+| enableContinuousTracking(EnableTrackingCommand)          | Activa y gestiona el flujo de localización tras una alerta        |
+
+---
+
+### 4.2.3.4. Infrastructure Layer
+
+| Nombre                          | Categoría                    | Implementa            | Descripción                                                        |
+|---------------------------------|------------------------------|------------------------|--------------------------------------------------------------------|
+| TimeSeriesTelemetryRepository   | Repository Implementation     | TelemetryRepository   | Persistencia optimizada para lecturas secuenciales de monitoreo   |
+| RelationalAlertRepository       | Repository Implementation     | AlertRepository       | Persistencia de alertas generadas y estados de localización       |
+
+
+
 #### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
 #### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
 ##### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams
