@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-    <strong>Startup: </strong><br>
+    <strong>Startup: BluePatitas </strong><br>
     <strong>Producto: </strong>
 </p>
 
@@ -65,6 +65,12 @@
         <td>María Hernández</td>
         <td>Creación del reporte</td>
     </tr>
+    <tr>
+    <td>0.1</td>
+    <td>23/04/2026</td>
+    <td>Carlos Gonzales</td>
+    <td>Actualización del Capítulo I: descripción de la startup, solution profile, antecedentes y problemática, Lean UX Process, Student Outcome, bibliografía y segmentos objetivo.</td>
+</tr>
 </table>
 
 <br>
@@ -179,12 +185,53 @@ Link del repositorio del reporte:
 
 # Student Outcome
 
+
+<table align="center">
+  <tr>
+    <th>Criterio específico</th>
+    <th>Acciones realizadas</th>
+    <th>Conclusiones</th>
+  </tr>
+  <tr>
+    <td>Trabaja en equipo para proporcionar liderazgo en forma conjunta.</td>
+    <td>
+      <p><strong>Giancarlo Santiago Castañeda Guimas</strong><br>AV1: </p>
+      <p><strong>Luciana Carolina Choquehuanca Nuñez</strong><br>AV1: </p>
+      <p><strong>Carlos Matthew Gonzales Valverde</strong><br>AV1: </p>
+      <p><strong>María Patricia Hernández Uchuya</strong><br>AV1: </p>
+      <p><strong>Ronald Joel Peralta Chipa</strong><br>AV1: </p>
+    </td>
+    <td>
+      Como equipo, durante AV1 se evidenció liderazgo compartido en la organización inicial del proyecto, la distribución de responsabilidades y la consolidación progresiva del informe. Cada integrante asumió tareas específicas y contribuyó al avance del documento, permitiendo construir una base común para el desarrollo del proyecto BluePatitas.
+    </td>
+  </tr>
+  <tr>
+    <td>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</td>
+    <td>
+      <p><strong>Giancarlo Santiago Castañeda Guimas</strong><br>AV1: </p>
+      <p><strong>Luciana Carolina Choquehuanca Nuñez</strong><br>AV1: </p>
+      <p><strong>Carlos Matthew Gonzales Valverde</strong><br>AV1: </p>
+      <p><strong>María Patricia Hernández Uchuya</strong><br>AV1: </p>
+      <p><strong>Ronald Joel Peralta Chipa</strong><br>AV1: </p>
+    </td>
+    <td>
+      Durante AV1, el equipo estableció una estructura inicial de trabajo colaborativo mediante el uso de GitHub y un tablero de tareas, lo que permitió organizar actividades, priorizar entregables y avanzar de forma ordenada en la elaboración del informe. Este proceso contribuyó a construir un entorno de coordinación y planificación alineado con los objetivos del curso.
+    </td>
+  </tr>
+</table>
+
 <br>
 
 # Capítulo I: Introducción
 
 ## 1.1. Startup Profile
 ### 1.1.1. Descripción de la Startup
+
+BluePatitas es una startup orientada al desarrollo de soluciones tecnológicas para mejorar el cuidado y monitoreo de animales en refugios. Surge a partir de la identificación de dificultades operativas frecuentes en estos entornos, tales como la supervisión manual de los animales, la limitada capacidad de respuesta ante incidentes y la falta de visibilidad continua sobre condiciones relevantes para su bienestar.
+
+La propuesta de BluePatitas se enfoca en brindar una solución accesible e innovadora que apoye a administradores de refugios y veterinarios mediante el uso de tecnología IoT y herramientas digitales. De esta manera, la startup busca contribuir a una gestión más eficiente, preventiva y ordenada del cuidado animal, facilitando el seguimiento de eventos relevantes y fortaleciendo la toma de decisiones en contextos donde el tiempo, el personal y los recursos suelen ser limitados.
+
+Como iniciativa de base tecnológica, BluePatitas proyecta integrar dispositivos IoT con productos digitales como aplicaciones web y móviles, permitiendo que la información recolectada se transforme en alertas, registros y soporte operativo útil para el entorno de refugios. Así, la startup plantea una propuesta con potencial de escalabilidad, enfocada en resolver una problemática real mediante una combinación de innovación, accesibilidad y compromiso con el bienestar animal.
 ### 1.1.2. Perfiles de integrantes del equipo
 
 <table align="center" border="1" cellspacing="0" cellpadding="8" style="width: 90%; border-collapse: collapse;">
@@ -208,7 +255,7 @@ Link del repositorio del reporte:
     </td>
     <td>
       <p align="center">
-        <strong>Luciana Carolina Choquehuanca Núñez - U202319431</strong>
+        <strong>Luciana Carolina Choquehuanca Nuñez - U202319431</strong>
       </p>    
       <p align="justify">
         Mi nombre es Luciana Carolina, soy estudiante de la carrera de Ingeniería de Software, actualmente cursando el séptimo ciclo, y tengo 20 años. Me considero una persona proactiva, con gran interés en participar en proyectos que impliquen adquirir nuevos conocimientos y seguir aprendiendo constantemente. Me gusta mantener el orden en mi trabajo, por lo que siempre busco entregar resultados que cumplan con los estándares requeridos. Además, disfruto aprender tanto de mis profesores como de mis compañeros, ya que considero que el aprendizaje colaborativo es clave para mi desarrollo profesional.
@@ -273,30 +320,30 @@ En ese sentido, BluePatitas no busca reemplazar la observación profesional ni e
 
 ### 1.2.1. Antecedentes y problemática
 
-El cuidado de animales en refugios presenta retos operativos relevantes en el contexto peruano, especialmente cuando la cantidad de animales supera la capacidad del personal disponible para supervisarlos de manera continua. En este escenario, las tareas de monitoreo suelen ejecutarse mediante observación presencial, rondas manuales y registros no centralizados, lo cual dificulta mantener un seguimiento constante sobre la seguridad del animal, el estado del entorno y el cumplimiento de rutinas de alimentación.
+El cuidado de animales en refugios representa un reto operativo y social relevante en el contexto peruano, especialmente cuando la cantidad de animales supera la capacidad del personal disponible para supervisarlos de manera continua. En el ámbito nacional, investigaciones académicas del repositorio de la Pontificia Universidad Católica del Perú han señalado vacíos y limitaciones en la regulación y comprensión del bienestar animal en el país, lo que evidencia la necesidad de fortalecer no solo el marco normativo, sino también las prácticas e instrumentos de cuidado y seguimiento en entornos de atención animal (Valdelomar Martínez, 2024).
 
-####  What? 
+#### What?
 
 La problemática principal radica en la limitada capacidad de los refugios para monitorear, de forma oportuna y sistemática, eventos críticos del cuidado diario. Entre estos se encuentran los intentos de escape o salidas del área permitida, la pérdida de visibilidad del animal dentro de la zona observable, las variaciones de temperatura y humedad que puedan afectar su bienestar y la falta de trazabilidad sobre la alimentación programada. La ausencia de una solución integrada reduce la capacidad de reacción del personal y dificulta la coordinación con los veterinarios responsables.
 
-####  When? 
+#### When?
 
 El problema se manifiesta durante toda la permanencia del animal en el refugio, pero se vuelve más crítico en horarios de menor supervisión, durante jornadas con alta carga operativa o cuando un mismo cuidador debe atender a varios animales de manera simultánea. En esos momentos, la detección tardía de un escape, de una condición ambiental fuera de rango o de una falla en la rutina de alimentación puede comprometer el cuidado adecuado.
 
-####  Where? 
+#### Where?
 
 El problema se localiza principalmente en los refugios y albergues temporales, donde la infraestructura, la distribución de espacios y la disponibilidad de personal limitan la supervisión constante. No obstante, también se refleja en el entorno digital, ya que los administradores de refugios y veterinarios no siempre cuentan con una plataforma centralizada que les permita revisar alertas, condiciones ambientales, ubicación aproximada y eventos de dispensación de manera remota.
 
-#### Who? 
+#### Who?
+
 Esta situación afecta directamente a dos grupos principales:
 
-1.  **Administradores de refugios:** Responsables de coordinar el cuidado diario, supervisar instalaciones y responder ante incidentes operativos relacionados con seguridad, ambiente y alimentación.
+1. **Administradores de refugios:** Responsables de coordinar el cuidado diario, supervisar instalaciones y responder ante incidentes operativos relacionados con seguridad, ambiente y alimentación.
+2. **Veterinarios:** Profesionales que requieren información oportuna sobre condiciones del entorno y cumplimiento de la dieta prescrita para apoyar el seguimiento del bienestar animal.
 
-2.  **Veterinarios:** Profesionales que requieren información oportuna sobre condiciones del entorno y cumplimiento de la dieta prescrita para apoyar el seguimiento del bienestar animal.
+#### Why?
 
-####  Why? 
-
-La problemática persiste por una combinación de recursos limitados, infraestructura variable y procesos altamente manuales. Desde una perspectiva técnica, la falta de integración entre monitoreo visual, geocerca, control ambiental y trazabilidad de alimentación mantiene un modelo de supervisión reactivo, en el que el personal actúa cuando el incidente ya ocurrió o cuando la verificación presencial lo hace evidente.
+La problemática persiste por una combinación de recursos limitados, infraestructura variable y procesos altamente manuales. Desde una perspectiva técnica, la falta de integración entre monitoreo visual, geocerca, control ambiental y trazabilidad de alimentación mantiene un modelo de supervisión reactivo, en el que el personal actúa cuando el incidente ya ocurrió o cuando la verificación presencial lo hace evidente. Este escenario resulta consistente con los vacíos y debilidades identificados en trabajos académicos sobre bienestar animal y regulación en el Perú (Valdelomar Martínez, 2024).
 
 #### How?
 
@@ -304,9 +351,11 @@ Los actores enfrentan este escenario a través de actividades presenciales de ob
 
 BluePatitas propone mejorar esta dinámica mediante una solución IoT que combine una cámara para monitoreo visual, un GPS con geocerca, un sensor de temperatura y humedad y un dispensador automático con registro de eventos. Con ello, administradores de refugios y veterinarios pueden acceder a información relevante de forma remota y responder con mayor rapidez ante situaciones que requieren intervención.
 
-####  How Much? 
+#### How Much?
 
-El impacto de esta problemática se refleja en mayor carga operativa para el personal, menor capacidad de respuesta frente a incidentes y menor consistencia en actividades rutinarias de cuidado. Aunque el MVP no resuelve por sí solo toda la problemática del bienestar animal en refugios, sí apunta a reducir brechas concretas de monitoreo, control y trazabilidad que resultan críticas para una gestión más ordenada y oportuna.
+La magnitud del problema también puede observarse desde una dimensión cuantitativa. Un reporte periodístico de *El Comercio*, basado en estimaciones de especialistas y organizaciones de protección animal, indicó que en el Perú habría más de 6 millones de perros y gatos en situación de abandono, y que alrededor de 4 millones se encontrarían en Lima. Aunque estas cifras no provienen de un registro oficial unificado, permiten dimensionar la escala del problema que enfrentan los refugios y redes de rescate (El Comercio, 2023).
+
+Como referencia internacional complementaria, la Fundación Affinity reportó que en 2023 se recogieron más de 286,000 perros y gatos en refugios y protectoras. Si bien esta cifra corresponde al contexto español, sirve para evidenciar que la sobrecarga de los sistemas de atención y la necesidad de mecanismos más eficientes de monitoreo, control y respuesta constituyen un problema estructural en el ámbito del bienestar animal (Fundación Affinity, 2024).
 
 ### 1.2.2 Lean UX Process
 #### 1.2.2.1. Lean UX Problem Statements
@@ -369,7 +418,7 @@ El Lean UX Canvas sintetiza el problema principal del proyecto, los usuarios inv
 |----------|-------------|-----------------|
 | **Segmento 1: Administradores de refugios** | Este segmento es prioritario porque asume la gestión operativa del cuidado diario de los animales en el refugio. Necesita herramientas que faciliten el monitoreo remoto, la recepción de alertas ante posibles escapes o eventos anormales, la supervisión de condiciones ambientales y la verificación del cumplimiento de la alimentación programada. | - **Edades:** 20 a 50 años <br> - **Ubicación:** Perú <br> - **Motivaciones:** Mejorar el cuidado de los animales y optimizar la capacidad de respuesta del refugio. <br> - **Intereses:** Bienestar animal, gestión operativa, supervisión remota y uso práctico de tecnología. <br> - **Comportamiento:** Valoran soluciones accesibles que reduzcan tareas manuales y centralicen información relevante para la toma de decisiones. |
 | **Segmento 2: Veterinarios** | Este segmento comprende a los profesionales que brindan seguimiento clínico y recomendaciones de cuidado para animales alojados en refugios. Requieren acceso a información confiable sobre condiciones ambientales, alertas relevantes y cumplimiento de la dieta semanal prescrita, de modo que puedan coordinar mejor con los administradores del refugio. | - **Edades:** 20 a 60 años <br> - **Ubicación:** Perú <br> - **Motivaciones:** Asegurar continuidad en el cuidado indicado y mejorar la coordinación con refugios. <br> - **Intereses:** Bienestar animal, seguimiento de condiciones de cuidado, eficiencia operativa e innovación aplicada. <br> - **Comportamiento:** Utilizan información sintetizada y registros de eventos como apoyo para emitir recomendaciones y priorizar intervenciones. |
-<br>
+
 
 # Capítulo II: Requirements Elicitation & Analysis
 
@@ -411,6 +460,8 @@ El Lean UX Canvas sintetiza el problema principal del proyecto, los usuarios inv
 ### 4.1.2. Context Mapping
 ### 4.1.3. Software Architecture
 #### 4.1.3.1. Software Architecture System Landscape Diagram
+#### 4.1.3.2. Software Architecture Context Level Diagrams
+#### 4.1.3.3. Software Architecture Container Level Diagrams
 #### 4.1.3.4. Software Architecture Deployment Diagrams
 
 ## 4.2. Tactical-Level Domain-Driven Design
@@ -490,6 +541,12 @@ El Lean UX Canvas sintetiza el problema principal del proyecto, los usuarios inv
 <br>
 
 # Bibliografía
+
+Valdelomar Martínez, D. E. (2024). *Deconstrucción de los conceptos de bienestar animal y sufrimiento innecesario animal en el sistema jurídico peruano* [Tesis de licenciatura, Pontificia Universidad Católica del Perú]. Repositorio Institucional PUCP. https://tesis.pucp.edu.pe/
+
+El Comercio. (2023). *Perros y gatos sin hogar en Lima: ¿Existe un registro de animales en situación de abandono?* https://elcomercio.pe/lima/sucesos/perros-y-gatos-sin-hogar-en-lima-existe-un-registro-de-animales-en-situacion-de-abandono-que-se-sabe-de-la-ley-4-patas-adopcion-responsable-esterilizacion-albergues-rescatistas-noticia/
+
+Fundación Affinity. (2024). *Las cifras del abandono de perros y gatos aún lejos de descender*. https://www.fundacion-affinity.org/es/biblioteca/las-cifras-del-abandono-de-perros-y-gatos-aun-lejos-de-descender
 
 <br>
 
