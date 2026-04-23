@@ -369,6 +369,8 @@ A continuación se presenta una tabla evaluando a estos competidores para la sol
 ## 2.2. Entrevistas
 ### 2.2.1. Diseño de entrevistas
 
+En esta sección se presenta el diseño de entrevistas dirigido a los principales segmentos del proyecto. Estas entrevistas tienen como objetivo comprender el contexto de los usuarios, sus necesidades, comportamientos, objetivos y frustraciones, con el fin de obtener información relevante para la construcción de los User Persona y el diseño de la solución. Se incluyeron preguntas principales para explorar los temas clave y preguntas complementarias que permiten profundizar en situaciones específicas, facilitando la obtención de insights más significativos.
+
 #### Segmento 1: Administradores de refugios
 
 ##### Preguntas generales
