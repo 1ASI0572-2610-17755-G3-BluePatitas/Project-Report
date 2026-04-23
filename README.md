@@ -341,7 +341,7 @@ Para su elaboración, se definieron Business Goals siguiendo criterios SMART, ju
 Asimismo, se identificaron los deliverables como las soluciones tecnológicas del sistema, tales como monitoreo IoT, alertas, geolocalización y automatización de la alimentación. Finalmente, se formularon las User Stories, asegurando que cada funcionalidad esté orientada a generar valor y responder a necesidades reales de los usuarios.
 
 #### Impact Mapping – Administrador del refugio
-![Impact Mapping Administrador](img/Impact_map_Administradores_de_refugios)
+![Impact Mapping Administrador](img/Impact_map_Administradores_de_refugios.png)
 
 #### Impact Mapping – Veterinario
 ![Impact Mapping Veterinario](img/Impact_map_Veterinarios.png)
