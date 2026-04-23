@@ -374,8 +374,64 @@ A continuación se presenta una tabla evaluando a estos competidores para la sol
 ## 2.3. Needfinding
 ### 2.3.1. User Personas
 ### 2.3.2. User Task Matrix
+En esta sección se detallan las tareas que realizan los usuarios clave de nuestra solución digital “SmartHire”. Se han identificado dos segmentos principales:
+
+- Segmento 1: Equipos de Recursos Humanos encargados del proceso de contratación
+
+- Segmento 2: Postulantes o candidatos que aplican a las vacantes
+
+
+Las tareas aquí descritas no dependen exclusivamente del uso del software, ya que representan acciones que los usuarios deben realizar en cualquier proceso de selección, sea manual o automatizado. Para cada tarea, se especifica su frecuencia y nivel de importancia, permitiendo identificar qué funciones son más críticas para cada perfil.
+
+#### 🧑‍💼 User Task Matrix – Administradores de refugios
+
+| Tarea                                             | Frecuencia | Importancia |
+|--------------------------------------------------|------------|-------------|
+| Gestionar el control ambiental usando sensores de temperatura y humedad  | A menudo     | Alta        |
+| Monitorear intentos de escape mediante cámaras                              | A menudo     | Alta        |
+| Supervisar el bienestar animal a través de alertas automáticas de cámaras             | Alta     | Alta        |
+| Confirmar la ubicación exacta del animal mediante el sistema       | A veces     | Media        |
+| Analizar alertas de irregularidades en la ingesta alimentaria    | A menudo    | Alta       |
+
+#### 🙋‍♂️ User Task Matrix – Veterinarios
+
+| Tarea                                          | Frecuencia | Importancia |
+|-----------------------------------------------|------------|-------------|
+| Monitorear el estado de salud y bienestar mediante camaras de seguridad     | A menudo     | Alta        |
+| Configurar dietas especiales vinculadas a los sensores de los comederos             | A veces      | Alta        |
+| Gestionar la alimentación automática con bebederos y comederos inteligentes     | A veces  | Alta        |
+| Recibir notificaciones de emergencia por anomalías detectadas por sensores o camaras                         | A menudo  | Alta        |
+| Analizar cambios de comportamiento inusual detectados por la camara                 | A veces    | Media       |
+
+En el caso del Administrador de refugios, las tareas con mayor frecuencia e importancia se centran en la seguridad perimetral y el control del entorno. El uso de cámaras para alertas automáticas y sensores de clima es vital para prevenir incidentes de escape o sofocación. Estas actividades, que antes requerían recorridos manuales y conteos físicos propensos a errores, ahora se automatizan para garantizar que los animales permanezcan en zonas seguras y con condiciones climáticas óptimas
+
+En el caso del Veterinario, las tareas más relevantes giran en torno a la medicina preventiva y personalizada. El monitoreo constante a través de cámaras permite detectar problemas de salud de forma temprana , mientras que el control de dietas mediante dispensadores inteligentes asegura que cada animal reciba la nutrición prescrita sin necesidad de supervisión humana constante. El sistema de alertas permite que el profesional priorice casos urgentes basados en datos reales de los sensores en lugar de revisiones aleatorias.
+
+En resumen, ambos segmentos interactúan con la tecnología IoT para reducir la carga operativa y mejorar la respuesta ante emergencias. Mientras el administrador se enfoca en la gestión y seguridad de las instalaciones, el veterinario utiliza los mismos recursos para optimizar la salud y nutrición individualizada de los animales.
+
+
 ### 2.3.3. User Journey Mapping
+Para desarrollar el User Journey Mapping de cada User Persona, se analizaron las distintas etapas de interacción del usuario con el producto o servicio, identificando sus objetivos, emociones y posibles fricciones en cada punto del recorrido. Este proceso se apoyó en la información previamente recopilada sobre el segmento y en las características específicas definidas para cada perfil, con el fin de representar de manera coherente su experiencia completa.
+
+Segmento 1: Andrees Caseres
+
+![imagen persona1](./img/segmento1_journeyMap.png)
+
+Segmento 2: Eva Mudel
+
+![imagen persona2](./img/segmento2_journeyMap.png)
+
 ### 2.3.4. Empathy Mapping
+Para construir el Empathy Map de cada User Persona, se tomó como base la perspectiva global del segmento previamente definido, integrando los rasgos de personalidad y el contexto específico del personaje establecidos durante el proceso de diseño de cada User Persona.
+
+Segmento 1: Andrees Caseres
+
+![imagen persona1](./img/Andrees_EM.png)
+
+Segmento 2: Eva Mudel
+
+![imagen persona2](./img/Eva_EM.png)
+
 
 ## 2.4. Big Picture EventStorming
 
