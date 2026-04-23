@@ -580,6 +580,214 @@ Representa una alerta generada por la salida de una zona asignada y su seguimien
 | TimeSeriesTelemetryRepository   | Repository Implementation     | TelemetryRepository   | Persistencia optimizada para lecturas secuenciales de monitoreo   |
 | RelationalAlertRepository       | Repository Implementation     | AlertRepository       | Persistencia de alertas generadas y estados de localización       |
 
+## 4.2.4. Bounded Context: Feeding
+
+### 4.2.4.1. Domain Layer
+
+#### Aggregate: FeedingPlan
+
+**Descripción:**  
+Representa el plan de alimentación asignado a un animal, incluyendo horarios, cantidad de alimento y tipo de dieta.
+
+##### Attributes
+
+| Nombre        | Tipo de dato        | Visibilidad | Descripción                                      |
+|--------------|---------------------|------------|--------------------------------------------------|
+| id           | UUID                | Private    | Identificador único del plan de alimentación      |
+| animalId     | UUID                | Private    | Identificador del animal asociado                |
+| dietType     | DietType            | Private    | Tipo de dieta asignada                           |
+| foodAmount   | FoodAmount          | Private    | Cantidad de alimento                             |
+| schedule     | FeedingSchedule     | Private    | Horarios de alimentación                         |
+| status       | FeedingPlanStatus   | Private    | Estado del plan (activo/inactivo)                |
+| createdAt    | LocalDateTime       | Private    | Fecha de creación                                |
+| updatedAt    | LocalDateTime       | Private    | Fecha de última actualización                    |
+
+##### Methods
+
+| Nombre                         | Tipo de retorno | Descripción                                      |
+|--------------------------------|----------------|--------------------------------------------------|
+| create(...)                    | FeedingPlan    | Crea un nuevo plan de alimentación               |
+| updateDiet(DietType)           | Void           | Actualiza el tipo de dieta                      |
+| updateFoodAmount(FoodAmount)   | Void           | Modifica la cantidad de alimento                |
+| updateSchedule(FeedingSchedule)| Void           | Actualiza los horarios                          |
+| activate()                     | Void           | Activa el plan                                  |
+| deactivate()                   | Void           | Desactiva el plan                               |
+| canBeExecutedAt(LocalDateTime) | Boolean        | Verifica si se puede ejecutar la alimentación   |
+
+---
+
+#### Entity: FeedingEvent
+
+**Descripción:**  
+Representa una ejecución de alimentación programada o realizada.
+
+##### Attributes
+
+| Nombre          | Tipo de dato   | Visibilidad | Descripción                         |
+|-----------------|----------------|------------|-------------------------------------|
+| id              | UUID           | Private    | Identificador del evento            |
+| feedingPlanId   | UUID           | Private    | Referencia al plan de alimentación  |
+| scheduledAt     | LocalDateTime  | Private    | Hora programada                     |
+| executedAt      | LocalDateTime  | Private    | Hora de ejecución                   |
+| status          | String         | Private    | Estado del evento                   |
+
+##### Methods
+
+| Nombre            | Tipo de retorno | Descripción                        |
+|------------------|----------------|------------------------------------|
+| markAsExecuted() | Void           | Marca el evento como ejecutado     |
+| markAsFailed()   | Void           | Marca el evento como fallido       |
+
+---
+
+### 4.2.4.2. Interface Layer
+
+#### Controller: FeedingPlansController
+
+| Ruta                               | Método | Descripción                                      |
+|------------------------------------|--------|--------------------------------------------------|
+| /api/feeding/plans                 | POST   | Crea un plan de alimentación                     |
+| /api/feeding/plans/{animalId}      | GET    | Obtiene el plan de alimentación por animal       |
+| /api/feeding/plans/{id}            | PUT    | Actualiza un plan de alimentación                |
+| /api/feeding/plans/{id}/activate   | PUT    | Activa el plan                                  |
+| /api/feeding/plans/{id}/deactivate | PUT    | Desactiva el plan                               |
+
+---
+
+### 4.2.4.3. Application Layer
+
+#### Command: CreateFeedingPlanCommand
+
+| Nombre        | Tipo de dato |
+|--------------|-------------|
+| animalId     | UUID        |
+| dietType     | String      |
+| foodAmount   | Decimal     |
+| schedule     | List        |
+
+---
+
+#### Command: UpdateFeedingPlanCommand
+
+| Nombre         | Tipo de dato |
+|---------------|-------------|
+| feedingPlanId | UUID        |
+| dietType      | String      |
+| foodAmount    | Decimal     |
+
+---
+
+#### Event Handler: VeterinaryFeedingRecommendationCreatedEventHandler
+
+| Nombre  | Descripción |
+|--------|------------|
+| handle | Recibe recomendaciones veterinarias y evalúa la actualización del FeedingPlan |
+
+---
+
+### 4.2.4.4. Infrastructure Layer
+
+| Nombre                     | Categoría                    | Implementa              | Descripción                                      |
+|---------------------------|------------------------------|--------------------------|--------------------------------------------------|
+| SqlFeedingPlanRepository  | Repository Implementation     | FeedingPlanRepository    | Persistencia de planes de alimentación            |
+| DispenserDeviceService    | External Service              | -                        | Integración con el dispensador automático         |
+
+---
+
+## 4.2.5. Bounded Context: Veterinary
+
+### 4.2.5.1. Domain Layer
+
+#### Aggregate: VeterinaryObservation
+
+**Descripción:**  
+Representa una observación veterinaria sobre el estado de un animal.
+
+##### Attributes
+
+| Nombre           | Tipo de dato   | Visibilidad | Descripción                                |
+|------------------|---------------|------------|--------------------------------------------|
+| id               | UUID          | Private    | Identificador de la observación            |
+| animalId         | UUID          | Private    | Identificador del animal                   |
+| veterinarianId   | UUID          | Private    | Identificador del veterinario              |
+| description      | String        | Private    | Descripción de la observación              |
+| recommendation   | String        | Private    | Recomendación veterinaria                  |
+| createdAt        | LocalDateTime | Private    | Fecha de creación                          |
+
+##### Methods
+
+| Nombre                      | Tipo de retorno | Descripción                                      |
+|---------------------------|----------------|--------------------------------------------------|
+| create(...)               | VeterinaryObservation | Crea una observación                       |
+| addRecommendation(...)    | Void           | Agrega una recomendación                        |
+| createFeedingRecommendation(...) | Void    | Genera recomendación de alimentación            |
+
+---
+
+#### Entity: VeterinaryAlertReview
+
+**Descripción:**  
+Representa la revisión de una alerta generada por monitoreo.
+
+##### Attributes
+
+| Nombre         | Tipo de dato   | Visibilidad | Descripción                     |
+|---------------|---------------|------------|---------------------------------|
+| id            | UUID          | Private    | Identificador                   |
+| alertId       | UUID          | Private    | Identificador de la alerta      |
+| veterinarianId| UUID          | Private    | Veterinario responsable         |
+| status        | String        | Private    | Estado de revisión              |
+
+---
+
+### 4.2.5.2. Interface Layer
+
+#### Controller: VeterinaryObservationsController
+
+| Ruta                                  | Método | Descripción                                      |
+|---------------------------------------|--------|--------------------------------------------------|
+| /api/veterinary/observations          | POST   | Registra una observación                         |
+| /api/veterinary/observations/{id}     | GET    | Obtiene una observación                          |
+| /api/veterinary/animals/{id}          | GET    | Lista observaciones por animal                   |
+
+---
+
+### 4.2.5.3. Application Layer
+
+#### Command: CreateVeterinaryObservationCommand
+
+| Nombre         | Tipo de dato |
+|---------------|-------------|
+| animalId      | UUID        |
+| veterinarianId| UUID        |
+| description   | String      |
+
+---
+
+#### Command: AddVeterinaryRecommendationCommand
+
+| Nombre         | Tipo de dato |
+|---------------|-------------|
+| observationId | UUID        |
+| recommendation| String      |
+
+---
+
+#### Domain Event: VeterinaryFeedingRecommendationCreatedEvent
+
+| Nombre         | Tipo de dato |
+|---------------|-------------|
+| animalId      | UUID        |
+| recommendation| String      |
+
+---
+
+### 4.2.5.4. Infrastructure Layer
+
+| Nombre                             | Categoría                    | Implementa                      | Descripción                                      |
+|-----------------------------------|------------------------------|----------------------------------|--------------------------------------------------|
+| SqlVeterinaryObservationRepository| Repository Implementation     | VeterinaryObservationRepository | Persistencia de observaciones veterinarias       |
+| VeterinaryNotificationService     | External Service              | -                                | Notificaciones al veterinario                    |
 
 
 #### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
