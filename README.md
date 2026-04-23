@@ -368,6 +368,45 @@ A continuación se presenta una tabla evaluando a estos competidores para la sol
 
 ## 2.2. Entrevistas
 ### 2.2.1. Diseño de entrevistas
+
+Las entrevistas fueron diseñadas con el propósito de validar las necesidades, dificultades, procesos actuales y oportunidades de mejora de los segmentos objetivo vinculados con la propuesta de valor de BluePatitas. A través de estas preguntas, se busca comprender cómo administradores de refugios y veterinarios gestionan actualmente el monitoreo, cuidado, seguimiento y coordinación alrededor de los animales, a fin de identificar hallazgos relevantes para el planteamiento de la solución IoT propuesta.
+
+#### Segmento 1: Administradores de refugios
+
+##### Preguntas generales
+
+- ¿Cómo organizas el seguimiento diario de los animales que tienes a cargo?
+- ¿Qué es lo más complicado al momento de preparar animales para adopción?
+- ¿Cómo manejas actualmente el seguimiento de recursos o apoyos necesarios para el cuidado de los animales?
+- ¿Qué herramientas digitales has utilizado para apoyarte en tu trabajo y qué tan útiles te han resultado?
+- ¿Qué te gustaría mejorar en la forma en que gestionas a los animales actualmente?
+- ¿Qué funcionalidades te harían más fácil tu trabajo en una plataforma digital?
+
+##### Preguntas complementarias
+
+- ¿Puedes contarme una situación reciente que haya sido difícil de manejar?
+- ¿Cómo resolviste ese problema?
+- ¿Qué fue lo más frustrante de esa experiencia?
+- ¿Qué crees que te hubiera ayudado a resolverlo mejor?
+
+#### Segmento 2: Veterinarios
+
+##### Preguntas generales
+
+- ¿Cómo coordinas actualmente con quienes llevan animales para atención?
+- ¿Qué es lo más difícil al tratar animales que no tienen un seguimiento previo?
+- ¿Cómo gestionas la información de los animales que atiendes?
+- ¿Qué herramientas digitales utilizas en tu trabajo diario y qué tan útiles te resultan?
+- ¿Qué te gustaría mejorar en la atención y seguimiento de los animales?
+- ¿Qué funcionalidades te ayudarían a trabajar mejor con quienes reportan o derivan animales?
+
+##### Preguntas complementarias
+
+- ¿Puedes contarme un caso reciente que haya sido complicado?
+- ¿Qué hiciste para resolverlo?
+- ¿Qué parte del proceso te tomó más tiempo o esfuerzo?
+- ¿Qué crees que hubiera facilitado ese trabajo?
+
 ### 2.2.2. Registro de entrevistas
 ### 2.2.3. Análisis de entrevistas
 
