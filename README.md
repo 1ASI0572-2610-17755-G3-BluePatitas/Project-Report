@@ -296,7 +296,7 @@ En este segmento se definió el User Persona **Andrees Caseres**, considerando s
 
 ### Veterinario
 
-En este segmento se definió el User Persona **Dr. Carlos Rivera**, tomando en cuenta su trayectoria profesional, entorno de trabajo y enfoque en la atención médica de animales. Se consideraron sus motivaciones relacionadas con brindar un servicio eficiente y de calidad, así como sus principales frustraciones asociadas a la coordinación de casos, la falta de información oportuna y la gestión de recursos limitados.
+En este segmento se definió el User Persona **Dr. Eva Mudel**, tomando en cuenta su trayectoria profesional, entorno de trabajo y enfoque en la atención médica de animales. Se consideraron sus motivaciones relacionadas con brindar un servicio eficiente y de calidad, así como sus principales frustraciones asociadas a la coordinación de casos, la falta de información oportuna y la gestión de recursos limitados.
 
 ![User Persona Veterinario](img/userpersona_2.png)
 
