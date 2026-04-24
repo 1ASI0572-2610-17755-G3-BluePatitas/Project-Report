@@ -502,6 +502,9 @@ El Container Diagram descompone internamente el sistema BluePatitas en sus princ
 ![Context Level Diagrams](img/BluePatitasContainerDiagram.png)
 
 #### 4.1.3.4. Software Architecture Deployment Diagrams
+El Deployment Diagram ilustra la infraestructura física y lógica donde se ejecutan los componentes de software en un entorno de producción. Se estructuran tres nodos principales: el dispositivo del usuario final, el Refugio Físico (Edge Layer) donde opera la red local de dispositivos IoT, y el Cloud Provider que aloja los servicios escalables de backend y bases de datos gestionadas. Su finalidad es detallar la topología de red, el uso de contenedores Docker y la conectividad necesaria para integrar los sensores físicos con la lógica en la nube
+
+![Deployment Diagram](img/DeploymentC4.png)
 
 ## 4.2. Tactical-Level Domain-Driven Design
 En esta sección veremos cómo se organiza la implementación del sistema siguiendo los principios de Domain-Driven Design a nivel táctico, dividiendo la solución en capas como Domain, Application, Interface e Infrastructure, para separar responsabilidades y mantener una arquitectura clara, mantenible y alineada con la lógica del negocio.
