@@ -932,11 +932,21 @@ Representa una ejecución de alimentación programada o realizada.
 | DispenserDeviceService    | External Service              | -                        | Integración con el dispensador automático         |
 
 
-#### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
+#### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams
 
-#### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams
+#### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams (Feeding)
+
+En este apartado se presentan los diagramas que ofrecen un mayor nivel de detalle sobre la implementación de los componentes del Feeding Bounded Context. Estos diagramas están diseñados para ilustrar cómo se estructuran las clases, interfaces y relaciones dentro de las capas del contexto, proporcionando una visión técnica que facilita el desarrollo, mantenimiento y evolución del sistema.
+
 ##### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
-##### 4.2.4.6.2. Bounded Context Database Design Diagram
+El diseño de la capa de dominio para el _Feeding Bounded Context_ encapsula la lógica central de la alimentación automatizada. El diagrama de clases a continuación ilustra cómo el _Aggregate Root_ (`FeedingPlan`) actúa como el guardián de la consistencia, gestionando las reglas de nutrición (dieta, cantidad y horarios) y orquestando el ciclo de vida de las entidades subordinadas (`FeedingEvent`), las cuales representan las ejecuciones físicas en el dispensador IoT.
+
+![Feeding Domain Diagram](img/BoundedContextDiagrams/Feeding/FeedingDomainDiagram.PNG)
+
+##### 4.2.4.6.2. Bounded Context Database Layer Class Diagrams
+El diseño de la base de datos para el _Feeding Bounded Context_ refleja fielmente la estructura del dominio, asegurando que el plan nutricional y su historial de dispensación se representen de manera eficiente en el modelo relacional. Se establece una relación directa de uno a muchos entre los planes (`feeding_plans`) y sus ejecuciones (`feeding_events`), garantizando la trazabilidad de cada gramo de alimento liberado por el hardware.
+
+![Feeding Database Diagram](img/BoundedContextDiagrams/Feeding/FeedingDatabaseDiagram.PNG)
 
 
 ## 4.2.5. Bounded Context: Veterinary
@@ -1037,9 +1047,18 @@ Representa la revisión de una alerta generada por monitoreo.
 
 #### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
 
-#### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
-##### 4.2.4.5.1. Bounded Context Domain Layer Class Diagrams
-##### 4.2.4.5.2. Bounded Context Database Design Diagram
+#### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams (Veterinary)
+En este apartado se presentan los diagramas que ofrecen un mayor nivel de detalle sobre la implementación de los componentes del Veterinary Bounded Context. Estos diagramas están diseñados para ilustrar cómo se estructuran las clases, interfaces y relaciones dentro de las capas del contexto, proporcionando una visión técnica que facilita el desarrollo, mantenimiento y evolución del sistema.
+
+##### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams
+El diseño de la capa de dominio para el _Veterinary Bounded Context_ se centra en la gestión de la salud clínica y la respuesta a la telemetría. El diagrama expone los _Aggregates_ principales responsables de registrar las observaciones médicas (`VeterinaryObservation`) y de gestionar las revisiones clínicas de las alertas emitidas por el hardware (`VeterinaryAlertReview`). Ambos elementos operan de manera independiente dentro del dominio médico para mantener un alto grado de cohesión en sus respectivas lógicas de negocio.
+
+![Veterinary Domain Diagram](img/BoundedContextDiagrams/Veterinary/VeterinaryDomainDiagram.PNG)
+
+##### 4.2.5.6.2. Bounded Context Database Design Diagram
+El diseño de la base de datos para el _Veterinary Bounded Context_ persiste la información clínica asegurando un bajo acoplamiento. Como se observa en el diagrama, las tablas `veterinary_observations` y `veterinary_alert_reviews` no poseen una relación física (Foreign Key) entre sí, ya que responden a flujos de negocio distintos (evaluación proactiva vs. reacción a alertas IoT). En su lugar, ambas tablas utilizan identificadores lógicos (Soft Links) como `animal_id` o `veterinarian_id` para referenciar información que pertenece y es gestionada por otros Bounded Contexts (Animals e IAM, respectivamente), respetando así las fronteras arquitectónicas dictadas por el Domain-Driven Design.
+
+![Veterinary Database Diagram](img/BoundedContextDiagrams/Veterinary/VeterinaryDatabaseDiagram.PNG)
 
 # Capítulo V: Solution UI/UX Design
 
