@@ -614,6 +614,30 @@ Representa un conjunto de permisos dentro del sistema.
 
 #### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
 
+En esta sección se presenta el diagrama de componentes del Bounded Context IAM (Identity and Access Management). Este diagrama sigue el enfoque del C4 Model y muestra la organización interna del contexto, sus componentes principales, las responsabilidades de cada capa y sus relaciones con las aplicaciones cliente, la API REST y la persistencia de datos.
+
+![IAM Component Diagram](img/iam-component-diagram.png)
+
+El Bounded Context IAM está compuesto por los siguientes componentes principales:
+
+1. **Interface Layer**
+   - `AuthController`: expone las solicitudes de inicio y cierre de sesión de los usuarios del sistema.
+   - `RoleController`: permite consultar roles, actualizar permisos y asignar roles a cuentas de usuario.
+
+2. **Application Layer**
+   - `AuthService`: procesa la validación de credenciales, la autenticación y la inhabilitación de cuentas.
+   - `RoleService`: gestiona la asignación de roles y la modificación de permisos asociados.
+
+3. **Domain Layer**
+   - `UserAccount`: representa la cuenta de acceso del usuario y concentra las reglas vinculadas con credenciales, estado y rol asignado.
+   - `Role`: representa el conjunto de permisos que determina las acciones autorizadas para cada perfil de usuario.
+
+4. **Infrastructure Layer**
+   - `RelationalUserAccountRepository`: persiste los datos de las cuentas de usuario.
+   - `RelationalRoleRepository`: persiste los roles y permisos disponibles en el sistema.
+
+Este contexto se comunica con la Web Application y la Mobile Application mediante la REST API para autenticar usuarios y validar sus permisos. Además, proporciona capacidades transversales de seguridad para los demás bounded contexts, especialmente para operaciones ejecutadas por administradores de refugios y veterinarios.
+
 #### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
 Aquí se muestra el diagrama correspondiente, organizado dentro del bounded context de Analíticas. El modelo incorpora tablas que representan entidades persistentes, las cuales pueden ser mapeadas a clases de dominio dentro de una arquitectura orientada a objetos.
 
@@ -693,6 +717,27 @@ Representa la identidad, estado biológico y ubicación asignada de un animal.
 | RelationalAnimalRepository | Repository Implementation     | AnimalRepository  | Persistencia de la identidad, estado y asignación de zona         |
 
 #### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams
+
+En esta sección se presenta el diagrama de componentes del Bounded Context Animals. Este diagrama sigue el enfoque del C4 Model y muestra la organización interna del contexto, sus componentes principales, las responsabilidades de cada capa y sus relaciones con otros contextos que utilizan la identidad y ubicación asignada de cada animal.
+
+![Animals Component Diagram](img/animals-component-diagram.png)
+
+El Bounded Context Animals está compuesto por los siguientes componentes principales:
+
+1. **Interface Layer**
+   - `AnimalProfileController`: expone las solicitudes para registrar animales, consultar perfiles, actualizar el estado general y asignar zonas o perímetros.
+
+2. **Application Layer**
+   - `AnimalManagementService`: coordina el registro de nuevos animales, la actualización de información general y la asignación de perímetros.
+
+3. **Domain Layer**
+   - `Animal`: representa la identidad principal del animal dentro del sistema, incluyendo datos base, estado general y zona asignada.
+   - `SpeciesInfo`: representa la información base de especie, raza y edad aproximada utilizada en el perfil del animal.
+
+4. **Infrastructure Layer**
+   - `RelationalAnimalRepository`: persiste la identidad, el estado general y la asignación de zona del animal.
+
+Este contexto se relaciona con Monitoring porque provee el identificador y la zona asignada del animal para evaluar eventos de geocerca y monitoreo visual. También sirve como referencia para Feeding y Veterinary, ya que ambos contextos requieren asociar planes de alimentación, observaciones o recomendaciones a un animal registrado.
 
 #### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
 Aquí se muestra el diagrama correspondiente, organizado dentro del bounded context de Analíticas. El modelo incorpora tablas que representan entidades persistentes, las cuales pueden ser mapeadas a clases de dominio dentro de una arquitectura orientada a objetos.
@@ -815,6 +860,33 @@ Representa una alerta generada por la salida de una zona asignada y su seguimien
 | RelationalAlertRepository       | Repository Implementation     | AlertRepository       | Persistencia de alertas generadas y estados de localización       |
 
 #### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
+
+En esta sección se presenta el diagrama de componentes del Bounded Context Monitoring. Este diagrama sigue el enfoque del C4 Model y muestra la organización interna del contexto, sus componentes principales, las responsabilidades de cada capa y su interacción con el Edge API / ESP32 Gateway, los dispositivos IoT y el servicio de notificaciones.
+
+![Monitoring Component Diagram](img/monitoring-component-diagram.png)
+
+El Bounded Context Monitoring está compuesto por los siguientes componentes principales:
+
+1. **Interface Layer**
+   - `TelemetryController`: recibe nuevas lecturas de temperatura, humedad y monitoreo por cámara, y permite consultar el historial reciente de telemetría.
+   - `AlertController`: expone operaciones para consultar alertas, activar seguimiento por ubicación y marcar alertas como resueltas.
+
+2. **Application Layer**
+   - `TelemetryAnalysisService`: procesa la telemetría entrante, registra lecturas y evalúa umbrales ambientales.
+   - `PerimeterAlertService`: evalúa salidas del perímetro, genera alertas y gestiona el flujo de seguimiento por ubicación.
+
+3. **Domain Layer**
+   - `TelemetryRecord`: representa las lecturas ambientales y los metadatos del monitoreo visual en un instante de tiempo.
+   - `PerimeterAlert`: representa una alerta generada por la salida de una zona asignada y su seguimiento operativo.
+   - `LocationContext`: representa la ubicación aproximada asociada al evento de geocerca.
+
+4. **Infrastructure Layer**
+   - `TimeSeriesTelemetryRepository`: persiste lecturas secuenciales de monitoreo ambiental y visual.
+   - `RelationalAlertRepository`: persiste alertas generadas y estados de seguimiento.
+   - `Edge API / ESP32 Gateway`: entrega al contexto las lecturas provenientes de cámara, GPS/geocerca y sensor de temperatura y humedad.
+   - `Notification Service`: permite emitir alertas críticas ante salida de zona permitida o valores ambientales fuera de rango.
+
+Este contexto se comunica con Animals para asociar la telemetría y las alertas al animal o zona correspondiente. También se integra con Veterinary cuando una alerta requiere revisión profesional, y con el servicio de notificaciones para informar eventos críticos a administradores de refugios o veterinarios.
 
 #### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
 Aquí se muestra el diagrama correspondiente, organizado dentro del bounded context de Analíticas. El modelo incorpora tablas que representan entidades persistentes, las cuales pueden ser mapeadas a clases de dominio dentro de una arquitectura orientada a objetos.
@@ -948,6 +1020,31 @@ Representa una ejecución de alimentación programada o realizada.
 
 #### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams
 
+En esta sección se presenta el diagrama de componentes del Bounded Context Feeding. Este diagrama sigue el enfoque del C4 Model y muestra la organización interna del contexto, sus componentes principales, las responsabilidades de cada capa y su relación con el dispensador automático de comida y las recomendaciones veterinarias.
+
+![Feeding Component Diagram](img/feeding-component-diagram.png)
+
+El Bounded Context Feeding está compuesto por los siguientes componentes principales:
+
+1. **Interface Layer**
+   - `FeedingPlansController`: expone operaciones para crear, consultar, actualizar, activar y desactivar planes de alimentación.
+
+2. **Application Layer**
+   - `CreateFeedingPlanCommand`: encapsula los datos necesarios para crear un plan de alimentación.
+   - `UpdateFeedingPlanCommand`: encapsula los datos necesarios para actualizar un plan existente.
+   - `VeterinaryFeedingRecommendationCreatedEventHandler`: recibe recomendaciones veterinarias y evalúa la actualización del plan de alimentación.
+
+3. **Domain Layer**
+   - `FeedingPlan`: representa el agregado principal del contexto, incluyendo dieta, cantidad de alimento, horario y estado.
+   - `FeedingEvent`: representa una ejecución programada o realizada de alimentación.
+   - `DietType`, `FoodAmount` y `FeedingSchedule`: representan objetos de valor utilizados para expresar la dieta, la cantidad y la programación de alimentación.
+
+4. **Infrastructure Layer**
+   - `SqlFeedingPlanRepository`: persiste los planes de alimentación y sus datos asociados.
+   - `DispenserDeviceService`: integra el contexto con el dispensador automático de comida mediante el Edge API / ESP32 Gateway.
+
+Este contexto se comunica con Veterinary para recibir recomendaciones de alimentación y con Animals para asociar cada plan al animal correspondiente. Además, interactúa con el Edge API / ESP32 Gateway para ejecutar la dispensación programada y registrar eventos generados por el dispositivo.
+
 #### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams (Feeding)
 
 En este apartado se presentan los diagramas que ofrecen un mayor nivel de detalle sobre la implementación de los componentes del Feeding Bounded Context. Estos diagramas están diseñados para ilustrar cómo se estructuran las clases, interfaces y relaciones dentro de las capas del contexto, proporcionando una visión técnica que facilita el desarrollo, mantenimiento y evolución del sistema.
@@ -1060,6 +1157,30 @@ Representa la revisión de una alerta generada por monitoreo.
 
 
 #### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
+
+En esta sección se presenta el diagrama de componentes del Bounded Context Veterinary. Este diagrama sigue el enfoque del C4 Model y muestra la organización interna del contexto, sus componentes principales, las responsabilidades de cada capa y su relación con los contextos de monitoreo y alimentación.
+
+![Veterinary Component Diagram](img/veterinary-component-diagram.png)
+
+El Bounded Context Veterinary está compuesto por los siguientes componentes principales:
+
+1. **Interface Layer**
+   - `VeterinaryObservationsController`: expone operaciones para registrar observaciones veterinarias, consultar una observación específica y listar observaciones asociadas a un animal.
+
+2. **Application Layer**
+   - `CreateVeterinaryObservationCommand`: encapsula los datos necesarios para registrar una observación veterinaria.
+   - `AddVeterinaryRecommendationCommand`: encapsula la recomendación agregada por el veterinario a una observación existente.
+   - `VeterinaryFeedingRecommendationCreatedEvent`: comunica una recomendación veterinaria relacionada con alimentación hacia el contexto Feeding.
+
+3. **Domain Layer**
+   - `VeterinaryObservation`: representa el agregado principal de la observación veterinaria y concentra la recomendación asociada.
+   - `VeterinaryAlertReview`: representa la revisión de una alerta generada por el monitoreo.
+
+4. **Infrastructure Layer**
+   - `SqlVeterinaryObservationRepository`: persiste las observaciones veterinarias y recomendaciones asociadas.
+   - `VeterinaryNotificationService`: integra el contexto con el servicio de notificaciones para informar al veterinario cuando corresponde.
+
+Este contexto se comunica con Monitoring cuando una alerta requiere revisión veterinaria y con Feeding cuando una recomendación modifica o genera criterios para el plan de alimentación. También utiliza información del contexto Animals para asociar observaciones y recomendaciones a un animal registrado.
 
 #### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams (Veterinary)
 En este apartado se presentan los diagramas que ofrecen un mayor nivel de detalle sobre la implementación de los componentes del Veterinary Bounded Context. Estos diagramas están diseñados para ilustrar cómo se estructuran las clases, interfaces y relaciones dentro de las capas del contexto, proporcionando una visión técnica que facilita el desarrollo, mantenimiento y evolución del sistema.
