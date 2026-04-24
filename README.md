@@ -307,6 +307,78 @@ Link del repositorio del reporte:
 #### 4.1.1.2 Domain Message Flows Modeling
 #### 4.1.1.3 Bounded Context Canvases
 ### 4.1.2. Context Mapping
+
+El Context Mapping en DDD permite representar de forma explícita cómo interactúan los bounded contexts entre sí y con sistemas externos. Este mapa facilita identificar dependencias, direcciones de influencia (upstream/downstream) y niveles de acoplamiento entre los diferentes componentes del sistema.
+
+En el proyecto se definieron los siguientes bounded contexts: IAM, Animals, Monitoring, Feeding y Veterinary. A partir del análisis del dominio, se evaluaron distintas alternativas de organización para garantizar una arquitectura desacoplada, clara y alineada a las capacidades del negocio.
+
+## Evaluación de alternativas
+
+Inicialmente se consideró agrupar las funcionalidades de monitoreo, alimentación y seguimiento veterinario en un único bounded context. Sin embargo, esta opción fue descartada debido a la alta complejidad que generaba al concentrar múltiples responsabilidades en un solo módulo.
+
+Otra alternativa evaluada fue separar el sistema según los dispositivos IoT (cámara, sensores, GPS y dispensador). Esta opción también fue descartada, ya que organizaba el sistema en base a elementos técnicos en lugar de capacidades del negocio, dificultando la evolución del dominio.
+
+Finalmente, se optó por separar los bounded contexts según responsabilidades claras: gestión de identidad, información del animal, monitoreo, alimentación y seguimiento veterinario. Esta estructura permite mantener independencia entre contextos y reducir el acoplamiento.
+
+## Context Map Patterns
+
+### Open Host Service (OHS)
+
+Un contexto upstream expone sus capacidades mediante un contrato claro y estable, permitiendo que múltiples contextos downstream consuman sus servicios sin conocer su implementación interna.
+
+En este proyecto, el bounded context IAM actúa como proveedor de servicios de autenticación y autorización. Los demás contextos consumen estos servicios para gestionar el acceso de usuarios al sistema.
+
+![IAM OHS](img/pattern1.png)
+
+
+### Customer/Supplier (C/S) – Animals
+
+El bounded context Animals actúa como proveedor de información base de los animales, como su identificación y estado. Otros contextos dependen de esta información para operar.
+
+Relaciones:
+- Monitoring (D) → Animals (U)  
+- Feeding (D) → Animals (U)  
+- Veterinary (D) → Animals (U)  
+
+![Animals C/S](img/pattern2.png)
+
+
+### Customer/Supplier (C/S) – Monitoring y Veterinary
+
+El bounded context Monitoring genera eventos y alertas sobre el comportamiento o estado del animal. Veterinary utiliza esta información para evaluar situaciones de riesgo y tomar decisiones.
+
+Relación:
+- Veterinary (D) → Monitoring (U)  
+
+![Monitoring-Veterinary](img/pattern3.png)
+
+
+### Customer/Supplier (C/S) – Feeding y Veterinary
+
+El bounded context Veterinary genera recomendaciones relacionadas con la alimentación según el estado de salud del animal. Feeding utiliza esta información para ajustar los planes de alimentación.
+
+Relación:
+- Feeding (D) → Veterinary (U)  
+
+![Feeding-Veterinary](img/pattern4.png)
+
+
+### Anti-Corruption Layer (ACL)
+
+El patrón Anti-Corruption Layer se utiliza para integrar sistemas externos sin afectar el modelo interno del dominio.
+
+En este proyecto, el bounded context Monitoring se integra con servicios externos como geolocalización (GPS). Para evitar acoplamiento directo, se utiliza una capa de traducción que adapta la información externa al modelo del sistema.
+
+Relación:
+- GPS External System (U) → ACL → Monitoring (D)  
+
+![ACL Monitoring](img/pattern5.png)
+
+La arquitectura final seleccionada organiza los bounded contexts en función de capacidades de negocio claramente definidas, evitando la centralización excesiva y la fragmentación técnica.
+
+El uso de patrones como Open Host Service, Customer/Supplier y Anti-Corruption Layer permite reducir el acoplamiento, facilitar la integración con sistemas externos y asegurar que cada contexto pueda evolucionar de manera independiente.
+
+Este enfoque garantiza una arquitectura escalable, mantenible y alineada con los principios de Domain-Driven Design.
 ### 4.1.3. Software Architecture
 #### 4.1.3.1. Software Architecture System Landscape Diagram
 #### 4.1.3.2. Software Architecture Context Level Diagrams
