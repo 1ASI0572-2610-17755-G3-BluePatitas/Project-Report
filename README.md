@@ -316,8 +316,8 @@ En este segmento se definió el User Persona **Dr. Eva Mudel**, tomando en cuent
 
 | Epic ID | Título | Descripción | US Asociadas |
 | :--- | :--- | :--- | :--- | 
-| **EP01** | Monitoreo y Control del Entorno en Refugios (IoT) | Como Administrador de Refugios, quiero utilizar tecnología para monitorear y controlar el ambiente del refugio, garantizando la seguridad y el bienestar de los animales  |
-| **EP02** | Monitoreo de Salud y Bienestar de los Animales | Como Veterinario, quiero utilizar la información recopilada por los dispositivos para monitorear la salud y el bienestar de los animales, permitiéndome tomar decisiones informadas y actuar rápidamente en caso de emergencias  |
+| **EP01** | Monitoreo y Control del Entorno en Refugios (IoT) | Como Administrador de Refugios, quiero utilizar tecnología para monitorear y controlar el ambiente del refugio, garantizando la seguridad y el bienestar de los animales | US01, US02, US03, US06, US07, US08, US09, US10, US12, US14, US15, US21, US22, US23, US24 |
+| **EP02** | Monitoreo de Salud y Bienestar de los Animales | Como Veterinario, quiero utilizar la información recopilada por los dispositivos para monitorear la salud y el bienestar de los animales, permitiéndome tomar decisiones informadas y actuar rápidamente en caso de emergencias | US04, US05, US11, US13, US16, US17, US18, US19, US20, US25, US26, US27 |
 
 ### User Stories
 
