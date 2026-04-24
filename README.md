@@ -411,7 +411,247 @@ En esta sección se presenta el diseño de entrevistas dirigido a los principale
 - ¿Qué crees que hubiera facilitado ese trabajo?
 
 ### 2.2.2. Registro de entrevistas
+
+
+#### Segmento objetivo 1: Administradores de refugios
+
+En esta sección se presenta el registro de entrevistas realizadas a personas vinculadas al segmento de administradores de refugios. Estas entrevistas permitieron conocer cómo organizan el seguimiento diario de los animales, qué dificultades enfrentan en la gestión de información, alimentación, monitoreo, adopción y respuesta ante incidentes, así como las oportunidades de mejora mediante una solución digital e IoT.
+
+#### Entrevista #1
+
+- **Nombre completo:** Mazar Unicaido
+- **Edad:** 20
+- **Rol/Ocupación:** Ayudante de refugio
+- **Ubicación:** La molina
+- **Herramientas digitales que utiliza:** Cuadernos, Excel y aplicaciones básicas
+- **Enlace del video:** https://youtu.be/EiVl7iM3mVY
+- **Inicio:** 0:00
+- **Fin:** 4:45
+
+![Entrevista Administrador 1](img/entrevista-administrador-1.png)
+
+#### Entrevista #2
+
+- **Nombre completo:** Renato Ochoa
+- **Edad:** 27
+- **Rol/Ocupación:** Persona vinculada a la gestión de refugios
+- **Ubicación:** San Borja
+- **Herramientas digitales que utiliza:** Google Sheets, WhatsApp, redes sociales, cuadernos y anotaciones en celular
+- **Enlace del video:** https://youtu.be/EiVl7iM3mVY
+- **Inicio:** 4:45
+- **Fin:** 9:44
+
+![Entrevista Administrador 2](img/entrevista-administrador-2.png)
+
+#### Entrevista #3
+
+- **Nombre completo:** Smith Morales Dispe
+- **Edad:** 22 años
+- **Rol/Ocupación:** Gerente de refugio
+- **Ubicación:** Abancay, Apurímac
+- **Herramientas digitales que utiliza:** Excel, documentos digitales, documentos físicos, carpetas y formularios de Google
+- **Enlace del video:** https://youtu.be/EiVl7iM3mVY
+- **Inicio:** 9:44
+- **Fin:** 16:10
+
+![Entrevista Administrador 3](img/entrevista-administrador-3.png)
+
+#### Entrevista #4
+
+- **Nombre completo:** Marcelo Alejandro Vindarrañil
+- **Edad:** 28 años
+- **Rol/Ocupación:** Persona vinculada a la administración de refugios
+- **Ubicación:** Surquillo
+- **Herramientas digitales que utiliza:** Excel, aplicaciones simples, cuaderno y anotaciones en celular
+- **Enlace del video:** https://youtu.be/EiVl7iM3mVY
+- **Inicio:** 16:10
+- **Fin:** 20:41
+
+![Entrevista Administrador 4](img/entrevista-administrador-4.png)
+
+#### Entrevista #5
+
+- **Nombre completo:** Fabiola Saldaña
+- **Edad:** 27 años
+- **Rol/Ocupación:** Gestora de refugio para animales
+- **Ubicación:** Surquillo
+- **Herramientas digitales que utiliza:** Excel, WhatsApp, registros de inventario, hojas de control de animales y registros de adoptantes
+- **Enlace del video:** https://youtu.be/EiVl7iM3mVY
+- **Inicio:** 20:41
+- **Fin:** 30:01
+
+![Entrevista Administrador 5](img/entrevista-administrador-5.png)
+
+#### Segmento objetivo 2: Veterinarios
+
+En esta sección se presenta el registro de entrevistas realizadas a personas vinculadas al segmento de veterinarios. Estas entrevistas permitieron conocer sus procesos actuales de coordinación, atención, gestión de información, dificultades al tratar animales sin seguimiento previo y oportunidades de mejora mediante una solución digital e IoT.
+
+#### Entrevista #1
+
+- **Nombre completo:** Sebastian Rubio
+- **Edad:** 25
+- **Rol/Ocupación:** Estudiante de veterinaria y ayudante veterinario
+- **Ubicación:** Surco
+- **Herramientas digitales que utiliza:** WhatsApp, llamadas, WhatsApp Business, Excel, software de clínica y registros en papel
+- **Enlace del video:** https://youtu.be/FBO5o1TM37M
+- **Inicio:** 0:00
+- **Fin:** 6:29
+
+![Entrevista Veterinario 1](img/entrevista-veterinario-1.png)
+
+#### Entrevista #2
+
+- **Nombre completo:** Martha Olivera
+- **Edad:** 28
+- **Rol/Ocupación:** Persona vinculada al área veterinaria
+- **Ubicación:** San isidro
+- **Herramientas digitales que utiliza:** Software de gestión, WhatsApp, correo y fichas físicas
+- **Enlace del video:** https://youtu.be/FBO5o1TM37M
+- **Inicio:** 6:34
+- **Fin:** 10:19
+
+![Entrevista Veterinario 2](img/entrevista-veterinario-2.png)
+
+#### Entrevista #3
+
+- **Nombre completo:** Briset Hurtado
+- **Edad:** 24
+- **Rol/Ocupación:** Veterinaria
+- **Ubicación:** Cusco
+- **Herramientas digitales que utiliza:** WhatsApp, Excel, notas digitales, documentos digitales y fichas clínicas físicas
+- **Enlace del video:** https://youtu.be/FBO5o1TM37M
+- **Inicio:** 10:23
+- **Fin:** 15:44
+
+![Entrevista Veterinario 3](img/entrevista-veterinario-3.png)
+
+#### Entrevista #4
+
+- **Nombre completo:** Catherine Quispe
+- **Edad:** 24 años
+- **Rol/Ocupación:** Persona vinculada al área veterinaria
+- **Ubicación:** San Juan de Miraflores
+- **Herramientas digitales que utiliza:** Excel, sistemas básicos, fichas clínicas físicas y archivos digitales
+- **Enlace del video:** https://youtu.be/FBO5o1TM37M
+- **Inicio:** 15:44
+- **Fin:** 21:10
+
+![Entrevista Veterinario 4](img/entrevista-veterinario-4.png)
+
+#### Entrevista #5
+
+- **Nombre completo:** Farid
+- **Edad:** 28 años
+- **Rol/Ocupación:** Veterinario egresado, trabajador en refugio
+- **Ubicación:** San Martín
+- **Herramientas digitales que utiliza:** WhatsApp, Excel, Google Drive, fichas clínicas físicas, notas digitales y hojas de cálculo
+- **Enlace del video:** https://youtu.be/FBO5o1TM37M
+- **Inicio:** 21:11
+- **Fin:** 26:49
+
+![Entrevista Veterinario 5](img/entrevista-veterinario-5.png)
+
 ### 2.2.3. Análisis de entrevistas
+
+#### Segmento objetivo 1: Administradores de refugios
+
+##### Contexto y perfil del segmento
+
+Los entrevistados pertenecientes al segmento de administradores de refugios cumplen roles relacionados con la gestión diaria de animales, coordinación de recursos, seguimiento del estado de los animales y respuesta ante incidentes dentro del refugio. En general, se identificó que sus actividades se desarrollan en entornos con alta carga operativa, donde una misma persona o un equipo reducido debe encargarse de alimentación, limpieza, control de salud, documentación, adopciones y supervisión del comportamiento de los animales.
+
+Este segmento evidencia una necesidad constante de organización y control, debido a que la gestión de los refugios depende en gran parte de procesos manuales, herramientas dispersas y comunicación informal entre responsables. Los entrevistados mencionaron el uso de cuadernos, Excel, Google Sheets, WhatsApp, redes sociales, documentos físicos, formularios de Google y anotaciones en celular como medios principales para registrar y coordinar información.
+
+##### Gestión actual: procesos manuales y dispersos
+
+Uno de los patrones más repetidos en las entrevistas fue la dependencia de herramientas manuales o poco especializadas para gestionar la información de los animales. Los administradores suelen registrar datos en hojas de cálculo, cuadernos, carpetas físicas o mensajes de WhatsApp. Aunque estas herramientas les permiten mantener cierto control, no están diseñadas específicamente para la gestión de refugios, por lo que generan problemas de actualización, duplicidad y pérdida de información.
+
+Esta situación se vuelve más crítica cuando el refugio maneja varios animales al mismo tiempo, ya que la información sobre salud, alimentación, vacunas, tratamientos o comportamiento puede quedar distribuida entre diferentes archivos o personas. Como resultado, los administradores deben invertir tiempo revisando documentos, cruzando información o preguntando a otros miembros del equipo para confirmar el estado de un animal.
+
+##### Dolor principal: falta de información centralizada
+
+El principal dolor identificado en este segmento es la ausencia de una plataforma centralizada que permita consultar rápidamente el estado e historial de cada animal. Los entrevistados coincidieron en que sería valioso contar con perfiles individuales donde se almacene información relevante como datos básicos, historial médico, alimentación, vacunas, tratamientos, observaciones y eventos recientes.
+
+La falta de centralización afecta tanto la operación interna del refugio como procesos externos, por ejemplo, la preparación de animales para adopción. En algunos casos, los administradores indicaron que buscar documentos o confirmar información puede retrasar procesos importantes, ya que los datos se encuentran en carpetas, hojas de cálculo o registros no actualizados.
+
+##### Monitoreo y respuesta ante incidentes
+
+Otro hallazgo importante es la dificultad para mantener una supervisión constante de todos los animales. Los administradores realizan rondas o revisiones visuales durante el día, pero reconocen que no siempre pueden detectar a tiempo situaciones de riesgo, como escapes, cambios de comportamiento, enfermedad o falta de alimentación.
+
+Algunos entrevistados mencionaron casos en los que un animal se enfermó y no fue detectado oportunamente, o situaciones en las que un perro salió del refugio y fue necesario buscarlo durante varias horas. Estas experiencias reflejan una necesidad clara de alertas automáticas, monitoreo remoto y mecanismos de detección temprana que ayuden a reducir la dependencia de la observación manual.
+
+En este punto, la propuesta de BluePatitas se alinea con las necesidades del segmento, especialmente mediante el uso de cámara para monitoreo visual, GPS/geocerca para detectar salidas de zonas permitidas y alertas en la aplicación móvil o web.
+
+##### Alimentación, recursos y trazabilidad
+
+La alimentación también apareció como una actividad relevante dentro de la gestión diaria. Los administradores indicaron que actualmente suelen controlar la comida mediante tablas, medidores, anotaciones o criterios generales según tamaño, raza o indicación veterinaria. Sin embargo, este proceso no siempre permite garantizar una trazabilidad clara sobre la alimentación de cada animal.
+
+Esto valida la utilidad de un dispensador automático de comida conectado al sistema, siempre que su función se enfoque en ejecutar una programación definida y registrar eventos de dispensación. Además, el historial de alimentación permitiría a los administradores y veterinarios verificar si la dieta indicada se cumplió correctamente.
+
+##### Receptividad hacia la solución IoT
+
+La receptividad hacia una solución digital e IoT fue positiva. Los entrevistados mostraron interés en funcionalidades como perfiles de animales, alertas automáticas, monitoreo remoto, ubicación del animal, control de alimentación e historial actualizado. En varios casos, los administradores señalaron que una plataforma de este tipo les permitiría actuar con mayor rapidez, reducir el desorden de información y tener más control sobre los animales a su cargo.
+
+No obstante, el análisis también muestra que la solución debe mantenerse simple y práctica. El segmento no necesita una herramienta excesivamente compleja, sino una plataforma que centralice información, facilite el seguimiento diario y emita alertas claras ante situaciones importantes.
+
+##### Conclusión del segmento
+
+Las entrevistas con administradores de refugios validan que el problema principal no está únicamente en la falta de herramientas digitales, sino en la falta de integración entre monitoreo, registros, alimentación y alertas. Los refugios ya utilizan herramientas como Excel, WhatsApp o documentos digitales, pero estas no resuelven adecuadamente la necesidad de trazabilidad y supervisión continua.
+
+Por ello, BluePatitas debe priorizar una solución que permita centralizar la información de cada animal, monitorear eventos relevantes, generar alertas oportunas, registrar alimentación y facilitar la toma de decisiones del personal encargado del refugio.
+
+---
+
+#### Segmento objetivo 2: Veterinarios
+
+##### Contexto y perfil del segmento
+
+Los entrevistados del segmento veterinarios están vinculados a la atención, evaluación y seguimiento de animales, especialmente en contextos donde los pacientes pueden llegar sin información previa clara. Algunos trabajan o colaboran con refugios, mientras que otros tienen experiencia en atención clínica, rescate o seguimiento de animales derivados por terceros.
+
+A diferencia del segmento de administradores, los veterinarios se enfocan principalmente en la calidad y disponibilidad de la información necesaria para tomar decisiones sobre el cuidado del animal. Para ellos, el problema no es solo registrar datos, sino contar con antecedentes confiables antes o durante la atención.
+
+##### Dolor principal: ausencia de historial previo
+
+El hallazgo más fuerte en este segmento fue la dificultad de atender animales sin historial clínico o seguimiento previo. Los entrevistados señalaron que, cuando no se conoce si el animal tiene vacunas, enfermedades previas, tratamientos recientes, alergias o antecedentes relevantes, el diagnóstico se vuelve más lento, incierto y riesgoso.
+
+En varios casos, los veterinarios indicaron que deben empezar “desde cero”, realizar pruebas básicas, estabilizar al animal y recopilar información manualmente. Esta situación no solo consume tiempo, sino que puede retrasar decisiones importantes en casos de emergencia o animales rescatados en mal estado.
+
+##### Gestión clínica: información incompleta y herramientas no integradas
+
+Los veterinarios mencionaron el uso de WhatsApp, llamadas, Excel, correo, fichas físicas, notas digitales, software básico y documentos compartidos para coordinar y registrar información. Aunque estas herramientas son útiles en algunos casos, no están integradas entre sí y no siempre permiten acceder rápidamente a la información necesaria.
+
+El problema se agrava cuando los animales provienen de refugios o rescates, ya que la información puede estar incompleta, dispersa o depender de lo que recuerde la persona que lo llevó a la atención. Esto evidencia la necesidad de una plataforma compartida donde los datos relevantes del animal puedan consultarse de forma ordenada.
+
+##### Coordinación con responsables y refugios
+
+La coordinación actual entre veterinarios, rescatistas, cuidadores o administradores suele realizarse por WhatsApp, llamadas o mensajes directos. Este canal permite una comunicación rápida, pero no garantiza que la información se registre correctamente ni que esté disponible para futuras atenciones.
+
+Los entrevistados valoraron la idea de que los responsables puedan registrar información previa del animal antes de la atención, como síntomas, fotos, antecedentes, ubicación, evolución o comportamiento reciente. Esto permitiría al veterinario prepararse mejor, reducir incertidumbre y tomar decisiones más rápidas.
+
+##### Valor de alertas, registros e historial compartido
+
+Los veterinarios mostraron interés en funcionalidades que permitan consultar historial, registrar observaciones, revisar alimentación, ver eventos relevantes y recibir alertas cuando ocurra una situación crítica. Aunque algunos entrevistados mencionaron necesidades relacionadas con salud o signos del animal, para el alcance de BluePatitas esto debe interpretarse como una necesidad de seguimiento operativo y alertas tempranas, no como diagnóstico médico automatizado.
+
+En ese sentido, el sistema puede aportar valor mediante registros de alimentación, condiciones ambientales, alertas por geocerca, eventos de monitoreo y observaciones veterinarias. Esta información puede servir como apoyo para el seguimiento, especialmente en animales de refugio que no cuentan con una historia clínica completa.
+
+##### Receptividad hacia la solución IoT
+
+La propuesta de una solución IoT fue recibida de manera favorable por los veterinarios, especialmente por su capacidad para centralizar información y generar trazabilidad. Los entrevistados coincidieron en que una plataforma con historial compartido, alertas y registros accesibles ayudaría a reducir tiempos de atención y mejorar el seguimiento de los animales.
+
+Los componentes del MVP, como el sensor de temperatura y humedad, el dispensador de comida, el GPS/geocerca y la cámara, son útiles siempre que estén conectados a una plataforma que convierta los datos en información accionable. Para el veterinario, el valor no está únicamente en el dispositivo físico, sino en poder consultar eventos, antecedentes y alertas de forma clara.
+
+##### Conclusión del segmento
+
+Las entrevistas con veterinarios validan que existe una necesidad importante de contar con información previa, ordenada y accesible sobre los animales atendidos. La ausencia de historial clínico o de registros confiables genera diagnósticos más lentos, procesos repetitivos y mayor incertidumbre en la atención.
+
+BluePatitas puede aportar valor a este segmento si permite consultar el historial operativo del animal, registrar observaciones, revisar eventos de alimentación, monitoreo ambiental y alertas críticas. De esta manera, la solución no reemplaza el criterio veterinario, sino que actúa como una herramienta de apoyo para mejorar el seguimiento y la toma de decisiones.
+
+---
+
+#### Conclusión general del análisis
+
+El análisis de ambos segmentos evidencia una problemática común: la información sobre los animales se encuentra dispersa, incompleta o registrada manualmente, lo que dificulta la supervisión, la trazabilidad y la respuesta oportuna ante incidentes. Mientras los administradores necesitan controlar mejor la operación diaria del refugio, los veterinarios requieren información confiable para realizar seguimiento y atención con mayor contexto.
+
+A partir de estos hallazgos, se valida la pertinencia de BluePatitas como una solución IoT integrada orientada a centralizar información, monitorear condiciones relevantes, registrar eventos de alimentación, generar alertas y facilitar el seguimiento de animales en refugios. La solución debe priorizar simplicidad, claridad en las alertas y acceso rápido a la información más importante para cada tipo de usuario.
 
 ## 2.3. Needfinding
 ### 2.3.1. User Personas
