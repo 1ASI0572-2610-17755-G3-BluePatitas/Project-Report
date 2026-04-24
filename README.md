@@ -326,37 +326,38 @@ Para mantener el estándar de la arquitectura orientada a eventos (DDD), se util
 
 ### **IAM**
 
-"Imagen"
+![EventStormIAM](img/Strategic-Level%20DDD/EventStorm/EventStormIAM.PNG)
 
 ### **Animals**
 
-"Imagen"
+![EventStormAnimals](img/Strategic-Level%20DDD/EventStorm/EventStormAnimals.PNG)
 
 ### **Feeding**
 
-"Imagen"
+![EventStormFeeding](img/Strategic-Level%20DDD/EventStorm/EventStormFeeding.PNG)
 
 ### **Veterinary**
 
-"Imagen"
+![EventStormVeterinary](img/Strategic-Level%20DDD/EventStorm/EventStormVeterinary.PNG)
 
 ### **Monitoring**
 
-"Imagen"
+![EventStormMonitoring](img/Strategic-Level%20DDD/EventStorm/EventStormMonitoring.PNG)
+![EventStormMonitoring2](img/Strategic-Level%20DDD/EventStorm/EventStormVeterinary2.PNG)
 
 
 ### **Elementos**
 Al tener ya nuestros segmentos objetivos definidos pudimos sacar facilmente a los actores principales de nuestra aplicación
 
-"Imagen"
+![EventStormActors](img/Strategic-Level%20DDD/EventStorm/EventStormActors.PNG)
 
 Identificamos los eventos que contara nuestra aplicación y pensar como serian aplicando una breve simulación mental, como resultado obtuvimos los siguientes eventos
 
-"Imagen"
+![EventStormEvents](img/Strategic-Level%20DDD/EventStorm/EventStormEvents.PNG)
 
 Finalmente identificamos los comandos con los cuales se puedan acceder a estos eventos en nuestra aplicación 
 
-"Imagen"
+![EventStormCommands](img/Strategic-Level%20DDD/EventStorm/EventStormCommands.PNG)
 
 #### 4.1.1.1 Candidate Context Discovery
 
@@ -378,15 +379,15 @@ En esta etapa, el equipo aplicó la técnica de Domain Storytelling con el fin d
 
 - Caso 1: Ingreso de Animal y Apertura Automática de Historial Clínico
   
-"Imagen"
+![DMFMStory1](img/Strategic-Level%20DDD/DomainMessageFlowModeling/DMFMStory1.PNG)
 
 - Caso 2: Control y gestión del ambiente en caso de alertas
 
-"Imagen"
+![DMFMStory2](img/Strategic-Level%20DDD/DomainMessageFlowModeling/DMFMStory2.PNG)
 
 - Caso 3: Detección Perimetral y Alerta Temprana de Escape
 
-"Imagen"
+![DMFMStory3](img/Strategic-Level%20DDD/DomainMessageFlowModeling/DMFMStory3.PNG)
 
 #### 4.1.1.3 Bounded Context Canvases
 
@@ -394,23 +395,24 @@ El Bounded Context Canvas es una herramienta visual utilizada en talleres de Dis
 
 ### **IAM**
 
-"Imagen"
+![BCCIAM](img/Strategic-Level%20DDD/BoundedContextCanvas/BCCIAM.PNG)
 
 ### **Animals**
 
-"Imagen"
+![BCCAnimals](img/Strategic-Level%20DDD/BoundedContextCanvas/BCCAnimals.PNG)
 
 ### **Feeding**
 
-"Imagen"
+![BCCFeeding](img/Strategic-Level%20DDD/BoundedContextCanvas/BCCFeeding.PNG)
 
 ### **Veterinary**
 
-"Imagen"
+![BCCVeterinary](img/Strategic-Level%20DDD/BoundedContextCanvas/BCCVeterinary.PNG)
 
 ### **Monitoring**
 
-"Imagen"
+![BCCMonitoring](img/Strategic-Level%20DDD/BoundedContextCanvas/BCCMonitoring.PNG)
+
 ### 4.1.2. Context Mapping
 
 El Context Mapping en DDD permite representar de forma explícita cómo interactúan los bounded contexts entre sí y con sistemas externos. Este mapa facilita identificar dependencias, direcciones de influencia (upstream/downstream) y niveles de acoplamiento entre los diferentes componentes del sistema.
