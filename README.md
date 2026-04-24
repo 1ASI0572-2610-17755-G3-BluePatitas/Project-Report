@@ -66,11 +66,19 @@
         <td>Creación del reporte</td>
     </tr>
     <tr>
-    <td>0.1</td>
-    <td>23/04/2026</td>
-    <td>Carlos Gonzales</td>
-    <td>Actualización del Capítulo I: descripción de la startup, solution profile, antecedentes y problemática, Lean UX Process, Student Outcome, bibliografía y segmentos objetivo.</td>
-</tr>
+      <td>0.1</td>
+      <td>23/04/2026</td>
+      <td>Carlos Gonzales</td>
+      <td>Actualización del Capítulo I: descripción de la startup, solution profile, antecedentes y problemática, Lean UX Process, Student Outcome, bibliografía y segmentos objetivo.</td>
+    
+  </tr>
+
+  <tr>
+        <td>0.2</td>
+        <td>23/04/2026</td>
+        <td>Ronald Peralta</td>
+        <td>Mejora del Capítulo I: descripción de la startup, solution profile, antecedentes y problemática, segmento objetivo, User Task Matrix, User Journey Mapping, Mapa de Empatía, Tactical-Level Domain-Driven Design, Diagramas de clases de dominio y diagramas entidad-relación</td>
+    </tr>
 </table>
 
 <br>
@@ -199,7 +207,7 @@ Link del repositorio del reporte:
       <p><strong>Luciana Carolina Choquehuanca Nuñez</strong><br>AV1: Participé activamente en el trabajo en equipo asumiendo un rol colaborativo y de apoyo en la organización del proyecto. Contribuí en la construcción de secciones clave como el Impact Mapping, User Personas y el diseño de los Bounded Contexts, aportando ideas en la definición de la arquitectura basada en DDD. Además, participé en la toma de decisiones junto al equipo, proponiendo mejoras y validando alternativas, lo que permitió consolidar una visión compartida del sistema y asegurar un avance coordinado. </p>
       <p><strong>Carlos Matthew Gonzales Valverde</strong><br>AV1: </p>
       <p><strong>María Patricia Hernández Uchuya</strong><br>AV1: </p>
-      <p><strong>Ronald Joel Peralta Chipa</strong><br>AV1: </p>
+      <p><strong>Ronald Joel Peralta Chipa</strong><br>AV1: Apoyo conitnuo técnico en la definición de la arquitectura de software del proyecto. Lideré el diseño del Tactical-Level Domain-Driven Design (DDD), estructurando los Bounded Contexts clave (IAM, Animals, Monitoring) y definiendo las entidades, servicios y repositorios en cada capa. Además, guié el modelado de los diagramas de clases de dominio y de base de datos, asegurando que el equipo compartiera una visión técnica sólida y que las decisiones arquitectónicas estuvieran perfectamente alineadas con los objetivos del sistema IoT.</p>
     </td>
     <td>
       Como equipo, durante AV1 se evidenció liderazgo compartido en la organización inicial del proyecto, la distribución de responsabilidades y la consolidación progresiva del informe. Cada integrante asumió tareas específicas y contribuyó al avance del documento, permitiendo construir una base común para el desarrollo del proyecto BluePatitas.
@@ -212,7 +220,7 @@ Link del repositorio del reporte:
       <p><strong>Luciana Carolina Choquehuanca Nuñez</strong><br>AV1: Contribuí a mantener un entorno colaborativo participando de forma constante en la coordinación del equipo y en el cumplimiento de las tareas asignadas. Utilicé herramientas como GitHub para gestionar los avances y apoyar en la organización del contenido, así como Lucidchart para el desarrollo de diagramas. Asimismo, cumplí con los objetivos establecidos en cada etapa del trabajo, asegurando la entrega oportuna de mis aportes y colaborando en la revisión conjunta del documento para garantizar coherencia y calidad en el resultado final. </p>
       <p><strong>Carlos Matthew Gonzales Valverde</strong><br>AV1: </p>
       <p><strong>María Patricia Hernández Uchuya</strong><br>AV1: </p>
-      <p><strong>Ronald Joel Peralta Chipa</strong><br>AV1: </p>
+      <p><strong>Ronald Joel Peralta Chipa</strong><br>AV1: Fomenté un entorno colaborativo conectando el análisis de las necesidades del usuario con la viabilidad técnica del sistema. Cumplí puntualmente con mis metas establecidas al desarrollar los artefactos de UX (User Task Matrix, User Journey Mapping y Mapas de Empatía) y planifiqué mis tareas para entregar la codificación de los diagramas de arquitectura a tiempo. Mantuve una comunicación constante con el equipo para validar los atributos y métodos del sistema, garantizando que mis entregables facilitaran el trabajo de mis compañeros y mantuvieran la coherencia del informe final.</p>
     </td>
     <td>
       Durante AV1, el equipo estableció una estructura inicial de trabajo colaborativo mediante el uso de GitHub y un tablero de tareas, lo que permitió organizar actividades, priorizar entregables y avanzar de forma ordenada en la elaboración del informe. Este proceso contribuyó a construir un entorno de coordinación y planificación alineado con los objetivos del curso.
