@@ -303,7 +303,8 @@ Como iniciativa de base tecnológica, BluePatitas proyecta integrar dispositivos
 <table align="center" border="1" cellspacing="0" cellpadding="8" style="width: 90%; border-collapse: collapse;">
   <tr>
     <td style="width: 150px; text-align: center;">
-      <img src="img/ronald_perfil.jpg" style="width: 180px; height: auto; border-radius: 10px;">
+    <img src="img/ronald_perfil.jpg" style="width: 1000px; height: auto; border-radius: 10px;">
+      <img src="" style="width: 180px; height: auto; border-radius: 10px;">
     </td>
     <td>
       <p align="center"><strong>Ronald Joel Peralta Chipa - U202224619</strong></p>
