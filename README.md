@@ -408,6 +408,11 @@ Asimismo, se identificaron los deliverables como las soluciones tecnológicas de
 | 25 | US18 | Priorización de alertas veterinarias | Como Veterinario, quiero que las alertas críticas se destaquen para atender primero los casos más urgentes. | 3 |
 | 26 | US04 | Notificaciones de emergencia veterinaria | Como veterinario, quiero recibir notificaciones automáticas cuando un animal requiere atención urgente, para poder actuar rápidamente. | 5 |
 | 27 | US05 | Monitoreo de signos vitales en tiempo real | Como veterinario, quiero acceder a datos de salud en tiempo real de los animales, para tomar decisiones informadas durante la consulta. | 8 |
+| 28 | TS01 | Configuración base del proyecto | Como equipo de desarrollo, queremos configurar la estructura inicial del proyecto para asegurar una base ordenada y mantenible. | 2 |
+| 29 | TS02 | Integración del IoT Edge Gateway | Como equipo de desarrollo, queremos implementar la comunicación entre los dispositivos IoT y el IoT Edge Gateway para centralizar los eventos del refugio. | 5 |
+| 30 | TS03 | Modelo de datos para seguimiento veterinario | Como equipo de desarrollo, queremos implementar el modelo de datos veterinario para almacenar dietas, observaciones, recomendaciones y reportes de bienestar. | 3 |
+| 31 | TS04 | Configuración de notificaciones push | Como equipo de desarrollo, queremos configurar el servicio de notificaciones push para enviar alertas a los usuarios ante eventos relevantes. | 3 |
+| 32 | TS05 | Desarrollo de reportes veterinarios | Como equipo de desarrollo, queremos implementar la base técnica para generar reportes veterinarios de bienestar animal. | 5 |
 
 <br>
 
