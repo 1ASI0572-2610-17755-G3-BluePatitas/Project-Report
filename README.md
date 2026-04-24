@@ -295,12 +295,12 @@ Como iniciativa de base tecnológica, BluePatitas proyecta integrar dispositivos
 <table align="center" border="1" cellspacing="0" cellpadding="8" style="width: 90%; border-collapse: collapse;">
   <tr>
     <td style="width: 150px; text-align: center;">
-      <img src="" width="150"></img>
+      <img src="img/ronald_perfil.jpg" style="width: 180px; height: auto; border-radius: 10px;">
     </td>
     <td>
       <p align="center"><strong>Ronald Joel Peralta Chipa - U202224619</strong></p>
       <p align="justify">
-         ...
+         Mi nombre es Ronald, tengo 22 años y soy una persona comprometida con el orden, con un estilo de liderazgo democrático y una gran capacidad para escuchar y comprender. Disfruto crecer en equipo y aprender constantemente de los demás. Además, tengo interés en la cultura DevSecOps y la gestión de proyectos, lo que me permite tener un enfoque integral orientado a la seguridad, organización y mejora continua.
       </p>
     </td>
   </tr>
