@@ -237,12 +237,12 @@ Como iniciativa de base tecnológica, BluePatitas proyecta integrar dispositivos
 <table align="center" border="1" cellspacing="0" cellpadding="8" style="width: 90%; border-collapse: collapse;">
   <tr>
     <td style="width: 150px; text-align: center;">
-      <img src="" width="150"></img>
+        <img src="img/giancarlo.jpg" style="width: 500px; height: auto; border-radius: 10px;">
     </td>
     <td>
       <p align="center"><strong>Giancarlo Santiago Castañeda Guimas - U202310601</strong></p>
       <p align="justify">
-        ...
+        Estudiante de la carrera de ingeniería de software en la Universidad Peruana de Ciencias Aplicadas cursando el 7mo ciclo. Me considero una persona activa y que siempre busca terminar las cosas bien y de ser posible rápidamente. También me gusta la responsabilidad y el buen ambiente entre mis compañeros de grupo.
       </p>
     </td>
   </tr>
@@ -251,7 +251,7 @@ Como iniciativa de base tecnológica, BluePatitas proyecta integrar dispositivos
 <table align="center" border="1" cellspacing="0" cellpadding="10" style="width: 90%; border-collapse: collapse;">
   <tr>    
     <td style="width: 200px; text-align: center;">
-      <img src="img/lluciana_img.png" style="width: 180px; height: auto; border-radius: 10px;">
+      <img src="img/lluciana_img.png" style="width: 1000px; height: auto; border-radius: 10px;">
     </td>
     <td>
       <p align="center">
@@ -356,6 +356,8 @@ BluePatitas propone mejorar esta dinámica mediante una solución IoT que combin
 La magnitud del problema también puede observarse desde una dimensión cuantitativa. Un reporte periodístico de *El Comercio*, basado en estimaciones de especialistas y organizaciones de protección animal, indicó que en el Perú habría más de 6 millones de perros y gatos en situación de abandono, y que alrededor de 4 millones se encontrarían en Lima. Aunque estas cifras no provienen de un registro oficial unificado, permiten dimensionar la escala del problema que enfrentan los refugios y redes de rescate (El Comercio, 2023).
 
 Como referencia internacional complementaria, la Fundación Affinity reportó que en 2023 se recogieron más de 286,000 perros y gatos en refugios y protectoras. Si bien esta cifra corresponde al contexto español, sirve para evidenciar que la sobrecarga de los sistemas de atención y la necesidad de mecanismos más eficientes de monitoreo, control y respuesta constituyen un problema estructural en el ámbito del bienestar animal (Fundación Affinity, 2024).
+
+![HowMuch](img/HowMuch.PNG)
 
 ### 1.2.2 Lean UX Process
 #### 1.2.2.1. Lean UX Problem Statements
