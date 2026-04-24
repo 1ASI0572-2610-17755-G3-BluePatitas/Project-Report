@@ -486,10 +486,18 @@ La arquitectura final seleccionada organiza los bounded contexts en función de 
 El uso de patrones como Open Host Service, Customer/Supplier y Anti-Corruption Layer permite reducir el acoplamiento, facilitar la integración con sistemas externos y asegurar que cada contexto pueda evolucionar de manera independiente.
 
 Este enfoque garantiza una arquitectura escalable, mantenible y alineada con los principios de Domain-Driven Design.
+
 ### 4.1.3. Software Architecture
+
 #### 4.1.3.1. Software Architecture System Landscape Diagram
+El System Landscape Diagram presenta una vista general del ecosistema en el que se ubica BluePatitas. En este diagrama se identifican los usuarios principales, el sistema BluePatitas y los sistemas externos con los que interactúa, como los dispositivos IoT, el servicio de notificaciones push y el servicio de mapas. Su propósito es mostrar, de forma resumida, cómo la solución se relaciona con su entorno general.
+
 #### 4.1.3.2. Software Architecture Context Level Diagrams
+El Context Diagram muestra a BluePatitas System como el sistema central de la solución. En esta vista se detallan sus relaciones directas con los actores principales, que son los administradores de refugios y veterinarios, así como con los dispositivos IoT y servicios externos necesarios para el monitoreo, las alertas y la ubicación. Este diagrama permite comprender qué funciones cumple el sistema dentro del contexto del refugio.
+
 #### 4.1.3.3. Software Architecture Container Level Diagrams
+El Container Diagram descompone internamente el sistema BluePatitas en sus principales componentes de software. En esta vista se representan la aplicación web, la aplicación móvil, el API Gateway, el Backend API, la base de datos, el IoT Edge Gateway, la base de datos local del Edge y las aplicaciones embebidas que interactúan con los dispositivos IoT. Su finalidad es mostrar cómo se organiza técnicamente la solución y cómo fluye la información entre sus componentes.
+
 #### 4.1.3.4. Software Architecture Deployment Diagrams
 
 ## 4.2. Tactical-Level Domain-Driven Design
