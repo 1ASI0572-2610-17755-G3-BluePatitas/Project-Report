@@ -2035,24 +2035,54 @@ El diseño de la base de datos para el _Veterinary Bounded Context_ persiste la 
 <br>
 
 # Conclusiones
-## Conclusiones y recomendaciones
+# Conclusiones y recomendaciones
+## Conclusiones
+
+- El valor real del IoT radica en la automatización operativa (Core Domains): El análisis estratégico demostró que el verdadero diferenciador de BluePatitas no es ser un directorio de mascotas, sino su capacidad para conectar reglas de software (como una dieta médica) con actuadores físicos (dispensadores), reduciendo drásticamente la carga operativa y los costos de los refugios.
+
+- El enfoque B2B fortalece la viabilidad comercial: Pivotar de un modelo mixto (donantes/voluntarios) a un modelo estricto SaaS + Hardware B2B (para administradores y veterinarios) clarificó el mercado objetivo y permitió construir tácticas de diferenciación mucho más sólidas frente a competidores tradicionales como WUF o Petfinder.
+
+- El diseño guiado por el dominio (DDD) asegura la escalabilidad: El uso de EventStorming permitió descubrir Bounded Contexts altamente cohesivos y poco acoplados. Separar el catálogo maestro (Animals) de la telemetría masiva (Monitoring) garantiza que el sistema no colapse cuando miles de sensores envíen datos simultáneamente.
+
+- La trazabilidad de eventos elimina la ambigüedad en el diseño: Modelar los Domain Message Flows utilizando los comandos y eventos exactos (técnica de post-its) comprobó teóricamente que la información fluye de manera correcta entre módulos, garantizando que ninguna acción física del hardware ocurra sin un disparador de negocio válido.
+
+- Clasificar estratégicamente optimiza los recursos de desarrollo: Al definir IAM como un subdominio genérico y Monitoring como un Core Domain, el equipo tiene una ruta clara: no se debe reinventar la rueda programando logins complejos, sino invertir todo el esfuerzo de ingeniería en el motor de reglas IoT y la telemetría.
 ## Video About-the-Team
+
+<br>
+
+## Recomendaciones
+
+- Implementar Edge Computing (Modo Offline): Los refugios suelen estar en zonas periféricas con mala conexión a internet. Se recomienda que el hardware local (Edge) tenga la capacidad de almacenar los cronogramas de alimentación (Feeding) y las reglas críticas de temperatura (Monitoring) para seguir funcionando autónomamente si se cae la red.
+
+- Evitar el síndrome de la "Navaja Suiza": Es muy tentador querer hacer una red social, una pasarela de pagos, un sistema de adopciones y un proyecto IoT todo al mismo tiempo. El consejo es recortar sin piedad los subdominios genéricos y centrarse exclusivamente en la interacción con el hardware, que es lo que realmente evalúa un curso de IoT.
+
+- Aprovechar la data para Machine Learning: Una vez que los sensores de clima, GPS y dispensadores generen un volumen considerable de historial, se recomienda integrar modelos de Inteligencia Artificial para realizar análisis predictivos (por ejemplo, detectar patrones de letargo para alertar sobre posibles enfermedades antes de que presenten síntomas graves).
+
+- Usar el EventStorming como "fuente de la verdad": Un error común es hacer el EventStorming por cumplir y luego inventarse los Bounded Contexts desde cero. La recomendación es que siempre construyan sus Inbound/Outbound communications arrastrando literalmente los eventos naranjas y comandos azules de su tablero inicial. Si un contexto no tiene eventos que lo disparen, está mal diseñado.
+
+- Pruebas de estrés y calibración de hardware: El papel lo aguanta todo, pero el hardware físico falla. Se recomienda destinar una fase exclusiva del proyecto a la calibración de los sensores DHT11 (humedad/temperatura) y pruebas de resistencia de los collares GPS para asegurar que las alertas de Monitoring no generen falsos positivos que terminen frustrando al administrador del refugio.
 
 <br>
 
 # Bibliografía
 
-Valdelomar Martínez, D. E. (2024). *Deconstrucción de los conceptos de bienestar animal y sufrimiento innecesario animal en el sistema jurídico peruano* [Tesis de licenciatura, Pontificia Universidad Católica del Perú]. Repositorio Institucional PUCP. https://tesis.pucp.edu.pe/
+- Fundación Affinity. (s.f.). Las cifras del abandono de perros y gatos aún lejos de descender. [Fundación Affinity. (s.f.). Las cifras del abandono de perros y gatos aún lejos de descender. Recuperado de https://www.fundacion-affinity.org/perros-gatos-y-personas/busco-un-animal-de-compania/las-cifras-del-abandono-de-perros-y-gatos-aun](https://www.fundacion-affinity.org/perros-gatos-y-personas/busco-un-animal-de-compania/las-cifras-del-abandono-de-perros-y-gatos-aun)
 
-El Comercio. (2023). *Perros y gatos sin hogar en Lima: ¿Existe un registro de animales en situación de abandono?* https://elcomercio.pe/lima/sucesos/perros-y-gatos-sin-hogar-en-lima-existe-un-registro-de-animales-en-situacion-de-abandono-que-se-sabe-de-la-ley-4-patas-adopcion-responsable-esterilizacion-albergues-rescatistas-noticia/
+- GEA Group. (s.f.). Activity Detection – GEA CowScout. [https://www.gea.com/es/products/milking-farming-barn/gea-herd-management/activity-detection-cowscout/](https://www.gea.com/es/products/milking-farming-barn/gea-herd-management/activity-detection-cowscout/)
 
-Fundación Affinity. (2024). *Las cifras del abandono de perros y gatos aún lejos de descender*. https://www.fundacion-affinity.org/es/biblioteca/las-cifras-del-abandono-de-perros-y-gatos-aun-lejos-de-descender
+- Pinto, A. (2021). Las protectoras de animales denuncian la falta de recursos. La Opinión de Málaga [https://www.laopiniondemalaga.es/municipios/2021/11/08/protectoras-animales-denuncian-falta-recursos-59278673.html](https://www.laopiniondemalaga.es/municipios/2021/11/08/protectoras-animales-denuncian-falta-recursos-59278673.html)
 
+- Valdelomar, D. (2025). Deconstrucción de los conceptos de Bienestar Animal y Sufrimiento Innecesario Animal en el sistema jurídico peruano. Recurso procedente de la Pontificia Universidad Católica del Perú (PUCP). [https://tesis.pucp.edu.pe/items/173234ff-fb31-4300-8d26-d5659388b7c7](https://tesis.pucp.edu.pe/items/173234ff-fb31-4300-8d26-d5659388b7c7)
 <br>
 
 # Anexos
+
+## Anexo A: Links importantes:
+
 Link del Repositorio del Informe: 
 Link del Repositorio del Backend: 
 Link del Repositorio del Frontend Aplicación Web: 
 Link del Repositorio del Frontend Aplicación Móvil: 
 
+## Anexo B: Exposiciones:
