@@ -423,6 +423,14 @@ Asimismo, se identificaron los deliverables como las soluciones tecnológicas de
 | 34 | TS05 | Desarrollo de reportes veterinarios | Como equipo de desarrollo, queremos implementar la base técnica para generar reportes veterinarios de bienestar animal, para consolidar eventos de alimentación, ambiente y alertas. | 5 |
 | 35 | US28 | Landing page informativa | Como Visitante de la landing page, quiero conocer la propuesta de valor de BluePatitas y acceder a una llamada a la acción, para solicitar más información o ingresar a la plataforma. | 2 |
 
+### Captura del Product Backlog en Jira
+
+![Product Backlog en Jira](img/product-backlog-jira.png)
+
+Link Product Backlog en Jira: [https://matthewpro17-17770197508.atlassian.net/jira/software/projects/BLUEP/boards/2/backlog?atlOrigin=eyJpIjoiY2FjNDc1ZTdkMzMzNDNmOWE5OTFmN2EyN2RkOGY3NGEiLCJwIjoiaiJ9](#)
+
+Invitación para poder visualizar Jira (entrar a este primero y aceptar la invitación, luego entrar al otro link): [https://id.atlassian.com/invite/p/jira-software?id=rR0gURm_RNOyBBhY-xMvrQ](#)
+
 <br>
 
 # Capítulo IV: Solution Software Design
