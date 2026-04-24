@@ -303,9 +303,114 @@ Link del repositorio del reporte:
 
 ## 4.1. Strategic-Level Domain-Driven Design
 ### 4.1.1. Design-Level EventStorming
+
+### **Introducción**
+
+El equipo realizó una sesión de EventStorming con el objetivo de identificar una primera aproximación de alto nivel al dominio de **BluePatitas**, mapeando los principales eventos que suceden dentro del negocio y su integración con los dispositivos físicos de hardware. Esta dinámica permitió alinear la visión de los integrantes, reconocer el flujo natural de operaciones del refugio (desde la gestión clínica hasta la automatización del entorno físico) y establecer una base sólida para las siguientes fases de modelado arquitectónico.
+
+La sesión se llevó a cabo a través de Discord como herramienta de comunicación, mientras que para la construcción colaborativa de los diagramas se utilizó Miro. El tiempo total invertido fue de aproximadamente 2 horas, tiempo suficiente para consolidar los eventos clave del software y la telemetría IoT sin extender el proceso innecesariamente.
+
+### **Identificadores**
+
+Para mantener el estándar de la arquitectura orientada a eventos (DDD), se utilizaron las siguientes convenciones visuales:
+
+-   **Post-it Naranja:** Evento de Dominio (Hito o cambio de estado relevante que ya ocurrió en el sistema, redactado en tiempo pasado).
+    
+-   **Post-it Azul:** Comando (Acción, intención o decisión que desencadena un evento).
+    
+-   **Post-it Amarillo:** Actor (Usuario humano que ejecuta el comando).
+    
+-   **Post-it Morado / Lila:** Sistema o Hardware Externo (Dispositivos IoT, motores de reglas o APIs de terceros que interactúan de forma autónoma en el flujo).
+
+### **Contextos Identificados**
+
+### **IAM**
+
+"Imagen"
+
+### **Animals**
+
+"Imagen"
+
+### **Feeding**
+
+"Imagen"
+
+### **Veterinary**
+
+"Imagen"
+
+### **Monitoring**
+
+"Imagen"
+
+
+### **Elementos**
+Al tener ya nuestros segmentos objetivos definidos pudimos sacar facilmente a los actores principales de nuestra aplicación
+
+"Imagen"
+
+Identificamos los eventos que contara nuestra aplicación y pensar como serian aplicando una breve simulación mental, como resultado obtuvimos los siguientes eventos
+
+"Imagen"
+
+Finalmente identificamos los comandos con los cuales se puedan acceder a estos eventos en nuestra aplicación 
+
+"Imagen"
+
 #### 4.1.1.1 Candidate Context Discovery
+
+Tras la sesión de EventStorming y el análisis de las capacidades del sistema IoT, el equipo ha identificado cinco Bounded Contexts candidatos para la arquitectura de BluePatitas. Estos contextos agrupan de forma lógica los eventos, comandos y reglas de negocio, permitiendo una estructura desacoplada donde el software puede interactuar eficientemente con los dispositivos de hardware.
+
+A continuación, se presenta la tabla de clasificación estratégica de los contextos identificados, detallando su rol en el dominio, la complejidad (tanto de negocio como técnica) y su prioridad para la implementación desde los valores que el sistema debe entregar al usuario final o al negocio.
+
+| Bounded Context | Descripción | Domain Role | Complexity (Business / Technical) | Priority |
+| :--- | :--- | :--- | :--- | :--- |
+| **Monitoring** | Centraliza la telemetría de cámaras y sensores en tiempo real para gestionar la seguridad perimetral y el control ambiental automático de las zonas. | Core Domain | High / High | High |
+| **Feeding** | Gestiona la automatización física de los dispensadores, traduciendo dietas médicas en raciones precisas y cronogramas de alimentación. | Core Domain | High / High | High |
+| **Veterinary** | Administra el ciclo de vida clínico, incluyendo historiales médicos, citas y las prescripciones nutricionales que rigen al módulo de Feeding. | Supporting Subdomain | Medium / Medium | Medium |
+| **Animals** | Actúa como catálogo maestro de perfiles y gestiona la vinculación lógica de dispositivos (GPS, cámaras) a cada animal o área del refugio. | Gateway Subdomain | Low / Medium | Medium |
+| **IAM** | Provee capacidades transversales de seguridad, gestionando la identidad, autenticación y autorización basada en roles (Admin/Veterinario). | Generic Subdomain | Low / Low | Low |
+
 #### 4.1.1.2 Domain Message Flows Modeling
+
+En esta etapa, el equipo aplicó la técnica de Domain Storytelling con el fin de visualizar cómo los bounded contexts previamente identificados colaboran para resolver los principales casos de uso del negocio. El objetivo fue detallar las interacciones entre usuarios y sistema, evidenciando cómo los mensajes fluyen entre los distintos contextos para completar los procesos clave.
+
+- Caso 1: Ingreso de Animal y Apertura Automática de Historial Clínico
+  
+"Imagen"
+
+- Caso 2: Control y gestión del ambiente en caso de alertas
+
+"Imagen"
+
+- Caso 3: Detección Perimetral y Alerta Temprana de Escape
+
+"Imagen"
+
 #### 4.1.1.3 Bounded Context Canvases
+
+El Bounded Context Canvas es una herramienta visual utilizada en talleres de Diseño Dirigido por el Dominio (DDD) para definir y documentar explícitamente los límites y las relaciones de diferentes Contextos Delimitados dentro de un sistema más grande. Ayuda a los equipos a lograr una comprensión compartida de el nombre y el propósito de cada contexto delimitado, las entidades y agregados que que posee el contexto y las politicas de negocio que poseen.
+
+### **IAM**
+
+"Imagen"
+
+### **Animals**
+
+"Imagen"
+
+### **Feeding**
+
+"Imagen"
+
+### **Veterinary**
+
+"Imagen"
+
+### **Monitoring**
+
+"Imagen"
 ### 4.1.2. Context Mapping
 
 El Context Mapping en DDD permite representar de forma explícita cómo interactúan los bounded contexts entre sí y con sistemas externos. Este mapa facilita identificar dependencias, direcciones de influencia (upstream/downstream) y niveles de acoplamiento entre los diferentes componentes del sistema.
