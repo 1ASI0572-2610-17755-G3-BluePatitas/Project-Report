@@ -1,4 +1,4 @@
-# <center>Project Report</center>
+﻿# <center>Project Report</center>
 
 <p align="center">
     <strong>Universidad Peruana de Ciencias Aplicadas</strong><br>
@@ -379,8 +379,6 @@ Asimismo, se identificaron los deliverables como las soluciones tecnológicas de
 
 #### Impact Mapping – Administrador del refugio
 ![Impact Mapping Administrador](img/Impact_map_Administradores_de_refugios.png)
-
-> Nota: La imagen debe actualizarse manualmente para reemplazar la mención de activación automática de ventilación por alertas ambientales ante temperatura o humedad fuera de rango.
 
 #### Impact Mapping – Veterinario
 ![Impact Mapping Veterinario](img/Impact_map_Veterinarios.png)
