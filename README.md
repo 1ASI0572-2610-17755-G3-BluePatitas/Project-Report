@@ -514,6 +514,28 @@ Cerca de la medianoche, dimos por concluida la sesión. El equipo logró obtener
 
 ## 2.5. Ubiquitous Language
 
+| Término | Definición |
+| :--- | :--- |
+| **Administrador** | Usuario con privilegios totales sobre la plataforma de software y la configuración del hardware IoT. |
+| **Veterinario** | Médico o especialista invitado con permisos restringidos exclusivamente a la gestión clínica y nutricional. |
+| **Perfil de Animal** | Conjunto de datos base (nombre, especie, edad, peso, raza) que identifica de manera única a un individuo en el sistema. |
+| **Zona / Hábitat** | Espacio físico delimitado dentro del refugio (ej. patio, cuarentena) al cual se le asignan animales y dispositivos IoT fijos. |
+| **Vinculación (Pairing)** | Proceso técnico de asociar un identificador de hardware físico (MAC Address/Device ID) con una entidad digital (Animal o Zona). |
+| **Estado Operativo** | Indicador que muestra si el animal se encuentra físicamente en el refugio, en tratamiento clínico o si ya ha sido adoptado. |
+| **Historial Clínico** | Registro maestro e inmutable de todas las evaluaciones médicas, anomalías detectadas y tratamientos de un animal. |
+| **Cita Médica** | Bloque de tiempo reservado en la agenda del refugio para una revisión rutinaria o procedimiento veterinario. |
+| **Tratamiento** | Plan médico prescrito que incluye medicación o cuidados específicos aplicados tras una evaluación clínica. |
+| **Cartilla de Vacunación** | Documento digital validado que certifica el historial de inmunizaciones recibidas por el animal. |
+| **Dieta Semanal** | Plan nutricional médico específico prescrito por el veterinario que sirve como input para los dispensadores automáticos. |
+| **Telemetría** | Flujo constante de datos en tiempo real (temperatura, humedad, movimiento) emitidos por los dispositivos físicos IoT. |
+| **Perímetro Seguro** | Geo-cerca o zona física delimitada por cámaras donde el animal tiene permitido moverse libremente sin disparar alertas. |
+| **Rastreo Continuo** | Modo de alta energía del collar GPS que transmite coordenadas en tiempo real, activado exclusivamente en casos de emergencia o escape. |
+| **Actuador** | Dispositivo de hardware físico (como un ventilador o sistema de calefacción) que modifica el entorno basado en reglas del sistema. |
+| **Ración** | Cantidad volumétrica exacta de alimento (ej. en gramos) que el dispensador inteligente libera en una sola toma. |
+| **Cronograma (Schedule)** | Calendario lógico de días y horas programadas automáticamente para la activación del motor del dispensador de comida. |
+| **Tolva (Hopper)** | Depósito de almacenamiento físico del dispensador IoT donde se guarda el alimento seco para mantener su frescura. |
+| **Alimentación Manual** | Acción remota disparada intencionalmente por el Administrador desde la plataforma para proveer una ración extra o premio. |
+
 <br>
 
 # Capítulo III: Requirements Specification
