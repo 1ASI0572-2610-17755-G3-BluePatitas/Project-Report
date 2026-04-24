@@ -597,6 +597,27 @@ Representa un conjunto de permisos dentro del sistema.
 | RelationalUserAccountRepository | Repository Implementation     | UserAccountRepository  | Persistencia de los datos de las cuentas             |
 | RelationalRoleRepository        | Repository Implementation     | RoleRepository         | Persistencia de los roles y la lista de permisos     |
 
+
+#### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
+
+#### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
+Aquí se muestra el diagrama correspondiente, organizado dentro del bounded context de Analíticas. El modelo incorpora tablas que representan entidades persistentes, las cuales pueden ser mapeadas a clases de dominio dentro de una arquitectura orientada a objetos.
+
+
+##### 4.2.1.6.1. Bounded Context Domain Layer Class Diagram (IAM)
+Este diagrama representa la lógica pura de negocio, utilizando los patrones tácticos de DDD como Aggregate Roots y Entities.
+
+![Class Diagram (IAM)](img/UML_IAM.png)
+
+
+##### 4.2.1.6.2. Bounded Context Database Design Diagram
+Este diagrama muestra cómo se estructura la persistencia de datos en una base de datos relacional, definiendo llaves primarias (PK), foráneas (FK) y tipos de datos.
+
+![Database Diagram (IAM)](img/BD_IAM.png)
+
+
+
+
 ## 4.2.2. Bounded Context: Animals
 
 ### 4.2.2.1. Domain Layer
@@ -656,6 +677,26 @@ Representa la identidad, estado biológico y ubicación asignada de un animal.
 | Nombre                      | Categoría                    | Implementa        | Descripción                                                        |
 |-----------------------------|------------------------------|-------------------|--------------------------------------------------------------------|
 | RelationalAnimalRepository | Repository Implementation     | AnimalRepository  | Persistencia de la identidad, estado y asignación de zona         |
+
+#### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams
+
+#### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
+Aquí se muestra el diagrama correspondiente, organizado dentro del bounded context de Analíticas. El modelo incorpora tablas que representan entidades persistentes, las cuales pueden ser mapeadas a clases de dominio dentro de una arquitectura orientada a objetos.
+
+
+##### 4.2.2.6.1. Bounded Context Domain Layer Class Diagram (Animals)
+El diagrama modela las reglas de negocio de los animales definiendo a Animal como Aggregate Root que garantiza la consistencia mediante sus métodos, a SpeciesInfo como Value Object que agrupa especie, raza y edad sin identificador propio, y a HealthStatus como Enumeration para limitar el estado de salud a valores controlados.
+
+![Class Diagram (Animals)](img/UML_ANIMALS.png)
+
+
+##### 4.2.2.6.2. Bounded Context Database Design Diagram
+El diagrama muestra cómo el modelo de dominio se adapta a una base de datos relacional, aplanando el objeto de valor SpeciesInfo en columnas dentro de la tabla ANIMALS para optimizar consultas, y representando la tabla PERIMETERS para establecer una clave foránea que garantiza la integridad referencial, asegurando que cada animal esté asignado a una zona válida.
+
+![Database Diagram (Animals)](img/BD_ANIMALS.png)
+
+
+
 
 ## 4.2.3. Bounded Context: Monitoring
 
@@ -758,6 +799,25 @@ Representa una alerta generada por la salida de una zona asignada y su seguimien
 |---------------------------------|------------------------------|------------------------|--------------------------------------------------------------------|
 | TimeSeriesTelemetryRepository   | Repository Implementation     | TelemetryRepository   | Persistencia optimizada para lecturas secuenciales de monitoreo   |
 | RelationalAlertRepository       | Repository Implementation     | AlertRepository       | Persistencia de alertas generadas y estados de localización       |
+
+#### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
+
+#### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
+Aquí se muestra el diagrama correspondiente, organizado dentro del bounded context de Analíticas. El modelo incorpora tablas que representan entidades persistentes, las cuales pueden ser mapeadas a clases de dominio dentro de una arquitectura orientada a objetos.
+
+##### 4.2.3.6.1. Bounded Context Domain Layer Class Diagram (Monitoring)
+El diagrama modela el núcleo del sistema en tiempo real con dos Aggregate Roots independientes: TelemetryRecord, que gestiona el flujo continuo de datos de sensores, y PerimeterAlert, que representa eventos críticos que requieren seguimiento; además, utiliza Value Objects para mejorar la claridad del modelo, agrupando temperatura y humedad en EnvironmentalMetrics y latitud y longitud en LocationContext, haciendo el diseño más expresivo y orientado al dominio.
+
+![Class Diagram (Monitoring)](img/UML_MONITORING.png)
+
+
+##### 4.2.3.6.2. Bounded Context Database Design Diagram
+El diagrama aborda la persistencia considerando el alto volumen de datos, separando la tabla TELEMETRY_RECORDS para manejar inserciones masivas con marcas de tiempo, aplanando los Value Objects (LocationContext y EnvironmentalMetrics) en columnas primitivas como temperatura, humedad y coordenadas, e incluyendo una referencia a la tabla ANIMALS mediante una clave foránea (target_id) para vincular lecturas y alertas con el animal monitoreado.
+
+![Database Diagram (Monitoring)](img/BD_MONITORING.png)
+
+
+
 
 ## 4.2.4. Bounded Context: Feeding
 
@@ -871,7 +931,13 @@ Representa una ejecución de alimentación programada o realizada.
 | SqlFeedingPlanRepository  | Repository Implementation     | FeedingPlanRepository    | Persistencia de planes de alimentación            |
 | DispenserDeviceService    | External Service              | -                        | Integración con el dispensador automático         |
 
----
+
+#### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
+
+#### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams
+##### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
+##### 4.2.4.6.2. Bounded Context Database Design Diagram
+
 
 ## 4.2.5. Bounded Context: Veterinary
 
@@ -969,12 +1035,11 @@ Representa la revisión de una alerta generada por monitoreo.
 | VeterinaryNotificationService     | External Service              | -                                | Notificaciones al veterinario                    |
 
 
-#### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
-#### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
-##### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams
-##### 4.2.X.6.2. Bounded Context Database Design Diagram
+#### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
 
-<br>
+#### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
+##### 4.2.4.5.1. Bounded Context Domain Layer Class Diagrams
+##### 4.2.4.5.2. Bounded Context Database Design Diagram
 
 # Capítulo V: Solution UI/UX Design
 
