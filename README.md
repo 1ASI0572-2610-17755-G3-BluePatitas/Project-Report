@@ -369,6 +369,36 @@ Asimismo, se identificaron los deliverables como las soluciones tecnológicas de
 
 ## 3.3. Product Backlog
 
+| # Orden | User Story Id | Título | Descripción | Story Points |
+| :------ | :------------ | :----- | :---------- | :----------- |
+| 1 | US07 | Visualización de cámara en tiempo real | Como Administrador de Refugios, quiero ver la cámara del área del animal en tiempo real para supervisar su comportamiento y ubicación. | 5 |
+| 2 | US01 | Control de movimiento en refugios | Como Administrador de Refugios, quiero sensores de movimiento para detectar si un animal intenta escapar del área designada, para garantizar su seguridad. | 5 |
+| 3 | US08 | Alerta por pérdida de rango visual | Como Administrador de Refugios, quiero recibir una alerta si el animal deja de estar dentro del rango visual de la cámara para verificar su seguridad. | 5 |
+| 4 | US09 | Configuración de geocerca | Como Administrador de Refugios, quiero configurar una geocerca para delimitar el área segura del animal dentro del refugio. | 3 |
+| 5 | US10 | Alerta por salida de geocerca | Como Administrador de Refugios, quiero recibir una alerta cuando el GPS detecte que un animal salió de la geocerca para actuar rápidamente. | 5 |
+| 6 | US24 | Visualización de ubicación del animal en mapa | Como Administrador de Refugios, quiero visualizar la ubicación aproximada del animal en un mapa para responder ante posibles escapes. | 3 |
+| 7 | US14 | Dashboard de alertas del refugio | Como Administrador de Refugios, quiero visualizar un panel con las alertas activas para priorizar la atención de incidentes. | 3 |
+| 8 | US02 | Monitoreo de temperatura ambiental | Como Administrador de Refugios, quiero monitorear la temperatura del ambiente en tiempo real para evitar que los animales se sofoquen. | 5 |
+| 9 | US06 | Monitoreo de humedad ambiental | Como Administrador de Refugios, quiero monitorear la humedad del ambiente en tiempo real para mantener condiciones adecuadas para los animales. | 3 |
+| 10 | US21 | Configuración de rangos ambientales seguros | Como Administrador de Refugios, quiero configurar rangos seguros de temperatura y humedad para recibir alertas cuando el ambiente no sea adecuado. | 3 |
+| 11 | US15 | Estado de conexión de dispositivos | Como Administrador de Refugios, quiero visualizar el estado de conexión de los dispositivos IoT para identificar fallas rápidamente. | 3 |
+| 12 | US11 | Programación de alimentación semanal | Como Veterinario, quiero programar la alimentación semanal de cada animal para asegurar que reciba la ración indicada. | 3 |
+| 13 | US12 | Ejecución automática de alimentación | Como Administrador de Refugios, quiero que el dispensador entregue alimento según la programación definida para reducir tareas manuales. | 5 |
+| 14 | US13 | Registro de eventos de alimentación | Como Veterinario, quiero revisar los eventos de dispensación de comida para verificar el cumplimiento de la dieta indicada. | 3 |
+| 15 | US25 | Alerta por alimentación no realizada | Como Veterinario, quiero recibir una alerta cuando no se realice una alimentación programada para evaluar si el animal requiere seguimiento. | 3 |
+| 16 | US03 | Control de alimentación con sensores de peso | Como Administrador de Refugios, quiero monitorear la cantidad de alimento consumido por cada animal utilizando sensores de peso en los comederos. | 5 |
+| 17 | US22 | Control manual del dispensador | Como Administrador de Refugios, quiero activar manualmente el dispensador de comida para alimentar a un animal cuando sea necesario. | 3 |
+| 18 | US23 | Sincronización de eventos ante pérdida de conexión | Como Administrador de Refugios, quiero que los eventos IoT se sincronicen cuando vuelva la conexión para no perder información importante. | 8 |
+| 19 | US16 | Historial ambiental del animal | Como Veterinario, quiero revisar el historial de temperatura y humedad del ambiente para evaluar posibles riesgos en el bienestar del animal. | 3 |
+| 20 | US19 | Consulta de perfil del animal | Como Veterinario, quiero acceder al perfil de cada animal para revisar su información básica, dieta y eventos recientes. | 2 |
+| 21 | US17 | Registro de observaciones veterinarias | Como Veterinario, quiero registrar observaciones sobre el estado del animal para mantener un seguimiento básico de su bienestar. | 2 |
+| 22 | US26 | Registro de recomendaciones veterinarias | Como Veterinario, quiero registrar recomendaciones de cuidado para que el refugio pueda aplicarlas correctamente. | 2 |
+| 23 | US20 | Reporte básico de bienestar | Como Veterinario, quiero generar un reporte básico del animal para revisar su alimentación, ambiente y alertas recientes. | 3 |
+| 24 | US27 | Reporte de eventos críticos del animal | Como Veterinario, quiero generar un reporte de eventos críticos del animal para revisar alertas, alimentación y condiciones ambientales relevantes. | 5 |
+| 25 | US18 | Priorización de alertas veterinarias | Como Veterinario, quiero que las alertas críticas se destaquen para atender primero los casos más urgentes. | 3 |
+| 26 | US04 | Notificaciones de emergencia veterinaria | Como veterinario, quiero recibir notificaciones automáticas cuando un animal requiere atención urgente, para poder actuar rápidamente. | 5 |
+| 27 | US05 | Monitoreo de signos vitales en tiempo real | Como veterinario, quiero acceder a datos de salud en tiempo real de los animales, para tomar decisiones informadas durante la consulta. | 8 |
+
 <br>
 
 # Capítulo IV: Solution Software Design
