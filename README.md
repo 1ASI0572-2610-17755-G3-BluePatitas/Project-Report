@@ -1,4 +1,4 @@
-# <center>Project Report</center>
+﻿# <center>Project Report</center>
 
 <p align="center">
     <strong>Universidad Peruana de Ciencias Aplicadas</strong><br>
@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-    <strong>Startup: </strong><br>
+    <strong>Startup: BluePatitas </strong><br>
     <strong>Producto: </strong>
 </p>
 
@@ -64,6 +64,20 @@
         <td>11/04/2026</td>
         <td>María Hernández</td>
         <td>Creación del reporte</td>
+    </tr>
+    <tr>
+      <td>0.1</td>
+      <td>23/04/2026</td>
+      <td>Carlos Gonzales</td>
+      <td>Actualización del Capítulo I: descripción de la startup, solution profile, antecedentes y problemática, Lean UX Process, Student Outcome, bibliografía y segmentos objetivo.</td>
+    
+  </tr>
+
+  <tr>
+        <td>0.2</td>
+        <td>23/04/2026</td>
+        <td>Ronald Peralta</td>
+        <td>Mejora del Capítulo I: descripción de la startup, solution profile, antecedentes y problemática, segmento objetivo, User Task Matrix, User Journey Mapping, Mapa de Empatía, Tactical-Level Domain-Driven Design, Diagramas de clases de dominio y diagramas entidad-relación</td>
     </tr>
 </table>
 
@@ -179,37 +193,80 @@ Link del repositorio del reporte:
 
 # Student Outcome
 
+
+<table align="center">
+  <tr>
+    <th>Criterio específico</th>
+    <th>Acciones realizadas</th>
+    <th>Conclusiones</th>
+  </tr>
+  <tr>
+    <td>Trabaja en equipo para proporcionar liderazgo en forma conjunta.</td>
+    <td>
+      <p><strong>Giancarlo Santiago Castañeda Guimas</strong><br>AV1: A lo largo del diseño y conceptualización de BluePatitas, el equipo demostró un liderazgo distribuido y complementario. Durante las fases de investigación (Antecedentes y Problemática) y el Análisis Competitivo, nos dividimos el estudio de soluciones existentes en el mercado (como WUF o Petfinder) para luego converger en sesiones de debate. A través de este análisis conjunto, tomamos la decisión estratégica y de negocio de pivotar nuestra solución hacia un modelo SaaS B2B puramente enfocado en la automatización IoT. Asimismo, durante las dinámicas técnicas de diseño, como la sesión de EventStorming, el liderazgo fue rotativo: distintos miembros del equipo tomaron la iniciativa para guiar la identificación de eventos de dominio, comandos y sistemas externos (sensores, GPS, dispensadores), asegurando que tanto las perspectivas de hardware como las de desarrollo de software guiaran la definición de nuestros Bounded Contexts finales. </p>
+      <p><strong>Luciana Carolina Choquehuanca Nuñez</strong><br>AV1: Participé activamente en el trabajo en equipo asumiendo un rol colaborativo y de apoyo en la organización del proyecto. Contribuí en la construcción de secciones clave como el Impact Mapping, User Personas y el diseño de los Bounded Contexts, aportando ideas en la definición de la arquitectura basada en DDD. Además, participé en la toma de decisiones junto al equipo, proponiendo mejoras y validando alternativas, lo que permitió consolidar una visión compartida del sistema y asegurar un avance coordinado. </p>
+      <p><strong>Carlos Matthew Gonzales Valverde</strong><br>AV1: Soy el team leader del equipo asi que me toco realizar muchas cosas tanto como revision y la correcion del capitulo 1 con las partes que inclui como viene siendo todo el lean ux, tambien ayude con los puntos en el capitulo 4 mas que todo el apartado de bounded context software architecture component level driagrams, me encargue de apoyar a mis compañeros y planificar las ideas antes de poder entregar este avance 1, para asi estar mejor estructurados todos. </p>
+      <p><strong>María Patricia Hernández Uchuya</strong><br>AV1: Asumí el liderazgo en la definición del alcance funcional y la arquitectura visual de BluePatitas. Guié al equipo estructurando el Product Backlog y redactando las historias de usuario y técnicas para cubrir equitativamente las necesidades de administradores, veterinarios y la infraestructura IoT. Con esta base, tomé la iniciativa de modelar la arquitectura mediante los diagramas Landscape, Context y Container del Modelo C4. Estos artefactos facilitaron la toma de decisiones conjuntas, asegurando que todo el equipo comprendiera la interacción entre nuestros usuarios, el sistema principal, los servicios externos y el hardware físico como sensores y cámaras.</p>
+      <p><strong>Ronald Joel Peralta Chipa</strong><br>AV1: Apoyo conitnuo técnico en la definición de la arquitectura de software del proyecto. Lideré el diseño del Tactical-Level Domain-Driven Design (DDD), estructurando los Bounded Contexts clave (IAM, Animals, Monitoring) y definiendo las entidades, servicios y repositorios en cada capa. Además, guié el modelado de los diagramas de clases de dominio y de base de datos, asegurando que el equipo compartiera una visión técnica sólida y que las decisiones arquitectónicas estuvieran perfectamente alineadas con los objetivos del sistema IoT.</p>
+    </td>
+    <td>
+      Como equipo, durante AV1 se evidenció liderazgo compartido en la organización inicial del proyecto, la distribución de responsabilidades y la consolidación progresiva del informe. Cada integrante asumió tareas específicas y contribuyó al avance del documento, permitiendo construir una base común para el desarrollo del proyecto BluePatitas.
+    </td>
+  </tr>
+  <tr>
+    <td>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</td>
+    <td>
+      <p><strong>Giancarlo Santiago Castañeda Guimas</strong><br>AV1: Fomentamos un entorno de trabajo altamente colaborativo e inclusivo mediante el uso de espacios virtuales compartidos (Discord, Miro), donde todas las propuestas técnicas fueron escuchadas y validadas sin sesgos. Establecimos metas claras y planificamos tareas específicas para cada hito del proyecto; por ejemplo, nos organizamos para mapear el Lenguaje Ubicuo y estructurar la arquitectura del sistema utilizando Domain-Driven Design (DDD) y los diagramas del Modelo C4 (Contexto, Contenedores, Componentes y Despliegue). La asignación equitativa de tareas permitió que cada integrante profundizara en áreas específicas (como el modelado de la base de datos para los contextos de Feeding y Veterinary, o el diseño de las interacciones IoT). El cumplimiento de nuestros objetivos se evidencia en la consolidación de un documento arquitectónico robusto, coherente y viable, demostrando nuestra capacidad técnica y organizativa para resolver una problemática real mediante la ingeniería de software. </p>
+      <p><strong>Luciana Carolina Choquehuanca Nuñez</strong><br>AV1: Contribuí a mantener un entorno colaborativo participando de forma constante en la coordinación del equipo y en el cumplimiento de las tareas asignadas. Utilicé herramientas como GitHub para gestionar los avances y apoyar en la organización del contenido, así como Lucidchart para el desarrollo de diagramas. Asimismo, cumplí con los objetivos establecidos en cada etapa del trabajo, asegurando la entrega oportuna de mis aportes y colaborando en la revisión conjunta del documento para garantizar coherencia y calidad en el resultado final. </p>
+      <p><strong>Carlos Matthew Gonzales Valverde</strong><br>AV1: Apoye mucho en el tema de organizar bien las entregas o de como nos dividimos el trabajo aunque tuvimos algunos percances al principio pero como grupo que somos lo solucionamos y aprendemos de ello, entregamos el trabajo a tiempo y sin ni un percance, la comunicacion fue lo mas importante pese a que al principio nos complicamos un poco pero fue mejorando y este es el resultado de ello y tenemos objetivos ya para las siguientes entregas que vienen.  </p>
+      <p><strong>María Patricia Hernández Uchuya</strong><br>AV1: Fomenté un entorno colaborativo traduciendo los debates técnicos del equipo en artefactos claros y accionables. Establecí metas precisas y planifiqué mis tiempos para entregar puntualmente la documentación de requisitos y el diseño arquitectónico del sistema. Al desarrollar los diagramas, utilicé herramientas de modelado como código y compartí los avances continuamente con mis compañeros para validar que la estructura reflejara correctamente nuestros contextos de dominio y la comunicación con el IoT Edge. El cumplimiento de mis objetivos brindó al equipo una hoja de ruta sólida para avanzar coordinadamente en el desarrollo del backend y la integración de dispositivos.</p>
+      <p><strong>Ronald Joel Peralta Chipa</strong><br>AV1: Fomenté un entorno colaborativo conectando el análisis de las necesidades del usuario con la viabilidad técnica del sistema. Cumplí puntualmente con mis metas establecidas al desarrollar los artefactos de UX (User Task Matrix, User Journey Mapping y Mapas de Empatía) y planifiqué mis tareas para entregar la codificación de los diagramas de arquitectura a tiempo. Mantuve una comunicación constante con el equipo para validar los atributos y métodos del sistema, garantizando que mis entregables facilitaran el trabajo de mis compañeros y mantuvieran la coherencia del informe final.</p>
+    </td>
+    <td>
+      Durante AV1, el equipo estableció una estructura inicial de trabajo colaborativo mediante el uso de GitHub y un tablero de tareas, lo que permitió organizar actividades, priorizar entregables y avanzar de forma ordenada en la elaboración del informe. Este proceso contribuyó a construir un entorno de coordinación y planificación alineado con los objetivos del curso.
+    </td>
+  </tr>
+</table>
+
 <br>
 
 # Capítulo I: Introducción
 
 ## 1.1. Startup Profile
 ### 1.1.1. Descripción de la Startup
+
+BluePatitas es una startup orientada al desarrollo de soluciones tecnológicas para mejorar el cuidado y monitoreo de animales en refugios. Surge a partir de la identificación de dificultades operativas frecuentes en estos entornos, tales como la supervisión manual de los animales, la limitada capacidad de respuesta ante incidentes y la falta de visibilidad continua sobre condiciones relevantes para su bienestar.
+
+La propuesta de BluePatitas se enfoca en brindar una solución accesible e innovadora que apoye a administradores de refugios y veterinarios mediante el uso de tecnología IoT y herramientas digitales. De esta manera, la startup busca contribuir a una gestión más eficiente, preventiva y ordenada del cuidado animal, facilitando el seguimiento de eventos relevantes y fortaleciendo la toma de decisiones en contextos donde el tiempo, el personal y los recursos suelen ser limitados.
+
+Como iniciativa de base tecnológica, BluePatitas proyecta integrar dispositivos IoT con productos digitales como aplicaciones web y móviles, permitiendo que la información recolectada se transforme en alertas, registros y soporte operativo útil para el entorno de refugios. Así, la startup plantea una propuesta con potencial de escalabilidad, enfocada en resolver una problemática real mediante una combinación de innovación, accesibilidad y compromiso con el bienestar animal.
 ### 1.1.2. Perfiles de integrantes del equipo
 
 <table align="center" border="1" cellspacing="0" cellpadding="8" style="width: 90%; border-collapse: collapse;">
   <tr>
     <td style="width: 150px; text-align: center;">
-      <img src="" width="150"></img>
+        <img src="img/giancarlo.jpg" style="width: 500px; height: auto; border-radius: 10px;">
     </td>
     <td>
       <p align="center"><strong>Giancarlo Santiago Castañeda Guimas - U202310601</strong></p>
       <p align="justify">
-        ...
+        Estudiante de la carrera de ingeniería de software en la Universidad Peruana de Ciencias Aplicadas cursando el 7mo ciclo. Me considero una persona activa y que siempre busca terminar las cosas bien y de ser posible rápidamente. También me gusta la responsabilidad y el buen ambiente entre mis compañeros de grupo.
       </p>
     </td>
   </tr>
 </table>
 
-<table align="center" border="1" cellspacing="0" cellpadding="8" style="width: 90%; border-collapse: collapse;">
-  <tr>
-    <td style="width: 150px; text-align: center;">
-      <img src="" width="150"></img>
+<table align="center" border="1" cellspacing="0" cellpadding="10" style="width: 90%; border-collapse: collapse;">
+  <tr>    
+    <td style="width: 200px; text-align: center;">
+      <img src="img/lluciana_img.png" style="width: 1000px; height: auto; border-radius: 10px;">
     </td>
     <td>
-      <p align="center"><strong>Luciana Carolina Choquehuanca Nuñez - U202319431</strong></p>
+      <p align="center">
+        <strong>Luciana Carolina Choquehuanca Nuñez - U202319431</strong>
+      </p>    
       <p align="justify">
-        ...
+        Mi nombre es Luciana Carolina, soy estudiante de la carrera de Ingeniería de Software, actualmente cursando el séptimo ciclo, y tengo 20 años. Me considero una persona proactiva, con gran interés en participar en proyectos que impliquen adquirir nuevos conocimientos y seguir aprendiendo constantemente. Me gusta mantener el orden en mi trabajo, por lo que siempre busco entregar resultados que cumplan con los estándares requeridos. Además, disfruto aprender tanto de mis profesores como de mis compañeros, ya que considero que el aprendizaje colaborativo es clave para mi desarrollo profesional.
       </p>
     </td>
   </tr>
@@ -218,12 +275,12 @@ Link del repositorio del reporte:
 <table align="center" border="1" cellspacing="0" cellpadding="8" style="width: 90%; border-collapse: collapse;">
   <tr>
     <td style="width: 150px; text-align: center;">
-      <img src="" width="150"></img>
+      <img src="img/Carlos.png" style="width: 500px; height: auto; border-radius: 10px;">
     </td>
     <td>
       <p align="center"><strong>Carlos Matthew Gonzales Valverde - U202314130</strong></p>
       <p align="justify">
-        ...
+        Mi nombre es Carlos Matthew Gonzales Valverde, soy estudiante de la carrera de Ingenieria de Software, me encuentro cursando el septimo ciclo y tengo 20 años. Me considero una persona amable y activa en el ambito tanto de los proyectos como fuera de ellos, se trabajar bajo presion y apoyo cada vez que pueda a mis compañeros, siempre busco que todo se cumpla a su medida segun las cosas que se requiera para un trabajo. Disfruto aprender ya sea de mis compañeros, siempre estoy dispuesto a aprender cosas nuevas o tambien a enseñarlas ya que me ayuda mucho en mi ambito profesional que me estoy desarrollando.
       </p>
     </td>
   </tr>
@@ -232,12 +289,12 @@ Link del repositorio del reporte:
 <table align="center" border="1" cellspacing="0" cellpadding="8" style="width: 90%; border-collapse: collapse;">
   <tr>
     <td style="width: 150px; text-align: center;">
-      <img src="" width="150"></img>
+      <img src="img/maria-hernandez.jpeg" style="width: 600px; height: auto; border-radius: 10px;"></img>
     </td>
     <td>
       <p align="center"><strong>María Patricia Hernández Uchuya - U202311258</strong></p>
       <p align="justify">
-        Estudio la carrera de Ingeniería de Software, tengo 20 años y actualmente me encuentro cursando el septimo ciclo de dicha carrera. Me considero una persona con responsabilidad, optimismo y honestidad, cualidades que considero fundamentales para una colaboración efectiva en equipo y un buen desarrollo en este proyecto.
+        Estudio la carrera de Ingeniería de Software, tengo 20 años y actualmente me encuentro cursando el séptimo ciclo de dicha carrera. Me considero una persona con responsabilidad, optimismo y honestidad, cualidades que considero fundamentales para una colaboración efectiva en equipo y un buen desarrollo en este proyecto.
       </p>
     </td>
   </tr>
@@ -246,28 +303,132 @@ Link del repositorio del reporte:
 <table align="center" border="1" cellspacing="0" cellpadding="8" style="width: 90%; border-collapse: collapse;">
   <tr>
     <td style="width: 150px; text-align: center;">
-      <img src="" width="150"></img>
+        <img src="img/ronald_perfil.jpg" style="width: 1000px; height: auto; border-radius: 10px;">
     </td>
     <td>
       <p align="center"><strong>Ronald Joel Peralta Chipa - U202224619</strong></p>
       <p align="justify">
-         ...
+         Mi nombre es Ronald, tengo 22 años y soy una persona comprometida con el orden, con un estilo de liderazgo democrático y una gran capacidad para escuchar y comprender. Disfruto crecer en equipo y aprender constantemente de los demás. Además, tengo interés en la cultura DevSecOps y la gestión de proyectos, lo que me permite tener un enfoque integral orientado a la seguridad, organización y mejora continua.
       </p>
     </td>
   </tr>
 </table>
 
 ## 1.2. Solution Profile
-### 1.2.1 Antecedentes y problemática
+
+BluePatitas es una propuesta de solución IoT orientada al monitoreo y cuidado de animales en refugios, desarrollada en el contexto del curso Desarrollo de Soluciones IoT. El proyecto plantea integrar una aplicación web con dispositivos de campo que permitan obtener información relevante del entorno y de eventos operativos, con el fin de fortalecer la supervisión diaria y apoyar la toma de decisiones de administradores de refugios y veterinarios.
+
+El MVP definido para el proyecto se concentra en cuatro componentes de alcance realista: una cámara para monitoreo visual del animal dentro de una zona delimitada, un dispositivo GPS para localización aproximada y geocerca, un sensor de temperatura y humedad para control ambiental, y un dispensador de comida para automatizar la alimentación según una programación semanal prescrita por el veterinario. Esta selección responde a restricciones de presupuesto y prioriza funciones con impacto directo en la seguridad, seguimiento y cuidado cotidiano dentro del refugio.
+
+En ese sentido, BluePatitas no busca reemplazar la observación profesional ni emitir diagnósticos veterinarios automatizados, sino proporcionar soporte tecnológico para mejorar la visibilidad remota, la capacidad de respuesta ante alertas y la trazabilidad de eventos relevantes, especialmente aquellos vinculados con escapes, condiciones ambientales y alimentación programada.
+
+| **Misión** | **Visión** | **Valores** |
+|------------|------------|-------------|
+| Nuestra misión es contribuir al bienestar de los animales en refugios mediante el uso de tecnologías IoT que apoyen el monitoreo, el control ambiental y la alimentación programada, fortaleciendo la gestión diaria de administradores y veterinarios. | Aspiramos a que los refugios incorporen soluciones tecnológicas accesibles y útiles para mejorar el cuidado, la supervisión y la capacidad de respuesta ante eventos que afecten la seguridad y bienestar de los animales. | Responsabilidad<br>Colaboración<br>Innovación |
+
+### 1.2.1. Antecedentes y problemática
+
+El cuidado de animales en refugios representa un reto operativo y social relevante en el contexto peruano, especialmente cuando la cantidad de animales supera la capacidad del personal disponible para supervisarlos de manera continua. En el ámbito nacional, investigaciones académicas del repositorio de la Pontificia Universidad Católica del Perú han señalado vacíos y limitaciones en la regulación y comprensión del bienestar animal en el país, lo que evidencia la necesidad de fortalecer no solo el marco normativo, sino también las prácticas e instrumentos de cuidado y seguimiento en entornos de atención animal (Valdelomar Martínez, 2024).
+
+#### What?
+
+La problemática principal radica en la limitada capacidad de los refugios para monitorear, de forma oportuna y sistemática, eventos críticos del cuidado diario. Entre estos se encuentran los intentos de escape o salidas del área permitida, la pérdida de visibilidad del animal dentro de la zona observable, las variaciones de temperatura y humedad que puedan afectar su bienestar y la falta de trazabilidad sobre la alimentación programada. La ausencia de una solución integrada reduce la capacidad de reacción del personal y dificulta la coordinación con los veterinarios responsables.
+
+#### When?
+
+El problema se manifiesta durante toda la permanencia del animal en el refugio, pero se vuelve más crítico en horarios de menor supervisión, durante jornadas con alta carga operativa o cuando un mismo cuidador debe atender a varios animales de manera simultánea. En esos momentos, la detección tardía de un escape, de una condición ambiental fuera de rango o de una falla en la rutina de alimentación puede comprometer el cuidado adecuado.
+
+#### Where?
+
+El problema se localiza principalmente en los refugios y albergues temporales, donde la infraestructura, la distribución de espacios y la disponibilidad de personal limitan la supervisión constante. No obstante, también se refleja en el entorno digital, ya que los administradores de refugios y veterinarios no siempre cuentan con una plataforma centralizada que les permita revisar alertas, condiciones ambientales, ubicación aproximada y eventos de dispensación de manera remota.
+
+#### Who?
+
+Esta situación afecta directamente a dos grupos principales:
+
+1. **Administradores de refugios:** Responsables de coordinar el cuidado diario, supervisar instalaciones y responder ante incidentes operativos relacionados con seguridad, ambiente y alimentación.
+2. **Veterinarios:** Profesionales que requieren información oportuna sobre condiciones del entorno y cumplimiento de la dieta prescrita para apoyar el seguimiento del bienestar animal.
+
+#### Why?
+
+La problemática persiste por una combinación de recursos limitados, infraestructura variable y procesos altamente manuales. Desde una perspectiva técnica, la falta de integración entre monitoreo visual, geocerca, control ambiental y trazabilidad de alimentación mantiene un modelo de supervisión reactivo, en el que el personal actúa cuando el incidente ya ocurrió o cuando la verificación presencial lo hace evidente. Este escenario resulta consistente con los vacíos y debilidades identificados en trabajos académicos sobre bienestar animal y regulación en el Perú (Valdelomar Martínez, 2024).
+
+#### How?
+
+Los actores enfrentan este escenario a través de actividades presenciales de observación y control que consumen tiempo y no siempre ofrecen visibilidad continua. La ausencia de alertas automatizadas y de registros consolidados obliga a depender de revisiones manuales para confirmar si el animal permanece en el área esperada, si el ambiente es adecuado o si la alimentación fue dispensada conforme a lo programado.
+
+BluePatitas propone mejorar esta dinámica mediante una solución IoT que combine una cámara para monitoreo visual, un GPS con geocerca, un sensor de temperatura y humedad y un dispensador automático con registro de eventos. Con ello, administradores de refugios y veterinarios pueden acceder a información relevante de forma remota y responder con mayor rapidez ante situaciones que requieren intervención.
+
+#### How Much?
+
+La magnitud del problema también puede observarse desde una dimensión cuantitativa. Un reporte periodístico de *El Comercio*, basado en estimaciones de especialistas y organizaciones de protección animal, indicó que en el Perú habría más de 6 millones de perros y gatos en situación de abandono, y que alrededor de 4 millones se encontrarían en Lima. Aunque estas cifras no provienen de un registro oficial unificado, permiten dimensionar la escala del problema que enfrentan los refugios y redes de rescate (El Comercio, 2023).
+
+Como referencia internacional complementaria, la Fundación Affinity reportó que en 2023 se recogieron más de 286,000 perros y gatos en refugios y protectoras. Si bien esta cifra corresponde al contexto español, sirve para evidenciar que la sobrecarga de los sistemas de atención y la necesidad de mecanismos más eficientes de monitoreo, control y respuesta constituyen un problema estructural en el ámbito del bienestar animal (Fundación Affinity, 2024).
+
+![HowMuch](img/HowMuch.PNG)
+
 ### 1.2.2 Lean UX Process
 #### 1.2.2.1. Lean UX Problem Statements
+Los refugios de animales enfrentan limitaciones operativas para supervisar de forma continua el estado y la permanencia segura de los animales bajo su cuidado. En muchos casos, el monitoreo sigue dependiendo de rondas manuales, observación presencial y registros dispersos, lo que dificulta detectar a tiempo intentos de escape, cambios inusuales en el comportamiento dentro del área observable, condiciones ambientales inadecuadas y el cumplimiento de rutinas de alimentación.
+
+Esta situación genera respuesta tardía del personal ante incidentes críticos, baja visibilidad remota sobre lo que ocurre en el refugio y escasa trazabilidad de eventos relevantes para la gestión diaria. Para administradores de refugios y veterinarios, estas brechas reducen la capacidad de tomar decisiones oportunas y de mantener condiciones de cuidado consistentes, especialmente cuando los recursos humanos y el tiempo disponible son limitados.
+
+BluePatitas plantea abordar este problema mediante un MVP IoT distribuido compuesto por una cámara para monitoreo visual y apoyo a alertas, un dispositivo GPS para localización aproximada y geocerca, un sensor de temperatura y humedad para monitoreo ambiental, y un dispensador de comida para automatizar la alimentación según una dieta semanal prescrita por el veterinario y registrar cada evento de dispensación. De esta manera, la solución busca mejorar el monitoreo, el control operativo y la capacidad de respuesta del refugio sin reemplazar el criterio del personal responsable.
+
+En ese contexto, surge la siguiente pregunta problema: ¿Cómo mejorar el monitoreo, control y capacidad de respuesta de los refugios ante escapes, condiciones ambientales no seguras y eventos de alimentación, mediante una solución IoT accesible que permita supervisión remota y trazabilidad operativa?
 #### 1.2.2.2. Lean UX Assumptions
+**Assumptions Worksheet**
+
+- Los administradores de refugios necesitan visibilidad remota del estado de los animales y del entorno para complementar la supervisión presencial.
+- Los veterinarios requieren información básica y oportuna sobre condiciones ambientales y cumplimiento de alimentación para apoyar el seguimiento del bienestar animal.
+- Los refugios tienen restricciones de presupuesto, por lo que priorizan un conjunto reducido de dispositivos con valor operativo claro.
+- La conectividad en refugios puede ser variable, por lo que el sistema debe tolerar interrupciones parciales y registrar eventos relevantes cuando sea posible.
+- El mantenimiento de dispositivos debe ser simple, debido a que el personal disponible suele ser limitado y no necesariamente especializado en tecnología.
+- Las alertas son útiles solo si se enfocan en eventos accionables, como salida de geocerca, pérdida del rango visual de la cámara, condiciones ambientales fuera de rango y ejecución o ausencia de dispensación programada.
+
+**Business Outcomes**
+
+- Mejorar la capacidad operativa del refugio para supervisar animales de forma continua sin depender exclusivamente de rondas manuales.
+- Reducir incidentes asociados a escapes o detección tardía de situaciones anormales dentro del entorno monitoreado.
+- Fortalecer la trazabilidad de eventos clave, especialmente en alimentación programada y alertas relevantes para la gestión diaria.
+- Validar la viabilidad de una solución IoT de alcance realista y costo controlado para un contexto de refugios.
+
+**User Outcomes**
+
+- Los administradores de refugios podrán monitorear remotamente el área observable del animal y recibir alertas ante eventos que requieran intervención.
+- Los veterinarios podrán revisar información ambiental y registros de alimentación como soporte para el seguimiento del cuidado indicado.
+- El personal del refugio podrá responder con mayor rapidez ante salidas del área permitida o cambios del entorno que afecten el bienestar del animal.
+- Los responsables del cuidado tendrán un historial básico de eventos de dispensación que facilite el control de la dieta semanal prescrita.
+
+**Features**
+
+- Monitoreo visual del animal dentro de una zona delimitada mediante cámara.
+- Detección de salidas del rango visual observable y generación de alertas asociadas.
+- Localización aproximada mediante GPS y configuración de geocerca para identificar salidas del área permitida.
+- Monitoreo de temperatura y humedad dentro del refugio, con alertas cuando los valores salgan del rango seguro definido.
+- Dispensación automatizada de comida según una programación semanal indicada por el veterinario.
+- Registro de eventos de dispensación para asegurar trazabilidad operativa.
+- Visualización centralizada de alertas y eventos relevantes para administradores de refugios y veterinarios.
 #### 1.2.2.3. Lean UX Hypothesis Statements
+**Business Hypothesis**
+
+Creemos que, si BluePatitas integra monitoreo visual, geocerca, monitoreo ambiental y alimentación automatizada con registro de eventos, los refugios podrán reducir la ocurrencia o severidad de incidentes asociados a escapes, mejorar la supervisión remota y contar con evidencia básica para el seguimiento operativo. Sabremos que esta hipótesis es válida si, durante la evaluación inicial del MVP, se observa una disminución razonable de incidentes no detectados a tiempo, una mejora en los tiempos de respuesta del personal ante alertas y un mayor cumplimiento de la alimentación programada.
+
+**User Hypothesis**
+
+Creemos que los administradores de refugios y los veterinarios usarán BluePatitas si la solución les permite identificar con mayor rapidez cuando un animal sale del área permitida o deja de estar dentro del rango visual esperado, verificar si la temperatura y humedad del entorno permanecen dentro de límites seguros y revisar el registro de dispensación de comida. Sabremos que esta hipótesis es válida si los usuarios reportan una mejor capacidad de monitoreo remoto, demuestran uso recurrente de alertas y registros para tomar decisiones operativas, y perciben que el sistema facilita el control diario sin agregar una carga excesiva de mantenimiento.
 #### 1.2.2.4. Lean UX Canvas
+El Lean UX Canvas sintetiza el problema principal del proyecto, los usuarios involucrados, las hipótesis de valor, los beneficios esperados y la dirección inicial de la solución BluePatitas para el contexto de refugios. Este artefacto sirve como soporte visual del enfoque de análisis adoptado en la etapa AV1.
 
-## 1.3. Segmentos objetivo
+![Lean UX Canvas](img/lean-ux-canvas-2.png)
 
-<br>
+## 1.3 Segmentos objetivo
+
+| Segmento | Descripción | Características |
+|----------|-------------|-----------------|
+| **Segmento 1: Administradores de refugios** | Este segmento es prioritario porque asume la gestión operativa del cuidado diario de los animales en el refugio. Necesita herramientas que faciliten el monitoreo remoto, la recepción de alertas ante posibles escapes o eventos anormales, la supervisión de condiciones ambientales y la verificación del cumplimiento de la alimentación programada. | - **Edades:** 20 a 50 años <br> - **Ubicación:** Perú <br> - **Motivaciones:** Mejorar el cuidado de los animales y optimizar la capacidad de respuesta del refugio. <br> - **Intereses:** Bienestar animal, gestión operativa, supervisión remota y uso práctico de tecnología. <br> - **Comportamiento:** Valoran soluciones accesibles que reduzcan tareas manuales y centralicen información relevante para la toma de decisiones. |
+| **Segmento 2: Veterinarios** | Este segmento comprende a los profesionales que brindan seguimiento clínico y recomendaciones de cuidado para animales alojados en refugios. Requieren acceso a información confiable sobre condiciones ambientales, alertas relevantes y cumplimiento de la dieta semanal prescrita, de modo que puedan coordinar mejor con los administradores del refugio. | - **Edades:** 20 a 60 años <br> - **Ubicación:** Perú <br> - **Motivaciones:** Asegurar continuidad en el cuidado indicado y mejorar la coordinación con refugios. <br> - **Intereses:** Bienestar animal, seguimiento de condiciones de cuidado, eficiencia operativa e innovación aplicada. <br> - **Comportamiento:** Utilizan información sintetizada y registros de eventos como apoyo para emitir recomendaciones y priorizar intervenciones. |
+
 
 # Capítulo II: Requirements Elicitation & Analysis
 
@@ -391,6 +552,12 @@ Link del repositorio del reporte:
 
 # Bibliografía
 
+Valdelomar Martínez, D. E. (2024). *Deconstrucción de los conceptos de bienestar animal y sufrimiento innecesario animal en el sistema jurídico peruano* [Tesis de licenciatura, Pontificia Universidad Católica del Perú]. Repositorio Institucional PUCP. https://tesis.pucp.edu.pe/
+
+El Comercio. (2023). *Perros y gatos sin hogar en Lima: ¿Existe un registro de animales en situación de abandono?* https://elcomercio.pe/lima/sucesos/perros-y-gatos-sin-hogar-en-lima-existe-un-registro-de-animales-en-situacion-de-abandono-que-se-sabe-de-la-ley-4-patas-adopcion-responsable-esterilizacion-albergues-rescatistas-noticia/
+
+Fundación Affinity. (2024). *Las cifras del abandono de perros y gatos aún lejos de descender*. https://www.fundacion-affinity.org/es/biblioteca/las-cifras-del-abandono-de-perros-y-gatos-aun-lejos-de-descender
+
 <br>
 
 # Anexos
@@ -398,3 +565,4 @@ Link del Repositorio del Informe:
 Link del Repositorio del Backend: 
 Link del Repositorio del Frontend Aplicación Web: 
 Link del Repositorio del Frontend Aplicación Móvil: 
+
