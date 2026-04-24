@@ -289,7 +289,7 @@ Como iniciativa de base tecnológica, BluePatitas proyecta integrar dispositivos
 <table align="center" border="1" cellspacing="0" cellpadding="8" style="width: 90%; border-collapse: collapse;">
   <tr>
     <td style="width: 150px; text-align: center;">
-      <img src="" width="150"></img>
+      <img src="img/maria-hernandez.jpeg" width="150"></img>
     </td>
     <td>
       <p align="center"><strong>María Patricia Hernández Uchuya - U202311258</strong></p>
