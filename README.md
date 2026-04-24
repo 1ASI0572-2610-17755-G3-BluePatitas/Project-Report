@@ -275,7 +275,7 @@ Como iniciativa de base tecnológica, BluePatitas proyecta integrar dispositivos
 <table align="center" border="1" cellspacing="0" cellpadding="8" style="width: 90%; border-collapse: collapse;">
   <tr>
     <td style="width: 150px; text-align: center;">
-      <img src="img/Carlos.png" width="150"></img>
+      <img src="img/Carlos.png" style="width: 500px; height: auto; border-radius: 10px;">
     </td>
     <td>
       <p align="center"><strong>Carlos Matthew Gonzales Valverde - U202314130</strong></p>
