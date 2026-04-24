@@ -314,56 +314,59 @@ A continuación se presenta una tabla evaluando a estos competidores para la sol
 
 ### 2.1.2. Estrategias y tácticas frente a competidores 
 
-#### **Estrategia 1: Diferenciación a través del monitoreo inteligente y transparencia de datos**
+#### **Estrategia 1: Liderazgo tecnológico mediante la automatización operativa y telemetría**
 
- **Táctica 1.1: Implementación de un Dashboard IoT de monitoreo en tiempo real**
+A diferencia de competidores como WUF o Petfinder que se centran en la visibilidad y adopción, BluePatitas se diferencia por intervenir directamente en la operación física del refugio.
 
--   Desarrollar una interfaz dentro de la plataforma web que permita a los administradores de refugios visualizar indicadores biométricos (temperatura, peso) y ambientales (humedad, calor) capturados por los sensores, facilitando una gestión basada en datos técnicos.
+**Táctica 1.1: Implementación de un Dashboard IoT de gestión integral**
+
+-   Desarrollar una interfaz centralizada donde el administrador pueda monitorear en tiempo real los cuatro pilares del sistema: ubicación (GPS), seguridad perimetral (Cámaras), condiciones ambientales (Sensores Temp/Hum) y estado de alimentación (Dispensadores).
     
--   Configurar un sistema de alertas críticas automáticas que notifique instantáneamente vía web o móvil ante intentos de escape (sensores de movimiento) o irregularidades en la alimentación (sensores de peso en bebederos).
-    
-
- **Táctica 1.2: Historial clínico digital e inteligente**
-
--   Crear una base de datos centralizada que registre automáticamente la información recolectada por los identificadores y cámaras térmicas, proporcionando a los veterinarios un historial detallado del estado de salud del animal desde su ingreso.
-    
--   Ofrecer a los donantes y futuros adoptantes un reporte de bienestar generado por el sistema, garantizando que el animal ha vivido en condiciones óptimas de temperatura y nutrición, lo que eleva el valor de confianza frente a la competencia.
+-   Configurar un motor de reglas que dispare alertas críticas automáticas al móvil del personal ante anomalías térmicas en los hábitats o detecciones de movimiento en zonas de riesgo de escape, permitiendo una reacción inmediata basada en datos.
     
 
+**Táctica 1.2: Historial clínico inteligente con telemetría vinculada**
+
+-   Integrar los datos de salud capturados por los sensores directamente en el módulo de _Veterinary_, permitiendo que el médico veterinario vea gráficas de actividad y comportamiento del animal antes de una consulta, facilitando diagnósticos preventivos.
+    
+-   Generar "Certificados de Bienestar Digital" basados en los logs de alimentación y clima del sistema, proporcionando una garantía técnica de cuidado a las organizaciones que financian los refugios o a los futuros adoptantes.
+    
 ----------
 
-#### **Estrategia 2: Fortalecimiento de la comunidad mediante el "Padrinazgo Tecnológico"**
+#### **Estrategia 2: Optimización de recursos y reducción de costos operativos**
 
- **Táctica 2.1: Campañas de educación sobre Bienestar Animal 4.0**
+_Nuestra estrategia busca profesionalizar los refugios mediante la eficiencia, reduciendo el desperdicio de insumos y el error humano._
 
--   Lanzar campañas digitales para concienciar sobre cómo la tecnología IoT reduce las tasas de mortalidad en refugios, educando a la comunidad sobre la importancia de pasar de un cuidado manual a uno automatizado y preventivo.
+**Táctica 2.1: Gestión inteligente de nutrición e inventarios**
+
+-   Utilizar los dispensadores automáticos para ejecutar raciones precisas según la prescripción del veterinario, evitando el sobrecosto por desperdicio de alimento y asegurando la salud nutricional del animal sin requerir personal dedicado exclusivamente a esta tarea.
     
--   Colaborar con estudiantes y facultades de ingeniería para promover el desarrollo de soluciones tecnológicas en favor de los animales, posicionando a BluePatitas como un referente de innovación social en el Perú.
-    
-
-**Táctica 2.2: Programa de transparencia para donantes**
-
--   Implementar un sistema donde cada donación económica se vea reflejada en el sostenimiento de los sensores y dispositivos IoT del refugio, permitiendo al usuario sentir que su aporte tiene un impacto directo y medible en la seguridad del animal.
-    
--   Organizar "Open Days" tecnológicos en los refugios aliados para que la comunidad vea en funcionamiento los bebederos inteligentes y sistemas de control ambiental, fortaleciendo el vínculo emocional y la credibilidad de la startup.
+-   Implementar alertas de bajo nivel de inventario en las tolvas de los dispensadores, permitiendo que la administración del refugio planifique las compras de suministros de manera anticipada y eficiente.
     
 
+**Táctica 2.2: Control ambiental automatizado para la salud preventiva**
+
+-   Vincular los sensores ambientales con actuadores físicos (ventiladores/calefacción) para mantener los hábitats en rangos óptimos de temperatura automáticamente, reduciendo la incidencia de enfermedades respiratorias y, por ende, disminuyendo los gastos en tratamientos médicos de emergencia.
+    
 ----------
 
-####  **Estrategia 3: Alianzas estratégicas para la sostenibilidad operativa**
+#### **Estrategia 3: Alianzas estratégicas para la sostenibilidad del ecosistema B2B**
 
- **Táctica 3.1: Acuerdos exclusivos de soporte técnico con refugios y clínicas**
+_Posicionar a BluePatitas como el socio tecnológico indispensable para las entidades de bienestar animal y clínicas veterinarias._
 
--   Establecer convenios con refugios estratégicos en zonas críticas de Lima (como Lima Norte o Este) para ser su proveedor exclusivo de tecnología de monitoreo, asegurando una red de albergues "Smart" que superen la oferta de gestión básica de otras plataformas.
+**Táctica 3.1: Red de Refugios "Smart" y soporte técnico especializado**
+
+-   Establecer convenios con refugios estratégicos en Lima para convertirlos en centros de referencia tecnológica, demostrando mediante métricas reales cómo el uso de BluePatitas reduce las tasas de escapes y mejora los tiempos de recuperación médica.
     
--   Integrar el acceso de las cámaras térmicas y datos de salud con clínicas veterinarias aliadas para permitir una telemetría básica antes de que el animal sea trasladado para atención presencial, optimizando tiempos y recursos.
+-   Ofrecer servicios de soporte técnico y mantenimiento preventivo del hardware IoT como parte del modelo de suscripción, asegurando la continuidad operativa del refugio y fidelizando al cliente B2B.
     
 
- **Táctica 3.2: Escalabilidad y expansión basada en datos de impacto**
+**Táctica 3.2: Escalabilidad basada en métricas de impacto**
 
--   Iniciar la fase piloto en los refugios con mayor índice de hacinamiento en Lima Metropolitana, recolectar métricas de éxito (reducción de escapes, mejora en tiempos de respuesta médica) y utilizar estos datos para atraer inversión y expandirse a provincias.
+-   Recolectar y analizar los datos agregados de telemetría para generar reportes de impacto sectorial (ej. reducción de mortalidad por control climático), utilizando estos resultados para atraer alianzas con grandes marcas de alimento o instituciones gubernamentales interesadas en la estandarización de refugios.
     
--   Evaluar la adaptación del hardware IoT para su implementación en hogares de acogida temporal, permitiendo que la red de voluntarios de BluePatitas tenga el mismo nivel de control y seguridad que un refugio profesional.
+-   Expandir la solución hacia clínicas veterinarias con áreas de hospitalización, adaptando los sensores y el software para el monitoreo de pacientes críticos en entornos médicos profesionales.
+
 
 
 ## 2.2. Entrevistas
