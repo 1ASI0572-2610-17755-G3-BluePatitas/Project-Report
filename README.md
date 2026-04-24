@@ -11,7 +11,7 @@
 
 <p align="center">
     <strong>Startup: BluePatitas </strong><br>
-    <strong>Producto: </strong>
+    <strong>Producto: BluePatitas </strong>
 </p>
 
 <div style="text-align:center;">
@@ -84,7 +84,7 @@
 <br>
 
 # Project Report Collaboration Insights
-Link del repositorio del reporte: 
+Link del repositorio del reporte: [https://github.com/1ASI0572-2610-17755-G3-BluePatitas/Project-Report](https://github.com/1ASI0572-2610-17755-G3-BluePatitas/Project-Report)
 
 <br>
 
@@ -230,6 +230,12 @@ Link del repositorio del reporte:
 
 <br>
 
+## Team Collaboration
+
+### AV1
+
+![CollaborationAV1](img/CollaborationAV1.PNG)
+
 # Capítulo I: Introducción
 
 ## 1.1. Startup Profile
@@ -313,6 +319,7 @@ Como iniciativa de base tecnológica, BluePatitas proyecta integrar dispositivos
     </td>
   </tr>
 </table>
+
 
 ## 1.2. Solution Profile
 
