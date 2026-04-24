@@ -196,7 +196,7 @@ Link del repositorio del reporte:
     <td>Trabaja en equipo para proporcionar liderazgo en forma conjunta.</td>
     <td>
       <p><strong>Giancarlo Santiago Castañeda Guimas</strong><br>AV1: </p>
-      <p><strong>Luciana Carolina Choquehuanca Nuñez</strong><br>AV1: </p>
+      <p><strong>Luciana Carolina Choquehuanca Nuñez</strong><br>AV1: Participé activamente en el trabajo en equipo asumiendo un rol colaborativo y de apoyo en la organización del proyecto. Contribuí en la construcción de secciones clave como el Impact Mapping, User Personas y el diseño de los Bounded Contexts, aportando ideas en la definición de la arquitectura basada en DDD. Además, participé en la toma de decisiones junto al equipo, proponiendo mejoras y validando alternativas, lo que permitió consolidar una visión compartida del sistema y asegurar un avance coordinado. </p>
       <p><strong>Carlos Matthew Gonzales Valverde</strong><br>AV1: </p>
       <p><strong>María Patricia Hernández Uchuya</strong><br>AV1: </p>
       <p><strong>Ronald Joel Peralta Chipa</strong><br>AV1: </p>
@@ -209,7 +209,7 @@ Link del repositorio del reporte:
     <td>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</td>
     <td>
       <p><strong>Giancarlo Santiago Castañeda Guimas</strong><br>AV1: </p>
-      <p><strong>Luciana Carolina Choquehuanca Nuñez</strong><br>AV1: </p>
+      <p><strong>Luciana Carolina Choquehuanca Nuñez</strong><br>AV1: Contribuí a mantener un entorno colaborativo participando de forma constante en la coordinación del equipo y en el cumplimiento de las tareas asignadas. Utilicé herramientas como GitHub para gestionar los avances y apoyar en la organización del contenido, así como Lucidchart para el desarrollo de diagramas. Asimismo, cumplí con los objetivos establecidos en cada etapa del trabajo, asegurando la entrega oportuna de mis aportes y colaborando en la revisión conjunta del documento para garantizar coherencia y calidad en el resultado final. </p>
       <p><strong>Carlos Matthew Gonzales Valverde</strong><br>AV1: </p>
       <p><strong>María Patricia Hernández Uchuya</strong><br>AV1: </p>
       <p><strong>Ronald Joel Peralta Chipa</strong><br>AV1: </p>
