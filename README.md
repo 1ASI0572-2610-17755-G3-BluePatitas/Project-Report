@@ -1,54 +1,54 @@
-﻿# <center>Project Report</center>
-
-<p align="center">
-    <strong>Universidad Peruana de Ciencias Aplicadas</strong><br>
+﻿<p align="center">
     <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" width="200"><br>
-    <strong>Ingeniería de Software - 2026-10</strong><br>
-    <strong>Desarrollo de Soluciones IOT - 17755</strong><br>
-    <strong>Profesor: Marco Antonio Leon Baca</strong><br>
-    <br><strong>Informe del Trabajo Final</strong>
+    <strong>Universidad Peruana de Ciencias Aplicadas</strong><br><br><br>
+    <strong>Ingeniería de Software</strong><br>
+    <strong>7mo ciclo, 2026-10</strong><br>
+    <strong>1ASI0572 Desarrollo de Soluciones IoT</strong><br>
+    <strong>NRC: 17755</strong><br>
+    <strong>Profesor: Marco Antonio Leon Baca</strong><br><br><br>
+    <strong>Informe del Trabajo Final</strong><br><br>
 </p>
 
 <p align="center">
-    <strong>Startup: BluePatitas </strong><br>
-    <strong>Producto: BluePatitas </strong>
+    <strong>Startup: BluePatitas</strong><br>
+    <strong>Producto: BluePatitas</strong><br><br>
 </p>
 
-<div style="text-align:center;">
-    <h3 align="center">Team Members:</h3>
-    <table align="center">
+<div align="center">
+    <strong>Relación de integrantes</strong><br><br>
+    <table>
         <tr>
-            <th style="text-align:center;">Member</th>
-            <th style="text-align:center;">Code</th>
+            <th>Code</th>
+            <th>Member</th>        
         </tr>
         <tr>
-            <td>Giancarlo Santiago Castañeda Guimas</td>
             <td>U202310601</td>
+            <td>Castañeda Guimas, Giancarlo Santiago</td>
         </tr>
         <tr>
-            <td>Luciana Carolina Choquehuanca Nuñez</td>
             <td>U202319431</td>
+            <td>Choquehuanca Nuñez, Luciana Carolina</td>
         </tr>
         <tr>
-            <td>Carlos Matthew Gonzales Valverde</td>
             <td>U202314130</td>
+            <td>Gonzales Valverde, Carlos Matthew</td>
         </tr>
         <tr>
-            <td>María Patricia Hernández Uchuya</td>
             <td>U202311258</td>
+            <td>Hernández Uchuya, María Patricia</td>
         </tr>
         <tr>
-            <td>Ronald Joel Peralta Chipa</td>
             <td>U202224619</td>
+            <td>Peralta Chipa, Ronald Joel</td>
         </tr>
     </table>
 </div>
 
-<p align="center">
+<p align="center" style="margin-top: 100px;">
     <strong>Abril, 2026</strong>
 </p>
 
-<br>
+<div style="page-break-after: always;"></div>
 
 # Registro de versiones del Informe
 
@@ -81,12 +81,16 @@
     </tr>
 </table>
 
-<br>
+<div style="page-break-after: always;"></div>
 
 # Project Report Collaboration Insights
 Link del repositorio del reporte: [https://github.com/1ASI0572-2610-17755-G3-BluePatitas/Project-Report](https://github.com/1ASI0572-2610-17755-G3-BluePatitas/Project-Report)
 
-<br>
+### AV1
+
+![CollaborationAV1](img/CollaborationAV1.PNG)
+
+<div style="page-break-after: always;"></div>
 
 # Contenido
 - [Student Outcome](#student-outcome)
@@ -189,10 +193,9 @@ Link del repositorio del reporte: [https://github.com/1ASI0572-2610-17755-G3-Blu
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
 
-<br>
+<div style="page-break-after: always;"></div>
 
 # Student Outcome
-
 
 <table align="center">
   <tr>
@@ -228,13 +231,7 @@ Link del repositorio del reporte: [https://github.com/1ASI0572-2610-17755-G3-Blu
   </tr>
 </table>
 
-<br>
-
-## Team Collaboration
-
-### AV1
-
-![CollaborationAV1](img/CollaborationAV1.PNG)
+<div style="page-break-after: always;"></div>
 
 # Capítulo I: Introducción
 
@@ -246,6 +243,7 @@ BluePatitas es una startup orientada al desarrollo de soluciones tecnológicas p
 La propuesta de BluePatitas se enfoca en brindar una solución accesible e innovadora que apoye a administradores de refugios y veterinarios mediante el uso de tecnología IoT y herramientas digitales. De esta manera, la startup busca contribuir a una gestión más eficiente, preventiva y ordenada del cuidado animal, facilitando el seguimiento de eventos relevantes y fortaleciendo la toma de decisiones en contextos donde el tiempo, el personal y los recursos suelen ser limitados.
 
 Como iniciativa de base tecnológica, BluePatitas proyecta integrar dispositivos IoT con productos digitales como aplicaciones web y móviles, permitiendo que la información recolectada se transforme en alertas, registros y soporte operativo útil para el entorno de refugios. Así, la startup plantea una propuesta con potencial de escalabilidad, enfocada en resolver una problemática real mediante una combinación de innovación, accesibilidad y compromiso con el bienestar animal.
+
 ### 1.1.2. Perfiles de integrantes del equipo
 
 <table align="center" border="1" cellspacing="0" cellpadding="8" style="width: 90%; border-collapse: collapse;">
@@ -264,7 +262,7 @@ Como iniciativa de base tecnológica, BluePatitas proyecta integrar dispositivos
 
 <table align="center" border="1" cellspacing="0" cellpadding="10" style="width: 90%; border-collapse: collapse;">
   <tr>    
-    <td style="width: 200px; text-align: center;">
+    <td style="width: 150px; text-align: center;">
       <img src="img/lluciana_img.png" style="width: 1000px; height: auto; border-radius: 10px;">
     </td>
     <td>
@@ -314,7 +312,7 @@ Como iniciativa de base tecnológica, BluePatitas proyecta integrar dispositivos
     <td>
       <p align="center"><strong>Ronald Joel Peralta Chipa - U202224619</strong></p>
       <p align="justify">
-         Mi nombre es Ronald, tengo 22 años y soy una persona comprometida con el orden, con un estilo de liderazgo democrático y una gran capacidad para escuchar y comprender. Disfruto crecer en equipo y aprender constantemente de los demás. Además, tengo interés en la cultura DevSecOps y la gestión de proyectos, lo que me permite tener un enfoque integral orientado a la seguridad, organización y mejora continua.
+         Mi nombre es Ronald, tengo 22 años y soy estudiante de la carrera de Ingeniería de Software. Me considero una persona comprometida con el orden, con un estilo de liderazgo democrático y una gran capacidad para escuchar y comprender. Disfruto crecer en equipo y aprender constantemente de los demás. Además, tengo interés en la cultura DevSecOps y la gestión de proyectos, lo que me permite tener un enfoque integral orientado a la seguridad, organización y mejora continua.
       </p>
     </td>
   </tr>
@@ -436,6 +434,7 @@ El Lean UX Canvas sintetiza el problema principal del proyecto, los usuarios inv
 | **Segmento 1: Administradores de refugios** | Este segmento es prioritario porque asume la gestión operativa del cuidado diario de los animales en el refugio. Necesita herramientas que faciliten el monitoreo remoto, la recepción de alertas ante posibles escapes o eventos anormales, la supervisión de condiciones ambientales y la verificación del cumplimiento de la alimentación programada. | - **Edades:** 20 a 50 años <br> - **Ubicación:** Perú <br> - **Motivaciones:** Mejorar el cuidado de los animales y optimizar la capacidad de respuesta del refugio. <br> - **Intereses:** Bienestar animal, gestión operativa, supervisión remota y uso práctico de tecnología. <br> - **Comportamiento:** Valoran soluciones accesibles que reduzcan tareas manuales y centralicen información relevante para la toma de decisiones. |
 | **Segmento 2: Veterinarios** | Este segmento comprende a los profesionales que brindan seguimiento clínico y recomendaciones de cuidado para animales alojados en refugios. Requieren acceso a información confiable sobre condiciones ambientales, alertas relevantes y cumplimiento de la dieta semanal prescrita, de modo que puedan coordinar mejor con los administradores del refugio. | - **Edades:** 20 a 60 años <br> - **Ubicación:** Perú <br> - **Motivaciones:** Asegurar continuidad en el cuidado indicado y mejorar la coordinación con refugios. <br> - **Intereses:** Bienestar animal, seguimiento de condiciones de cuidado, eficiencia operativa e innovación aplicada. <br> - **Comportamiento:** Utilizan información sintetizada y registros de eventos como apoyo para emitir recomendaciones y priorizar intervenciones. |
 
+<div style="page-break-after: always;"></div>
 
 # Capítulo II: Requirements Elicitation & Analysis
 
@@ -833,8 +832,6 @@ En este segmento se definió el User Persona **Andrees Caseres**, considerando s
 
 ![User Persona Administrador del refugio](img/userpersona_1.png)
 
-
-
 ### Veterinario
 
 En este segmento se definió el User Persona **Dr. Eva Mudel**, tomando en cuenta su trayectoria profesional, entorno de trabajo y enfoque en la atención médica de animales. Se consideraron sus motivaciones relacionadas con brindar un servicio eficiente y de calidad, así como sus principales frustraciones asociadas a la coordinación de casos, la falta de información oportuna y la gestión de recursos limitados.
@@ -851,7 +848,7 @@ En esta sección se detallan las tareas que realizan los usuarios clave de nuest
 
 Las tareas aquí descritas no dependen exclusivamente del uso del software, ya que representan acciones que los usuarios deben realizar en cualquier proceso de selección, sea manual o automatizado. Para cada tarea, se especifica su frecuencia y nivel de importancia, permitiendo identificar qué funciones son más críticas para cada perfil.
 
-#### 🧑‍💼 User Task Matrix – Administradores de refugios
+#### User Task Matrix – Administradores de refugios
 
 | Tarea                                             | Frecuencia | Importancia |
 |--------------------------------------------------|------------|-------------|
@@ -861,7 +858,7 @@ Las tareas aquí descritas no dependen exclusivamente del uso del software, ya q
 | Confirmar la ubicación exacta del animal mediante el sistema       | A veces     | Media        |
 | Analizar alertas de irregularidades en la ingesta alimentaria    | A menudo    | Alta       |
 
-#### 🙋‍♂️ User Task Matrix – Veterinarios
+#### User Task Matrix – Veterinarios
 
 | Tarea                                          | Frecuencia | Importancia |
 |-----------------------------------------------|------------|-------------|
@@ -962,7 +959,7 @@ Cerca de la medianoche, dimos por concluida la sesión. El equipo logró obtener
 | **Tolva (Hopper)** | Depósito de almacenamiento físico del dispensador IoT donde se guarda el alimento seco para mantener su frescura. |
 | **Alimentación Manual** | Acción remota disparada intencionalmente por el Administrador desde la plataforma para proveer una ración extra o premio. |
 
-<br>
+<div style="page-break-after: always;"></div>
 
 # Capítulo III: Requirements Specification
 
@@ -1086,7 +1083,7 @@ Link Product Backlog en Jira: [https://matthewpro17-17770197508.atlassian.net/ji
 
 Invitación para poder visualizar Jira (entrar a este primero y aceptar la invitación, luego entrar al otro link): [https://id.atlassian.com/invite/p/jira-software?id=rR0gURm_RNOyBBhY-xMvrQ](#)
 
-<br>
+<div style="page-break-after: always;"></div>
 
 # Capítulo IV: Solution Software Design
 
@@ -1280,14 +1277,17 @@ Este enfoque garantiza una arquitectura escalable, mantenible y alineada con los
 
 #### 4.1.3.1. Software Architecture System Landscape Diagram
 El System Landscape Diagram presenta una vista general del ecosistema en el que se ubica BluePatitas. En este diagrama se identifican los usuarios principales, el sistema BluePatitas y los sistemas externos con los que interactúa, como los dispositivos IoT, el servicio de notificaciones push y el servicio de mapas. Su propósito es mostrar, de forma resumida, cómo la solución se relaciona con su entorno general.
+
 ![System Landscape Diagram](img/BluePatitasSystemLandscape.png)
 
 #### 4.1.3.2. Software Architecture Context Level Diagrams
 El Context Diagram muestra a BluePatitas System como el sistema central de la solución. En esta vista se detallan sus relaciones directas con los actores principales, que son los administradores de refugios y veterinarios, así como con los dispositivos IoT y servicios externos necesarios para el monitoreo, las alertas y la ubicación. Este diagrama permite comprender qué funciones cumple el sistema dentro del contexto del refugio.
+
 ![Context Level Diagrams](img/BluePatitasSystemContext.png)
 
 #### 4.1.3.3. Software Architecture Container Level Diagrams
 El Container Diagram descompone internamente el sistema BluePatitas en sus principales componentes de software. En esta vista se representan la aplicación web, la aplicación móvil, el API Gateway, el Backend API, la base de datos, el IoT Edge Gateway, la base de datos local del Edge y las aplicaciones embebidas que interactúan con los dispositivos IoT. Su finalidad es mostrar cómo se organiza técnicamente la solución y cómo fluye la información entre sus componentes.
+
 ![Context Level Diagrams](img/BluePatitasContainerDiagram.png)
 
 #### 4.1.3.4. Software Architecture Deployment Diagrams
@@ -1984,6 +1984,8 @@ El diseño de la base de datos para el _Veterinary Bounded Context_ persiste la 
 
 ![Veterinary Database Diagram](img/BoundedContextDiagrams/Veterinary/VeterinaryDatabaseDiagram.PNG)
 
+<div style="page-break-after: always;"></div>
+
 # Capítulo V: Solution UI/UX Design
 
 ## 5.1. Style Guidelines
@@ -2010,7 +2012,7 @@ El diseño de la base de datos para el _Veterinary Bounded Context_ persiste la 
 ## 5.5. Applications Prototyping
 ## 5.6. IoT Device Design
 
-<br>
+<div style="page-break-after: always;"></div>
 
 # Capítulo VI: Product Implementation, Validation & Deployment
 
@@ -2039,11 +2041,11 @@ El diseño de la base de datos para el _Veterinary Bounded Context_ persiste la 
 
 ## 6.4. Video About-the-Product
 
-<br>
+<div style="page-break-after: always;"></div>
 
 # Conclusiones
-# Conclusiones y recomendaciones
-## Conclusiones
+## Conclusiones y recomendaciones
+### Conclusiones
 
 - El valor real del IoT radica en la automatización operativa (Core Domains): El análisis estratégico demostró que el verdadero diferenciador de BluePatitas no es ser un directorio de mascotas, sino su capacidad para conectar reglas de software (como una dieta médica) con actuadores físicos (dispensadores), reduciendo drásticamente la carga operativa y los costos de los refugios.
 
@@ -2054,11 +2056,11 @@ El diseño de la base de datos para el _Veterinary Bounded Context_ persiste la 
 - La trazabilidad de eventos elimina la ambigüedad en el diseño: Modelar los Domain Message Flows utilizando los comandos y eventos exactos (técnica de post-its) comprobó teóricamente que la información fluye de manera correcta entre módulos, garantizando que ninguna acción física del hardware ocurra sin un disparador de negocio válido.
 
 - Clasificar estratégicamente optimiza los recursos de desarrollo: Al definir IAM como un subdominio genérico y Monitoring como un Core Domain, el equipo tiene una ruta clara: no se debe reinventar la rueda programando logins complejos, sino invertir todo el esfuerzo de ingeniería en el motor de reglas IoT y la telemetría.
-## Video About-the-Team
+### Video About-the-Team
 
 <br>
 
-## Recomendaciones
+### Recomendaciones
 
 - Implementar Edge Computing (Modo Offline): Los refugios suelen estar en zonas periféricas con mala conexión a internet. Se recomienda que el hardware local (Edge) tenga la capacidad de almacenar los cronogramas de alimentación (Feeding) y las reglas críticas de temperatura (Monitoring) para seguir funcionando autónomamente si se cae la red.
 
@@ -2070,26 +2072,27 @@ El diseño de la base de datos para el _Veterinary Bounded Context_ persiste la 
 
 - Pruebas de estrés y calibración de hardware: El papel lo aguanta todo, pero el hardware físico falla. Se recomienda destinar una fase exclusiva del proyecto a la calibración de los sensores DHT11 (humedad/temperatura) y pruebas de resistencia de los collares GPS para asegurar que las alertas de Monitoring no generen falsos positivos que terminen frustrando al administrador del refugio.
 
-<br>
+<div style="page-break-after: always;"></div>
 
 # Bibliografía
 
-- Fundación Affinity. (s.f.). Las cifras del abandono de perros y gatos aún lejos de descender. [Fundación Affinity. (s.f.). Las cifras del abandono de perros y gatos aún lejos de descender. Recuperado de https://www.fundacion-affinity.org/perros-gatos-y-personas/busco-un-animal-de-compania/las-cifras-del-abandono-de-perros-y-gatos-aun](https://www.fundacion-affinity.org/perros-gatos-y-personas/busco-un-animal-de-compania/las-cifras-del-abandono-de-perros-y-gatos-aun)
+- Fundación Affinity. (s.f.). *Las cifras del abandono de perros y gatos aún lejos de descender.* [Fundación Affinity. (s.f.). Las cifras del abandono de perros y gatos aún lejos de descender. Recuperado de https://www.fundacion-affinity.org/perros-gatos-y-personas/busco-un-animal-de-compania/las-cifras-del-abandono-de-perros-y-gatos-aun](https://www.fundacion-affinity.org/perros-gatos-y-personas/busco-un-animal-de-compania/las-cifras-del-abandono-de-perros-y-gatos-aun)
 
-- GEA Group. (s.f.). Activity Detection – GEA CowScout. [https://www.gea.com/es/products/milking-farming-barn/gea-herd-management/activity-detection-cowscout/](https://www.gea.com/es/products/milking-farming-barn/gea-herd-management/activity-detection-cowscout/)
+- GEA Group. (s.f.). *Activity Detection – GEA CowScout.* [https://www.gea.com/es/products/milking-farming-barn/gea-herd-management/activity-detection-cowscout/](https://www.gea.com/es/products/milking-farming-barn/gea-herd-management/activity-detection-cowscout/)
 
-- Pinto, A. (2021). Las protectoras de animales denuncian la falta de recursos. La Opinión de Málaga [https://www.laopiniondemalaga.es/municipios/2021/11/08/protectoras-animales-denuncian-falta-recursos-59278673.html](https://www.laopiniondemalaga.es/municipios/2021/11/08/protectoras-animales-denuncian-falta-recursos-59278673.html)
+- Pinto, A. (2021). *Las protectoras de animales denuncian la falta de recursos. La Opinión de Málaga* [https://www.laopiniondemalaga.es/municipios/2021/11/08/protectoras-animales-denuncian-falta-recursos-59278673.html](https://www.laopiniondemalaga.es/municipios/2021/11/08/protectoras-animales-denuncian-falta-recursos-59278673.html)
 
-- Valdelomar, D. (2025). Deconstrucción de los conceptos de Bienestar Animal y Sufrimiento Innecesario Animal en el sistema jurídico peruano. Recurso procedente de la Pontificia Universidad Católica del Perú (PUCP). [https://tesis.pucp.edu.pe/items/173234ff-fb31-4300-8d26-d5659388b7c7](https://tesis.pucp.edu.pe/items/173234ff-fb31-4300-8d26-d5659388b7c7)
-<br>
+- Valdelomar, D. (2025). *Deconstrucción de los conceptos de Bienestar Animal y Sufrimiento Innecesario Animal en el sistema jurídico peruano.* Recurso procedente de la Pontificia Universidad Católica del Perú (PUCP). [https://tesis.pucp.edu.pe/items/173234ff-fb31-4300-8d26-d5659388b7c7](https://tesis.pucp.edu.pe/items/173234ff-fb31-4300-8d26-d5659388b7c7)
+
+<div style="page-break-after: always;"></div>
 
 # Anexos
 
 ## Anexo A: Links importantes:
 
-Link del Repositorio del Informe: 
-Link del Repositorio del Backend: 
-Link del Repositorio del Frontend Aplicación Web: 
-Link del Repositorio del Frontend Aplicación Móvil: 
+Link del Repositorio del Informe: <br>
+Link del Repositorio del Backend: <br>
+Link del Repositorio del Frontend Aplicación Web: <br> 
+Link del Repositorio del Frontend Aplicación Móvil: <br>
 
 ## Anexo B: Exposiciones:
