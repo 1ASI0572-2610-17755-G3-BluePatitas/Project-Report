@@ -1990,85 +1990,41 @@ El diseño de la base de datos para el _Veterinary Bounded Context_ persiste la 
 
 ## 5.1. Style Guidelines
 
-En esta sección se presentan los lineamientos visuales y de interacción definidos para BluePatitas. Estos lineamientos permiten mantener una experiencia consistente entre los productos digitales de la solución, incluyendo el Landing Page, la Frontend Web Application, las interfaces móviles referenciales y las interfaces relacionadas con el dispositivo IoT.
+Los lineamientos de estilo de BluePatitas definen la identidad visual y los criterios de interacción que serán aplicados en el Landing Page, la Frontend Web Application y las interfaces relacionadas con el dispositivo IoT. Estos lineamientos permiten mantener una experiencia consistente, accesible y alineada con el propósito de la solución: apoyar el monitoreo y cuidado de animales en refugios mediante tecnología IoT.
 
-BluePatitas es una solución orientada al monitoreo y cuidado de animales en refugios mediante tecnologías IoT. Por ello, la identidad visual debe transmitir confianza, empatía, claridad operativa y soporte tecnológico. Las decisiones de diseño buscan que los administradores de refugios y veterinarios puedan interpretar rápidamente la información del sistema, especialmente cuando se presentan datos de sensores, alertas de ubicación, condiciones ambientales, alimentación o eventos relevantes sobre las mascotas monitoreadas.
-
-Los lineamientos visuales consideran el uso de una paleta de colores basada en tonos azules, asociados a tecnología, calma y confianza, complementada con colores funcionales para representar estados del sistema. Asimismo, se establece una jerarquía tipográfica clara, componentes reutilizables, iconografía consistente, criterios de espaciado y un tono de comunicación empático y directo.
-
-El diseño de BluePatitas también toma en cuenta principios de accesibilidad, diseño responsivo e internacionalización. Las interfaces deben ser legibles, adaptables a distintos tamaños de pantalla y comprensibles para usuarios con diferentes niveles de familiaridad tecnológica. Además, se considera que el producto pueda soportar contenidos en inglés y español latinoamericano, manteniendo coherencia visual y funcional en ambos idiomas.
+La propuesta visual busca transmitir confianza, empatía, claridad operativa y soporte tecnológico. Para ello, se utiliza una paleta basada en tonos azules, una jerarquía tipográfica clara, componentes reutilizables, iconografía relacionada al dominio del producto y colores semánticos para representar estados normales, advertencias y alertas críticas.
 
 ![General Style Guidelines](./img/general-style-guidelines-bluepatitas.png)
 
 ### 5.1.1. General Style Guidelines
 
-Los lineamientos generales de estilo de BluePatitas establecen la base visual común que será aplicada en todos los productos de la solución. Esta guía define los elementos principales de identidad visual, incluyendo logotipo, personalidad de marca, paleta de colores, tipografía, botones, componentes, iconografía, tono de comunicación y espaciado.
+La identidad visual de BluePatitas se construye a partir de un logotipo amigable, una personalidad de marca confiable y empática, y una paleta de colores asociada a tecnología, calma y seguridad. El azul funciona como color principal, mientras que los colores verde, amarillo y rojo permiten representar estados de éxito, advertencia y criticidad dentro del sistema.
 
-El logotipo de BluePatitas utiliza la representación de un perro como elemento principal, reforzando la relación emocional del producto con el cuidado animal. La mascota visual comunica cercanía, empatía y confianza, mientras que el uso de tonos azules permite asociar la marca con tecnología, seguridad y monitoreo inteligente.
+La tipografía seleccionada combina Poppins para títulos e Inter para textos de cuerpo e interfaz. Esta combinación permite mantener una lectura clara en dashboards, formularios, tarjetas de monitoreo y mensajes del sistema.
 
-La personalidad de marca se define a partir de cuatro atributos principales: confiable, empática, tecnológica y amigable. Estos atributos permiten orientar tanto las decisiones visuales como la forma en que el sistema comunica información al usuario. BluePatitas no debe presentar mensajes alarmistas ni confusos; por el contrario, debe comunicar estados, alertas y recomendaciones de forma clara, oportuna y comprensible.
+Los componentes base incluyen botones, tarjetas de mascota, campos de entrada, chips de estado, badges de alerta e iconografía relacionada con GPS, temperatura, humedad, cámara, alimentación y alertas. Estos elementos permiten mantener consistencia visual entre las distintas interfaces del ecosistema BluePatitas.
 
-La paleta de colores se organiza en colores de identidad y colores funcionales. El azul primario se utiliza en fondos sutiles, elementos informativos y componentes destacados. El azul marino se aplica en encabezados, navegación y textos principales. El azul secundario se emplea en elementos interactivos, gráficos y estados informativos. El fondo suave se utiliza como base para tarjetas, formularios y secciones de contenido. El gris pizarra se reserva para textos secundarios e iconografía complementaria.
-
-Para los estados del sistema se utilizan colores semánticos. El verde representa acciones exitosas o estados normales; el amarillo indica advertencias que requieren revisión; y el rojo representa situaciones críticas, errores o alertas que requieren atención inmediata. Esta diferenciación es importante para una solución IoT, debido a que el usuario debe identificar rápidamente eventos relacionados con temperatura, humedad, GPS, alimentación o seguridad de las mascotas.
-
-La tipografía seleccionada combina Poppins e Inter. Poppins se utiliza para títulos y encabezados debido a su presencia visual y legibilidad, mientras que Inter se utiliza para textos de cuerpo, etiquetas, formularios y elementos de interfaz. Esta combinación permite mantener una experiencia moderna, clara y adecuada para paneles de monitoreo.
-
-Los componentes base consideran botones primarios, secundarios y botones de estado. También se definen tarjetas de mascota, badges de alerta, campos de entrada, chips de estado e indicadores visuales. Estos componentes permiten reutilizar patrones en las distintas interfaces del ecosistema BluePatitas, reduciendo inconsistencias y facilitando el desarrollo posterior.
-
-La iconografía se orienta al dominio del producto e incluye elementos como huella, GPS, temperatura, humedad, cámara, alimentación y alertas. Estos íconos permiten representar conceptos frecuentes del sistema de forma rápida y reconocible.
-
-El tono de comunicación de BluePatitas es claro, empático y confiable. Los mensajes deben priorizar el bienestar animal y la toma de decisiones oportuna, evitando ambigüedad en situaciones críticas. Por ejemplo, una alerta de temperatura debe indicar el evento, el valor registrado y la acción esperada de manera directa.
-
-Finalmente, el espaciado se organiza mediante una escala base de 8 px, 16 px, 24 px y 32 px. Esta escala permite mantener consistencia entre márgenes, separación de tarjetas, formularios, botones y secciones. El uso de espaciado regular facilita la lectura, mejora la jerarquía visual y permite una adaptación más ordenada a distintos tamaños de pantalla.
+El tono de comunicación es claro, empático y confiable. Los mensajes deben ayudar al usuario a interpretar rápidamente el estado de una mascota o dispositivo, evitando ambigüedad en situaciones críticas.
 
 ### 5.1.2. Web, Mobile and IoT Style Guidelines
 
-Los lineamientos específicos para Web, Mobile e IoT definen cómo se aplican los principios generales de estilo en cada tipo de interfaz. Aunque cada plataforma presenta necesidades particulares, todas deben mantener coherencia visual, jerarquía de información, accesibilidad y consistencia con la identidad de BluePatitas.
+Los lineamientos específicos para Web, Mobile e IoT adaptan la identidad visual de BluePatitas a cada tipo de interfaz. Aunque cada plataforma tiene necesidades diferentes, todas mantienen la misma paleta, tipografía, iconografía, jerarquía visual y criterios de accesibilidad.
 
 #### Web Style Guidelines
 
-Las interfaces web de BluePatitas están orientadas principalmente a la gestión y monitoreo desde navegadores de escritorio. En este contexto, la experiencia debe priorizar claridad visual, organización de información y eficiencia operativa. La Frontend Web Application debe permitir que los administradores de refugios y veterinarios consulten información relevante de forma rápida, especialmente datos de mascotas, alertas activas, condiciones ambientales, ubicación, alimentación e historial de eventos.
-
-El diseño web utiliza una estructura basada en grillas de escritorio, navegación superior y navegación lateral para el dashboard. La navegación principal considera secciones como Inicio, Mascotas, Alertas, Monitoreo, Veterinaria y Configuración. Esta organización permite separar las funciones principales del sistema y facilita que el usuario encuentre la información necesaria sin recorrer rutas complejas.
-
-Los componentes web incluyen tarjetas de mascota, tarjetas de alerta, gráficos de monitoreo, tablas o listas de registros, chips de estado, campos de búsqueda y filtros. Estos elementos son necesarios para representar datos cuantitativos recolectados por sensores IoT, como temperatura, humedad, ubicación GPS o estado del dispositivo.
-
-Los botones web se diferencian según su propósito. El botón primario se utiliza para acciones principales, como monitorear una mascota o acceder a un detalle relevante. Los botones secundarios se usan para acciones complementarias. Los botones de estado permiten representar acciones exitosas, advertencias o eventos críticos, manteniendo coherencia con la paleta semántica definida.
-
-El sistema web también considera principios de accesibilidad. Los textos deben mantener contraste suficiente, los estados no deben depender únicamente del color, los elementos interactivos deben ser identificables y la navegación debe ser consistente. Además, el diseño debe responder adecuadamente a distintos tamaños de pantalla, manteniendo una experiencia clara tanto en vistas amplias como en resoluciones menores.
+La experiencia web está orientada a la gestión y monitoreo desde navegadores de escritorio. Por ello, se prioriza una estructura clara basada en navegación superior, navegación lateral, tarjetas informativas, filtros, tablas, gráficos y componentes de dashboard. Esta interfaz permite consultar mascotas, alertas, datos ambientales, ubicación, alimentación e historial de eventos.
 
 ![Web Style Guidelines](./img/web-style-guidelines-bluepatitas.png)
 
 #### Mobile Style Guidelines
 
-Las interfaces móviles de BluePatitas están pensadas para consulta rápida y monitoreo desde dispositivos portátiles. Aunque el alcance principal de TB1 se centra en Landing Page y Frontend Web Application, los lineamientos móviles permiten proyectar una experiencia coherente para futuras aplicaciones o vistas responsivas.
-
-El diseño mobile prioriza interacción táctil, lectura rápida y navegación simplificada. Para ello, se utiliza una grilla mobile de cuatro columnas, botones con altura mínima adecuada para interacción táctil y componentes compactos que permitan consultar información sin sobrecargar la pantalla.
-
-La navegación móvil considera una barra superior con acceso a menú, identidad de BluePatitas y notificaciones. También se propone una navegación inferior con accesos principales como Inicio, Mascotas, Alertas y Perfil. Esta estructura permite que el usuario acceda rápidamente a las funciones principales desde una sola mano, reduciendo el esfuerzo de navegación.
-
-Los componentes móviles incluyen tarjetas compactas de mascota, tarjetas de alerta, chips de estado, campos de búsqueda, filtros y listas de actividad. Estos elementos permiten consultar eventos recientes, revisar el estado de una mascota y visualizar alertas de sensores de forma resumida.
-
-En mobile, la jerarquía visual es especialmente importante. La información crítica, como alertas de temperatura, geocerca o estado del dispositivo, debe tener prioridad visual. Las métricas secundarias deben presentarse de forma compacta, evitando saturar la interfaz. Asimismo, se considera el uso de colores semánticos para facilitar la interpretación rápida de estados normales, advertencias y eventos críticos.
+La experiencia móvil prioriza la consulta rápida, la interacción táctil y la navegación simplificada. Se consideran componentes compactos, botones con tamaño adecuado, navegación inferior y tarjetas resumidas para mostrar información relevante de mascotas, alertas y eventos recientes.
 
 ![Mobile Style Guidelines](./img/mobile-style-guidelines-bluepatitas.png)
 
 #### IoT Style Guidelines
 
-Los lineamientos para interfaces IoT se enfocan en la lectura rápida de información, la claridad operativa y la respuesta inmediata ante eventos del dispositivo. Debido a que las interfaces IoT suelen ser más compactas, los elementos visuales deben ser simples, directos y altamente legibles.
-
-La interfaz IoT de BluePatitas debe priorizar datos provenientes de sensores, como temperatura, humedad, ubicación GPS, estado de batería, alimentación y alertas. Estos datos deben presentarse en tarjetas o módulos compactos, con jerarquía clara y estados visuales diferenciados.
-
-La navegación IoT debe ser mínima y funcional. Se consideran opciones como Sensores, Mantenimiento, Alertas y Cerrar sesión. Esta organización permite que el usuario acceda rápidamente a las acciones principales relacionadas con el dispositivo, sin complejidad innecesaria.
-
-Los botones en interfaces IoT deben priorizar tamaño táctil, contraste y respuesta inmediata. Las acciones principales, como responder, confirmar, revisar o atender una alerta, deben distinguirse claramente mediante color, texto e iconografía. En situaciones críticas, la interfaz debe reducir la ambigüedad y orientar al usuario hacia una acción concreta.
-
-Los componentes IoT incluyen tarjetas de sensor, tarjetas de alerta, chips de estado e ítems de actividad. Por ejemplo, una tarjeta de sensor puede mostrar temperatura, humedad y GPS estable; una tarjeta de alerta puede indicar temperatura alta o geocerca activada; y los chips de estado pueden representar si un dispositivo se encuentra activo, en observación, inactivo o en alerta.
-
-La iconografía IoT mantiene coherencia con el resto del ecosistema BluePatitas, utilizando símbolos relacionados con mascotas, ubicación, temperatura, humedad, cámara, alimentación y alertas. Esto permite que los usuarios reconozcan rápidamente los conceptos principales en cualquier plataforma.
-
-Los principios de diseño IoT se centran en claridad operativa, jerarquía visual, accesibilidad y consistencia. La información debe estar priorizada para una lectura inmediata, los estados y métricas deben organizarse por relevancia, el contraste debe facilitar la comprensión rápida y los patrones visuales deben mantenerse unificados en todo el ecosistema.
+Las interfaces IoT se enfocan en la lectura rápida de datos y la respuesta inmediata ante eventos del dispositivo. Se utilizan módulos compactos para sensores, chips de estado, tarjetas de alerta y botones de acción directa. La prioridad es que el usuario pueda interpretar rápidamente información como temperatura, humedad, GPS, alimentación, batería y estado del dispositivo.
 
 ![IoT Style Guidelines](./img/iot-style-guidelines-bluepatitas.png)
 
@@ -2076,6 +2032,30 @@ Los principios de diseño IoT se centran en claridad operativa, jerarquía visua
 ### 5.2.1. Organization Systems
 ### 5.2.2. Labeling Systems
 ### 5.2.3. SEO Tags and Meta Tags
+Para mejorar la visibilidad, comprensión y posicionamiento del Landing Page de BluePatitas, se definieron SEO Tags y Meta Tags preliminares alineados con el propósito de la solución y con la estructura inicial de contenidos del producto. Estos elementos permiten describir correctamente el contenido de la página, facilitar su indexación por motores de búsqueda y comunicar de forma clara el valor del producto a los visitantes.
+
+BluePatitas utiliza etiquetas orientadas al monitoreo IoT de mascotas en refugios, destacando conceptos como cuidado animal, sensores, alertas, geolocalización, monitoreo ambiental y gestión de refugios. Asimismo, se consideran etiquetas consistentes con la identidad de marca y los segmentos objetivo definidos: administradores de refugios y veterinarios.
+
+| Page | Title | Meta Description | Keywords | Author |
+|---|---|---|---|---|
+| Landing Page - Home | BluePatitas - IoT Monitoring for Animal Shelters | BluePatitas is an IoT solution designed to help animal shelters monitor pets through sensors, alerts, GPS tracking, environmental data and feeding events. | BluePatitas, IoT, animal shelter, pet monitoring, GPS tracking, temperature sensor, humidity sensor, smart feeding, animal welfare | BluePatitas Team |
+| Landing Page - Benefits | BluePatitas - Smart Care for Shelter Animals | Discover how BluePatitas supports animal shelters with real-time monitoring, automated alerts and data-driven pet care. | animal care, shelter management, IoT alerts, pet welfare, smart monitoring, animal rescue | BluePatitas Team |
+| Landing Page - IoT Features | BluePatitas - IoT Features for Pet Monitoring | Monitor temperature, humidity, GPS location, camera status and feeding events with BluePatitas IoT features. | IoT device, pet sensors, geofence, temperature monitoring, humidity monitoring, camera monitoring, automatic feeder | BluePatitas Team |
+| Web Application - Dashboard | BluePatitas Dashboard - Shelter Monitoring Platform | Access shelter monitoring data, pet status, alerts and IoT sensor information from the BluePatitas dashboard. | dashboard, shelter dashboard, pet alerts, IoT dashboard, animal monitoring platform | BluePatitas Team |
+| Web Application - Alerts | BluePatitas Alerts - Real-Time Pet Monitoring | Review real-time alerts related to temperature, humidity, GPS location, feeding and device status. | pet alerts, real-time monitoring, IoT notifications, geofence alerts, shelter alerts | BluePatitas Team |
+
+Ejemplo de implementación de Meta Tags para el Landing Page:
+
+```html
+<title>BluePatitas - Monitoreo IoT para refugios de animales</title>
+<meta name="description" content="BluePatitas es una solución IoT que ayuda a refugios de animales a monitorear mascotas mediante sensores, alertas, GPS, cámara y alimentación inteligente.">
+<meta name="keywords" content="BluePatitas, IoT, refugios de animales, monitoreo de mascotas, sensores, GPS, bienestar animal">
+<meta name="author" content="BluePatitas Team">
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="es">
+```
 ### 5.2.4. Searching Systems
 ### 5.2.5. Navigation Systems
 
