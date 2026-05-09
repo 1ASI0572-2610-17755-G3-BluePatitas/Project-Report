@@ -2061,6 +2061,15 @@ Ejemplo de implementación de Meta Tags para el Landing Page:
 
 ## 5.3. Landing Page UI Design
 ### 5.3.1. Landing Page Wireframe
+
+Wireframe Desktop
+
+![Landing Page - Wireframe Desktop](./img/Landing%20Page%20-%20Wireframe%20Desktop.png)
+
+Wireframe Mobile
+
+![Landing Page - Wireframe Mobile](./img/Landing%20Page%20-%20Wireframe%20Mobile.png)
+
 ### 5.3.2. Landing Page Mock-up
 
 ## 5.4. Applications UX/UI Design
