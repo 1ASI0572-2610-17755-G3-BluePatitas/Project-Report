@@ -2072,6 +2072,14 @@ Wireframe Mobile
 
 ### 5.3.2. Landing Page Mock-up
 
+Mock-up Desktop
+
+![Landing Page - Wireframe Desktop](./img/Landing%20Page%20-%20Mockup%20Desktop.png)
+
+Mock-up Mobile
+
+![Landing Page - Wireframe Mobile](./img/Landing%20Page%20-%20Mockup%20Mobile.png)
+
 ## 5.4. Applications UX/UI Design
 ### 5.4.1. Applications Wireframes
 ### 5.4.2. Applications Wireflow Diagrams
