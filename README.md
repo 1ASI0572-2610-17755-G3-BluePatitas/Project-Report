@@ -2057,6 +2057,26 @@ Ejemplo de implementación de Meta Tags para el Landing Page:
 <meta http-equiv="Content-Language" content="es">
 ```
 ### 5.2.4. Searching Systems
+
+El sistema de búsqueda de BluePatitas está diseñado para facilitar el acceso rápido a la información más relevante dentro de la Frontend Web Application. Debido a que la solución centraliza datos de mascotas, dispositivos IoT, alertas, registros ambientales, ubicación, alimentación e historial operativo, los usuarios necesitan mecanismos de búsqueda y filtrado que reduzcan el tiempo necesario para encontrar información crítica.
+
+En el Landing Page no se considera un buscador global, ya que su contenido está organizado de forma secuencial mediante secciones informativas y llamadas a la acción. En este caso, la búsqueda de información se apoya principalmente en la navegación por secciones como Inicio, Beneficios, Monitoreo IoT, Funcionalidades y Contacto.
+
+En la Frontend Web Application, la búsqueda se concentra en los módulos de gestión y monitoreo. Los administradores de refugios podrán buscar mascotas por nombre, identificador, refugio asignado o estado actual. Asimismo, podrán filtrar alertas por tipo, severidad, fecha, sensor asociado y estado de atención. Esto permite priorizar rápidamente eventos críticos como salida de geocerca, pérdida de rango visual, temperatura fuera de rango o alimentación no realizada.
+
+Para los veterinarios, el sistema de búsqueda permitirá consultar perfiles de animales, historial operativo, registros ambientales, eventos de alimentación, observaciones y recomendaciones. De esta manera, el usuario podrá encontrar información relevante para el seguimiento del bienestar animal sin depender de registros dispersos o búsqueda manual en documentos externos.
+
+Los resultados de búsqueda se mostrarán mediante tarjetas, tablas o listas compactas, según el tipo de información consultada. Cada resultado debe presentar datos esenciales como nombre de la mascota, estado, refugio, última actualización, tipo de evento, severidad y acción disponible. Además, las alertas críticas deberán mostrarse con prioridad visual para facilitar una respuesta oportuna.
+
+| Contexto de búsqueda | Criterios de búsqueda | Filtros disponibles | Resultado esperado |
+|---|---|---|---|
+| Mascotas | Nombre, identificador o refugio asociado | Estado, refugio, última actualización | Lista de mascotas coincidentes con su estado actual |
+| Alertas | Tipo de alerta, mascota asociada o dispositivo | Severidad, fecha, sensor, estado de atención | Alertas ordenadas por prioridad y fecha |
+| Monitoreo IoT | Mascota, dispositivo o tipo de sensor | Temperatura, humedad, GPS, cámara, alimentación | Registros de sensores y eventos relacionados |
+| Historial veterinario | Mascota, observación o recomendación | Fecha, tipo de evento, estado del animal | Historial operativo y registros útiles para seguimiento |
+| Alimentación | Mascota, dieta o evento de dispensación | Fecha, estado de ejecución, tipo de ración | Eventos de alimentación programada o ejecutada |
+| Ubicación | Mascota o zona asignada | Geocerca, estado GPS, fecha de evento | Información de ubicación y eventos asociados a geocerca |
+
 ### 5.2.5. Navigation Systems
 
 ## 5.3. Landing Page UI Design
