@@ -2023,16 +2023,43 @@ El diseño de la base de datos para el _Veterinary Bounded Context_ persiste la 
 ### 6.1.4. Software Deployment Configuration
 
 ## 6.2. Landing Page, Services & Applications Implementation
-### 6.2.X. Sprint n
-#### 6.2.X.1. Sprint Planning n
-#### 6.2.X.2. Aspect Leaders and Collaborators
-#### 6.2.X.3. Sprint Backlog n
-#### 6.2.X.4. Development Evidence for Sprint Review
-#### 6.2.X.5. Testing Suite Evidence for Sprint Review
-#### 6.2.X.6. Execution Evidence for Sprint Review
-#### 6.2.X.7. Services Documentation Evidence for Sprint Review
-#### 6.2.X.8. Software Deployment Evidence for Sprint Review
-#### 6.2.X.9. Team Collaboration Insights during Sprint
+### 6.2.1. Sprint 1
+
+#### 6.2.1.1. Sprint Planning 1
+
+| **Sprint #**                    | Sprint 1 |
+|----------------------------------|----------|
+| **Sprint Planning Background**  |          |
+| **Date**                        | 20/04/2026 |
+| **Time**                        | 8:00 pm |
+| **Location**                    | Virtual (Discord) |
+| **Prepared by**                 | Peralta Chipa Ronald Joel |
+| **Attendees (to planning meeting)** | Peralta Chipa Ronald Joel <br> Castañeda Guimas Giancarlo Santiago <br> Choquehuanca Nuñez Luciana Carolina <br> Gonzales Valverde Carlos Matthew <br> Hernández Uchuya María Patricia |
+| **Sprint n - 1 Review Summary**  | No hubo sprint anterior |
+| **Sprint n - 1 Retrospective Summary** | No hubo sprint anterior |
+| **Sprint 1 Goal**                | Realizar el Landing Page / Informe de trabajo |
+| **Sprint 1 Velocity**            | 15 |
+| **Sum of Story Points**          | 12 |
+
+#### 6.2.1.2. Aspect Leaders and Collaborators
+
+| Team Member (Last Name, First Name) | GitHub Username | Arquitectura Base (L/C) | API REST y Seguridad (L/C) | Persistencia y Base de Datos (L/C) | Modelo Veterinario (L/C) | Servicios de Alimentación (L/C) | Landing Page (L/C) |
+|:-----------------------------------|:----------------|:--------------------------|:----------------------------|:-----------------------------------|:--------------------------|:--------------------------------|:-------------------|
+| Peralta, Ronald                    | RooDev10        | L                          | C                            | L                                   | C                          | C                                | C                   |
+| Guimas, Giancarlo                  | Darksens01      | C                          | C                            | C                                   | L                          | C                                | C                   |
+| Choquehuanca Nuñez, Luciana        | Lucianxaaa      | C                          | L                            | C                                   | C                          | C                                | C                   |
+| Gonzales Valverde, Carlos          | Carlos12324     | C                          | C                            | C                                   | C                          | L                                | C                   |
+| Hernández Uchuya, María            | Bal2220         | C                          | C                            | L                                   | C                          | C                                | C                   |
+
+#### 6.2.1.3. Sprint Backlog 1
+
+#### 6.2.1.4. Development Evidence for Sprint Review
+
+#### 6.2.1.5. Execution Evidence for Sprint Review
+
+#### 6.2.1.6. Services Documentation Evidence for Sprint Review
+
+#### 6.2.1.7. Software Deployment Evidence for Sprint Review
 
 ## 6.3. Validation Interviews
 ### 6.3.1. Diseño de Entrevistas
