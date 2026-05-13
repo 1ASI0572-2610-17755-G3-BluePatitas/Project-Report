@@ -2188,7 +2188,50 @@ Los resultados de búsqueda se mostrarán mediante tarjetas, tablas o listas com
 
 ### 5.2.5. Navigation Systems
 
+El diseño de la navegación de BluePatitas se basa en una estructura clara y accesible, orientada a facilitar el uso del sistema por parte del personal administrativo del refugio. La navegación permite acceder rápidamente a los módulos principales del sistema, como el dashboard, la gestión de animales, el monitoreo ambiental, el registro de veterinarios y la configuración general de la plataforma.
+
+**Web App**
+
+En la aplicación web, la navegación principal se organiza mediante una barra lateral persistente ubicada al lado izquierdo de la pantalla. Esta barra funciona como el eje central del sistema, ya que permite al administrador desplazarse entre las secciones más importantes sin perder visibilidad del contenido principal.
+
+![Dashboard](/img/BluePatitas-Figma/Web/Mockup/Dashboard%20-%20Mockup%20Desktop.png)
+*Figura 1. Vista general del dashboard web de BluePatitas.*
+
+El menú lateral incluye accesos directos al Dashboard, Animales, Monitoreo, Veterinarios y Configuración. Cada opción está acompañada de un ícono representativo, lo cual facilita la identificación rápida de cada módulo y mejora la experiencia de uso. Además, la sección activa se resalta visualmente, permitiendo que el usuario reconozca en qué parte del sistema se encuentra.
+
+![Sidebar](/img/BluePatitas-Figma/Web/Mockup/Sidebar.png)
+*Figura 2. Menú lateral principal de la aplicación web.*
+
+En la parte superior del dashboard también se presentan acciones rápidas, como Agregar animal, Ver monitoreo y Registrar veterinario. Estos botones permiten acceder directamente a tareas frecuentes del refugio, reduciendo la cantidad de pasos necesarios para realizar acciones importantes dentro del sistema.
+
+![Acciones rápidas](/img/BluePatitas-Figma/Web/Mockup/Acciones%20Rapidas.png)
+*Figura 3. Acciones rápidas disponibles en el dashboard web.*
+
+La navegación web de BluePatitas mantiene una jerarquía visual ordenada, con un menú lateral fijo, contenido central organizado en tarjetas y accesos rápidos visibles. Esto permite que el personal administrativo trabaje de manera eficiente, especialmente en tareas de seguimiento, control ambiental y gestión de animales.
+
+**Mobile App**
+
+En la versión móvil, la navegación se adapta a una estructura más compacta y práctica, utilizando una barra inferior de menú. Esta decisión permite que el usuario acceda fácilmente a las funciones principales desde la parte inferior de la pantalla, lo cual resulta más cómodo en dispositivos móviles.
+
+![Dashboard Movil](/img/BluePatitas-Figma/Movil/Mockup/Dashboard%20-%20Mockup%20Movil.png)
+*Figura 4. Vista general del dashboard móvil de BluePatitas.*
+
+La barra inferior incluye cinco accesos principales: Dashboard, Animales, Monitoreo, Vets y Config. El primer ícono dirige al resumen general del refugio, donde se muestran indicadores como animales registrados, alertas activas, zonas monitoreadas y dispositivos. El módulo de animales permite consultar la información de las mascotas registradas, mientras que monitoreo facilita el seguimiento de las zonas y sus condiciones ambientales.
+
+![Menu Movil](/img/BluePatitas-Figma/Movil/Mockup/Menu%20Movil.png)
+*Figura 5. Barra inferior de navegación de la aplicación móvil.*
+
+Asimismo, el acceso a Vets permite gestionar la información relacionada con veterinarios, y la opción de Config. dirige a la configuración del sistema. Esta distribución permite que las funciones más importantes estén siempre disponibles sin saturar la pantalla.
+
+Además, la aplicación móvil incorpora un botón flotante con el símbolo “+”, ubicado en la parte inferior derecha. Este botón funciona como una acción rápida para registrar o agregar nuevos elementos dentro del sistema, manteniendo una navegación ágil y orientada a tareas frecuentes.
+
+![Botón Más Movil](/img/BluePatitas-Figma/Movil/Mockup/Boton%20Mas%20Movil.png)
+*Figura 6. Botón flotante para acciones rápidas en la aplicación móvil.*
+
+En conjunto, el sistema de navegación de BluePatitas busca mantener coherencia entre la versión web y móvil. Mientras que la web prioriza una navegación lateral más completa para pantallas amplias, la versión móvil utiliza una barra inferior más simple y accesible, adecuada para el uso en celulares. De esta manera, ambas interfaces permiten que el usuario acceda de forma rápida, clara y ordenada a las funcionalidades principales del sistema.
+
 ## 5.3. Landing Page UI Design
+
 ### 5.3.1. Landing Page Wireframe
 
 Wireframe Desktop
