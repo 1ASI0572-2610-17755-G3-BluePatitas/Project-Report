@@ -2224,7 +2224,7 @@ El objetivo principal del Sprint 1 fue establecer la base del FrontEnd del siste
 
 Se realizaron los avances con los commits correspondiente en el repositorio de la siguiente forma.
 
-- Repositorio Landing Page:
+- Repositorio Landing Page: [Landing-page](https://github.com/1ASI0572-2610-17755-G3-BluePatitas/Project-LandingPage.git)
 
 | Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
 |:----------:|:------:|:---------:|:--------------:|:------------------:|
@@ -2235,9 +2235,7 @@ Se realizaron los avances con los commits correspondiente en el repositorio de l
 | Landing-Page | feature/pricing-cta | 4124f766cc3a6ecf990bb1d163a89c5e01356718 | feat: implement pricing plans and contact form CTA | 11/05/2026 |
 | Landing-Page | feature/i18n-interactions | e1b84cfb86447812eb9a81d3b568d024d1dfa7ec | feat: add language toggle and interactive FAQ behavior | 12/05/2026 |
 
-- Repositorio Frontend:
-
-- Repositorio Frontend:
+- Repositorio Frontend: [frontend-app](https://github.com/1ASI0572-2610-17755-G3-BluePatitas/frontend-BluePatitas)
 
 | Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
 |:----------:|:------:|:---------:|:--------------:|:------------------:|
