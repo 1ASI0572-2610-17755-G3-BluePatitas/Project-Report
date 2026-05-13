@@ -2222,13 +2222,84 @@ El objetivo principal del Sprint 1 fue establecer la base del FrontEnd del siste
 
 #### 6.2.1.4. Development Evidence for Sprint Review
 
+Se realizaron los avances con los commits correspondiente en el repositorio de la siguiente forma.
+
+- Repositorio Landing Page:
+
+| Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
+|:----------:|:------:|:---------:|:--------------:|:------------------:|
+| Landing-Page | main | 8ab70ee9b0430fa5eb1a21d8d4bbc7fab5a99691 | chore: update landing page structure and assets | 13/05/2026 |
+| Landing-Page | develop | be91f5210ca4b98d7a5ff1621e2d997b1f70cfdb | fix: improve responsive layout and section spacing | 13/05/2026 |
+| Landing-Page | feature/ui-layout | 9c53463046f305aeac086e92fd213e56a7a85ae6 | feat: implement hero section and navigation layout | 10/05/2026 |
+| Landing-Page | feature/product-sections | 57499e38aa7636347e10a5c363e686511870da07 | feat: add product, benefits and testimonials sections | 10/05/2026 |
+| Landing-Page | feature/pricing-cta | 4124f766cc3a6ecf990bb1d163a89c5e01356718 | feat: implement pricing plans and contact form CTA | 11/05/2026 |
+| Landing-Page | feature/i18n-interactions | e1b84cfb86447812eb9a81d3b568d024d1dfa7ec | feat: add language toggle and interactive FAQ behavior | 12/05/2026 |
+
+- Repositorio Frontend:
+
+- Repositorio Frontend:
+
+| Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
+|:----------:|:------:|:---------:|:--------------:|:------------------:|
+| Frontend | main | a13f9d7c51e4d2c7f98ab34e9fba1c2d6f7a901 | chore: initialize Angular frontend architecture and base configuration | 13/05/2026 |
+| Frontend | develop | b24e8f1d72a5f9e1c3ad72be4c9f1a5e8d2c7431 | fix: integrate shared layout, routing and responsive navigation | 13/05/2026 |
+| Frontend | feature/auth | c35d7a2b84d6e1f3b4ca81de9f2b6d3a7e8f5124 | feat: develop login, session handling and authentication guards | 08/05/2026 |
+| Frontend | feature/dashboard | d46e8c3f95a7b2d4c5eb92fa1d3c7e4b8f9a6235 | feat: implement dashboard metrics, charts and overview components | 09/05/2026 |
+| Frontend | feature/animals | e57f9d4a16b8c3e5d6fc03ab2e4d8f5c9a1b7346 | feat: add animal registration, profile management and status views | 09/05/2026 |
+| Frontend | feature/devices | f68a1e5b27c9d4f6e7ad14bc3f5e9a6d1b2c8457 | feat: implement IoT device management and connection monitoring | 10/05/2026 |
+| Frontend | feature/monitoring | a79b2f6c38d1e5a7f8be25cd4a6f1b7e2c3d9568 | feat: develop real-time monitoring panels and alert visualization | 10/05/2026 |
+| Frontend | feature/feeding | b81c3a7d49e2f6b8a9cf36de5b7a2c8f3d4e0679 | feat: implement automated feeding schedules and tracking interface | 11/05/2026 |
+| Frontend | feature/reports | c92d4b8e51f3a7c9bad47ef6c8b3d9a4e5f1780a | feat: add reports module with statistics and export functionality | 11/05/2026 |
+| Frontend | feature/settings | d03e5c9f62a4b8da0ce58fa7d9c4e1b5f6a2891b | feat: implement user settings and platform configuration screens | 12/05/2026 |
+| Frontend | feature/veterinarians | e14f6da073b5c9eb1df69ab08e1d5f2c6a7b3902 | feat: develop veterinarians management and assignment interface | 12/05/2026 |
+| Frontend | feature/alerts | f25a7eb184c6da0f2eg70bc19f2e6a3d7b8c4013 | feat: implement notifications center and emergency alert components | 13/05/2026 |
+
 #### 6.2.1.5. Execution Evidence for Sprint Review
+Al concluir el primer sprint, se logró establecer la base estructural del proyecto frontend, implementando la arquitectura inicial de la aplicación y las principales secciones de navegación. Se definió la estructura general de la landing page, asegurando una organización clara de los componentes y una correcta separación por secciones funcionales.
+
+Se incorporó una primera versión de la interfaz visual, incluyendo el layout principal, la barra de navegación y la sección hero, sentando las bases para una experiencia de usuario coherente y escalable. Asimismo, se aplicaron principios básicos de usabilidad y buenas prácticas de desarrollo UI para garantizar una navegación intuitiva desde el inicio del proyecto.
+
+Este sprint permitió consolidar la estructura inicial del sistema, facilitando la integración progresiva de nuevas funcionalidades en los siguientes ciclos de desarrollo.
+
+#### A continuación, se presentan capturas de pantalla que ilustran los avances y detalles de la interfaz.
+
+- Avance 1
+![Footer](./img/evidencia_sprint1/avance1.png)
+
+- Avance 2
+![Footer](./img/evidencia_sprint1/avance2.png)
+
+- Avance 3
+![Footer](./img/evidencia_sprint1/avance3.png)
+
+- Avance 4
+![Footer](./img/evidencia_sprint1/avance4.png)
+
+- Avance 5
+![Footer](./img/evidencia_sprint1/avance5.png)
+
+- Avance 6
+![Footer](./img/evidencia_sprint1/avance6.png)
 
 #### 6.2.1.6. Services Documentation Evidence for Sprint Review
 
 #### 6.2.1.7. Software Deployment Evidence for Sprint Review
+En este Sprint, se realizó el despliegue inicial de la landing Page y la aplicación web del proyecto BluePatitas, marcando el comienzo del proceso de publicación gradual de los componentes del sistema. Esta acción tuvo como propósito principal validar visualmente los avances en diseño e interacción, tanto con el cliente como con el equipo docente.
+
+- URL de la aplicación web desplegada: 
+[appWeb-Bluepatittas](https://ejemplo.com)
+
+- URL de el landing page desplegada:
+[Landing-page](https://ejemplo.com)
+
+Para realizar el despliegue, accedimos a la configuración del repositorio y usamos netlify.
+
+
+#### 6.2.1.7. Team Collaboration Insights during Sprint
 
 ## 6.3. Validation Interviews
+
+
 ### 6.3.1. Diseño de Entrevistas
 ### 6.3.2. Registro de Entrevistas
 ### 6.3.3. Evaluaciones según heurísticas
