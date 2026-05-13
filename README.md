@@ -2261,25 +2261,29 @@ Este sprint permitió consolidar la estructura inicial del sistema, facilitando 
 
 #### A continuación, se presentan capturas de pantalla que ilustran los avances y detalles de la interfaz.
 
-- Avance 1
+- Evidencia de inicio de sesión 
 ![Footer](./img/evidencia_sprint1/avance1.png)
 
-- Avance 2
+- Evidencia de registro
 ![Footer](./img/evidencia_sprint1/avance2.png)
 
-- Avance 3
+- Evidencia de formulario
 ![Footer](./img/evidencia_sprint1/avance3.png)
 
-- Avance 4
+- Evidencia de Panel principal de BluePatitas
 ![Footer](./img/evidencia_sprint1/avance4.png)
 
-- Avance 5
+- Evidencia de la sección de gestión de mascotas
 ![Footer](./img/evidencia_sprint1/avance5.png)
 
-- Avance 6
+- Evidencia de sección de veterinarios
 ![Footer](./img/evidencia_sprint1/avance6.png)
 
 #### 6.2.1.6. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 1 no se implementaron ni se expusieron servicios backend ni endpoints, ya que el alcance principal del sprint estuvo enfocado en la definición de la base del producto y/o componentes frontend.
+
+Se identificaron los servicios necesarios a nivel de diseño, pero su desarrollo fue postergado para el Sprint 2 debido a la priorización del flujo de trabajo y la planificación incremental del sistema.
 
 #### 6.2.1.7. Software Deployment Evidence for Sprint Review
 En este Sprint, se realizó el despliegue inicial de la landing Page y la aplicación web del proyecto BluePatitas, marcando el comienzo del proceso de publicación gradual de los componentes del sistema. Esta acción tuvo como propósito principal validar visualmente los avances en diseño e interacción, tanto con el cliente como con el equipo docente.
@@ -2292,8 +2296,17 @@ En este Sprint, se realizó el despliegue inicial de la landing Page y la aplica
 
 Para realizar el despliegue, accedimos a la configuración del repositorio y usamos netlify.
 
+- Evidencia del deploy
+![Footer](./img/evidencia_sprint1/deployEvi.jpg)
+
 
 #### 6.2.1.7. Team Collaboration Insights during Sprint
+
+Se muestra la colaboracion del equipo
+
+![Footer](./img/evidencia_sprint1/Insights1.jpg)
+![Footer](./img/evidencia_sprint1/Insights2.jpg)
+![Footer](./img/evidencia_sprint1/Insights3.jpg)
 
 ## 6.3. Validation Interviews
 
