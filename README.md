@@ -2262,6 +2262,16 @@ Wireframe Mobile
 
 Wireframe Desktop
 
+![Register](/img/BluePatitas-Figma/Web/Wireframe/Register%20-%20Wireframe%20Desktop.png)
+
+![Login](/img/BluePatitas-Figma/Web/Wireframe/Login%20-%20Wireframe%20Desktop.png)
+
+![Crear Refugio Paso 1](/img/BluePatitas-Figma/Web/Wireframe/Crear%20Refugio%20Paso%201%20-%20Wireframe%20Desktop.png)
+
+![Crear Refugio Paso 2](/img/BluePatitas-Figma/Web/Wireframe/Crear%20Refugio%20Paso%202%20-%20Wireframe%20Desktop.png)
+
+![Crear Refugio Paso 3](/img/BluePatitas-Figma/Web/Wireframe/Crear%20Refugio%20Paso%203%20-%20Wireframe%20Desktop.png)
+
 ![Acción](/img/BluePatitas-Figma/Web/Wireframe/Acción%20-%20Wireframe%20Desktop.png)
 
 ![Agregar Animales](/img/BluePatitas-Figma/Web/Wireframe/Agregar%20Animales%20-%20Wireframe%20Desktop.png)
@@ -2279,14 +2289,6 @@ Wireframe Desktop
 ![Añadir Usuario](/img/BluePatitas-Figma/Web/Wireframe/Añadir%20Usuario%20-%20Wireframe%20Desktop.png)
 
 ![Configuración](/img/BluePatitas-Figma/Web/Wireframe/Configuración%20-%20Wireframe%20Desktop.png)
-
-![Container-1](/img/BluePatitas-Figma/Web/Wireframe/Container-1.png)
-
-![Crear Refugio Paso 1](/img/BluePatitas-Figma/Web/Wireframe/Crear%20Refugio%20Paso%201%20-%20Wireframe%20Desktop.png)
-
-![Crear Refugio Paso 2](/img/BluePatitas-Figma/Web/Wireframe/Crear%20Refugio%20Paso%202%20-%20Wireframe%20Desktop.png)
-
-![Crear Refugio Paso 3](/img/BluePatitas-Figma/Web/Wireframe/Crear%20Refugio%20Paso%203%20-%20Wireframe%20Desktop.png)
 
 ![Dashboard](/img/BluePatitas-Figma/Web/Wireframe/Dashboard%20-%20Wireframe%20Desktop.png)
 
@@ -2343,6 +2345,16 @@ Mock-up Mobile
 
 Mock-up Desktop
 
+![Register](/img/BluePatitas-Figma/Web/Mockup/Register%20-%20Mockup%20Web.png)
+
+![Login](/img/BluePatitas-Figma/Web/Mockup/Login%20-%20Mockup%20Web.png)
+
+![Crear Refugio Paso 1](/img/BluePatitas-Figma/Web/Mockup/Crear%20Refugio%20Paso%201%20-%20Mockup%20Desktop.png)
+
+![Crear Refugio Paso 2](/img/BluePatitas-Figma/Web/Mockup/Crear%20Refugio%20Paso%202%20-%20Mockup%20Desktop.png)
+
+![Crear Refugio Paso 3](/img/BluePatitas-Figma/Web/Mockup/Crear%20Refugio%20Paso%203%20-%20Mockup%20Desktop.png)
+
 ![Acción](/img/BluePatitas-Figma/Web/Mockup/Acción%20-%20Mockup%20Desktop.png)
 
 ![Agregar Dispositivo](/img/BluePatitas-Figma/Web/Mockup/Agregar%20Dispositivo%20-%20Mockup%20Desktop.png)
@@ -2354,14 +2366,6 @@ Mock-up Desktop
 ![Añadir Usuario](/img/BluePatitas-Figma/Web/Mockup/Añadir%20Usuario%20-%20Mockup%20Desktop.png)
 
 ![Configuración](/img/BluePatitas-Figma/Web/Mockup/Configuración%20-%20Mockup%20Desktop.png)
-
-![Container](/img/BluePatitas-Figma/Web/Mockup/Container.png)
-
-![Crear Refugio Paso 1](/img/BluePatitas-Figma/Web/Mockup/Crear%20Refugio%20Paso%201%20-%20Mockup%20Desktop.png)
-
-![Crear Refugio Paso 2](/img/BluePatitas-Figma/Web/Mockup/Crear%20Refugio%20Paso%202%20-%20Mockup%20Desktop.png)
-
-![Crear Refugio Paso 3](/img/BluePatitas-Figma/Web/Mockup/Crear%20Refugio%20Paso%203%20-%20Mockup%20Desktop.png)
 
 ![Dashboard](/img/BluePatitas-Figma/Web/Mockup/Dashboard%20-%20Mockup%20Desktop.png)
 
@@ -2376,6 +2380,12 @@ Mock-up Desktop
 ![Solicitudes de acceso](/img/BluePatitas-Figma/Web/Mockup/Solicitudes%20de%20acceso%20-%20Mockup%20Desktop.png)
 
 ![Veterinarios](/img/BluePatitas-Figma/Web/Mockup/Veterinarios%20-%20Mockup%20Desktop.png)
+
+![Agregar Dietas](/img/BluePatitas-Figma/Web/Mockup/Agregar%20Dieta%20-%20Mockup%20Desktop.png)
+
+![Detalles Monitoreo](/img/BluePatitas-Figma/Web/Mockup/Detalles%20Monitoreo%20-%20Mockup%20Web.png)
+
+![Ver Reportes](/img/BluePatitas-Figma/Web/Mockup/Ver%20Reportes%20-%20Mockup%20Desktop.png)
 
 ### 5.4.4. Applications User Flow Diagrams
 
