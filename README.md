@@ -2017,10 +2017,83 @@ El diseño de la base de datos para el _Veterinary Bounded Context_ persiste la 
 # Capítulo VI: Product Implementation, Validation & Deployment
 
 ## 6.1. Software Configuration Management
+
 ### 6.1.1. Software Development Environment Configuration
+
+Esta sección establece el listado oficial del software, herramientas y plataformas que los miembros del equipo de la startup usaron para garantizar coherencia, colaboración y eficiencia en la construcción y mantenimiento del proyecto.
+
+| Actividad | Producto | Propósito | Ruta de referencia |
+| :--- | :--- | :--- | :--- |
+| **Project Management** | Trello / GitHub Projects | Planificación, seguimiento y gestión de tareas ágiles (Sprints, Product Backlog, etc.). | [https://trello.com](https://trello.com/) |
+| **Product UX/UI Design** | Figma | Diseño de interfaces de usuario, landing page y prototipado. | [https://figma.com](https://figma.com) |
+| **Software Development** | Visual Studio Code | Edición y desarrollo de código para las interfaces web, backend y scripts IoT. | [https://code.visualstudio.com/](https://code.visualstudio.com/) |
+| Software Development | Android Studio | Edición y desarrollo de código para interfaces web y móvil | [https://developer.android.com/](https://developer.android.com/) |
+| **Software Deployment** | Netlify | Despliegue automatizado y alojamiento de la Landing Page. | [https://www.netlify.com/](https://www.netlify.com/) |
+| **Software Documentation** | Markdown + StackEdit | Redacción y estructuración de la documentación técnica del proyecto. | [https://stackedit.io](https://stackedit.io) |
+| **Version Control** | Git (GitHub) | Control de versiones, ramas y revisiones de código colaborativo. | [https://github.com](https://github.com) |
+
 ### 6.1.2. Source Code Management
+
+La administración y estructuración de las múltiples modificaciones se realizaron mediante la creación de repositorios centralizados en GitHub para el proyecto. Nuestra organización se estructuró de la siguiente manera:
+
+* **Organización**
+
+| Producto | Repositorio | URL |
+| :--- | :--- | :--- |
+| **Organización principal** | BluePatitas | [https://github.com/orgs/1ASI0572-2610-17755-G3-BluePatitas/repositories](https://github.com/orgs/1ASI0572-2610-17755-G3-BluePatitas/repositories) |
+| **Landing Page** | BluePatitas-Landing-Page | [https://github.com/1ASI0572-2610-17755-G3-BluePatitas/Project-LandingPage](https://github.com/1ASI0572-2610-17755-G3-BluePatitas/Project-LandingPage) |
+| **Front-End Web** | BluePatitas-Frontend | [https://github.com/1ASI0572-2610-17755-G3-BluePatitas/frontend-BluePatitas](https://github.com/1ASI0572-2610-17755-G3-BluePatitas/frontend-BluePatitas) |
+| **Back-End / API** | BluePatitas-Backend | [https://github.com/1ASI0572-2610-17755-G3-BluePatitas/backend](https://github.com/1ASI0572-2610-17755-G3-BluePatitas/backend) |
+| **IoT / Edge** | BluePatitas-IoT | [https://github.com/1ASI0572-2610-17755-G3-BluePatitas/iot](https://github.com/1ASI0572-2610-17755-G3-BluePatitas/iot) |
+
+* **Ramas Principales:**
+
+Se usará el flujo de trabajo **GitFlow** para mantener nuestras ramas correctamente estructuradas y aplicar buenas prácticas de control de versiones. Para ello, contaremos con:
+
+* **Main branch (`main`):** Esta rama está destinada exclusivamente a la producción. Contiene código estable, funcional y listo para el usuario final.
+* **Develop branch (`develop`):** Esta rama está destinada a la integración constante y pruebas pre-producción. Aquí se fusionan las nuevas características antes de pasar a producción.
+* **Feature branches (`feature/nombre-del-feature`):** Cada funcionalidad, arreglo o mejora poseerá su respectiva rama creada a partir de `develop`. Una vez que se encuentre correctamente implementada y probada, será fusionada de vuelta a la rama `develop`.
+
 ### 6.1.3. Source Code Style Guide & Conventions
+
+Usaremos buenas prácticas en cuanto a la escritura y estructuración del código para asegurar que sea coherente, legible y escalable por cualquier miembro del equipo.
+
+**HTML:**
+* Cada etiqueta, id, nombre y clase será nombrada usando *lowercase* (minúsculas).
+* Utilizar la codificación `UTF-8`.
+* Nomenclatura y redacción de identificadores en inglés.
+* En cada referencia a un archivo, colocar la extensión correspondiente (`.css`, `.js`).
+* Asegurar el cierre correcto de todas las etiquetas semánticas.
+
+**Etiquetas semánticas empleadas:**
+* `<header>`: Define el contenido introductorio de la página web (ej. barra de navegación y logo).
+* `<nav>`: Define las secciones dedicadas a la navegación principal.
+* `<div>`: Permite la agrupación lógica de elementos para aplicarles hojas de estilo específicas y manejar el layout.
+* `<img>`: Inserción de imágenes con su respectivo atributo `alt` para accesibilidad.
+* `<ul>` y `<li>`: Definición de listas desordenadas, empleadas principalmente para la elaboración del menú interactivo.
+* `<a>` (Anchor): Hipervínculos para desplazar a los usuarios a través de las diferentes secciones.
+* `<button>`: Botones interactivos que permiten a los usuarios realizar acciones específicas (CTAs).
+* `<h1>` - `<h4>`: Jerarquía de títulos y subtítulos de la página web, vitales para el SEO y la legibilidad.
+
+**CSS:**
+* Las imágenes deben especificar su ancho máximo (`max-width: 100%`) para garantizar un diseño *responsive* que se adapte al contenedor padre.
+* Cada clase será nombrada de acuerdo al propósito y bloque del elemento (recomendable seguir metodologías como BEM).
+* Separación de palabras en clases e identificadores mediante guiones (`-`), también conocido como *kebab-case*.
+* Reinicio de estilos base utilizando un selector universal (`*`) con `margin: 0`, `padding: 0` y `box-sizing: border-box`.
+
 ### 6.1.4. Software Deployment Configuration
+
+**Consideraciones previas al despliegue:**
+Asegurarse de que todos los archivos `.html`, `.css` y `.js` tengan rutas relativas correctas. Se debe verificar exhaustivamente que los hipervínculos y rutas de imágenes (que suelen funcionar bien en entornos locales como *Live Server* de Visual Studio Code) apunten a los directorios correctos respetando mayúsculas y minúsculas, ya que los servidores en la nube son *case-sensitive*.
+
+**Proceso de Despliegue con Netlify:**
+Dado que la Landing Page es un sitio web estático (HTML/CSS/JS), utilizamos **Netlify** debido a su velocidad, optimización de recursos y despliegue continuo integrado directamente con nuestro repositorio.
+
+1.  **Preparación del Repositorio:** Aseguramos que la versión final de la Landing Page esté en la rama `main` del repositorio `BluePatitas-Landing-Page` dentro de nuestra organización en GitHub.
+2.  **Autenticación y Conexión:** Ingresamos a [Netlify.com](https://www.netlify.com/) y accedemos con nuestra cuenta de GitHub.
+3.  **Importar el Proyecto:** Seleccionamos la opción *Add new site* > *Import an existing project* y elegimos GitHub como proveedor.
+4.  **Configuración del Build:** Seleccionamos el repositorio `1ASI0572-2610-17755-G3-BluePatitas/BluePatitas-Landing-Page`. Indicamos que la rama de producción a observar es `main`. Dado que es HTML puro, los campos de *Build command* y *Publish directory* se dejan en blanco o según el directorio raíz donde esté el `index.html`.
+5.  **Despliegue:** Hacemos clic en *Deploy site*. Netlify compilará y publicará los archivos en segundos, generando un enlace público automatizado (con HTTPS incluido) a través del cual cualquier usuario puede acceder a nuestra plataforma. Cualquier cambio futuro que se haga *push
 
 ## 6.2. Landing Page, Services & Applications Implementation
 ### 6.2.1. Sprint 1
@@ -2052,6 +2125,26 @@ El diseño de la base de datos para el _Veterinary Bounded Context_ persiste la 
 | Hernández Uchuya, María            | Bal2220         | C                          | C                            | L                                   | C                          | C                                | C                   |
 
 #### 6.2.1.3. Sprint Backlog 1
+
+El objetivo principal del Sprint 1 fue establecer la base del FrontEnd del sistema BluePatitas, diseñando y plasmando lo que vendra a ser nuestra estructura en el futuro
+
+| Sprint # | Sprint 1 | | | | | | |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **User Story Id** | **User Story Title** | **Task Id** | **Task Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status (To-do / In-Process / To-Review / Done)** |
+| US28 | Landing page informativa | T01 | Maquetación HTML de la Landing Page | Desarrollar la estructura base HTML5 de la landing page con la propuesta de valor. | 4 | Luciana Choquehuanca | Done |
+| US28 | Landing page informativa | T02 | Estilos CSS y Responsive Design | Implementar los estilos en CSS para que la landing page sea adaptable (mobile/desktop). | 5 | María Hernández | Done |
+| US07 | Visualización de cámara en tiempo real | T03 | Desarrollo del componente de Video Stream | Crear el componente UI en Angular/React para recibir y mostrar el streaming de video mockeado. | 6 | Giancarlo Castañeda | Done |
+| US07 | Visualización de cámara en tiempo real | T04 | Manejo de estados de cámara (Activa/Inactiva) | Implementar la lógica UI para mostrar placeholders o mensajes cuando la cámara se desconecta. | 4 | Ronald Peralta | Done |
+| US14 | Dashboard de alertas del refugio | T05 | Maquetación del Dashboard Principal | Diseñar y maquetar la vista principal donde el administrador verá el resumen de su refugio. | 6 | Carlos Gonzales | Done |
+| US14 | Dashboard de alertas del refugio | T06 | Componente de Lista de Alertas | Crear el panel lateral o sección inferior para listar notificaciones (mock data). | 5 | Luciana Choquehuanca | Done |
+| US16 | Historial ambiental del animal | T07 | Diseño de gráficos de Temperatura/Humedad | Integrar librería de gráficos (ej. Chart.js) para mostrar el historial ambiental del animal. | 7 | Ronald Peralta | Done |
+| US16 | Historial ambiental del animal | T08 | Implementación de filtros de fecha en gráficos | Agregar selectores de fecha en la UI para filtrar los datos mostrados en los gráficos ambientales. | 4 | Giancarlo Castañeda | Done |
+| US09 | Configuración de geocerca | T09 | Integración de Mapa en la UI | Agregar el componente de mapa (ej. Google Maps API o Leaflet) en la vista de configuración. | 6 | Carlos Gonzales | Done |
+| US09 | Configuración de geocerca | T10 | Herramientas de dibujo en el Mapa | Habilitar la funcionalidad para dibujar polígonos/círculos en el mapa para delimitar la geocerca. | 6 | Ronald Peralta | Done |
+| US19 | Consulta de perfil del animal | T11 | Maquetación del Perfil del Animal | Crear la vista con la foto, información básica y dieta del animal. | 4 | María Hernández | Done |
+| US15 | Estado de conexión de dispositivos | T12 | Componente de Estado de Hardware | Crear un panel que muestre el estado de los sensores, cámara y dispensador (Verde/Rojo). | 4 | Luciana Choquehuanca | Done |
+| -- | Tareas Generales | T13 | Configuración del repositorio Front Web | Iniciar proyecto, configurar linter, dependencias y enrutamiento inicial. | 4 | Giancarlo Castañeda | Done |
+| -- | Tareas Generales | T14 | Despliegue en Netlify de Landing Page | Configurar el CD/CI básico para desplegar la landing page automáticamente en Netlify. | 4 | Carlos Gonzales | Done |
 
 #### 6.2.1.4. Development Evidence for Sprint Review
 
