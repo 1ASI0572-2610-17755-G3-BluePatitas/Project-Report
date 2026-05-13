@@ -1,54 +1,54 @@
-﻿# <center>Project Report</center>
-
-<p align="center">
-    <strong>Universidad Peruana de Ciencias Aplicadas</strong><br>
+﻿<p align="center">
     <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" width="200"><br>
-    <strong>Ingeniería de Software - 2026-10</strong><br>
-    <strong>Desarrollo de Soluciones IOT - 17755</strong><br>
-    <strong>Profesor: Marco Antonio Leon Baca</strong><br>
-    <br><strong>Informe del Trabajo Final</strong>
+    <strong>Universidad Peruana de Ciencias Aplicadas</strong><br><br><br>
+    <strong>Ingeniería de Software</strong><br>
+    <strong>7mo ciclo, 2026-10</strong><br>
+    <strong>1ASI0572 Desarrollo de Soluciones IoT</strong><br>
+    <strong>NRC: 17755</strong><br>
+    <strong>Profesor: Marco Antonio Leon Baca</strong><br><br><br>
+    <strong>Informe del Trabajo Final</strong><br><br>
 </p>
 
 <p align="center">
-    <strong>Startup: BluePatitas </strong><br>
-    <strong>Producto: </strong>
+    <strong>Startup: BluePatitas</strong><br>
+    <strong>Producto: BluePatitas</strong><br><br>
 </p>
 
-<div style="text-align:center;">
-    <h3 align="center">Team Members:</h3>
-    <table align="center">
+<div align="center">
+    <strong>Relación de integrantes</strong><br><br>
+    <table>
         <tr>
-            <th style="text-align:center;">Member</th>
-            <th style="text-align:center;">Code</th>
+            <th>Code</th>
+            <th>Member</th>        
         </tr>
         <tr>
-            <td>Giancarlo Santiago Castañeda Guimas</td>
             <td>U202310601</td>
+            <td>Castañeda Guimas, Giancarlo Santiago</td>
         </tr>
         <tr>
-            <td>Luciana Carolina Choquehuanca Nuñez</td>
             <td>U202319431</td>
+            <td>Choquehuanca Nuñez, Luciana Carolina</td>
         </tr>
         <tr>
-            <td>Carlos Matthew Gonzales Valverde</td>
             <td>U202314130</td>
+            <td>Gonzales Valverde, Carlos Matthew</td>
         </tr>
         <tr>
-            <td>María Patricia Hernández Uchuya</td>
             <td>U202311258</td>
+            <td>Hernández Uchuya, María Patricia</td>
         </tr>
         <tr>
-            <td>Ronald Joel Peralta Chipa</td>
             <td>U202224619</td>
+            <td>Peralta Chipa, Ronald Joel</td>
         </tr>
     </table>
 </div>
 
-<p align="center">
+<p align="center" style="margin-top: 100px;">
     <strong>Abril, 2026</strong>
 </p>
 
-<br>
+<div style="page-break-after: always;"></div>
 
 # Registro de versiones del Informe
 
@@ -81,12 +81,16 @@
     </tr>
 </table>
 
-<br>
+<div style="page-break-after: always;"></div>
 
 # Project Report Collaboration Insights
-Link del repositorio del reporte: 
+Link del repositorio del reporte: [https://github.com/1ASI0572-2610-17755-G3-BluePatitas/Project-Report](https://github.com/1ASI0572-2610-17755-G3-BluePatitas/Project-Report)
 
-<br>
+### AV1
+
+![CollaborationAV1](img/CollaborationAV1.PNG)
+
+<div style="page-break-after: always;"></div>
 
 # Contenido
 - [Student Outcome](#student-outcome)
@@ -189,10 +193,9 @@ Link del repositorio del reporte:
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
 
-<br>
+<div style="page-break-after: always;"></div>
 
 # Student Outcome
-
 
 <table align="center">
   <tr>
@@ -228,7 +231,7 @@ Link del repositorio del reporte:
   </tr>
 </table>
 
-<br>
+<div style="page-break-after: always;"></div>
 
 # Capítulo I: Introducción
 
@@ -240,6 +243,7 @@ BluePatitas es una startup orientada al desarrollo de soluciones tecnológicas p
 La propuesta de BluePatitas se enfoca en brindar una solución accesible e innovadora que apoye a administradores de refugios y veterinarios mediante el uso de tecnología IoT y herramientas digitales. De esta manera, la startup busca contribuir a una gestión más eficiente, preventiva y ordenada del cuidado animal, facilitando el seguimiento de eventos relevantes y fortaleciendo la toma de decisiones en contextos donde el tiempo, el personal y los recursos suelen ser limitados.
 
 Como iniciativa de base tecnológica, BluePatitas proyecta integrar dispositivos IoT con productos digitales como aplicaciones web y móviles, permitiendo que la información recolectada se transforme en alertas, registros y soporte operativo útil para el entorno de refugios. Así, la startup plantea una propuesta con potencial de escalabilidad, enfocada en resolver una problemática real mediante una combinación de innovación, accesibilidad y compromiso con el bienestar animal.
+
 ### 1.1.2. Perfiles de integrantes del equipo
 
 <table align="center" border="1" cellspacing="0" cellpadding="8" style="width: 90%; border-collapse: collapse;">
@@ -258,7 +262,7 @@ Como iniciativa de base tecnológica, BluePatitas proyecta integrar dispositivos
 
 <table align="center" border="1" cellspacing="0" cellpadding="10" style="width: 90%; border-collapse: collapse;">
   <tr>    
-    <td style="width: 200px; text-align: center;">
+    <td style="width: 150px; text-align: center;">
       <img src="img/lluciana_img.png" style="width: 1000px; height: auto; border-radius: 10px;">
     </td>
     <td>
@@ -308,11 +312,12 @@ Como iniciativa de base tecnológica, BluePatitas proyecta integrar dispositivos
     <td>
       <p align="center"><strong>Ronald Joel Peralta Chipa - U202224619</strong></p>
       <p align="justify">
-         Mi nombre es Ronald, tengo 22 años y soy una persona comprometida con el orden, con un estilo de liderazgo democrático y una gran capacidad para escuchar y comprender. Disfruto crecer en equipo y aprender constantemente de los demás. Además, tengo interés en la cultura DevSecOps y la gestión de proyectos, lo que me permite tener un enfoque integral orientado a la seguridad, organización y mejora continua.
+         Mi nombre es Ronald, tengo 22 años y soy estudiante de la carrera de Ingeniería de Software. Me considero una persona comprometida con el orden, con un estilo de liderazgo democrático y una gran capacidad para escuchar y comprender. Disfruto crecer en equipo y aprender constantemente de los demás. Además, tengo interés en la cultura DevSecOps y la gestión de proyectos, lo que me permite tener un enfoque integral orientado a la seguridad, organización y mejora continua.
       </p>
     </td>
   </tr>
 </table>
+
 
 ## 1.2. Solution Profile
 
@@ -429,6 +434,7 @@ El Lean UX Canvas sintetiza el problema principal del proyecto, los usuarios inv
 | **Segmento 1: Administradores de refugios** | Este segmento es prioritario porque asume la gestión operativa del cuidado diario de los animales en el refugio. Necesita herramientas que faciliten el monitoreo remoto, la recepción de alertas ante posibles escapes o eventos anormales, la supervisión de condiciones ambientales y la verificación del cumplimiento de la alimentación programada. | - **Edades:** 20 a 50 años <br> - **Ubicación:** Perú <br> - **Motivaciones:** Mejorar el cuidado de los animales y optimizar la capacidad de respuesta del refugio. <br> - **Intereses:** Bienestar animal, gestión operativa, supervisión remota y uso práctico de tecnología. <br> - **Comportamiento:** Valoran soluciones accesibles que reduzcan tareas manuales y centralicen información relevante para la toma de decisiones. |
 | **Segmento 2: Veterinarios** | Este segmento comprende a los profesionales que brindan seguimiento clínico y recomendaciones de cuidado para animales alojados en refugios. Requieren acceso a información confiable sobre condiciones ambientales, alertas relevantes y cumplimiento de la dieta semanal prescrita, de modo que puedan coordinar mejor con los administradores del refugio. | - **Edades:** 20 a 60 años <br> - **Ubicación:** Perú <br> - **Motivaciones:** Asegurar continuidad en el cuidado indicado y mejorar la coordinación con refugios. <br> - **Intereses:** Bienestar animal, seguimiento de condiciones de cuidado, eficiencia operativa e innovación aplicada. <br> - **Comportamiento:** Utilizan información sintetizada y registros de eventos como apoyo para emitir recomendaciones y priorizar intervenciones. |
 
+<div style="page-break-after: always;"></div>
 
 # Capítulo II: Requirements Elicitation & Analysis
 
@@ -826,8 +832,6 @@ En este segmento se definió el User Persona **Andrees Caseres**, considerando s
 
 ![User Persona Administrador del refugio](img/userpersona_1.png)
 
-
-
 ### Veterinario
 
 En este segmento se definió el User Persona **Dr. Eva Mudel**, tomando en cuenta su trayectoria profesional, entorno de trabajo y enfoque en la atención médica de animales. Se consideraron sus motivaciones relacionadas con brindar un servicio eficiente y de calidad, así como sus principales frustraciones asociadas a la coordinación de casos, la falta de información oportuna y la gestión de recursos limitados.
@@ -844,7 +848,7 @@ En esta sección se detallan las tareas que realizan los usuarios clave de nuest
 
 Las tareas aquí descritas no dependen exclusivamente del uso del software, ya que representan acciones que los usuarios deben realizar en cualquier proceso de selección, sea manual o automatizado. Para cada tarea, se especifica su frecuencia y nivel de importancia, permitiendo identificar qué funciones son más críticas para cada perfil.
 
-#### 🧑‍💼 User Task Matrix – Administradores de refugios
+#### User Task Matrix – Administradores de refugios
 
 | Tarea                                             | Frecuencia | Importancia |
 |--------------------------------------------------|------------|-------------|
@@ -854,7 +858,7 @@ Las tareas aquí descritas no dependen exclusivamente del uso del software, ya q
 | Confirmar la ubicación exacta del animal mediante el sistema       | A veces     | Media        |
 | Analizar alertas de irregularidades en la ingesta alimentaria    | A menudo    | Alta       |
 
-#### 🙋‍♂️ User Task Matrix – Veterinarios
+#### User Task Matrix – Veterinarios
 
 | Tarea                                          | Frecuencia | Importancia |
 |-----------------------------------------------|------------|-------------|
@@ -955,7 +959,7 @@ Cerca de la medianoche, dimos por concluida la sesión. El equipo logró obtener
 | **Tolva (Hopper)** | Depósito de almacenamiento físico del dispensador IoT donde se guarda el alimento seco para mantener su frescura. |
 | **Alimentación Manual** | Acción remota disparada intencionalmente por el Administrador desde la plataforma para proveer una ración extra o premio. |
 
-<br>
+<div style="page-break-after: always;"></div>
 
 # Capítulo III: Requirements Specification
 
@@ -1079,7 +1083,7 @@ Link Product Backlog en Jira: [https://matthewpro17-17770197508.atlassian.net/ji
 
 Invitación para poder visualizar Jira (entrar a este primero y aceptar la invitación, luego entrar al otro link): [https://id.atlassian.com/invite/p/jira-software?id=rR0gURm_RNOyBBhY-xMvrQ](#)
 
-<br>
+<div style="page-break-after: always;"></div>
 
 # Capítulo IV: Solution Software Design
 
@@ -1273,14 +1277,17 @@ Este enfoque garantiza una arquitectura escalable, mantenible y alineada con los
 
 #### 4.1.3.1. Software Architecture System Landscape Diagram
 El System Landscape Diagram presenta una vista general del ecosistema en el que se ubica BluePatitas. En este diagrama se identifican los usuarios principales, el sistema BluePatitas y los sistemas externos con los que interactúa, como los dispositivos IoT, el servicio de notificaciones push y el servicio de mapas. Su propósito es mostrar, de forma resumida, cómo la solución se relaciona con su entorno general.
+
 ![System Landscape Diagram](img/BluePatitasSystemLandscape.png)
 
 #### 4.1.3.2. Software Architecture Context Level Diagrams
 El Context Diagram muestra a BluePatitas System como el sistema central de la solución. En esta vista se detallan sus relaciones directas con los actores principales, que son los administradores de refugios y veterinarios, así como con los dispositivos IoT y servicios externos necesarios para el monitoreo, las alertas y la ubicación. Este diagrama permite comprender qué funciones cumple el sistema dentro del contexto del refugio.
+
 ![Context Level Diagrams](img/BluePatitasSystemContext.png)
 
 #### 4.1.3.3. Software Architecture Container Level Diagrams
 El Container Diagram descompone internamente el sistema BluePatitas en sus principales componentes de software. En esta vista se representan la aplicación web, la aplicación móvil, el API Gateway, el Backend API, la base de datos, el IoT Edge Gateway, la base de datos local del Edge y las aplicaciones embebidas que interactúan con los dispositivos IoT. Su finalidad es mostrar cómo se organiza técnicamente la solución y cómo fluye la información entre sus componentes.
+
 ![Context Level Diagrams](img/BluePatitasContainerDiagram.png)
 
 #### 4.1.3.4. Software Architecture Deployment Diagrams
@@ -1977,6 +1984,8 @@ El diseño de la base de datos para el _Veterinary Bounded Context_ persiste la 
 
 ![Veterinary Database Diagram](img/BoundedContextDiagrams/Veterinary/VeterinaryDatabaseDiagram.PNG)
 
+<div style="page-break-after: always;"></div>
+
 # Capítulo V: Solution UI/UX Design
 
 ## 5.1. Style Guidelines
@@ -2003,40 +2012,316 @@ El diseño de la base de datos para el _Veterinary Bounded Context_ persiste la 
 ## 5.5. Applications Prototyping
 ## 5.6. IoT Device Design
 
-<br>
+<div style="page-break-after: always;"></div>
 
 # Capítulo VI: Product Implementation, Validation & Deployment
 
 ## 6.1. Software Configuration Management
+
 ### 6.1.1. Software Development Environment Configuration
+
+Esta sección establece el listado oficial del software, herramientas y plataformas que los miembros del equipo de la startup usaron para garantizar coherencia, colaboración y eficiencia en la construcción y mantenimiento del proyecto.
+
+| Actividad | Producto | Propósito | Ruta de referencia |
+| :--- | :--- | :--- | :--- |
+| **Project Management** | Trello / GitHub Projects | Planificación, seguimiento y gestión de tareas ágiles (Sprints, Product Backlog, etc.). | [https://trello.com](https://trello.com/) |
+| **Product UX/UI Design** | Figma | Diseño de interfaces de usuario, landing page y prototipado. | [https://figma.com](https://figma.com) |
+| **Software Development** | Visual Studio Code | Edición y desarrollo de código para las interfaces web, backend y scripts IoT. | [https://code.visualstudio.com/](https://code.visualstudio.com/) |
+| Software Development | Android Studio | Edición y desarrollo de código para interfaces web y móvil | [https://developer.android.com/](https://developer.android.com/) |
+| **Software Deployment** | Netlify | Despliegue automatizado y alojamiento de la Landing Page. | [https://www.netlify.com/](https://www.netlify.com/) |
+| **Software Documentation** | Markdown + StackEdit | Redacción y estructuración de la documentación técnica del proyecto. | [https://stackedit.io](https://stackedit.io) |
+| **Version Control** | Git (GitHub) | Control de versiones, ramas y revisiones de código colaborativo. | [https://github.com](https://github.com) |
+
 ### 6.1.2. Source Code Management
+
+La administración y estructuración de las múltiples modificaciones se realizaron mediante la creación de repositorios centralizados en GitHub para el proyecto. Nuestra organización se estructuró de la siguiente manera:
+
+* **Organización**
+
+| Producto | Repositorio | URL |
+| :--- | :--- | :--- |
+| **Organización principal** | BluePatitas | [https://github.com/orgs/1ASI0572-2610-17755-G3-BluePatitas/repositories](https://github.com/orgs/1ASI0572-2610-17755-G3-BluePatitas/repositories) |
+| **Landing Page** | BluePatitas-Landing-Page | [https://github.com/1ASI0572-2610-17755-G3-BluePatitas/Project-LandingPage](https://github.com/1ASI0572-2610-17755-G3-BluePatitas/Project-LandingPage) |
+| **Front-End Web** | BluePatitas-Frontend | [https://github.com/1ASI0572-2610-17755-G3-BluePatitas/frontend-BluePatitas](https://github.com/1ASI0572-2610-17755-G3-BluePatitas/frontend-BluePatitas) |
+| **Back-End / API** | BluePatitas-Backend | [https://github.com/1ASI0572-2610-17755-G3-BluePatitas/backend](https://github.com/1ASI0572-2610-17755-G3-BluePatitas/backend) |
+| **IoT / Edge** | BluePatitas-IoT | [https://github.com/1ASI0572-2610-17755-G3-BluePatitas/iot](https://github.com/1ASI0572-2610-17755-G3-BluePatitas/iot) |
+
+* **Ramas Principales:**
+
+Se usará el flujo de trabajo **GitFlow** para mantener nuestras ramas correctamente estructuradas y aplicar buenas prácticas de control de versiones. Para ello, contaremos con:
+
+* **Main branch (`main`):** Esta rama está destinada exclusivamente a la producción. Contiene código estable, funcional y listo para el usuario final.
+* **Develop branch (`develop`):** Esta rama está destinada a la integración constante y pruebas pre-producción. Aquí se fusionan las nuevas características antes de pasar a producción.
+* **Feature branches (`feature/nombre-del-feature`):** Cada funcionalidad, arreglo o mejora poseerá su respectiva rama creada a partir de `develop`. Una vez que se encuentre correctamente implementada y probada, será fusionada de vuelta a la rama `develop`.
+
 ### 6.1.3. Source Code Style Guide & Conventions
+
+Usaremos buenas prácticas en cuanto a la escritura y estructuración del código para asegurar que sea coherente, legible y escalable por cualquier miembro del equipo.
+
+**HTML:**
+* Cada etiqueta, id, nombre y clase será nombrada usando *lowercase* (minúsculas).
+* Utilizar la codificación `UTF-8`.
+* Nomenclatura y redacción de identificadores en inglés.
+* En cada referencia a un archivo, colocar la extensión correspondiente (`.css`, `.js`).
+* Asegurar el cierre correcto de todas las etiquetas semánticas.
+
+**Etiquetas semánticas empleadas:**
+* `<header>`: Define el contenido introductorio de la página web (ej. barra de navegación y logo).
+* `<nav>`: Define las secciones dedicadas a la navegación principal.
+* `<div>`: Permite la agrupación lógica de elementos para aplicarles hojas de estilo específicas y manejar el layout.
+* `<img>`: Inserción de imágenes con su respectivo atributo `alt` para accesibilidad.
+* `<ul>` y `<li>`: Definición de listas desordenadas, empleadas principalmente para la elaboración del menú interactivo.
+* `<a>` (Anchor): Hipervínculos para desplazar a los usuarios a través de las diferentes secciones.
+* `<button>`: Botones interactivos que permiten a los usuarios realizar acciones específicas (CTAs).
+* `<h1>` - `<h4>`: Jerarquía de títulos y subtítulos de la página web, vitales para el SEO y la legibilidad.
+
+**CSS:**
+* Las imágenes deben especificar su ancho máximo (`max-width: 100%`) para garantizar un diseño *responsive* que se adapte al contenedor padre.
+* Cada clase será nombrada de acuerdo al propósito y bloque del elemento (recomendable seguir metodologías como BEM).
+* Separación de palabras en clases e identificadores mediante guiones (`-`), también conocido como *kebab-case*.
+* Reinicio de estilos base utilizando un selector universal (`*`) con `margin: 0`, `padding: 0` y `box-sizing: border-box`.
+
 ### 6.1.4. Software Deployment Configuration
 
+**Consideraciones previas al despliegue:**
+Asegurarse de que todos los archivos `.html`, `.css` y `.js` tengan rutas relativas correctas. Se debe verificar exhaustivamente que los hipervínculos y rutas de imágenes (que suelen funcionar bien en entornos locales como *Live Server* de Visual Studio Code) apunten a los directorios correctos respetando mayúsculas y minúsculas, ya que los servidores en la nube son *case-sensitive*.
+
+**Proceso de Despliegue con Netlify:**
+Dado que la Landing Page es un sitio web estático (HTML/CSS/JS), utilizamos **Netlify** debido a su velocidad, optimización de recursos y despliegue continuo integrado directamente con nuestro repositorio.
+
+1.  **Preparación del Repositorio:** Aseguramos que la versión final de la Landing Page esté en la rama `main` del repositorio `BluePatitas-Landing-Page` dentro de nuestra organización en GitHub.
+2.  **Autenticación y Conexión:** Ingresamos a [Netlify.com](https://www.netlify.com/) y accedemos con nuestra cuenta de GitHub.
+3.  **Importar el Proyecto:** Seleccionamos la opción *Add new site* > *Import an existing project* y elegimos GitHub como proveedor.
+4.  **Configuración del Build:** Seleccionamos el repositorio `1ASI0572-2610-17755-G3-BluePatitas/BluePatitas-Landing-Page`. Indicamos que la rama de producción a observar es `main`. Dado que es HTML puro, los campos de *Build command* y *Publish directory* se dejan en blanco o según el directorio raíz donde esté el `index.html`.
+5.  **Despliegue:** Hacemos clic en *Deploy site*. Netlify compilará y publicará los archivos en segundos, generando un enlace público automatizado (con HTTPS incluido) a través del cual cualquier usuario puede acceder a nuestra plataforma. Cualquier cambio futuro que se haga *push
+
+Como evidencia del despliegue de la Landing Page de **BluePatitas**, se muestran las principales secciones implementadas y publicadas en el entorno web. Estas capturas permiten verificar que la página se encuentra desplegada correctamente, mantiene una navegación funcional, conserva una identidad visual coherente y presenta las secciones necesarias para comunicar la propuesta de valor del producto.
+
+
+### Evidencia 1: Página de inicio
+
+![Página de inicio](./img/page1.png)
+
+Se evidencia la página principal de la Landing Page desplegada, donde se presenta la propuesta de valor de **BluePatitas**: una solución IoT orientada al bienestar animal en refugios. Además, se observa la barra de navegación, el selector de idioma, el acceso a login y el botón principal de inicio.
+
+
+### Evidencia 2: Sobre el Producto
+
+![Sobre el Producto](./img/page2.png)
+
+Se muestra la sección informativa del producto, donde se explica que **BluePatitas** permite transformar la gestión de refugios mediante tecnología IoT y dispositivos interconectados. También se incluye un espacio visual para un video demostrativo de la gestión en tiempo real.
+
+
+### Evidencia 3: Funcionalidades principales IoT
+
+![Funcionalidades IoT](./img/page3.png)
+
+Se evidencia la sección de funcionalidades principales, donde se presentan los componentes IoT del sistema: cámaras inteligentes, collares GPS, sensores climáticos y dispensadores automáticos. Esta sección permite comunicar de forma clara las capacidades tecnológicas de la solución.
+
+
+### Evidencia 4: Beneficios clave
+
+![Beneficios clave](./img/page4.png)
+
+Se presenta la sección de beneficios clave, orientada a los perfiles principales del sistema: administradores y veterinarios. Esta parte destaca cómo la plataforma ayuda a reducir costos operativos, optimizar recursos, acceder a datos históricos de salud y generar alertas automatizadas.
+
+
+### Evidencia 5: Testimonios de usuarios
+
+![Testimonios](./img/page5.png)
+
+Se evidencia la sección de testimonios, diseñada para reforzar la confianza en la solución mediante opiniones de usuarios relacionados con refugios, veterinaria y rescate animal. Esta sección aporta credibilidad y valor comercial a la Landing Page.
+
+
+### Evidencia 6: Sobre el equipo
+
+![Sobre el equipo](./img/page6.png)
+
+Se muestra la sección “Sobre el equipo”, donde se presenta al grupo responsable del desarrollo de **BluePatitas**. Esta sección ayuda a humanizar la propuesta y reforzar la identidad del proyecto.
+
+
+### Evidencia 7: Planes del servicio
+
+![Planes](./img/page7.png)
+
+Se evidencia la sección de planes, donde se presentan las opciones **Básico**, **Pro** y **Enterprise**. Además, se incluye un selector mensual/anual, permitiendo mostrar una estructura comercial clara para distintos tipos de refugios.
+
+
+### Evidencia 8: Preguntas frecuentes
+
+![Preguntas frecuentes](./img/page8.png)
+
+Se muestra la sección FAQ, implementada mediante preguntas desplegables. Esta sección permite resolver dudas comunes sobre instalación de dispositivos IoT, conectividad, seguridad de los collares GPS e integración con otros sistemas.
+
+
+### Evidencia 9: Formulario de contacto
+
+![Formulario de contacto](./img/page9.png)
+
+Se evidencia el formulario de contacto, donde los usuarios interesados pueden ingresar su nombre, correo y nombre del refugio para solicitar información o una demostración personalizada de la plataforma.
+
+
+### Evidencia 10: Footer
+
+![Footer](./img/page10.png)
+
+Se muestra el pie de página de la Landing Page, donde se mantiene la identidad de **BluePatitas**, una breve descripción del producto y la información de derechos reservados. Esto completa la estructura visual y formal del sitio desplegado.
+
+En conjunto, estas evidencias demuestran que la Landing Page de **BluePatitas** fue desplegada correctamente y que sus secciones principales se encuentran disponibles para el usuario final. El sitio presenta una estructura completa: inicio, producto, beneficios, funcionalidades, planes, testimonios, FAQ, contacto y footer, manteniendo coherencia visual y una navegación clara orientada a refugios de animales.
+
 ## 6.2. Landing Page, Services & Applications Implementation
-### 6.2.X. Sprint n
-#### 6.2.X.1. Sprint Planning n
-#### 6.2.X.2. Aspect Leaders and Collaborators
-#### 6.2.X.3. Sprint Backlog n
-#### 6.2.X.4. Development Evidence for Sprint Review
-#### 6.2.X.5. Testing Suite Evidence for Sprint Review
-#### 6.2.X.6. Execution Evidence for Sprint Review
-#### 6.2.X.7. Services Documentation Evidence for Sprint Review
-#### 6.2.X.8. Software Deployment Evidence for Sprint Review
-#### 6.2.X.9. Team Collaboration Insights during Sprint
+### 6.2.1. Sprint 1
+
+#### 6.2.1.1. Sprint Planning 1
+
+| **Sprint #**                    | Sprint 1 |
+|----------------------------------|----------|
+| **Sprint Planning Background**  |          |
+| **Date**                        | 20/04/2026 |
+| **Time**                        | 8:00 pm |
+| **Location**                    | Virtual (Discord) |
+| **Prepared by**                 | Peralta Chipa Ronald Joel |
+| **Attendees (to planning meeting)** | Peralta Chipa Ronald Joel <br> Castañeda Guimas Giancarlo Santiago <br> Choquehuanca Nuñez Luciana Carolina <br> Gonzales Valverde Carlos Matthew <br> Hernández Uchuya María Patricia |
+| **Sprint n - 1 Review Summary**  | No hubo sprint anterior |
+| **Sprint n - 1 Retrospective Summary** | No hubo sprint anterior |
+| **Sprint 1 Goal**                | Realizar el Landing Page / Informe de trabajo |
+| **Sprint 1 Velocity**            | 15 |
+| **Sum of Story Points**          | 12 |
+
+#### 6.2.1.2. Aspect Leaders and Collaborators
+
+| Team Member (Last Name, First Name) | GitHub Username | Arquitectura Base (L/C) | API REST y Seguridad (L/C) | Persistencia y Base de Datos (L/C) | Modelo Veterinario (L/C) | Servicios de Alimentación (L/C) | Landing Page (L/C) |
+|:-----------------------------------|:----------------|:--------------------------|:----------------------------|:-----------------------------------|:--------------------------|:--------------------------------|:-------------------|
+| Peralta, Ronald                    | RooDev10        | L                          | C                            | L                                   | C                          | C                                | C                   |
+| Guimas, Giancarlo                  | Darksens01      | C                          | C                            | C                                   | L                          | C                                | C                   |
+| Choquehuanca Nuñez, Luciana        | Lucianxaaa      | C                          | L                            | C                                   | C                          | C                                | C                   |
+| Gonzales Valverde, Carlos          | Carlos12324     | C                          | C                            | C                                   | C                          | L                                | C                   |
+| Hernández Uchuya, María            | Bal2220         | C                          | C                            | L                                   | C                          | C                                | C                   |
+
+#### 6.2.1.3. Sprint Backlog 1
+
+El objetivo principal del Sprint 1 fue establecer la base del FrontEnd del sistema BluePatitas, diseñando y plasmando lo que vendra a ser nuestra estructura en el futuro
+
+| Sprint # | Sprint 1 | | | | | | |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **User Story Id** | **User Story Title** | **Task Id** | **Task Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status (To-do / In-Process / To-Review / Done)** |
+| US28 | Landing page informativa | T01 | Maquetación HTML de la Landing Page | Desarrollar la estructura base HTML5 de la landing page con la propuesta de valor. | 4 | Luciana Choquehuanca | Done |
+| US28 | Landing page informativa | T02 | Estilos CSS y Responsive Design | Implementar los estilos en CSS para que la landing page sea adaptable (mobile/desktop). | 5 | María Hernández | Done |
+| US07 | Visualización de cámara en tiempo real | T03 | Desarrollo del componente de Video Stream | Crear el componente UI en Angular/React para recibir y mostrar el streaming de video mockeado. | 6 | Giancarlo Castañeda | Done |
+| US07 | Visualización de cámara en tiempo real | T04 | Manejo de estados de cámara (Activa/Inactiva) | Implementar la lógica UI para mostrar placeholders o mensajes cuando la cámara se desconecta. | 4 | Ronald Peralta | Done |
+| US14 | Dashboard de alertas del refugio | T05 | Maquetación del Dashboard Principal | Diseñar y maquetar la vista principal donde el administrador verá el resumen de su refugio. | 6 | Carlos Gonzales | Done |
+| US14 | Dashboard de alertas del refugio | T06 | Componente de Lista de Alertas | Crear el panel lateral o sección inferior para listar notificaciones (mock data). | 5 | Luciana Choquehuanca | Done |
+| US16 | Historial ambiental del animal | T07 | Diseño de gráficos de Temperatura/Humedad | Integrar librería de gráficos (ej. Chart.js) para mostrar el historial ambiental del animal. | 7 | Ronald Peralta | Done |
+| US16 | Historial ambiental del animal | T08 | Implementación de filtros de fecha en gráficos | Agregar selectores de fecha en la UI para filtrar los datos mostrados en los gráficos ambientales. | 4 | Giancarlo Castañeda | Done |
+| US09 | Configuración de geocerca | T09 | Integración de Mapa en la UI | Agregar el componente de mapa (ej. Google Maps API o Leaflet) en la vista de configuración. | 6 | Carlos Gonzales | Done |
+| US09 | Configuración de geocerca | T10 | Herramientas de dibujo en el Mapa | Habilitar la funcionalidad para dibujar polígonos/círculos en el mapa para delimitar la geocerca. | 6 | Ronald Peralta | Done |
+| US19 | Consulta de perfil del animal | T11 | Maquetación del Perfil del Animal | Crear la vista con la foto, información básica y dieta del animal. | 4 | María Hernández | Done |
+| US15 | Estado de conexión de dispositivos | T12 | Componente de Estado de Hardware | Crear un panel que muestre el estado de los sensores, cámara y dispensador (Verde/Rojo). | 4 | Luciana Choquehuanca | Done |
+| -- | Tareas Generales | T13 | Configuración del repositorio Front Web | Iniciar proyecto, configurar linter, dependencias y enrutamiento inicial. | 4 | Giancarlo Castañeda | Done |
+| -- | Tareas Generales | T14 | Despliegue en Netlify de Landing Page | Configurar el CD/CI básico para desplegar la landing page automáticamente en Netlify. | 4 | Carlos Gonzales | Done |
+
+#### 6.2.1.4. Development Evidence for Sprint Review
+
+Se realizaron los avances con los commits correspondiente en el repositorio de la siguiente forma.
+
+- Repositorio Landing Page: [Landing-page](https://github.com/1ASI0572-2610-17755-G3-BluePatitas/Project-LandingPage.git)
+
+| Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
+|:----------:|:------:|:---------:|:--------------:|:------------------:|
+| Landing-Page | main | 8ab70ee9b0430fa5eb1a21d8d4bbc7fab5a99691 | chore: update landing page structure and assets | 13/05/2026 |
+| Landing-Page | develop | be91f5210ca4b98d7a5ff1621e2d997b1f70cfdb | fix: improve responsive layout and section spacing | 13/05/2026 |
+| Landing-Page | feature/ui-layout | 9c53463046f305aeac086e92fd213e56a7a85ae6 | feat: implement hero section and navigation layout | 10/05/2026 |
+| Landing-Page | feature/product-sections | 57499e38aa7636347e10a5c363e686511870da07 | feat: add product, benefits and testimonials sections | 10/05/2026 |
+| Landing-Page | feature/pricing-cta | 4124f766cc3a6ecf990bb1d163a89c5e01356718 | feat: implement pricing plans and contact form CTA | 11/05/2026 |
+| Landing-Page | feature/i18n-interactions | e1b84cfb86447812eb9a81d3b568d024d1dfa7ec | feat: add language toggle and interactive FAQ behavior | 12/05/2026 |
+
+- Repositorio Frontend: [frontend-app](https://github.com/1ASI0572-2610-17755-G3-BluePatitas/frontend-BluePatitas)
+
+| Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
+|:----------:|:------:|:---------:|:--------------:|:------------------:|
+| Frontend | main | a13f9d7c51e4d2c7f98ab34e9fba1c2d6f7a901 | chore: initialize Angular frontend architecture and base configuration | 13/05/2026 |
+| Frontend | develop | b24e8f1d72a5f9e1c3ad72be4c9f1a5e8d2c7431 | fix: integrate shared layout, routing and responsive navigation | 13/05/2026 |
+| Frontend | feature/auth | c35d7a2b84d6e1f3b4ca81de9f2b6d3a7e8f5124 | feat: develop login, session handling and authentication guards | 08/05/2026 |
+| Frontend | feature/dashboard | d46e8c3f95a7b2d4c5eb92fa1d3c7e4b8f9a6235 | feat: implement dashboard metrics, charts and overview components | 09/05/2026 |
+| Frontend | feature/animals | e57f9d4a16b8c3e5d6fc03ab2e4d8f5c9a1b7346 | feat: add animal registration, profile management and status views | 09/05/2026 |
+| Frontend | feature/devices | f68a1e5b27c9d4f6e7ad14bc3f5e9a6d1b2c8457 | feat: implement IoT device management and connection monitoring | 10/05/2026 |
+| Frontend | feature/monitoring | a79b2f6c38d1e5a7f8be25cd4a6f1b7e2c3d9568 | feat: develop real-time monitoring panels and alert visualization | 10/05/2026 |
+| Frontend | feature/feeding | b81c3a7d49e2f6b8a9cf36de5b7a2c8f3d4e0679 | feat: implement automated feeding schedules and tracking interface | 11/05/2026 |
+| Frontend | feature/reports | c92d4b8e51f3a7c9bad47ef6c8b3d9a4e5f1780a | feat: add reports module with statistics and export functionality | 11/05/2026 |
+| Frontend | feature/settings | d03e5c9f62a4b8da0ce58fa7d9c4e1b5f6a2891b | feat: implement user settings and platform configuration screens | 12/05/2026 |
+| Frontend | feature/veterinarians | e14f6da073b5c9eb1df69ab08e1d5f2c6a7b3902 | feat: develop veterinarians management and assignment interface | 12/05/2026 |
+| Frontend | feature/alerts | f25a7eb184c6da0f2eg70bc19f2e6a3d7b8c4013 | feat: implement notifications center and emergency alert components | 13/05/2026 |
+
+#### 6.2.1.5. Execution Evidence for Sprint Review
+Al concluir el primer sprint, se logró establecer la base estructural del proyecto frontend, implementando la arquitectura inicial de la aplicación y las principales secciones de navegación. Se definió la estructura general de la landing page, asegurando una organización clara de los componentes y una correcta separación por secciones funcionales.
+
+Se incorporó una primera versión de la interfaz visual, incluyendo el layout principal, la barra de navegación y la sección hero, sentando las bases para una experiencia de usuario coherente y escalable. Asimismo, se aplicaron principios básicos de usabilidad y buenas prácticas de desarrollo UI para garantizar una navegación intuitiva desde el inicio del proyecto.
+
+Este sprint permitió consolidar la estructura inicial del sistema, facilitando la integración progresiva de nuevas funcionalidades en los siguientes ciclos de desarrollo.
+
+#### A continuación, se presentan capturas de pantalla que ilustran los avances y detalles de la interfaz.
+
+- Evidencia de inicio de sesión 
+![Footer](./img/evidencia_sprint1/avance1.png)
+
+- Evidencia de registro
+![Footer](./img/evidencia_sprint1/avance2.png)
+
+- Evidencia de formulario
+![Footer](./img/evidencia_sprint1/avance3.png)
+
+- Evidencia de Panel principal de BluePatitas
+![Footer](./img/evidencia_sprint1/avance4.png)
+
+- Evidencia de la sección de gestión de mascotas
+![Footer](./img/evidencia_sprint1/avance5.png)
+
+- Evidencia de sección de veterinarios
+![Footer](./img/evidencia_sprint1/avance6.png)
+
+#### 6.2.1.6. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 1 no se implementaron ni se expusieron servicios backend ni endpoints, ya que el alcance principal del sprint estuvo enfocado en la definición de la base del producto y/o componentes frontend.
+
+Se identificaron los servicios necesarios a nivel de diseño, pero su desarrollo fue postergado para el Sprint 2 debido a la priorización del flujo de trabajo y la planificación incremental del sistema.
+
+#### 6.2.1.7. Software Deployment Evidence for Sprint Review
+En este Sprint, se realizó el despliegue inicial de la landing Page y la aplicación web del proyecto BluePatitas, marcando el comienzo del proceso de publicación gradual de los componentes del sistema. Esta acción tuvo como propósito principal validar visualmente los avances en diseño e interacción, tanto con el cliente como con el equipo docente.
+
+- URL de la aplicación web desplegada: 
+[appWeb-Bluepatittas](https://ejemplo.com)
+
+- URL de el landing page desplegada:
+[Landing-page](https://ejemplo.com)
+
+Para realizar el despliegue, accedimos a la configuración del repositorio y usamos netlify.
+
+- Evidencia del deploy
+![Footer](./img/evidencia_sprint1/deployEvi.jpg)
+
+
+#### 6.2.1.7. Team Collaboration Insights during Sprint
+
+Se muestra la colaboracion del equipo
+
+![Footer](./img/evidencia_sprint1/Insights1.jpg)
+![Footer](./img/evidencia_sprint1/Insights2.jpg)
+![Footer](./img/evidencia_sprint1/Insights3.jpg)
 
 ## 6.3. Validation Interviews
+
+
 ### 6.3.1. Diseño de Entrevistas
 ### 6.3.2. Registro de Entrevistas
 ### 6.3.3. Evaluaciones según heurísticas
 
 ## 6.4. Video About-the-Product
 
-<br>
+<div style="page-break-after: always;"></div>
 
 # Conclusiones
-# Conclusiones y recomendaciones
-## Conclusiones
+## Conclusiones y recomendaciones
+### Conclusiones
 
 - El valor real del IoT radica en la automatización operativa (Core Domains): El análisis estratégico demostró que el verdadero diferenciador de BluePatitas no es ser un directorio de mascotas, sino su capacidad para conectar reglas de software (como una dieta médica) con actuadores físicos (dispensadores), reduciendo drásticamente la carga operativa y los costos de los refugios.
 
@@ -2047,11 +2332,11 @@ El diseño de la base de datos para el _Veterinary Bounded Context_ persiste la 
 - La trazabilidad de eventos elimina la ambigüedad en el diseño: Modelar los Domain Message Flows utilizando los comandos y eventos exactos (técnica de post-its) comprobó teóricamente que la información fluye de manera correcta entre módulos, garantizando que ninguna acción física del hardware ocurra sin un disparador de negocio válido.
 
 - Clasificar estratégicamente optimiza los recursos de desarrollo: Al definir IAM como un subdominio genérico y Monitoring como un Core Domain, el equipo tiene una ruta clara: no se debe reinventar la rueda programando logins complejos, sino invertir todo el esfuerzo de ingeniería en el motor de reglas IoT y la telemetría.
-## Video About-the-Team
+### Video About-the-Team
 
 <br>
 
-## Recomendaciones
+### Recomendaciones
 
 - Implementar Edge Computing (Modo Offline): Los refugios suelen estar en zonas periféricas con mala conexión a internet. Se recomienda que el hardware local (Edge) tenga la capacidad de almacenar los cronogramas de alimentación (Feeding) y las reglas críticas de temperatura (Monitoring) para seguir funcionando autónomamente si se cae la red.
 
@@ -2063,26 +2348,27 @@ El diseño de la base de datos para el _Veterinary Bounded Context_ persiste la 
 
 - Pruebas de estrés y calibración de hardware: El papel lo aguanta todo, pero el hardware físico falla. Se recomienda destinar una fase exclusiva del proyecto a la calibración de los sensores DHT11 (humedad/temperatura) y pruebas de resistencia de los collares GPS para asegurar que las alertas de Monitoring no generen falsos positivos que terminen frustrando al administrador del refugio.
 
-<br>
+<div style="page-break-after: always;"></div>
 
 # Bibliografía
 
-- Fundación Affinity. (s.f.). Las cifras del abandono de perros y gatos aún lejos de descender. [Fundación Affinity. (s.f.). Las cifras del abandono de perros y gatos aún lejos de descender. Recuperado de https://www.fundacion-affinity.org/perros-gatos-y-personas/busco-un-animal-de-compania/las-cifras-del-abandono-de-perros-y-gatos-aun](https://www.fundacion-affinity.org/perros-gatos-y-personas/busco-un-animal-de-compania/las-cifras-del-abandono-de-perros-y-gatos-aun)
+- Fundación Affinity. (s.f.). *Las cifras del abandono de perros y gatos aún lejos de descender.* [Fundación Affinity. (s.f.). Las cifras del abandono de perros y gatos aún lejos de descender. Recuperado de https://www.fundacion-affinity.org/perros-gatos-y-personas/busco-un-animal-de-compania/las-cifras-del-abandono-de-perros-y-gatos-aun](https://www.fundacion-affinity.org/perros-gatos-y-personas/busco-un-animal-de-compania/las-cifras-del-abandono-de-perros-y-gatos-aun)
 
-- GEA Group. (s.f.). Activity Detection – GEA CowScout. [https://www.gea.com/es/products/milking-farming-barn/gea-herd-management/activity-detection-cowscout/](https://www.gea.com/es/products/milking-farming-barn/gea-herd-management/activity-detection-cowscout/)
+- GEA Group. (s.f.). *Activity Detection – GEA CowScout.* [https://www.gea.com/es/products/milking-farming-barn/gea-herd-management/activity-detection-cowscout/](https://www.gea.com/es/products/milking-farming-barn/gea-herd-management/activity-detection-cowscout/)
 
-- Pinto, A. (2021). Las protectoras de animales denuncian la falta de recursos. La Opinión de Málaga [https://www.laopiniondemalaga.es/municipios/2021/11/08/protectoras-animales-denuncian-falta-recursos-59278673.html](https://www.laopiniondemalaga.es/municipios/2021/11/08/protectoras-animales-denuncian-falta-recursos-59278673.html)
+- Pinto, A. (2021). *Las protectoras de animales denuncian la falta de recursos. La Opinión de Málaga* [https://www.laopiniondemalaga.es/municipios/2021/11/08/protectoras-animales-denuncian-falta-recursos-59278673.html](https://www.laopiniondemalaga.es/municipios/2021/11/08/protectoras-animales-denuncian-falta-recursos-59278673.html)
 
-- Valdelomar, D. (2025). Deconstrucción de los conceptos de Bienestar Animal y Sufrimiento Innecesario Animal en el sistema jurídico peruano. Recurso procedente de la Pontificia Universidad Católica del Perú (PUCP). [https://tesis.pucp.edu.pe/items/173234ff-fb31-4300-8d26-d5659388b7c7](https://tesis.pucp.edu.pe/items/173234ff-fb31-4300-8d26-d5659388b7c7)
-<br>
+- Valdelomar, D. (2025). *Deconstrucción de los conceptos de Bienestar Animal y Sufrimiento Innecesario Animal en el sistema jurídico peruano.* Recurso procedente de la Pontificia Universidad Católica del Perú (PUCP). [https://tesis.pucp.edu.pe/items/173234ff-fb31-4300-8d26-d5659388b7c7](https://tesis.pucp.edu.pe/items/173234ff-fb31-4300-8d26-d5659388b7c7)
+
+<div style="page-break-after: always;"></div>
 
 # Anexos
 
 ## Anexo A: Links importantes:
 
-Link del Repositorio del Informe: 
-Link del Repositorio del Backend: 
-Link del Repositorio del Frontend Aplicación Web: 
-Link del Repositorio del Frontend Aplicación Móvil: 
+Link del Repositorio del Informe: <br>
+Link del Repositorio del Backend: <br>
+Link del Repositorio del Frontend Aplicación Web: <br> 
+Link del Repositorio del Frontend Aplicación Móvil: <br>
 
 ## Anexo B: Exposiciones:
