@@ -2533,7 +2533,7 @@ Link al prototipo: [https://www.figma.com/proto/Q634gqNxe8N4Pm06IPDAJT/BluePatit
 
 #### Dispositivo: PIR HC-SR501
 
-![ProtoMovil](/img/iot_disenio/HC-SR501.PNG)
+![ProtoMovil](/img/iot_disenio/HC-SR501.png)
 
 #### Simula
 - Detección de movimiento.
@@ -2545,7 +2545,7 @@ Link al prototipo: [https://www.figma.com/proto/Q634gqNxe8N4Pm06IPDAJT/BluePatit
 
 #### Dispositivo: Potenciómetro (ADC)
 
-![ProtoMovil](/img/iot_disenio/Potenciómetro.PNG)
+![ProtoMovil](/img/iot_disenio/Potenciómetro.png)
 
 #### Simula
 - Variación de coordenadas GPS.
@@ -2557,7 +2557,7 @@ Link al prototipo: [https://www.figma.com/proto/Q634gqNxe8N4Pm06IPDAJT/BluePatit
 
 #### Dispositivo: DHT22
 
-![ProtoMovil](/img/iot_disenio/DHT22.PNG)
+![ProtoMovil](/img/iot_disenio/DHT22.png)
 
 #### Simula
 - Lectura de temperatura ambiental.
@@ -2569,7 +2569,7 @@ Link al prototipo: [https://www.figma.com/proto/Q634gqNxe8N4Pm06IPDAJT/BluePatit
 
 #### Dispositivo: Servo SG90
 
-![ProtoMovil](/img/iot_disenio/ServoSG90.PNG)
+![ProtoMovil](/img/iot_disenio/ServoSG90.png)
 
 #### Simula
 - Apertura automática del dispensador.
@@ -2581,7 +2581,7 @@ Link al prototipo: [https://www.figma.com/proto/Q634gqNxe8N4Pm06IPDAJT/BluePatit
 
 #### Dispositivo: LED rojo
 
-![ProtoMovil](/img/iot_disenio/LED.PNG)
+![ProtoMovil](/img/iot_disenio/LED.png)
 
 #### Simula
 - Alertas visuales.
@@ -2592,7 +2592,7 @@ Link al prototipo: [https://www.figma.com/proto/Q634gqNxe8N4Pm06IPDAJT/BluePatit
 
 #### Prototipo completo
 
-![ProtoMovil](/img/iot_disenio/disenio_completo.PNG)
+![ProtoMovil](/img/iot_disenio/disenio_completo.png)
 
 # Capítulo VI: Product Implementation, Validation & Deployment
 
