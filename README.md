@@ -2358,6 +2358,15 @@ Wireframe Desktop
 ![Veterinarios](/img/BluePatitas-Figma/Web/Wireframe/Veterinarios%20-%20Wireframe%20Desktop.png)
 
 ### 5.4.2. Applications Wireflow Diagrams
+
+### Segmento Admin:
+
+![Wireflow Admin](/img/AdminWireflow.PNG)
+
+### Segmento Veterinario:
+
+![Wireflow Vet](/img/VetWireflow.PNG)
+
 ### 5.4.3. Applications Mock-ups
 
 Mock-up Mobile
@@ -2437,6 +2446,63 @@ Mock-up Desktop
 ![Ver Reportes](/img/BluePatitas-Figma/Web/Mockup/Ver%20Reportes%20-%20Mockup%20Desktop.png)
 
 ### 5.4.4. Applications User Flow Diagrams
+
+### Segmento Admin:
+
+![Userflow Admin](/img/AdminUserflow.PNG)
+
+User Flow 1: Registro de administrador y creación de Refugio
+User Persona: Administrador del Sistema / Dueño del Refugio.
+User Goal: Registrarse exitosamente en la plataforma, autenticar su cuenta y configurar el perfil de un nuevo refugio para acceder al panel de control (Dashboard) y comenzar a operar.
+
+Explicación de los flujos y condiciones:
+
+Happy Path (Ruta Esperada):
+
+Create Account: El usuario ingresa a la pantalla de registro, llena sus datos personales (nombre, correo, teléfono, rol y contraseña) y hace clic en crear cuenta.
+
+Sign In: El usuario ingresa sus credenciales recién creadas para iniciar sesión.
+
+Crear Refugio - Paso 1 (Información Básica): El administrador llena los datos principales de la organización (Nombre del refugio, RUC, correo institucional, teléfono).
+
+Crear Refugio - Paso 2 (Ubicación): El administrador especifica la dirección, referencia, distrito y ciudad del refugio.
+
+Crear Refugio - Paso 3 (Confirmación): El sistema muestra una pantalla de éxito indicando que el refugio ha sido creado.
+
+Dashboard: Al hacer clic en "Ir al refugio", el usuario aterriza en el panel principal donde puede visualizar las métricas, animales registrados, alertas activas y próximas alimentaciones.
+
+Unhappy Paths / Rutas Alternativas:
+
+Condición de Usuario Duplicado: Si en la pantalla de "Create Account" el sistema detecta que ya existe un usuario registrado con los mismos datos, se interrumpe el flujo de creación y se redirige al usuario directamente al Login o al Dashboard.
+
+Condición de Edición/Equivocación: Durante cualquiera de los pasos de "Crear Refugio" (Paso 1 o Paso 2), el sistema habilita una ruta de retroceso. Siempre se le permitirá al usuario volver a la pantalla anterior sin perder su progreso en caso de que necesite corregir alguna información ingresada por equivocación.
+
+### Segmento Veterinario:
+
+![Userflow Vet](/img/VetUserflow.PNG)
+
+User Persona: Veterinario.
+User Goal: Visualizar el inventario de animales a su cargo, asignarles dietas, analizar sus reportes médicos y monitorear las cámaras de las zonas asignadas para gestionar la salud del refugio y reaccionar ante emergencias.
+
+Explicación de los flujos y condiciones:
+
+Happy Path (Ruta Esperada):
+
+Animales: El usuario ingresa a la vista principal para ver el listado de animales y selecciona el perfil de uno en específico.
+
+Agregar Dieta: El veterinario abre el modal correspondiente para recetar o modificar la dieta del animal seleccionado.
+
+Ver Reportes: Posteriormente, el veterinario visualiza un modal con las estadísticas, signos vitales o métricas del animal a lo largo del tiempo.
+
+Monitoreo: El usuario cambia a la sección de monitoreo general del refugio, donde puede ver múltiples feeds de cámaras.
+
+Detalles Monitoreo: El veterinario hace clic en una cámara específica para ver los detalles de una zona (por ejemplo, la zona de cachorros) en tiempo real.
+
+Unhappy Paths / Flujos Alternativos:
+
+Condición de Acción Clínica (Desde Reportes): Tras revisar los reportes de un animal, el flujo no siempre termina ahí. Como ruta alternativa, el veterinario puede llegar a conclusiones clínicas. Si determina que hay una anomalía, puede poner al animal en observación o agendarle una cita directamente. Tras esta decisión, los datos actualizados del animal pasarán a la zona de "Animales" para que el personal vea las medidas adecuadas a tomar.
+
+Condición de Emergencia Manual (Desde Monitoreo): En la vista de "Detalles Monitoreo", el flujo normal dicta que las alertas del sistema deben sonar automáticamente si algo va mal. Sin embargo, existe un flujo alternativo de emergencia: el veterinario puede disparar alarmas de forma manual si detecta una anomalía visual. La condición de este evento indica que, tras accionar el disparador, se enviará inmediatamente una notificación push/alerta al personal correspondiente del refugio.
 
 ## 5.5. Applications Prototyping
 
