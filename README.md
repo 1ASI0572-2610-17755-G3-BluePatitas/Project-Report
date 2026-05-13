@@ -2031,6 +2031,115 @@ Las interfaces IoT se enfocan en la lectura rápida de datos y la respuesta inme
 ## 5.2. Information Architecture
 ### 5.2.1. Organization Systems
 ### 5.2.2. Labeling Systems
+
+La interfaz de BluePatitas utiliza un sistema de etiquetado simple, directo y consistente para que los usuarios puedan reconocer rápidamente cada sección, acción y estado del sistema. Las etiquetas fueron definidas tomando como referencia la Landing Page y el Dashboard de la Web App, manteniendo una navegación clara para visitantes, administradores de refugios y veterinarios.
+
+El objetivo principal del labeling system es evitar confusión en el usuario, usando nombres breves y relacionados con el dominio del proyecto: monitoreo animal, alertas, alimentación, dispositivos IoT, zonas del refugio y seguimiento veterinario.
+
+### Landing Page
+
+La Landing Page utiliza etiquetas orientadas a informar al visitante sobre el producto, sus beneficios y sus planes. Estas etiquetas se ubican principalmente en el encabezado y en las secciones informativas del sitio.
+
+**HOME:** Permite regresar al inicio de la Landing Page, donde se presenta la propuesta principal de BluePatitas y su enfoque en tecnología IoT para el bienestar animal.
+
+**Producto:** Dirige a la sección donde se explica el funcionamiento general de BluePatitas y sus principales componentes tecnológicos.
+
+**Beneficios:** Lleva a la sección donde se muestran las ventajas del sistema para administradores y veterinarios, como mejor monitoreo, control remoto y reducción de tareas manuales.
+
+**Planes:** Permite acceder a la sección de precios y tipos de suscripción disponibles para los refugios.
+
+**FAQ:** Dirige a la sección de preguntas frecuentes, donde se resuelven dudas comunes sobre instalación, funcionamiento y uso del sistema.
+
+**Contact:** Lleva al formulario de contacto para solicitar más información sobre la plataforma o sus servicios.
+
+**Login:** Permite ingresar a la aplicación web de BluePatitas.
+
+**Get Started:** Funciona como llamada a la acción principal. Invita al usuario a iniciar el proceso de registro o solicitud de información.
+
+### Web App para administradores
+
+La Web App utiliza un menú lateral con etiquetas claras para que el administrador pueda acceder rápidamente a los módulos principales del refugio.
+
+**Dashboard:** Representa la vista principal del sistema. Muestra un resumen general del refugio, incluyendo animales registrados, alertas activas, zonas monitoreadas y dispositivos conectados.
+
+**Animales:** Permite acceder al registro de animales del refugio. Desde esta sección se pueden revisar perfiles, información básica y datos asociados a cada animal.
+
+**Monitoreo:** Dirige al módulo de supervisión del refugio. Incluye funciones relacionadas con cámaras, zonas monitoreadas, ubicación y estado ambiental.
+
+**Veterinarios:** Permite gestionar o registrar veterinarios asociados al refugio, facilitando la coordinación del seguimiento animal.
+
+**Configuración:** Agrupa opciones generales del sistema, como datos del refugio, preferencias, usuarios y ajustes relacionados con el funcionamiento de la plataforma.
+
+### Etiquetas de acciones principales
+
+Las acciones principales utilizan verbos claros para indicar qué puede hacer el usuario dentro del sistema.
+
+| Etiqueta | Uso dentro del sistema |
+|---|---|
+| **Agregar animal** | Permite registrar un nuevo animal dentro del refugio. |
+| **Ver monitoreo** | Dirige al módulo donde se visualiza el estado de zonas, cámaras y dispositivos. |
+| **Registrar veterinario** | Permite añadir un veterinario al sistema. |
+| **Ver todas** | Muestra el listado completo de alertas recientes. |
+| **Gestionar dietas** | Permite revisar o modificar la programación de alimentación de los animales. |
+| **Solicitar información** | Envía los datos del formulario de contacto de la Landing Page. |
+| **Contratar ahora** | Permite iniciar el proceso de contratación de un plan. |
+| **Seleccionar Pro** | Permite elegir el plan Pro dentro de la sección de planes. |
+| **Comenzar Gratis** | Permite iniciar con el plan básico gratuito. |
+
+### Etiquetas de módulos y tarjetas informativas
+
+Estas etiquetas aparecen en tarjetas, paneles y resúmenes del Dashboard para comunicar información clave de forma rápida.
+
+| Etiqueta | Significado |
+|---|---|
+| **Animales registrados** | Cantidad total de animales ingresados en el refugio. |
+| **Alertas activas** | Número de alertas que requieren revisión. |
+| **Zonas monitoreadas** | Cantidad de zonas del refugio supervisadas por el sistema. |
+| **Dispositivos** | Cantidad de dispositivos IoT registrados o conectados. |
+| **Alertas recientes** | Lista de eventos importantes ocurridos recientemente. |
+| **Estado ambiental por zona** | Panel que muestra temperatura, humedad y estado de cada zona. |
+| **Próximas alimentaciones** | Lista de animales con alimentación programada. |
+| **Animal** | Nombre o identificación del animal. |
+| **Hora** | Momento programado para una acción, como alimentación. |
+| **Tipo de dieta** | Clasificación de la alimentación asignada al animal. |
+| **Acción** | Operación disponible para completar o revisar un registro. |
+
+### Etiquetas de estados
+
+Las etiquetas de estado permiten identificar rápidamente si una zona, dispositivo o alerta se encuentra en una condición normal, crítica o sin conexión.
+
+| Categoría | Etiqueta | Significado |
+|---|---|---|
+| Estado ambiental | **Normal** | La zona se encuentra dentro de los rangos adecuados. |
+| Estado ambiental | **Alerta** | Existe una condición fuera del rango esperado. |
+| Estado ambiental | **Offline** | La zona o dispositivo no está enviando datos. |
+| Alerta | **Temperatura alta** | La temperatura de una zona supera el rango recomendado. |
+| Alerta | **Alimentación pendiente** | Existe una alimentación que requiere revisión o atención. |
+| Alerta | **Cámara desconectada** | Una cámara dejó de enviar señal de video. |
+| Tiempo | **Hace 5m** | Indica que el evento ocurrió hace cinco minutos. |
+| Tiempo | **Hace 15m** | Indica que el evento ocurrió hace quince minutos. |
+| Tiempo | **Hace 1h** | Indica que el evento ocurrió hace una hora. |
+
+### Etiquetas de planes
+
+La Landing Page utiliza etiquetas simples para presentar las opciones comerciales del producto.
+
+| Etiqueta | Uso |
+|---|---|
+| **Básico** | Plan inicial para refugios que desean empezar con funciones esenciales. |
+| **Pro** | Plan recomendado con más capacidades de monitoreo y gestión. |
+| **Enterprise** | Plan avanzado para refugios grandes o con necesidades personalizadas. |
+| **Recomendado** | Destaca visualmente el plan sugerido para el usuario. |
+| **A medida** | Indica que el precio o condiciones se adaptan a las necesidades del refugio. |
+
+### Criterios de etiquetado
+
+Las etiquetas de BluePatitas se definieron bajo tres criterios principales: claridad, brevedad y relación con el dominio del usuario. Por ello, se evita usar términos demasiado técnicos dentro de la navegación principal, como “telemetría”, “logs” o “eventos IoT”, y se reemplazan por términos más comprensibles como **Monitoreo**, **Alertas**, **Dispositivos** o **Estado ambiental**.
+
+Asimismo, las acciones usan verbos directos como **Agregar**, **Ver**, **Registrar**, **Gestionar**, **Solicitar** y **Contratar**, permitiendo que el usuario entienda de inmediato qué ocurrirá al seleccionar una opción.
+
+De esta manera, el sistema de etiquetado de BluePatitas permite una navegación más intuitiva, reduce la carga cognitiva del usuario y mantiene coherencia entre la Landing Page y la Web App del producto.
+
 ### 5.2.3. SEO Tags and Meta Tags
 Para mejorar la visibilidad, comprensión y posicionamiento del Landing Page de BluePatitas, se definieron SEO Tags y Meta Tags preliminares alineados con el propósito de la solución y con la estructura inicial de contenidos del producto. Estos elementos permiten describir correctamente el contenido de la página, facilitar su indexación por motores de búsqueda y comunicar de forma clara el valor del producto a los visitantes.
 
