@@ -2027,52 +2027,908 @@ El diseño de la base de datos para el _Veterinary Bounded Context_ persiste la 
 # Capítulo V: Solution UI/UX Design
 
 ## 5.1. Style Guidelines
+
+Los lineamientos de estilo de BluePatitas definen la identidad visual y los criterios de interacción que serán aplicados en el Landing Page, la Frontend Web Application y las interfaces relacionadas con el dispositivo IoT. Estos lineamientos permiten mantener una experiencia consistente, accesible y alineada con el propósito de la solución: apoyar el monitoreo y cuidado de animales en refugios mediante tecnología IoT.
+
+La propuesta visual busca transmitir confianza, empatía, claridad operativa y soporte tecnológico. Para ello, se utiliza una paleta basada en tonos azules, una jerarquía tipográfica clara, componentes reutilizables, iconografía relacionada al dominio del producto y colores semánticos para representar estados normales, advertencias y alertas críticas.
+
+![General Style Guidelines](./img/general-style-guidelines-bluepatitas.png)
+
 ### 5.1.1. General Style Guidelines
+
+La identidad visual de BluePatitas se construye a partir de un logotipo amigable, una personalidad de marca confiable y empática, y una paleta de colores asociada a tecnología, calma y seguridad. El azul funciona como color principal, mientras que los colores verde, amarillo y rojo permiten representar estados de éxito, advertencia y criticidad dentro del sistema.
+
+La tipografía seleccionada combina Poppins para títulos e Inter para textos de cuerpo e interfaz. Esta combinación permite mantener una lectura clara en dashboards, formularios, tarjetas de monitoreo y mensajes del sistema.
+
+Los componentes base incluyen botones, tarjetas de mascota, campos de entrada, chips de estado, badges de alerta e iconografía relacionada con GPS, temperatura, humedad, cámara, alimentación y alertas. Estos elementos permiten mantener consistencia visual entre las distintas interfaces del ecosistema BluePatitas.
+
+El tono de comunicación es claro, empático y confiable. Los mensajes deben ayudar al usuario a interpretar rápidamente el estado de una mascota o dispositivo, evitando ambigüedad en situaciones críticas.
+
 ### 5.1.2. Web, Mobile and IoT Style Guidelines
+
+Los lineamientos específicos para Web, Mobile e IoT adaptan la identidad visual de BluePatitas a cada tipo de interfaz. Aunque cada plataforma tiene necesidades diferentes, todas mantienen la misma paleta, tipografía, iconografía, jerarquía visual y criterios de accesibilidad.
+
+#### Web Style Guidelines
+
+La experiencia web está orientada a la gestión y monitoreo desde navegadores de escritorio. Por ello, se prioriza una estructura clara basada en navegación superior, navegación lateral, tarjetas informativas, filtros, tablas, gráficos y componentes de dashboard. Esta interfaz permite consultar mascotas, alertas, datos ambientales, ubicación, alimentación e historial de eventos.
+
+![Web Style Guidelines](./img/web-style-guidelines-bluepatitas.png)
+
+#### Mobile Style Guidelines
+
+La experiencia móvil prioriza la consulta rápida, la interacción táctil y la navegación simplificada. Se consideran componentes compactos, botones con tamaño adecuado, navegación inferior y tarjetas resumidas para mostrar información relevante de mascotas, alertas y eventos recientes.
+
+![Mobile Style Guidelines](./img/mobile-style-guidelines-bluepatitas.png)
+
+#### IoT Style Guidelines
+
+Las interfaces IoT se enfocan en la lectura rápida de datos y la respuesta inmediata ante eventos del dispositivo. Se utilizan módulos compactos para sensores, chips de estado, tarjetas de alerta y botones de acción directa. La prioridad es que el usuario pueda interpretar rápidamente información como temperatura, humedad, GPS, alimentación, batería y estado del dispositivo.
+
+![IoT Style Guidelines](./img/iot-style-guidelines-bluepatitas.png)
 
 ## 5.2. Information Architecture
 ### 5.2.1. Organization Systems
 ### 5.2.2. Labeling Systems
+
+La interfaz de BluePatitas utiliza un sistema de etiquetado simple, directo y consistente para que los usuarios puedan reconocer rápidamente cada sección, acción y estado del sistema. Las etiquetas fueron definidas tomando como referencia la Landing Page y el Dashboard de la Web App, manteniendo una navegación clara para visitantes, administradores de refugios y veterinarios.
+
+El objetivo principal del labeling system es evitar confusión en el usuario, usando nombres breves y relacionados con el dominio del proyecto: monitoreo animal, alertas, alimentación, dispositivos IoT, zonas del refugio y seguimiento veterinario.
+
+### Landing Page
+
+La Landing Page utiliza etiquetas orientadas a informar al visitante sobre el producto, sus beneficios y sus planes. Estas etiquetas se ubican principalmente en el encabezado y en las secciones informativas del sitio.
+
+**HOME:** Permite regresar al inicio de la Landing Page, donde se presenta la propuesta principal de BluePatitas y su enfoque en tecnología IoT para el bienestar animal.
+
+**Producto:** Dirige a la sección donde se explica el funcionamiento general de BluePatitas y sus principales componentes tecnológicos.
+
+**Beneficios:** Lleva a la sección donde se muestran las ventajas del sistema para administradores y veterinarios, como mejor monitoreo, control remoto y reducción de tareas manuales.
+
+**Planes:** Permite acceder a la sección de precios y tipos de suscripción disponibles para los refugios.
+
+**FAQ:** Dirige a la sección de preguntas frecuentes, donde se resuelven dudas comunes sobre instalación, funcionamiento y uso del sistema.
+
+**Contact:** Lleva al formulario de contacto para solicitar más información sobre la plataforma o sus servicios.
+
+**Login:** Permite ingresar a la aplicación web de BluePatitas.
+
+**Get Started:** Funciona como llamada a la acción principal. Invita al usuario a iniciar el proceso de registro o solicitud de información.
+
+### Web App para administradores
+
+La Web App utiliza un menú lateral con etiquetas claras para que el administrador pueda acceder rápidamente a los módulos principales del refugio.
+
+**Dashboard:** Representa la vista principal del sistema. Muestra un resumen general del refugio, incluyendo animales registrados, alertas activas, zonas monitoreadas y dispositivos conectados.
+
+**Animales:** Permite acceder al registro de animales del refugio. Desde esta sección se pueden revisar perfiles, información básica y datos asociados a cada animal.
+
+**Monitoreo:** Dirige al módulo de supervisión del refugio. Incluye funciones relacionadas con cámaras, zonas monitoreadas, ubicación y estado ambiental.
+
+**Veterinarios:** Permite gestionar o registrar veterinarios asociados al refugio, facilitando la coordinación del seguimiento animal.
+
+**Configuración:** Agrupa opciones generales del sistema, como datos del refugio, preferencias, usuarios y ajustes relacionados con el funcionamiento de la plataforma.
+
+### Etiquetas de acciones principales
+
+Las acciones principales utilizan verbos claros para indicar qué puede hacer el usuario dentro del sistema.
+
+| Etiqueta | Uso dentro del sistema |
+|---|---|
+| **Agregar animal** | Permite registrar un nuevo animal dentro del refugio. |
+| **Ver monitoreo** | Dirige al módulo donde se visualiza el estado de zonas, cámaras y dispositivos. |
+| **Registrar veterinario** | Permite añadir un veterinario al sistema. |
+| **Ver todas** | Muestra el listado completo de alertas recientes. |
+| **Gestionar dietas** | Permite revisar o modificar la programación de alimentación de los animales. |
+| **Solicitar información** | Envía los datos del formulario de contacto de la Landing Page. |
+| **Contratar ahora** | Permite iniciar el proceso de contratación de un plan. |
+| **Seleccionar Pro** | Permite elegir el plan Pro dentro de la sección de planes. |
+| **Comenzar Gratis** | Permite iniciar con el plan básico gratuito. |
+
+### Etiquetas de módulos y tarjetas informativas
+
+Estas etiquetas aparecen en tarjetas, paneles y resúmenes del Dashboard para comunicar información clave de forma rápida.
+
+| Etiqueta | Significado |
+|---|---|
+| **Animales registrados** | Cantidad total de animales ingresados en el refugio. |
+| **Alertas activas** | Número de alertas que requieren revisión. |
+| **Zonas monitoreadas** | Cantidad de zonas del refugio supervisadas por el sistema. |
+| **Dispositivos** | Cantidad de dispositivos IoT registrados o conectados. |
+| **Alertas recientes** | Lista de eventos importantes ocurridos recientemente. |
+| **Estado ambiental por zona** | Panel que muestra temperatura, humedad y estado de cada zona. |
+| **Próximas alimentaciones** | Lista de animales con alimentación programada. |
+| **Animal** | Nombre o identificación del animal. |
+| **Hora** | Momento programado para una acción, como alimentación. |
+| **Tipo de dieta** | Clasificación de la alimentación asignada al animal. |
+| **Acción** | Operación disponible para completar o revisar un registro. |
+
+### Etiquetas de estados
+
+Las etiquetas de estado permiten identificar rápidamente si una zona, dispositivo o alerta se encuentra en una condición normal, crítica o sin conexión.
+
+| Categoría | Etiqueta | Significado |
+|---|---|---|
+| Estado ambiental | **Normal** | La zona se encuentra dentro de los rangos adecuados. |
+| Estado ambiental | **Alerta** | Existe una condición fuera del rango esperado. |
+| Estado ambiental | **Offline** | La zona o dispositivo no está enviando datos. |
+| Alerta | **Temperatura alta** | La temperatura de una zona supera el rango recomendado. |
+| Alerta | **Alimentación pendiente** | Existe una alimentación que requiere revisión o atención. |
+| Alerta | **Cámara desconectada** | Una cámara dejó de enviar señal de video. |
+| Tiempo | **Hace 5m** | Indica que el evento ocurrió hace cinco minutos. |
+| Tiempo | **Hace 15m** | Indica que el evento ocurrió hace quince minutos. |
+| Tiempo | **Hace 1h** | Indica que el evento ocurrió hace una hora. |
+
+### Etiquetas de planes
+
+La Landing Page utiliza etiquetas simples para presentar las opciones comerciales del producto.
+
+| Etiqueta | Uso |
+|---|---|
+| **Básico** | Plan inicial para refugios que desean empezar con funciones esenciales. |
+| **Pro** | Plan recomendado con más capacidades de monitoreo y gestión. |
+| **Enterprise** | Plan avanzado para refugios grandes o con necesidades personalizadas. |
+| **Recomendado** | Destaca visualmente el plan sugerido para el usuario. |
+| **A medida** | Indica que el precio o condiciones se adaptan a las necesidades del refugio. |
+
+### Criterios de etiquetado
+
+Las etiquetas de BluePatitas se definieron bajo tres criterios principales: claridad, brevedad y relación con el dominio del usuario. Por ello, se evita usar términos demasiado técnicos dentro de la navegación principal, como “telemetría”, “logs” o “eventos IoT”, y se reemplazan por términos más comprensibles como **Monitoreo**, **Alertas**, **Dispositivos** o **Estado ambiental**.
+
+Asimismo, las acciones usan verbos directos como **Agregar**, **Ver**, **Registrar**, **Gestionar**, **Solicitar** y **Contratar**, permitiendo que el usuario entienda de inmediato qué ocurrirá al seleccionar una opción.
+
+De esta manera, el sistema de etiquetado de BluePatitas permite una navegación más intuitiva, reduce la carga cognitiva del usuario y mantiene coherencia entre la Landing Page y la Web App del producto.
+
 ### 5.2.3. SEO Tags and Meta Tags
+Para mejorar la visibilidad, comprensión y posicionamiento del Landing Page de BluePatitas, se definieron SEO Tags y Meta Tags preliminares alineados con el propósito de la solución y con la estructura inicial de contenidos del producto. Estos elementos permiten describir correctamente el contenido de la página, facilitar su indexación por motores de búsqueda y comunicar de forma clara el valor del producto a los visitantes.
+
+BluePatitas utiliza etiquetas orientadas al monitoreo IoT de mascotas en refugios, destacando conceptos como cuidado animal, sensores, alertas, geolocalización, monitoreo ambiental y gestión de refugios. Asimismo, se consideran etiquetas consistentes con la identidad de marca y los segmentos objetivo definidos: administradores de refugios y veterinarios.
+
+| Page | Title | Meta Description | Keywords | Author |
+|---|---|---|---|---|
+| Landing Page - Home | BluePatitas - IoT Monitoring for Animal Shelters | BluePatitas is an IoT solution designed to help animal shelters monitor pets through sensors, alerts, GPS tracking, environmental data and feeding events. | BluePatitas, IoT, animal shelter, pet monitoring, GPS tracking, temperature sensor, humidity sensor, smart feeding, animal welfare | BluePatitas Team |
+| Landing Page - Benefits | BluePatitas - Smart Care for Shelter Animals | Discover how BluePatitas supports animal shelters with real-time monitoring, automated alerts and data-driven pet care. | animal care, shelter management, IoT alerts, pet welfare, smart monitoring, animal rescue | BluePatitas Team |
+| Landing Page - IoT Features | BluePatitas - IoT Features for Pet Monitoring | Monitor temperature, humidity, GPS location, camera status and feeding events with BluePatitas IoT features. | IoT device, pet sensors, geofence, temperature monitoring, humidity monitoring, camera monitoring, automatic feeder | BluePatitas Team |
+| Web Application - Dashboard | BluePatitas Dashboard - Shelter Monitoring Platform | Access shelter monitoring data, pet status, alerts and IoT sensor information from the BluePatitas dashboard. | dashboard, shelter dashboard, pet alerts, IoT dashboard, animal monitoring platform | BluePatitas Team |
+| Web Application - Alerts | BluePatitas Alerts - Real-Time Pet Monitoring | Review real-time alerts related to temperature, humidity, GPS location, feeding and device status. | pet alerts, real-time monitoring, IoT notifications, geofence alerts, shelter alerts | BluePatitas Team |
+
+Ejemplo de implementación de Meta Tags para el Landing Page:
+
+```html
+<title>BluePatitas - Monitoreo IoT para refugios de animales</title>
+<meta name="description" content="BluePatitas es una solución IoT que ayuda a refugios de animales a monitorear mascotas mediante sensores, alertas, GPS, cámara y alimentación inteligente.">
+<meta name="keywords" content="BluePatitas, IoT, refugios de animales, monitoreo de mascotas, sensores, GPS, bienestar animal">
+<meta name="author" content="BluePatitas Team">
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="es">
+```
 ### 5.2.4. Searching Systems
+
+El sistema de búsqueda de BluePatitas está diseñado para facilitar el acceso rápido a la información más relevante dentro de la Frontend Web Application. Debido a que la solución centraliza datos de mascotas, dispositivos IoT, alertas, registros ambientales, ubicación, alimentación e historial operativo, los usuarios necesitan mecanismos de búsqueda y filtrado que reduzcan el tiempo necesario para encontrar información crítica.
+
+En el Landing Page no se considera un buscador global, ya que su contenido está organizado de forma secuencial mediante secciones informativas y llamadas a la acción. En este caso, la búsqueda de información se apoya principalmente en la navegación por secciones como Inicio, Beneficios, Monitoreo IoT, Funcionalidades y Contacto.
+
+En la Frontend Web Application, la búsqueda se concentra en los módulos de gestión y monitoreo. Los administradores de refugios podrán buscar mascotas por nombre, identificador, refugio asignado o estado actual. Asimismo, podrán filtrar alertas por tipo, severidad, fecha, sensor asociado y estado de atención. Esto permite priorizar rápidamente eventos críticos como salida de geocerca, pérdida de rango visual, temperatura fuera de rango o alimentación no realizada.
+
+Para los veterinarios, el sistema de búsqueda permitirá consultar perfiles de animales, historial operativo, registros ambientales, eventos de alimentación, observaciones y recomendaciones. De esta manera, el usuario podrá encontrar información relevante para el seguimiento del bienestar animal sin depender de registros dispersos o búsqueda manual en documentos externos.
+
+Los resultados de búsqueda se mostrarán mediante tarjetas, tablas o listas compactas, según el tipo de información consultada. Cada resultado debe presentar datos esenciales como nombre de la mascota, estado, refugio, última actualización, tipo de evento, severidad y acción disponible. Además, las alertas críticas deberán mostrarse con prioridad visual para facilitar una respuesta oportuna.
+
+| Contexto de búsqueda | Criterios de búsqueda | Filtros disponibles | Resultado esperado |
+|---|---|---|---|
+| Mascotas | Nombre, identificador o refugio asociado | Estado, refugio, última actualización | Lista de mascotas coincidentes con su estado actual |
+| Alertas | Tipo de alerta, mascota asociada o dispositivo | Severidad, fecha, sensor, estado de atención | Alertas ordenadas por prioridad y fecha |
+| Monitoreo IoT | Mascota, dispositivo o tipo de sensor | Temperatura, humedad, GPS, cámara, alimentación | Registros de sensores y eventos relacionados |
+| Historial veterinario | Mascota, observación o recomendación | Fecha, tipo de evento, estado del animal | Historial operativo y registros útiles para seguimiento |
+| Alimentación | Mascota, dieta o evento de dispensación | Fecha, estado de ejecución, tipo de ración | Eventos de alimentación programada o ejecutada |
+| Ubicación | Mascota o zona asignada | Geocerca, estado GPS, fecha de evento | Información de ubicación y eventos asociados a geocerca |
+
 ### 5.2.5. Navigation Systems
 
+El diseño de la navegación de BluePatitas se basa en una estructura clara y accesible, orientada a facilitar el uso del sistema por parte del personal administrativo del refugio. La navegación permite acceder rápidamente a los módulos principales del sistema, como el dashboard, la gestión de animales, el monitoreo ambiental, el registro de veterinarios y la configuración general de la plataforma.
+
+**Web App**
+
+En la aplicación web, la navegación principal se organiza mediante una barra lateral persistente ubicada al lado izquierdo de la pantalla. Esta barra funciona como el eje central del sistema, ya que permite al administrador desplazarse entre las secciones más importantes sin perder visibilidad del contenido principal.
+
+![Dashboard](/img/BluePatitas-Figma/Web/Mockup/Dashboard%20-%20Mockup%20Desktop.png)
+
+*Figura 1. Vista general del dashboard web de BluePatitas.*
+
+El menú lateral incluye accesos directos al Dashboard, Animales, Monitoreo, Veterinarios y Configuración. Cada opción está acompañada de un ícono representativo, lo cual facilita la identificación rápida de cada módulo y mejora la experiencia de uso. Además, la sección activa se resalta visualmente, permitiendo que el usuario reconozca en qué parte del sistema se encuentra.
+
+![Sidebar](/img/BluePatitas-Figma/Web/Mockup/Sidebar.png)
+
+*Figura 2. Menú lateral principal de la aplicación web.*
+
+En la parte superior del dashboard también se presentan acciones rápidas, como Agregar animal, Ver monitoreo y Registrar veterinario. Estos botones permiten acceder directamente a tareas frecuentes del refugio, reduciendo la cantidad de pasos necesarios para realizar acciones importantes dentro del sistema.
+
+![Acciones rápidas](/img/BluePatitas-Figma/Web/Mockup/Acciones%20Rapidas.png)
+
+*Figura 3. Acciones rápidas disponibles en el dashboard web.*
+
+La navegación web de BluePatitas mantiene una jerarquía visual ordenada, con un menú lateral fijo, contenido central organizado en tarjetas y accesos rápidos visibles. Esto permite que el personal administrativo trabaje de manera eficiente, especialmente en tareas de seguimiento, control ambiental y gestión de animales.
+
+**Mobile App**
+
+En la versión móvil, la navegación se adapta a una estructura más compacta y práctica, utilizando una barra inferior de menú. Esta decisión permite que el usuario acceda fácilmente a las funciones principales desde la parte inferior de la pantalla, lo cual resulta más cómodo en dispositivos móviles.
+
+![Dashboard Movil](/img/BluePatitas-Figma/Movil/Mockup/Dashboard%20-%20Mockup%20Movil.png)
+
+*Figura 4. Vista general del dashboard móvil de BluePatitas.*
+
+La barra inferior incluye cinco accesos principales: Dashboard, Animales, Monitoreo, Vets y Config. El primer ícono dirige al resumen general del refugio, donde se muestran indicadores como animales registrados, alertas activas, zonas monitoreadas y dispositivos. El módulo de animales permite consultar la información de las mascotas registradas, mientras que monitoreo facilita el seguimiento de las zonas y sus condiciones ambientales.
+
+![Menu Movil](/img/BluePatitas-Figma/Movil/Mockup/Menu%20Movil.png)
+
+*Figura 5. Barra inferior de navegación de la aplicación móvil.*
+
+Asimismo, el acceso a Vets permite gestionar la información relacionada con veterinarios, y la opción de Config. dirige a la configuración del sistema. Esta distribución permite que las funciones más importantes estén siempre disponibles sin saturar la pantalla.
+
+Además, la aplicación móvil incorpora un botón flotante con el símbolo “+”, ubicado en la parte inferior derecha. Este botón funciona como una acción rápida para registrar o agregar nuevos elementos dentro del sistema, manteniendo una navegación ágil y orientada a tareas frecuentes.
+
+![Botón Más Movil](/img/BluePatitas-Figma/Movil/Mockup/Boton%20Mas%20Movil.png)
+
+*Figura 6. Botón flotante para acciones rápidas en la aplicación móvil.*
+
+En conjunto, el sistema de navegación de BluePatitas busca mantener coherencia entre la versión web y móvil. Mientras que la web prioriza una navegación lateral más completa para pantallas amplias, la versión móvil utiliza una barra inferior más simple y accesible, adecuada para el uso en celulares. De esta manera, ambas interfaces permiten que el usuario acceda de forma rápida, clara y ordenada a las funcionalidades principales del sistema.
+
 ## 5.3. Landing Page UI Design
+
 ### 5.3.1. Landing Page Wireframe
+
+Wireframe Desktop
+
+![Landing Page - Wireframe Desktop](./img/Landing%20Page%20-%20Wireframe%20Desktop.png)
+
+Wireframe Mobile
+
+![Landing Page - Wireframe Mobile](./img/Landing%20Page%20-%20Wireframe%20Mobile.png)
+
 ### 5.3.2. Landing Page Mock-up
+
+Mock-up Desktop
+
+![Landing Page - Wireframe Desktop](./img/Landing%20Page%20-%20Mockup%20Desktop.png)
+
+Mock-up Mobile
+
+![Landing Page - Wireframe Mobile](./img/Landing%20Page%20-%20Mockup%20Mobile.png)
 
 ## 5.4. Applications UX/UI Design
 ### 5.4.1. Applications Wireframes
+
+Wireframe Mobile
+
+![Acción](/img/BluePatitas-Figma/Movil/Wireframe/Acción%20-%20Wireframe%20Movil.png)
+
+![Agregar Animal](/img/BluePatitas-Figma/Movil/Wireframe/Agregar%20Animal%20-%20Wireframe%20Movil.png)
+
+![Agregar Dieta](/img/BluePatitas-Figma/Movil/Wireframe/Agregar%20Dieta%20-%20Wireframe%20Movil.png)
+
+![Agregar Dispositivo IOT](/img/BluePatitas-Figma/Movil/Wireframe/Agregar%20Dispositivo%20IOT%20-%20Wireframe%20Movil.png)
+
+![Agregar Veterinarios](/img/BluePatitas-Figma/Movil/Wireframe/Agregar%20Veterinarios%20-%20Wireframe%20Movil.png)
+
+![Agregar Zona Monitoreo](/img/BluePatitas-Figma/Movil/Wireframe/Agregar%20Zona%20Monitoreo-%20Wireframe%20Movil.png)
+
+![Animales](/img/BluePatitas-Figma/Movil/Wireframe/Animales%20-%20Wireframe%20Movil.png)
+
+![Añadir Usuario](/img/BluePatitas-Figma/Movil/Wireframe/Añadir%20Usuario%20-%20Wireframe%20Movil.png)
+
+![Configuración](/img/BluePatitas-Figma/Movil/Wireframe/Configuración%20-%20Wireframe%20Movil.png)
+
+![Crear Refugio Paso 1-1](/img/BluePatitas-Figma/Movil/Wireframe/Crear%20Refugio%20Paso%201%20-%20Wireframe%20Movil-1.png)
+
+![Crear Refugio Paso 1](/img/BluePatitas-Figma/Movil/Wireframe/Crear%20Refugio%20Paso%201%20-%20Wireframe%20Movil.png)
+
+![Crear Refugio Paso 3](/img/BluePatitas-Figma/Movil/Wireframe/Crear%20Refugio%20Paso%203%20-%20Wireframe%20Movil.png)
+
+![Dashboard](/img/BluePatitas-Figma/Movil/Wireframe/Dashboard%20-%20WireframeMovil.png)
+
+![Detalles Monitoreo](/img/BluePatitas-Figma/Movil/Wireframe/Detalles%20Monitoreo%20-%20Wireframe%20Movil.png)
+
+![Editar Datos Refugio](/img/BluePatitas-Figma/Movil/Wireframe/Editar%20Datos%20Refugio%20-%20Wireframe%20Movil.png)
+
+![Editar Usuario](/img/BluePatitas-Figma/Movil/Wireframe/Editar%20Usuario%20-%20Wireframe%20Movil.png)
+
+![Editar Veterinarios](/img/BluePatitas-Figma/Movil/Wireframe/Editar%20Veterinarios%20-%20Wireframe%20Movil.png)
+
+![Login](/img/BluePatitas-Figma/Movil/Wireframe/Login%20-%20Wireframe%20Movil.png)
+
+![Monitoreo](/img/BluePatitas-Figma/Movil/Wireframe/Monitoreo%20-%20Wireframe%20Movil.png)
+
+![Register](/img/BluePatitas-Figma/Movil/Wireframe/Register%20-%20Wireframe%20Movil.png)
+
+![Solicitudes de acceso](/img/BluePatitas-Figma/Movil/Wireframe/Solicitudes%20de%20acceso%20-%20Wireframe%20Movil.png)
+
+![Ver Reportes](/img/BluePatitas-Figma/Movil/Wireframe/Ver%20Reportes%20-%20Wireframe%20Movil.png)
+
+![Veterinarios](/img/BluePatitas-Figma/Movil/Wireframe/Veterinarios%20-%20Wireframe%20Movil.png)
+
+Wireframe Desktop
+
+![Register](/img/BluePatitas-Figma/Web/Wireframe/Register%20-%20Wireframe%20Desktop.png)
+
+![Login](/img/BluePatitas-Figma/Web/Wireframe/Login%20-%20Wireframe%20Desktop.png)
+
+![Crear Refugio Paso 1](/img/BluePatitas-Figma/Web/Wireframe/Crear%20Refugio%20Paso%201%20-%20Wireframe%20Desktop.png)
+
+![Crear Refugio Paso 2](/img/BluePatitas-Figma/Web/Wireframe/Crear%20Refugio%20Paso%202%20-%20Wireframe%20Desktop.png)
+
+![Crear Refugio Paso 3](/img/BluePatitas-Figma/Web/Wireframe/Crear%20Refugio%20Paso%203%20-%20Wireframe%20Desktop.png)
+
+![Acción](/img/BluePatitas-Figma/Web/Wireframe/Acción%20-%20Wireframe%20Desktop.png)
+
+![Agregar Animales](/img/BluePatitas-Figma/Web/Wireframe/Agregar%20Animales%20-%20Wireframe%20Desktop.png)
+
+![Agregar Dieta](/img/BluePatitas-Figma/Web/Wireframe/Agregar%20Dieta%20-%20Wireframe%20Desktop.png)
+
+![Agregar Dispositivo](/img/BluePatitas-Figma/Web/Wireframe/Agregar%20Dispositivo%20-%20Wireframe%20Desktop.png)
+
+![Agregar Veterinarios](/img/BluePatitas-Figma/Web/Wireframe/Agregar%20Veterinarios%20-%20Wireframe%20Desktop.png)
+
+![Agregar Zona Monitoreo](/img/BluePatitas-Figma/Web/Wireframe/Agregar%20Zona%20Monitoreo%20-%20Wireframe%20Desktop.png)
+
+![Animales](/img/BluePatitas-Figma/Web/Wireframe/Animales%20-%20Wireframe%20Desktop.png)
+
+![Añadir Usuario](/img/BluePatitas-Figma/Web/Wireframe/Añadir%20Usuario%20-%20Wireframe%20Desktop.png)
+
+![Configuración](/img/BluePatitas-Figma/Web/Wireframe/Configuración%20-%20Wireframe%20Desktop.png)
+
+![Dashboard](/img/BluePatitas-Figma/Web/Wireframe/Dashboard%20-%20Wireframe%20Desktop.png)
+
+![Detalles Monitoreo](/img/BluePatitas-Figma/Web/Wireframe/Detalles%20Monitoreo%20-%20Wireframe%20Desktop.png)
+
+![Editar Datos Refugio](/img/BluePatitas-Figma/Web/Wireframe/Editar%20Datos%20Refugio%20-%20Wireframe%20Desktop.png)
+
+![Editar Usuario](/img/BluePatitas-Figma/Web/Wireframe/Editar%20Usuario%20-%20Wireframe%20Desktop.png)
+
+![Editar Veterinarios](/img/BluePatitas-Figma/Web/Wireframe/Editar%20Veterinarios%20-%20Wireframe%20Desktop.png)
+
+![Monitoreo](/img/BluePatitas-Figma/Web/Wireframe/Monitoreo%20-%20Wireframe%20Desktop.png)
+
+![Solicitudes de acceso](/img/BluePatitas-Figma/Web/Wireframe/Solicitudes%20de%20acceso%20-%20Wireframe%20Desktop.png)
+
+![Ver Reportes](/img/BluePatitas-Figma/Web/Wireframe/Ver%20Reportes%20-%20Wireframe%20Desktop.png)
+
+![Veterinarios](/img/BluePatitas-Figma/Web/Wireframe/Veterinarios%20-%20Wireframe%20Desktop.png)
+
 ### 5.4.2. Applications Wireflow Diagrams
+
+### Segmento Admin:
+
+![Wireflow Admin](/img/AdminWireflow.PNG)
+
+### Segmento Veterinario:
+
+![Wireflow Vet](/img/VetWireflow.PNG)
+
 ### 5.4.3. Applications Mock-ups
+
+Mock-up Mobile
+
+![Acción](/img/BluePatitas-Figma/Movil/Mockup/Acción%20-%20Mockup%20Movil.png)
+
+![Agregar Animal](/img/BluePatitas-Figma/Movil/Mockup/Agregar%20Animal%20-%20Mockup%20Movil.png)
+
+![Agregar Dieta](/img/BluePatitas-Figma/Movil/Mockup/Agregar%20Dieta%20-%20Mockup%20Movil.png)
+
+![Agregar Dispositivo IOT](/img/BluePatitas-Figma/Movil/Mockup/Agregar%20Dispositivo%20IOT%20-%20Mockup%20Movil.png)
+
+![Agregar Veterinarios](/img/BluePatitas-Figma/Movil/Mockup/Agregar%20Veterinarios%20-%20Mockup%20Movil.png)
+
+![Agregar Zona Monitoreo](/img/BluePatitas-Figma/Movil/Mockup/Agregar%20Zona%20Monitoreo-%20Mockup%20Desktop.png)
+
+![Animales](/img/BluePatitas-Figma/Movil/Mockup/Animales%20-%20Mockup%20Movil.png)
+
+![Añadir Usuario](/img/BluePatitas-Figma/Movil/Mockup/Añadir%20Usuario%20-%20Mockup%20Movil.png)
+
+![Configuración](/img/BluePatitas-Figma/Movil/Mockup/Configuración%20-%20Mockup%20Movil.png)
+
+![Crear Refugio Paso 1](/img/BluePatitas-Figma/Movil/Mockup/Crear%20Refugio%20Paso%201%20-%20Mockup%20Movil.png)
+
+![Crear Refugio Paso 3](/img/BluePatitas-Figma/Movil/Mockup/Crear%20Refugio%20Paso%203%20-%20Mockup%20Movil.png)
+
+![Dashboard](/img/BluePatitas-Figma/Movil/Mockup/Dashboard%20-%20Mockup%20Movil.png)
+
+![Detalles Monitoreo](/img/BluePatitas-Figma/Movil/Mockup/Detalles%20Monitoreo%20-%20Mockup%20Movil.png)
+
+![Editar Datos Refugio](/img/BluePatitas-Figma/Movil/Mockup/Editar%20Datos%20Refugio%20-%20Mockup%20Movil.png)
+
+![Editar Usuario](/img/BluePatitas-Figma/Movil/Mockup/Editar%20Usuario%20-%20Mockup%20Movil.png)
+
+Mock-up Desktop
+
+![Register](/img/BluePatitas-Figma/Web/Mockup/Register%20-%20Mockup%20Web.png)
+
+![Login](/img/BluePatitas-Figma/Web/Mockup/Login%20-%20Mockup%20Web.png)
+
+![Crear Refugio Paso 1](/img/BluePatitas-Figma/Web/Mockup/Crear%20Refugio%20Paso%201%20-%20Mockup%20Desktop.png)
+
+![Crear Refugio Paso 2](/img/BluePatitas-Figma/Web/Mockup/Crear%20Refugio%20Paso%202%20-%20Mockup%20Desktop.png)
+
+![Crear Refugio Paso 3](/img/BluePatitas-Figma/Web/Mockup/Crear%20Refugio%20Paso%203%20-%20Mockup%20Desktop.png)
+
+![Acción](/img/BluePatitas-Figma/Web/Mockup/Acción%20-%20Mockup%20Desktop.png)
+
+![Agregar Dispositivo](/img/BluePatitas-Figma/Web/Mockup/Agregar%20Dispositivo%20-%20Mockup%20Desktop.png)
+
+![Agregar Veterinarios](/img/BluePatitas-Figma/Web/Mockup/Agregar%20Veterinarios%20-%20Mockup%20Desktop.png)
+
+![Animales](/img/BluePatitas-Figma/Web/Mockup/Animales%20-%20Mockup%20Desktop.png)
+
+![Añadir Usuario](/img/BluePatitas-Figma/Web/Mockup/Añadir%20Usuario%20-%20Mockup%20Desktop.png)
+
+![Configuración](/img/BluePatitas-Figma/Web/Mockup/Configuración%20-%20Mockup%20Desktop.png)
+
+![Dashboard](/img/BluePatitas-Figma/Web/Mockup/Dashboard%20-%20Mockup%20Desktop.png)
+
+![Editar Datos Refugio](/img/BluePatitas-Figma/Web/Mockup/Editar%20Datos%20Refugio%20-%20Mockup%20Desktop.png)
+
+![Editar Usuario](/img/BluePatitas-Figma/Web/Mockup/Editar%20Usuario%20-%20Mockup%20Desktop.png)
+
+![Editar Veterinarios](/img/BluePatitas-Figma/Web/Mockup/Editar%20Veterinarios%20-%20Mockup%20Desktop.png)
+
+![Monitoreo](/img/BluePatitas-Figma/Web/Mockup/Monitoreo%20-%20Mockup%20Desktop.png)
+
+![Solicitudes de acceso](/img/BluePatitas-Figma/Web/Mockup/Solicitudes%20de%20acceso%20-%20Mockup%20Desktop.png)
+
+![Veterinarios](/img/BluePatitas-Figma/Web/Mockup/Veterinarios%20-%20Mockup%20Desktop.png)
+
+![Agregar Dietas](/img/BluePatitas-Figma/Web/Mockup/Agregar%20Dieta%20-%20Mockup%20Desktop.png)
+
+![Detalles Monitoreo](/img/BluePatitas-Figma/Web/Mockup/Detalles%20Monitoreo%20-%20Mockup%20Web.png)
+
+![Ver Reportes](/img/BluePatitas-Figma/Web/Mockup/Ver%20Reportes%20-%20Mockup%20Desktop.png)
+
 ### 5.4.4. Applications User Flow Diagrams
 
+### Segmento Admin:
+
+![Userflow Admin](/img/AdminUserflow.PNG)
+
+User Flow 1: Registro de administrador y creación de Refugio
+User Persona: Administrador del Sistema / Dueño del Refugio.
+User Goal: Registrarse exitosamente en la plataforma, autenticar su cuenta y configurar el perfil de un nuevo refugio para acceder al panel de control (Dashboard) y comenzar a operar.
+
+Explicación de los flujos y condiciones:
+
+Happy Path (Ruta Esperada):
+
+Create Account: El usuario ingresa a la pantalla de registro, llena sus datos personales (nombre, correo, teléfono, rol y contraseña) y hace clic en crear cuenta.
+
+Sign In: El usuario ingresa sus credenciales recién creadas para iniciar sesión.
+
+Crear Refugio - Paso 1 (Información Básica): El administrador llena los datos principales de la organización (Nombre del refugio, RUC, correo institucional, teléfono).
+
+Crear Refugio - Paso 2 (Ubicación): El administrador especifica la dirección, referencia, distrito y ciudad del refugio.
+
+Crear Refugio - Paso 3 (Confirmación): El sistema muestra una pantalla de éxito indicando que el refugio ha sido creado.
+
+Dashboard: Al hacer clic en "Ir al refugio", el usuario aterriza en el panel principal donde puede visualizar las métricas, animales registrados, alertas activas y próximas alimentaciones.
+
+Unhappy Paths / Rutas Alternativas:
+
+Condición de Usuario Duplicado: Si en la pantalla de "Create Account" el sistema detecta que ya existe un usuario registrado con los mismos datos, se interrumpe el flujo de creación y se redirige al usuario directamente al Login o al Dashboard.
+
+Condición de Edición/Equivocación: Durante cualquiera de los pasos de "Crear Refugio" (Paso 1 o Paso 2), el sistema habilita una ruta de retroceso. Siempre se le permitirá al usuario volver a la pantalla anterior sin perder su progreso en caso de que necesite corregir alguna información ingresada por equivocación.
+
+### Segmento Veterinario:
+
+![Userflow Vet](/img/VetUserflow.PNG)
+
+User Persona: Veterinario.
+User Goal: Visualizar el inventario de animales a su cargo, asignarles dietas, analizar sus reportes médicos y monitorear las cámaras de las zonas asignadas para gestionar la salud del refugio y reaccionar ante emergencias.
+
+Explicación de los flujos y condiciones:
+
+Happy Path (Ruta Esperada):
+
+Animales: El usuario ingresa a la vista principal para ver el listado de animales y selecciona el perfil de uno en específico.
+
+Agregar Dieta: El veterinario abre el modal correspondiente para recetar o modificar la dieta del animal seleccionado.
+
+Ver Reportes: Posteriormente, el veterinario visualiza un modal con las estadísticas, signos vitales o métricas del animal a lo largo del tiempo.
+
+Monitoreo: El usuario cambia a la sección de monitoreo general del refugio, donde puede ver múltiples feeds de cámaras.
+
+Detalles Monitoreo: El veterinario hace clic en una cámara específica para ver los detalles de una zona (por ejemplo, la zona de cachorros) en tiempo real.
+
+Unhappy Paths / Flujos Alternativos:
+
+Condición de Acción Clínica (Desde Reportes): Tras revisar los reportes de un animal, el flujo no siempre termina ahí. Como ruta alternativa, el veterinario puede llegar a conclusiones clínicas. Si determina que hay una anomalía, puede poner al animal en observación o agendarle una cita directamente. Tras esta decisión, los datos actualizados del animal pasarán a la zona de "Animales" para que el personal vea las medidas adecuadas a tomar.
+
+Condición de Emergencia Manual (Desde Monitoreo): En la vista de "Detalles Monitoreo", el flujo normal dicta que las alertas del sistema deben sonar automáticamente si algo va mal. Sin embargo, existe un flujo alternativo de emergencia: el veterinario puede disparar alarmas de forma manual si detecta una anomalía visual. La condición de este evento indica que, tras accionar el disparador, se enviará inmediatamente una notificación push/alerta al personal correspondiente del refugio.
+
 ## 5.5. Applications Prototyping
+
+Prototype Mobile
+
+![ProtoMovil](/img/BluePatitas-Figma/PrototipoMovil.PNG)
+
+Link al Prototipo: [https://www.figma.com/proto/Q634gqNxe8N4Pm06IPDAJT/BluePatitas?node-id=206-14895&p=f&t=GpXs2gYVCwmZnnxm-1&scaling=min-zoom&content-scaling=fixed&page-id=206%3A1054](https://www.figma.com/proto/Q634gqNxe8N4Pm06IPDAJT/BluePatitas?node-id=206-14895&p=f&t=GpXs2gYVCwmZnnxm-1&scaling=min-zoom&content-scaling=fixed&page-id=206%3A1054)
+
+Prototype Web
+
+![ProtoWeb](/img/BluePatitas-Figma/PrototipoWeb.PNG)
+
+Link al prototipo: [https://www.figma.com/proto/Q634gqNxe8N4Pm06IPDAJT/BluePatitas?node-id=143-5590&p=f&t=kw8IFOyuUtkFxQ0b-1&scaling=min-zoom&content-scaling=fixed&page-id=143%3A4196&starting-point-node-id=143%3A5590](https://www.figma.com/proto/Q634gqNxe8N4Pm06IPDAJT/BluePatitas?node-id=143-5590&p=f&t=kw8IFOyuUtkFxQ0b-1&scaling=min-zoom&content-scaling=fixed&page-id=143%3A4196&starting-point-node-id=143%3A5590)
+![ProtoMovil](/img/BluePatitas-Figma/PrototipoWeb.PNG)
+
 ## 5.6. IoT Device Design
 
-<div style="page-break-after: always;"></div>
+| Dispositivo real | Equivalente Wokwi | Pin ESP32 |
+|---|---|---|
+| Cámara + detección de perímetro | PIR HC-SR501 | GPIO 13 |
+| GPS | Potenciómetro (ADC) | GPIO 34 |
+| Sensor de temperatura y humedad | DHT22 | GPIO 14 |
+| Dispensador de comida | Servo SG90 | GPIO 15 |
+| Alerta visual | LED rojo | GPIO 2 |
+
+---
+
+#### Dispositivo: PIR HC-SR501
+
+![ProtoMovil](/img/iot_disenio/HC-SR501.png)
+
+#### Simula
+- Detección de movimiento.
+- Activación automática de alertas.
+- Vigilancia básica del entorno.
+- Presencia de mascotas o intrusos cerca del dispositivo.
+
+---
+
+#### Dispositivo: Potenciómetro (ADC)
+
+![ProtoMovil](/img/iot_disenio/Potenciómetro.png)
+
+#### Simula
+- Variación de coordenadas GPS.
+- Movimiento o cambio de ubicación.
+- Lectura analógica de posición.
+- Simulación de desplazamiento en tiempo real.
+
+---
+
+#### Dispositivo: DHT22
+
+![ProtoMovil](/img/iot_disenio/DHT22.png)
+
+#### Simula
+- Lectura de temperatura ambiental.
+- Medición de humedad relativa.
+- Monitoreo de condiciones climáticas.
+- Obtención de datos ambientales en tiempo real.
+
+---
+
+#### Dispositivo: Servo SG90
+
+![ProtoMovil](/img/iot_disenio/ServoSG90.png)
+
+#### Simula
+- Apertura automática del dispensador.
+- Movimiento controlado del mecanismo.
+- Dosificación de alimento.
+- Activación programada del sistema de comida.
+
+---
+
+#### Dispositivo: LED rojo
+
+![ProtoMovil](/img/iot_disenio/LED.png)
+
+#### Simula
+- Alertas visuales.
+- Indicador de detección o emergencia.
+- Estado activo del sistema.
+- Notificaciones luminosas del dispositivo.
+
+
+#### Prototipo completo
+
+![ProtoMovil](/img/iot_disenio/disenio_completo.png)
 
 # Capítulo VI: Product Implementation, Validation & Deployment
 
 ## 6.1. Software Configuration Management
+
 ### 6.1.1. Software Development Environment Configuration
+
+Esta sección establece el listado oficial del software, herramientas y plataformas que los miembros del equipo de la startup usaron para garantizar coherencia, colaboración y eficiencia en la construcción y mantenimiento del proyecto.
+
+| Actividad | Producto | Propósito | Ruta de referencia |
+| :--- | :--- | :--- | :--- |
+| **Project Management** | Trello / GitHub Projects | Planificación, seguimiento y gestión de tareas ágiles (Sprints, Product Backlog, etc.). | [https://trello.com](https://trello.com/) |
+| **Product UX/UI Design** | Figma | Diseño de interfaces de usuario, landing page y prototipado. | [https://figma.com](https://figma.com) |
+| **Software Development** | Visual Studio Code | Edición y desarrollo de código para las interfaces web, backend y scripts IoT. | [https://code.visualstudio.com/](https://code.visualstudio.com/) |
+| Software Development | Android Studio | Edición y desarrollo de código para interfaces web y móvil | [https://developer.android.com/](https://developer.android.com/) |
+| **Software Deployment** | Netlify | Despliegue automatizado y alojamiento de la Landing Page. | [https://www.netlify.com/](https://www.netlify.com/) |
+| **Software Documentation** | Markdown + StackEdit | Redacción y estructuración de la documentación técnica del proyecto. | [https://stackedit.io](https://stackedit.io) |
+| **Version Control** | Git (GitHub) | Control de versiones, ramas y revisiones de código colaborativo. | [https://github.com](https://github.com) |
+
 ### 6.1.2. Source Code Management
+
+La administración y estructuración de las múltiples modificaciones se realizaron mediante la creación de repositorios centralizados en GitHub para el proyecto. Nuestra organización se estructuró de la siguiente manera:
+
+* **Organización**
+
+| Producto | Repositorio | URL |
+| :--- | :--- | :--- |
+| **Organización principal** | BluePatitas | [https://github.com/orgs/1ASI0572-2610-17755-G3-BluePatitas/repositories](https://github.com/orgs/1ASI0572-2610-17755-G3-BluePatitas/repositories) |
+| **Landing Page** | BluePatitas-Landing-Page | [https://github.com/1ASI0572-2610-17755-G3-BluePatitas/Project-LandingPage](https://github.com/1ASI0572-2610-17755-G3-BluePatitas/Project-LandingPage) |
+| **Front-End Web** | BluePatitas-Frontend | [https://github.com/1ASI0572-2610-17755-G3-BluePatitas/frontend-BluePatitas](https://github.com/1ASI0572-2610-17755-G3-BluePatitas/frontend-BluePatitas) |
+| **Back-End / API** | BluePatitas-Backend | [https://github.com/1ASI0572-2610-17755-G3-BluePatitas/backend](https://github.com/1ASI0572-2610-17755-G3-BluePatitas/backend) |
+| **IoT / Edge** | BluePatitas-IoT | [https://github.com/1ASI0572-2610-17755-G3-BluePatitas/iot](https://github.com/1ASI0572-2610-17755-G3-BluePatitas/iot) |
+
+* **Ramas Principales:**
+
+Se usará el flujo de trabajo **GitFlow** para mantener nuestras ramas correctamente estructuradas y aplicar buenas prácticas de control de versiones. Para ello, contaremos con:
+
+* **Main branch (`main`):** Esta rama está destinada exclusivamente a la producción. Contiene código estable, funcional y listo para el usuario final.
+* **Develop branch (`develop`):** Esta rama está destinada a la integración constante y pruebas pre-producción. Aquí se fusionan las nuevas características antes de pasar a producción.
+* **Feature branches (`feature/nombre-del-feature`):** Cada funcionalidad, arreglo o mejora poseerá su respectiva rama creada a partir de `develop`. Una vez que se encuentre correctamente implementada y probada, será fusionada de vuelta a la rama `develop`.
+
 ### 6.1.3. Source Code Style Guide & Conventions
+
+Usaremos buenas prácticas en cuanto a la escritura y estructuración del código para asegurar que sea coherente, legible y escalable por cualquier miembro del equipo.
+
+**HTML:**
+* Cada etiqueta, id, nombre y clase será nombrada usando *lowercase* (minúsculas).
+* Utilizar la codificación `UTF-8`.
+* Nomenclatura y redacción de identificadores en inglés.
+* En cada referencia a un archivo, colocar la extensión correspondiente (`.css`, `.js`).
+* Asegurar el cierre correcto de todas las etiquetas semánticas.
+
+**Etiquetas semánticas empleadas:**
+* `<header>`: Define el contenido introductorio de la página web (ej. barra de navegación y logo).
+* `<nav>`: Define las secciones dedicadas a la navegación principal.
+* `<div>`: Permite la agrupación lógica de elementos para aplicarles hojas de estilo específicas y manejar el layout.
+* `<img>`: Inserción de imágenes con su respectivo atributo `alt` para accesibilidad.
+* `<ul>` y `<li>`: Definición de listas desordenadas, empleadas principalmente para la elaboración del menú interactivo.
+* `<a>` (Anchor): Hipervínculos para desplazar a los usuarios a través de las diferentes secciones.
+* `<button>`: Botones interactivos que permiten a los usuarios realizar acciones específicas (CTAs).
+* `<h1>` - `<h4>`: Jerarquía de títulos y subtítulos de la página web, vitales para el SEO y la legibilidad.
+
+**CSS:**
+* Las imágenes deben especificar su ancho máximo (`max-width: 100%`) para garantizar un diseño *responsive* que se adapte al contenedor padre.
+* Cada clase será nombrada de acuerdo al propósito y bloque del elemento (recomendable seguir metodologías como BEM).
+* Separación de palabras en clases e identificadores mediante guiones (`-`), también conocido como *kebab-case*.
+* Reinicio de estilos base utilizando un selector universal (`*`) con `margin: 0`, `padding: 0` y `box-sizing: border-box`.
+
 ### 6.1.4. Software Deployment Configuration
 
+**Consideraciones previas al despliegue:**
+Asegurarse de que todos los archivos `.html`, `.css` y `.js` tengan rutas relativas correctas. Se debe verificar exhaustivamente que los hipervínculos y rutas de imágenes (que suelen funcionar bien en entornos locales como *Live Server* de Visual Studio Code) apunten a los directorios correctos respetando mayúsculas y minúsculas, ya que los servidores en la nube son *case-sensitive*.
+
+**Proceso de Despliegue con Netlify:**
+Dado que la Landing Page es un sitio web estático (HTML/CSS/JS), utilizamos **Netlify** debido a su velocidad, optimización de recursos y despliegue continuo integrado directamente con nuestro repositorio.
+
+1.  **Preparación del Repositorio:** Aseguramos que la versión final de la Landing Page esté en la rama `main` del repositorio `BluePatitas-Landing-Page` dentro de nuestra organización en GitHub.
+2.  **Autenticación y Conexión:** Ingresamos a [Netlify.com](https://www.netlify.com/) y accedemos con nuestra cuenta de GitHub.
+3.  **Importar el Proyecto:** Seleccionamos la opción *Add new site* > *Import an existing project* y elegimos GitHub como proveedor.
+4.  **Configuración del Build:** Seleccionamos el repositorio `1ASI0572-2610-17755-G3-BluePatitas/BluePatitas-Landing-Page`. Indicamos que la rama de producción a observar es `main`. Dado que es HTML puro, los campos de *Build command* y *Publish directory* se dejan en blanco o según el directorio raíz donde esté el `index.html`.
+5.  **Despliegue:** Hacemos clic en *Deploy site*. Netlify compilará y publicará los archivos en segundos, generando un enlace público automatizado (con HTTPS incluido) a través del cual cualquier usuario puede acceder a nuestra plataforma. Cualquier cambio futuro que se haga *push
+
+Como evidencia del despliegue de la Landing Page de **BluePatitas**, se muestran las principales secciones implementadas y publicadas en el entorno web. Estas capturas permiten verificar que la página se encuentra desplegada correctamente, mantiene una navegación funcional, conserva una identidad visual coherente y presenta las secciones necesarias para comunicar la propuesta de valor del producto.
+
+
+### Evidencia 1: Página de inicio
+
+![Página de inicio](./img/page1.png)
+
+Se evidencia la página principal de la Landing Page desplegada, donde se presenta la propuesta de valor de **BluePatitas**: una solución IoT orientada al bienestar animal en refugios. Además, se observa la barra de navegación, el selector de idioma, el acceso a login y el botón principal de inicio.
+
+
+### Evidencia 2: Sobre el Producto
+
+![Sobre el Producto](./img/page2.png)
+
+Se muestra la sección informativa del producto, donde se explica que **BluePatitas** permite transformar la gestión de refugios mediante tecnología IoT y dispositivos interconectados. También se incluye un espacio visual para un video demostrativo de la gestión en tiempo real.
+
+
+### Evidencia 3: Funcionalidades principales IoT
+
+![Funcionalidades IoT](./img/page3.png)
+
+Se evidencia la sección de funcionalidades principales, donde se presentan los componentes IoT del sistema: cámaras inteligentes, collares GPS, sensores climáticos y dispensadores automáticos. Esta sección permite comunicar de forma clara las capacidades tecnológicas de la solución.
+
+
+### Evidencia 4: Beneficios clave
+
+![Beneficios clave](./img/page4.png)
+
+Se presenta la sección de beneficios clave, orientada a los perfiles principales del sistema: administradores y veterinarios. Esta parte destaca cómo la plataforma ayuda a reducir costos operativos, optimizar recursos, acceder a datos históricos de salud y generar alertas automatizadas.
+
+
+### Evidencia 5: Testimonios de usuarios
+
+![Testimonios](./img/page5.png)
+
+Se evidencia la sección de testimonios, diseñada para reforzar la confianza en la solución mediante opiniones de usuarios relacionados con refugios, veterinaria y rescate animal. Esta sección aporta credibilidad y valor comercial a la Landing Page.
+
+
+### Evidencia 6: Sobre el equipo
+
+![Sobre el equipo](./img/page6.png)
+
+Se muestra la sección “Sobre el equipo”, donde se presenta al grupo responsable del desarrollo de **BluePatitas**. Esta sección ayuda a humanizar la propuesta y reforzar la identidad del proyecto.
+
+
+### Evidencia 7: Planes del servicio
+
+![Planes](./img/page7.png)
+
+Se evidencia la sección de planes, donde se presentan las opciones **Básico**, **Pro** y **Enterprise**. Además, se incluye un selector mensual/anual, permitiendo mostrar una estructura comercial clara para distintos tipos de refugios.
+
+
+### Evidencia 8: Preguntas frecuentes
+
+![Preguntas frecuentes](./img/page8.png)
+
+Se muestra la sección FAQ, implementada mediante preguntas desplegables. Esta sección permite resolver dudas comunes sobre instalación de dispositivos IoT, conectividad, seguridad de los collares GPS e integración con otros sistemas.
+
+
+### Evidencia 9: Formulario de contacto
+
+![Formulario de contacto](./img/page9.png)
+
+Se evidencia el formulario de contacto, donde los usuarios interesados pueden ingresar su nombre, correo y nombre del refugio para solicitar información o una demostración personalizada de la plataforma.
+
+
+### Evidencia 10: Footer
+
+![Footer](./img/page10.png)
+
+Se muestra el pie de página de la Landing Page, donde se mantiene la identidad de **BluePatitas**, una breve descripción del producto y la información de derechos reservados. Esto completa la estructura visual y formal del sitio desplegado.
+
+En conjunto, estas evidencias demuestran que la Landing Page de **BluePatitas** fue desplegada correctamente y que sus secciones principales se encuentran disponibles para el usuario final. El sitio presenta una estructura completa: inicio, producto, beneficios, funcionalidades, planes, testimonios, FAQ, contacto y footer, manteniendo coherencia visual y una navegación clara orientada a refugios de animales.
+
 ## 6.2. Landing Page, Services & Applications Implementation
-### 6.2.X. Sprint n
-#### 6.2.X.1. Sprint Planning n
-#### 6.2.X.2. Aspect Leaders and Collaborators
-#### 6.2.X.3. Sprint Backlog n
-#### 6.2.X.4. Development Evidence for Sprint Review
-#### 6.2.X.5. Testing Suite Evidence for Sprint Review
-#### 6.2.X.6. Execution Evidence for Sprint Review
-#### 6.2.X.7. Services Documentation Evidence for Sprint Review
-#### 6.2.X.8. Software Deployment Evidence for Sprint Review
-#### 6.2.X.9. Team Collaboration Insights during Sprint
+### 6.2.1. Sprint 1
+
+#### 6.2.1.1. Sprint Planning 1
+
+| **Sprint #**                    | Sprint 1 |
+|----------------------------------|----------|
+| **Sprint Planning Background**  |          |
+| **Date**                        | 20/04/2026 |
+| **Time**                        | 8:00 pm |
+| **Location**                    | Virtual (Discord) |
+| **Prepared by**                 | Peralta Chipa Ronald Joel |
+| **Attendees (to planning meeting)** | Peralta Chipa Ronald Joel <br> Castañeda Guimas Giancarlo Santiago <br> Choquehuanca Nuñez Luciana Carolina <br> Gonzales Valverde Carlos Matthew <br> Hernández Uchuya María Patricia |
+| **Sprint n - 1 Review Summary**  | No hubo sprint anterior |
+| **Sprint n - 1 Retrospective Summary** | No hubo sprint anterior |
+| **Sprint 1 Goal**                | Realizar el Landing Page / Informe de trabajo |
+| **Sprint 1 Velocity**            | 15 |
+| **Sum of Story Points**          | 12 |
+
+#### 6.2.1.2. Aspect Leaders and Collaborators
+
+| Team Member (Last Name, First Name) | GitHub Username | Arquitectura Base (L/C) | API REST y Seguridad (L/C) | Persistencia y Base de Datos (L/C) | Modelo Veterinario (L/C) | Servicios de Alimentación (L/C) | Landing Page (L/C) |
+|:-----------------------------------|:----------------|:--------------------------|:----------------------------|:-----------------------------------|:--------------------------|:--------------------------------|:-------------------|
+| Peralta, Ronald                    | RooDev10        | L                          | C                            | L                                   | C                          | C                                | C                   |
+| Guimas, Giancarlo                  | Darksens01      | C                          | C                            | C                                   | L                          | C                                | C                   |
+| Choquehuanca Nuñez, Luciana        | Lucianxaaa      | C                          | L                            | C                                   | C                          | C                                | C                   |
+| Gonzales Valverde, Carlos          | Carlos12324     | C                          | C                            | C                                   | C                          | L                                | C                   |
+| Hernández Uchuya, María            | Bal2220         | C                          | C                            | L                                   | C                          | C                                | C                   |
+
+#### 6.2.1.3. Sprint Backlog 1
+
+El objetivo principal del Sprint 1 fue establecer la base del FrontEnd del sistema BluePatitas, diseñando y plasmando lo que vendra a ser nuestra estructura en el futuro
+
+| Sprint # | Sprint 1 | | | | | | |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **User Story Id** | **User Story Title** | **Task Id** | **Task Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status (To-do / In-Process / To-Review / Done)** |
+| US28 | Landing page informativa | T01 | Maquetación HTML de la Landing Page | Desarrollar la estructura base HTML5 de la landing page con la propuesta de valor. | 4 | Luciana Choquehuanca | Done |
+| US28 | Landing page informativa | T02 | Estilos CSS y Responsive Design | Implementar los estilos en CSS para que la landing page sea adaptable (mobile/desktop). | 5 | María Hernández | Done |
+| US07 | Visualización de cámara en tiempo real | T03 | Desarrollo del componente de Video Stream | Crear el componente UI en Angular/React para recibir y mostrar el streaming de video mockeado. | 6 | Giancarlo Castañeda | Done |
+| US07 | Visualización de cámara en tiempo real | T04 | Manejo de estados de cámara (Activa/Inactiva) | Implementar la lógica UI para mostrar placeholders o mensajes cuando la cámara se desconecta. | 4 | Ronald Peralta | Done |
+| US14 | Dashboard de alertas del refugio | T05 | Maquetación del Dashboard Principal | Diseñar y maquetar la vista principal donde el administrador verá el resumen de su refugio. | 6 | Carlos Gonzales | Done |
+| US14 | Dashboard de alertas del refugio | T06 | Componente de Lista de Alertas | Crear el panel lateral o sección inferior para listar notificaciones (mock data). | 5 | Luciana Choquehuanca | Done |
+| US16 | Historial ambiental del animal | T07 | Diseño de gráficos de Temperatura/Humedad | Integrar librería de gráficos (ej. Chart.js) para mostrar el historial ambiental del animal. | 7 | Ronald Peralta | Done |
+| US16 | Historial ambiental del animal | T08 | Implementación de filtros de fecha en gráficos | Agregar selectores de fecha en la UI para filtrar los datos mostrados en los gráficos ambientales. | 4 | Giancarlo Castañeda | Done |
+| US09 | Configuración de geocerca | T09 | Integración de Mapa en la UI | Agregar el componente de mapa (ej. Google Maps API o Leaflet) en la vista de configuración. | 6 | Carlos Gonzales | Done |
+| US09 | Configuración de geocerca | T10 | Herramientas de dibujo en el Mapa | Habilitar la funcionalidad para dibujar polígonos/círculos en el mapa para delimitar la geocerca. | 6 | Ronald Peralta | Done |
+| US19 | Consulta de perfil del animal | T11 | Maquetación del Perfil del Animal | Crear la vista con la foto, información básica y dieta del animal. | 4 | María Hernández | Done |
+| US15 | Estado de conexión de dispositivos | T12 | Componente de Estado de Hardware | Crear un panel que muestre el estado de los sensores, cámara y dispensador (Verde/Rojo). | 4 | Luciana Choquehuanca | Done |
+| -- | Tareas Generales | T13 | Configuración del repositorio Front Web | Iniciar proyecto, configurar linter, dependencias y enrutamiento inicial. | 4 | Giancarlo Castañeda | Done |
+| -- | Tareas Generales | T14 | Despliegue en Netlify de Landing Page | Configurar el CD/CI básico para desplegar la landing page automáticamente en Netlify. | 4 | Carlos Gonzales | Done |
+
+#### 6.2.1.4. Development Evidence for Sprint Review
+
+Se realizaron los avances con los commits correspondiente en el repositorio de la siguiente forma.
+
+- Repositorio Landing Page: [Landing-page](https://github.com/1ASI0572-2610-17755-G3-BluePatitas/Project-LandingPage.git)
+
+| Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
+|:----------:|:------:|:---------:|:--------------:|:------------------:|
+| Landing-Page | main | 8ab70ee9b0430fa5eb1a21d8d4bbc7fab5a99691 | chore: update landing page structure and assets | 13/05/2026 |
+| Landing-Page | develop | be91f5210ca4b98d7a5ff1621e2d997b1f70cfdb | fix: improve responsive layout and section spacing | 13/05/2026 |
+| Landing-Page | feature/ui-layout | 9c53463046f305aeac086e92fd213e56a7a85ae6 | feat: implement hero section and navigation layout | 10/05/2026 |
+| Landing-Page | feature/product-sections | 57499e38aa7636347e10a5c363e686511870da07 | feat: add product, benefits and testimonials sections | 10/05/2026 |
+| Landing-Page | feature/pricing-cta | 4124f766cc3a6ecf990bb1d163a89c5e01356718 | feat: implement pricing plans and contact form CTA | 11/05/2026 |
+| Landing-Page | feature/i18n-interactions | e1b84cfb86447812eb9a81d3b568d024d1dfa7ec | feat: add language toggle and interactive FAQ behavior | 12/05/2026 |
+
+- Repositorio Frontend: [frontend-app](https://github.com/1ASI0572-2610-17755-G3-BluePatitas/frontend-BluePatitas)
+
+| Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
+|:----------:|:------:|:---------:|:--------------:|:------------------:|
+| Frontend | main | a13f9d7c51e4d2c7f98ab34e9fba1c2d6f7a901 | chore: initialize Angular frontend architecture and base configuration | 13/05/2026 |
+| Frontend | develop | b24e8f1d72a5f9e1c3ad72be4c9f1a5e8d2c7431 | fix: integrate shared layout, routing and responsive navigation | 13/05/2026 |
+| Frontend | feature/auth | c35d7a2b84d6e1f3b4ca81de9f2b6d3a7e8f5124 | feat: develop login, session handling and authentication guards | 08/05/2026 |
+| Frontend | feature/dashboard | d46e8c3f95a7b2d4c5eb92fa1d3c7e4b8f9a6235 | feat: implement dashboard metrics, charts and overview components | 09/05/2026 |
+| Frontend | feature/animals | e57f9d4a16b8c3e5d6fc03ab2e4d8f5c9a1b7346 | feat: add animal registration, profile management and status views | 09/05/2026 |
+| Frontend | feature/devices | f68a1e5b27c9d4f6e7ad14bc3f5e9a6d1b2c8457 | feat: implement IoT device management and connection monitoring | 10/05/2026 |
+| Frontend | feature/monitoring | a79b2f6c38d1e5a7f8be25cd4a6f1b7e2c3d9568 | feat: develop real-time monitoring panels and alert visualization | 10/05/2026 |
+| Frontend | feature/feeding | b81c3a7d49e2f6b8a9cf36de5b7a2c8f3d4e0679 | feat: implement automated feeding schedules and tracking interface | 11/05/2026 |
+| Frontend | feature/reports | c92d4b8e51f3a7c9bad47ef6c8b3d9a4e5f1780a | feat: add reports module with statistics and export functionality | 11/05/2026 |
+| Frontend | feature/settings | d03e5c9f62a4b8da0ce58fa7d9c4e1b5f6a2891b | feat: implement user settings and platform configuration screens | 12/05/2026 |
+| Frontend | feature/veterinarians | e14f6da073b5c9eb1df69ab08e1d5f2c6a7b3902 | feat: develop veterinarians management and assignment interface | 12/05/2026 |
+| Frontend | feature/alerts | f25a7eb184c6da0f2eg70bc19f2e6a3d7b8c4013 | feat: implement notifications center and emergency alert components | 13/05/2026 |
+
+#### 6.2.1.5. Execution Evidence for Sprint Review
+Al concluir el primer sprint, se logró establecer la base estructural del proyecto frontend, implementando la arquitectura inicial de la aplicación y las principales secciones de navegación. Se definió la estructura general de la landing page, asegurando una organización clara de los componentes y una correcta separación por secciones funcionales.
+
+Se incorporó una primera versión de la interfaz visual, incluyendo el layout principal, la barra de navegación y la sección hero, sentando las bases para una experiencia de usuario coherente y escalable. Asimismo, se aplicaron principios básicos de usabilidad y buenas prácticas de desarrollo UI para garantizar una navegación intuitiva desde el inicio del proyecto.
+
+Este sprint permitió consolidar la estructura inicial del sistema, facilitando la integración progresiva de nuevas funcionalidades en los siguientes ciclos de desarrollo.
+
+#### A continuación, se presentan capturas de pantalla que ilustran los avances y detalles de la interfaz.
+
+- Evidencia de inicio de sesión 
+![Footer](./img/evidencia_sprint1/avance1.png)
+
+- Evidencia de registro
+![Footer](./img/evidencia_sprint1/avance2.png)
+
+- Evidencia de formulario
+![Footer](./img/evidencia_sprint1/avance3.png)
+
+- Evidencia de Panel principal de BluePatitas
+![Footer](./img/evidencia_sprint1/avance4.png)
+
+- Evidencia de la sección de gestión de mascotas
+![Footer](./img/evidencia_sprint1/avance5.png)
+
+- Evidencia de sección de veterinarios
+![Footer](./img/evidencia_sprint1/avance6.png)
+
+#### 6.2.1.6. Services Documentation Evidence for Sprint Review
+
+Durante el Sprint 1 no se implementaron ni se expusieron servicios backend ni endpoints, ya que el alcance principal del sprint estuvo enfocado en la definición de la base del producto y/o componentes frontend.
+
+Se identificaron los servicios necesarios a nivel de diseño, pero su desarrollo fue postergado para el Sprint 2 debido a la priorización del flujo de trabajo y la planificación incremental del sistema.
+
+#### 6.2.1.7. Software Deployment Evidence for Sprint Review
+En este Sprint, se realizó el despliegue inicial de la landing Page y la aplicación web del proyecto BluePatitas, marcando el comienzo del proceso de publicación gradual de los componentes del sistema. Esta acción tuvo como propósito principal validar visualmente los avances en diseño e interacción, tanto con el cliente como con el equipo docente.
+
+- URL de la aplicación web desplegada: 
+[appWeb-Bluepatittas](https://ejemplo.com)
+
+- URL de el landing page desplegada:
+[Landing-page](https://ejemplo.com)
+
+Para realizar el despliegue, accedimos a la configuración del repositorio y usamos netlify.
+
+- Evidencia del deploy
+![Footer](./img/evidencia_sprint1/deployEvi.jpg)
+
+
+#### 6.2.1.7. Team Collaboration Insights during Sprint
+
+Se muestra la colaboracion del equipo
+
+![Footer](./img/evidencia_sprint1/Insights1.jpg)
+![Footer](./img/evidencia_sprint1/Insights2.jpg)
+![Footer](./img/evidencia_sprint1/Insights3.jpg)
 
 ## 6.3. Validation Interviews
+
+
 ### 6.3.1. Diseño de Entrevistas
 ### 6.3.2. Registro de Entrevistas
 ### 6.3.3. Evaluaciones según heurísticas
