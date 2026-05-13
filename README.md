@@ -2095,6 +2095,96 @@ Dado que la Landing Page es un sitio web estático (HTML/CSS/JS), utilizamos **N
 4.  **Configuración del Build:** Seleccionamos el repositorio `1ASI0572-2610-17755-G3-BluePatitas/BluePatitas-Landing-Page`. Indicamos que la rama de producción a observar es `main`. Dado que es HTML puro, los campos de *Build command* y *Publish directory* se dejan en blanco o según el directorio raíz donde esté el `index.html`.
 5.  **Despliegue:** Hacemos clic en *Deploy site*. Netlify compilará y publicará los archivos en segundos, generando un enlace público automatizado (con HTTPS incluido) a través del cual cualquier usuario puede acceder a nuestra plataforma. Cualquier cambio futuro que se haga *push
 
+## Software Deployment Evidence for Sprint Review – Landing Page
+
+Como evidencia del despliegue de la Landing Page de **BluePatitas**, se muestran las principales secciones implementadas y publicadas en el entorno web. Estas capturas permiten verificar que la página se encuentra desplegada correctamente, mantiene una navegación funcional, conserva una identidad visual coherente y presenta las secciones necesarias para comunicar la propuesta de valor del producto.
+
+---
+
+### Evidencia 1: Página de inicio
+
+![Página de inicio](./img/page1.png)
+
+Se evidencia la página principal de la Landing Page desplegada, donde se presenta la propuesta de valor de **BluePatitas**: una solución IoT orientada al bienestar animal en refugios. Además, se observa la barra de navegación, el selector de idioma, el acceso a login y el botón principal de inicio.
+
+---
+
+### Evidencia 2: Sobre el Producto
+
+![Sobre el Producto](./img/page2.png)
+
+Se muestra la sección informativa del producto, donde se explica que **BluePatitas** permite transformar la gestión de refugios mediante tecnología IoT y dispositivos interconectados. También se incluye un espacio visual para un video demostrativo de la gestión en tiempo real.
+
+---
+
+### Evidencia 3: Funcionalidades principales IoT
+
+![Funcionalidades IoT](./img/page3.png)
+
+Se evidencia la sección de funcionalidades principales, donde se presentan los componentes IoT del sistema: cámaras inteligentes, collares GPS, sensores climáticos y dispensadores automáticos. Esta sección permite comunicar de forma clara las capacidades tecnológicas de la solución.
+
+---
+
+### Evidencia 4: Beneficios clave
+
+![Beneficios clave](./img/page4.png)
+
+Se presenta la sección de beneficios clave, orientada a los perfiles principales del sistema: administradores y veterinarios. Esta parte destaca cómo la plataforma ayuda a reducir costos operativos, optimizar recursos, acceder a datos históricos de salud y generar alertas automatizadas.
+
+---
+
+### Evidencia 5: Testimonios de usuarios
+
+![Testimonios](./img/page5.png)
+
+Se evidencia la sección de testimonios, diseñada para reforzar la confianza en la solución mediante opiniones de usuarios relacionados con refugios, veterinaria y rescate animal. Esta sección aporta credibilidad y valor comercial a la Landing Page.
+
+---
+
+### Evidencia 6: Sobre el equipo
+
+![Sobre el equipo](./img/page6.png)
+
+Se muestra la sección “Sobre el equipo”, donde se presenta al grupo responsable del desarrollo de **BluePatitas**. Esta sección ayuda a humanizar la propuesta y reforzar la identidad del proyecto.
+
+---
+
+### Evidencia 7: Planes del servicio
+
+![Planes](./img/page7.png)
+
+Se evidencia la sección de planes, donde se presentan las opciones **Básico**, **Pro** y **Enterprise**. Además, se incluye un selector mensual/anual, permitiendo mostrar una estructura comercial clara para distintos tipos de refugios.
+
+---
+
+### Evidencia 8: Preguntas frecuentes
+
+![Preguntas frecuentes](./img/page8.png)
+
+Se muestra la sección FAQ, implementada mediante preguntas desplegables. Esta sección permite resolver dudas comunes sobre instalación de dispositivos IoT, conectividad, seguridad de los collares GPS e integración con otros sistemas.
+
+---
+
+### Evidencia 9: Formulario de contacto
+
+![Formulario de contacto](./img/page9.png)
+
+Se evidencia el formulario de contacto, donde los usuarios interesados pueden ingresar su nombre, correo y nombre del refugio para solicitar información o una demostración personalizada de la plataforma.
+
+---
+
+### Evidencia 10: Footer
+
+![Footer](./img/page10.png)
+
+Se muestra el pie de página de la Landing Page, donde se mantiene la identidad de **BluePatitas**, una breve descripción del producto y la información de derechos reservados. Esto completa la estructura visual y formal del sitio desplegado.
+
+---
+
+### Conclusión
+
+En conjunto, estas evidencias demuestran que la Landing Page de **BluePatitas** fue desplegada correctamente y que sus secciones principales se encuentran disponibles para el usuario final. El sitio presenta una estructura completa: inicio, producto, beneficios, funcionalidades, planes, testimonios, FAQ, contacto y footer, manteniendo coherencia visual y una navegación clara orientada a refugios de animales.
+
 ## 6.2. Landing Page, Services & Applications Implementation
 ### 6.2.1. Sprint 1
 
