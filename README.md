@@ -2211,11 +2211,189 @@ Mock-up Mobile
 
 ## 5.4. Applications UX/UI Design
 ### 5.4.1. Applications Wireframes
+
+Wireframe Mobile
+
+![Acción](/img/BluePatitas-Figma/Movil/Wireframe/Acción%20-%20Wireframe%20Movil.png)
+
+![Agregar Animal](/img/BluePatitas-Figma/Movil/Wireframe/Agregar%20Animal%20-%20Wireframe%20Movil.png)
+
+![Agregar Dieta](/img/BluePatitas-Figma/Movil/Wireframe/Agregar%20Dieta%20-%20Wireframe%20Movil.png)
+
+![Agregar Dispositivo IOT](/img/BluePatitas-Figma/Movil/Wireframe/Agregar%20Dispositivo%20IOT%20-%20Wireframe%20Movil.png)
+
+![Agregar Veterinarios](/img/BluePatitas-Figma/Movil/Wireframe/Agregar%20Veterinarios%20-%20Wireframe%20Movil.png)
+
+![Agregar Zona Monitoreo](/img/BluePatitas-Figma/Movil/Wireframe/Agregar%20Zona%20Monitoreo-%20Wireframe%20Movil.png)
+
+![Animales](/img/BluePatitas-Figma/Movil/Wireframe/Animales%20-%20Wireframe%20Movil.png)
+
+![Añadir Usuario](/img/BluePatitas-Figma/Movil/Wireframe/Añadir%20Usuario%20-%20Wireframe%20Movil.png)
+
+![Configuración](/img/BluePatitas-Figma/Movil/Wireframe/Configuración%20-%20Wireframe%20Movil.png)
+
+![Crear Refugio Paso 1-1](/img/BluePatitas-Figma/Movil/Wireframe/Crear%20Refugio%20Paso%201%20-%20Wireframe%20Movil-1.png)
+
+![Crear Refugio Paso 1](/img/BluePatitas-Figma/Movil/Wireframe/Crear%20Refugio%20Paso%201%20-%20Wireframe%20Movil.png)
+
+![Crear Refugio Paso 3](/img/BluePatitas-Figma/Movil/Wireframe/Crear%20Refugio%20Paso%203%20-%20Wireframe%20Movil.png)
+
+![Dashboard](/img/BluePatitas-Figma/Movil/Wireframe/Dashboard%20-%20WireframeMovil.png)
+
+![Detalles Monitoreo](/img/BluePatitas-Figma/Movil/Wireframe/Detalles%20Monitoreo%20-%20Wireframe%20Movil.png)
+
+![Editar Datos Refugio](/img/BluePatitas-Figma/Movil/Wireframe/Editar%20Datos%20Refugio%20-%20Wireframe%20Movil.png)
+
+![Editar Usuario](/img/BluePatitas-Figma/Movil/Wireframe/Editar%20Usuario%20-%20Wireframe%20Movil.png)
+
+![Editar Veterinarios](/img/BluePatitas-Figma/Movil/Wireframe/Editar%20Veterinarios%20-%20Wireframe%20Movil.png)
+
+![Login](/img/BluePatitas-Figma/Movil/Wireframe/Login%20-%20Wireframe%20Movil.png)
+
+![Monitoreo](/img/BluePatitas-Figma/Movil/Wireframe/Monitoreo%20-%20Wireframe%20Movil.png)
+
+![Register](/img/BluePatitas-Figma/Movil/Wireframe/Register%20-%20Wireframe%20Movil.png)
+
+![Solicitudes de acceso](/img/BluePatitas-Figma/Movil/Wireframe/Solicitudes%20de%20acceso%20-%20Wireframe%20Movil.png)
+
+![Ver Reportes](/img/BluePatitas-Figma/Movil/Wireframe/Ver%20Reportes%20-%20Wireframe%20Movil.png)
+
+![Veterinarios](/img/BluePatitas-Figma/Movil/Wireframe/Veterinarios%20-%20Wireframe%20Movil.png)
+
+Wireframe Desktop
+
+![Acción](/img/BluePatitas-Figma/Web/Wireframe/Acción%20-%20Wireframe%20Desktop.png)
+
+![Agregar Animales](/img/BluePatitas-Figma/Web/Wireframe/Agregar%20Animales%20-%20Wireframe%20Desktop.png)
+
+![Agregar Dieta](/img/BluePatitas-Figma/Web/Wireframe/Agregar%20Dieta%20-%20Wireframe%20Desktop.png)
+
+![Agregar Dispositivo](/img/BluePatitas-Figma/Web/Wireframe/Agregar%20Dispositivo%20-%20Wireframe%20Desktop.png)
+
+![Agregar Veterinarios](/img/BluePatitas-Figma/Web/Wireframe/Agregar%20Veterinarios%20-%20Wireframe%20Desktop.png)
+
+![Agregar Zona Monitoreo](/img/BluePatitas-Figma/Web/Wireframe/Agregar%20Zona%20Monitoreo%20-%20Wireframe%20Desktop.png)
+
+![Animales](/img/BluePatitas-Figma/Web/Wireframe/Animales%20-%20Wireframe%20Desktop.png)
+
+![Añadir Usuario](/img/BluePatitas-Figma/Web/Wireframe/Añadir%20Usuario%20-%20Wireframe%20Desktop.png)
+
+![Configuración](/img/BluePatitas-Figma/Web/Wireframe/Configuración%20-%20Wireframe%20Desktop.png)
+
+![Container-1](/img/BluePatitas-Figma/Web/Wireframe/Container-1.png)
+
+![Crear Refugio Paso 1](/img/BluePatitas-Figma/Web/Wireframe/Crear%20Refugio%20Paso%201%20-%20Wireframe%20Desktop.png)
+
+![Crear Refugio Paso 2](/img/BluePatitas-Figma/Web/Wireframe/Crear%20Refugio%20Paso%202%20-%20Wireframe%20Desktop.png)
+
+![Crear Refugio Paso 3](/img/BluePatitas-Figma/Web/Wireframe/Crear%20Refugio%20Paso%203%20-%20Wireframe%20Desktop.png)
+
+![Dashboard](/img/BluePatitas-Figma/Web/Wireframe/Dashboard%20-%20Wireframe%20Desktop.png)
+
+![Detalles Monitoreo](/img/BluePatitas-Figma/Web/Wireframe/Detalles%20Monitoreo%20-%20Wireframe%20Desktop.png)
+
+![Editar Datos Refugio](/img/BluePatitas-Figma/Web/Wireframe/Editar%20Datos%20Refugio%20-%20Wireframe%20Desktop.png)
+
+![Editar Usuario](/img/BluePatitas-Figma/Web/Wireframe/Editar%20Usuario%20-%20Wireframe%20Desktop.png)
+
+![Editar Veterinarios](/img/BluePatitas-Figma/Web/Wireframe/Editar%20Veterinarios%20-%20Wireframe%20Desktop.png)
+
+![Monitoreo](/img/BluePatitas-Figma/Web/Wireframe/Monitoreo%20-%20Wireframe%20Desktop.png)
+
+![Solicitudes de acceso](/img/BluePatitas-Figma/Web/Wireframe/Solicitudes%20de%20acceso%20-%20Wireframe%20Desktop.png)
+
+![Ver Reportes](/img/BluePatitas-Figma/Web/Wireframe/Ver%20Reportes%20-%20Wireframe%20Desktop.png)
+
+![Veterinarios](/img/BluePatitas-Figma/Web/Wireframe/Veterinarios%20-%20Wireframe%20Desktop.png)
+
 ### 5.4.2. Applications Wireflow Diagrams
 ### 5.4.3. Applications Mock-ups
+
+Mock-up Mobile
+
+![Acción](/img/BluePatitas-Figma/Movil/Mockup/Acción%20-%20Mockup%20Movil.png)
+
+![Agregar Animal](/img/BluePatitas-Figma/Movil/Mockup/Agregar%20Animal%20-%20Mockup%20Movil.png)
+
+![Agregar Dieta](/img/BluePatitas-Figma/Movil/Mockup/Agregar%20Dieta%20-%20Mockup%20Movil.png)
+
+![Agregar Dispositivo IOT](/img/BluePatitas-Figma/Movil/Mockup/Agregar%20Dispositivo%20IOT%20-%20Mockup%20Movil.png)
+
+![Agregar Veterinarios](/img/BluePatitas-Figma/Movil/Mockup/Agregar%20Veterinarios%20-%20Mockup%20Movil.png)
+
+![Agregar Zona Monitoreo](/img/BluePatitas-Figma/Movil/Mockup/Agregar%20Zona%20Monitoreo-%20Mockup%20Desktop.png)
+
+![Animales](/img/BluePatitas-Figma/Movil/Mockup/Animales%20-%20Mockup%20Movil.png)
+
+![Añadir Usuario](/img/BluePatitas-Figma/Movil/Mockup/Añadir%20Usuario%20-%20Mockup%20Movil.png)
+
+![Configuración](/img/BluePatitas-Figma/Movil/Mockup/Configuración%20-%20Mockup%20Movil.png)
+
+![Crear Refugio Paso 1](/img/BluePatitas-Figma/Movil/Mockup/Crear%20Refugio%20Paso%201%20-%20Mockup%20Movil.png)
+
+![Crear Refugio Paso 3](/img/BluePatitas-Figma/Movil/Mockup/Crear%20Refugio%20Paso%203%20-%20Mockup%20Movil.png)
+
+![Dashboard](/img/BluePatitas-Figma/Movil/Mockup/Dashboard%20-%20Mockup%20Movil.png)
+
+![Detalles Monitoreo](/img/BluePatitas-Figma/Movil/Mockup/Detalles%20Monitoreo%20-%20Mockup%20Movil.png)
+
+![Editar Datos Refugio](/img/BluePatitas-Figma/Movil/Mockup/Editar%20Datos%20Refugio%20-%20Mockup%20Movil.png)
+
+![Editar Usuario](/img/BluePatitas-Figma/Movil/Mockup/Editar%20Usuario%20-%20Mockup%20Movil.png)
+
+Mock-up Desktop
+
+![Acción](/img/BluePatitas-Figma/Web/Mockup/Acción%20-%20Mockup%20Desktop.png)
+
+![Agregar Dispositivo](/img/BluePatitas-Figma/Web/Mockup/Agregar%20Dispositivo%20-%20Mockup%20Desktop.png)
+
+![Agregar Veterinarios](/img/BluePatitas-Figma/Web/Mockup/Agregar%20Veterinarios%20-%20Mockup%20Desktop.png)
+
+![Animales](/img/BluePatitas-Figma/Web/Mockup/Animales%20-%20Mockup%20Desktop.png)
+
+![Añadir Usuario](/img/BluePatitas-Figma/Web/Mockup/Añadir%20Usuario%20-%20Mockup%20Desktop.png)
+
+![Configuración](/img/BluePatitas-Figma/Web/Mockup/Configuración%20-%20Mockup%20Desktop.png)
+
+![Container](/img/BluePatitas-Figma/Web/Mockup/Container.png)
+
+![Crear Refugio Paso 1](/img/BluePatitas-Figma/Web/Mockup/Crear%20Refugio%20Paso%201%20-%20Mockup%20Desktop.png)
+
+![Crear Refugio Paso 2](/img/BluePatitas-Figma/Web/Mockup/Crear%20Refugio%20Paso%202%20-%20Mockup%20Desktop.png)
+
+![Crear Refugio Paso 3](/img/BluePatitas-Figma/Web/Mockup/Crear%20Refugio%20Paso%203%20-%20Mockup%20Desktop.png)
+
+![Dashboard](/img/BluePatitas-Figma/Web/Mockup/Dashboard%20-%20Mockup%20Desktop.png)
+
+![Editar Datos Refugio](/img/BluePatitas-Figma/Web/Mockup/Editar%20Datos%20Refugio%20-%20Mockup%20Desktop.png)
+
+![Editar Usuario](/img/BluePatitas-Figma/Web/Mockup/Editar%20Usuario%20-%20Mockup%20Desktop.png)
+
+![Editar Veterinarios](/img/BluePatitas-Figma/Web/Mockup/Editar%20Veterinarios%20-%20Mockup%20Desktop.png)
+
+![Monitoreo](/img/BluePatitas-Figma/Web/Mockup/Monitoreo%20-%20Mockup%20Desktop.png)
+
+![Solicitudes de acceso](/img/BluePatitas-Figma/Web/Mockup/Solicitudes%20de%20acceso%20-%20Mockup%20Desktop.png)
+
+![Veterinarios](/img/BluePatitas-Figma/Web/Mockup/Veterinarios%20-%20Mockup%20Desktop.png)
+
 ### 5.4.4. Applications User Flow Diagrams
 
 ## 5.5. Applications Prototyping
+
+Prototype Mobile
+
+![ProtoMovil](/img/BluePatitas-Figma/PrototipoMovil.PNG)
+
+Link al Prototipo: [https://www.figma.com/proto/Q634gqNxe8N4Pm06IPDAJT/BluePatitas?node-id=206-14895&p=f&t=GpXs2gYVCwmZnnxm-1&scaling=min-zoom&content-scaling=fixed&page-id=206%3A1054](https://www.figma.com/proto/Q634gqNxe8N4Pm06IPDAJT/BluePatitas?node-id=206-14895&p=f&t=GpXs2gYVCwmZnnxm-1&scaling=min-zoom&content-scaling=fixed&page-id=206%3A1054)
+
+Prototype Web
+
+![ProtoWeb](/img/BluePatitas-Figma/PrototipoWeb.PNG)
+
+Link al prototipo: [https://www.figma.com/proto/Q634gqNxe8N4Pm06IPDAJT/BluePatitas?node-id=143-5590&p=f&t=kw8IFOyuUtkFxQ0b-1&scaling=min-zoom&content-scaling=fixed&page-id=143%3A4196&starting-point-node-id=143%3A5590](https://www.figma.com/proto/Q634gqNxe8N4Pm06IPDAJT/BluePatitas?node-id=143-5590&p=f&t=kw8IFOyuUtkFxQ0b-1&scaling=min-zoom&content-scaling=fixed&page-id=143%3A4196&starting-point-node-id=143%3A5590)
+![ProtoMovil](/img/BluePatitas-Figma/PrototipoWeb.PNG)
+
 ## 5.6. IoT Device Design
 
 <div style="page-break-after: always;"></div>
