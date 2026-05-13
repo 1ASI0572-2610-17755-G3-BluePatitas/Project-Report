@@ -2521,7 +2521,78 @@ Link al prototipo: [https://www.figma.com/proto/Q634gqNxe8N4Pm06IPDAJT/BluePatit
 
 ## 5.6. IoT Device Design
 
-<div style="page-break-after: always;"></div>
+| Dispositivo real | Equivalente Wokwi | Pin ESP32 |
+|---|---|---|
+| Cámara + detección de perímetro | PIR HC-SR501 | GPIO 13 |
+| GPS | Potenciómetro (ADC) | GPIO 34 |
+| Sensor de temperatura y humedad | DHT22 | GPIO 14 |
+| Dispensador de comida | Servo SG90 | GPIO 15 |
+| Alerta visual | LED rojo | GPIO 2 |
+
+---
+
+#### Dispositivo: PIR HC-SR501
+
+![ProtoMovil](/img/iot_disenio/HC-SR501.PNG)
+
+#### Simula
+- Detección de movimiento.
+- Activación automática de alertas.
+- Vigilancia básica del entorno.
+- Presencia de mascotas o intrusos cerca del dispositivo.
+
+---
+
+#### Dispositivo: Potenciómetro (ADC)
+
+![ProtoMovil](/img/iot_disenio/Potenciómetro.PNG)
+
+#### Simula
+- Variación de coordenadas GPS.
+- Movimiento o cambio de ubicación.
+- Lectura analógica de posición.
+- Simulación de desplazamiento en tiempo real.
+
+---
+
+#### Dispositivo: DHT22
+
+![ProtoMovil](/img/iot_disenio/DHT22.PNG)
+
+#### Simula
+- Lectura de temperatura ambiental.
+- Medición de humedad relativa.
+- Monitoreo de condiciones climáticas.
+- Obtención de datos ambientales en tiempo real.
+
+---
+
+#### Dispositivo: Servo SG90
+
+![ProtoMovil](/img/iot_disenio/ServoSG90.PNG)
+
+#### Simula
+- Apertura automática del dispensador.
+- Movimiento controlado del mecanismo.
+- Dosificación de alimento.
+- Activación programada del sistema de comida.
+
+---
+
+#### Dispositivo: LED rojo
+
+![ProtoMovil](/img/iot_disenio/LED.PNG)
+
+#### Simula
+- Alertas visuales.
+- Indicador de detección o emergencia.
+- Estado activo del sistema.
+- Notificaciones luminosas del dispositivo.
+
+
+#### Prototipo completo
+
+![ProtoMovil](/img/iot_disenio/disenio_completo.PNG)
 
 # Capítulo VI: Product Implementation, Validation & Deployment
 
