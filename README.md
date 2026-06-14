@@ -2308,6 +2308,121 @@ Se muestra la colaboracion del equipo
 ![Footer](./img/evidencia_sprint1/Insights2.jpg)
 ![Footer](./img/evidencia_sprint1/Insights3.jpg)
 
+
+### 6.2.2. Sprint 2
+
+#### 6.2.2.1. Sprint Planning 2
+
+| **Sprint #**                    | Sprint 2 |
+|----------------------------------|----------|
+| **Sprint Planning Background**  |          |
+| **Date**                        | 20/04/2026 |
+| **Time**                        | 8:00 pm |
+| **Location**                    | Virtual (Discord) |
+| **Prepared by**                 | Peralta Chipa Ronald Joel |
+| **Attendees (to planning meeting)** | Peralta Chipa Ronald Joel <br> Castañeda Guimas Giancarlo Santiago <br> Choquehuanca Nuñez Luciana Carolina <br> Gonzales Valverde Carlos Matthew <br> Hernández Uchuya María Patricia |
+| **Sprint n - 1 Review Summary**  | No hubo sprint anterior |
+| **Sprint n - 1 Retrospective Summary** | No hubo sprint anterior |
+| **Sprint 1 Goal**                | Realizar el Landing Page / Informe de trabajo |
+| **Sprint 1 Velocity**            | 15 |
+| **Sum of Story Points**          | 12 |
+
+#### 6.2.2.2. Aspect Leaders and Collaborators
+
+| Team Member (Last Name, First Name) | GitHub Username | Arquitectura Base (L/C) | API REST y Seguridad (L/C) | Persistencia y Base de Datos (L/C) | Modelo Veterinario (L/C) | Servicios de Alimentación (L/C) | Landing Page (L/C) |
+|:-----------------------------------|:----------------|:--------------------------|:----------------------------|:-----------------------------------|:--------------------------|:--------------------------------|:-------------------|
+| Peralta, Ronald                    | RooDev10        | L                          | C                            | L                                   | C                          | C                                | C                   |
+| Guimas, Giancarlo                  | Darksens01      | C                          | C                            | C                                   | L                          | C                                | C                   |
+| Choquehuanca Nuñez, Luciana        | Lucianxaaa      | C                          | L                            | C                                   | C                          | C                                | C                   |
+| Gonzales Valverde, Carlos          | Carlos12324     | C                          | C                            | C                                   | C                          | L                                | C                   |
+| Hernández Uchuya, María            | Bal2220         | C                          | C                            | L                                   | C                          | C                                | C                   |
+
+#### 6.2.2.3. Sprint Backlog 2
+
+El objetivo principal del Sprint 1 fue establecer la base del FrontEnd del sistema BluePatitas, diseñando y plasmando lo que vendra a ser nuestra estructura en el futuro
+
+| Sprint # | Sprint 1 | | | | | | |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **User Story Id** | **User Story Title** | **Task Id** | **Task Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status (To-do / In-Process / To-Review / Done)** |
+| US28 | Landing page informativa | T01 | Maquetación HTML de la Landing Page | Desarrollar la estructura base HTML5 de la landing page con la propuesta de valor. | 4 | Luciana Choquehuanca | Done |
+| US28 | Landing page informativa | T02 | Estilos CSS y Responsive Design | Implementar los estilos en CSS para que la landing page sea adaptable (mobile/desktop). | 5 | María Hernández | Done |
+| US07 | Visualización de cámara en tiempo real | T03 | Desarrollo del componente de Video Stream | Crear el componente UI en Angular/React para recibir y mostrar el streaming de video mockeado. | 6 | Giancarlo Castañeda | Done |
+| US07 | Visualización de cámara en tiempo real | T04 | Manejo de estados de cámara (Activa/Inactiva) | Implementar la lógica UI para mostrar placeholders o mensajes cuando la cámara se desconecta. | 4 | Ronald Peralta | Done |
+| US14 | Dashboard de alertas del refugio | T05 | Maquetación del Dashboard Principal | Diseñar y maquetar la vista principal donde el administrador verá el resumen de su refugio. | 6 | Carlos Gonzales | Done |
+| US14 | Dashboard de alertas del refugio | T06 | Componente de Lista de Alertas | Crear el panel lateral o sección inferior para listar notificaciones (mock data). | 5 | Luciana Choquehuanca | Done |
+| US16 | Historial ambiental del animal | T07 | Diseño de gráficos de Temperatura/Humedad | Integrar librería de gráficos (ej. Chart.js) para mostrar el historial ambiental del animal. | 7 | Ronald Peralta | Done |
+| US16 | Historial ambiental del animal | T08 | Implementación de filtros de fecha en gráficos | Agregar selectores de fecha en la UI para filtrar los datos mostrados en los gráficos ambientales. | 4 | Giancarlo Castañeda | Done |
+| US09 | Configuración de geocerca | T09 | Integración de Mapa en la UI | Agregar el componente de mapa (ej. Google Maps API o Leaflet) en la vista de configuración. | 6 | Carlos Gonzales | Done |
+| US09 | Configuración de geocerca | T10 | Herramientas de dibujo en el Mapa | Habilitar la funcionalidad para dibujar polígonos/círculos en el mapa para delimitar la geocerca. | 6 | Ronald Peralta | Done |
+| US19 | Consulta de perfil del animal | T11 | Maquetación del Perfil del Animal | Crear la vista con la foto, información básica y dieta del animal. | 4 | María Hernández | Done |
+| US15 | Estado de conexión de dispositivos | T12 | Componente de Estado de Hardware | Crear un panel que muestre el estado de los sensores, cámara y dispensador (Verde/Rojo). | 4 | Luciana Choquehuanca | Done |
+| -- | Tareas Generales | T13 | Configuración del repositorio Front Web | Iniciar proyecto, configurar linter, dependencias y enrutamiento inicial. | 4 | Giancarlo Castañeda | Done |
+| -- | Tareas Generales | T14 | Despliegue en Netlify de Landing Page | Configurar el CD/CI básico para desplegar la landing page automáticamente en Netlify. | 4 | Carlos Gonzales | Done |
+
+#### 6.2.2.4. Development Evidence for Sprint Review
+
+Se realizaron los avances con los commits correspondiente en el repositorio de la siguiente forma.
+
+- Repositorio Landing Page: [Landing-page](https://github.com/1ASI0572-2610-17755-G3-BluePatitas/Project-LandingPage.git)
+
+| Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
+|:----------:|:------:|:---------:|:--------------:|:------------------:|
+| Landing-Page | main | 8ab70ee9b0430fa5eb1a21d8d4bbc7fab5a99691 | chore: update landing page structure and assets | 13/05/2026 |
+| Landing-Page | develop | be91f5210ca4b98d7a5ff1621e2d997b1f70cfdb | fix: improve responsive layout and section spacing | 13/05/2026 |
+| Landing-Page | feature/ui-layout | 9c53463046f305aeac086e92fd213e56a7a85ae6 | feat: implement hero section and navigation layout | 10/05/2026 |
+| Landing-Page | feature/product-sections | 57499e38aa7636347e10a5c363e686511870da07 | feat: add product, benefits and testimonials sections | 10/05/2026 |
+| Landing-Page | feature/pricing-cta | 4124f766cc3a6ecf990bb1d163a89c5e01356718 | feat: implement pricing plans and contact form CTA | 11/05/2026 |
+| Landing-Page | feature/i18n-interactions | e1b84cfb86447812eb9a81d3b568d024d1dfa7ec | feat: add language toggle and interactive FAQ behavior | 12/05/2026 |
+
+- Repositorio Frontend: [frontend-app](https://github.com/1ASI0572-2610-17755-G3-BluePatitas/frontend-BluePatitas)
+
+| Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
+|:----------:|:------:|:---------:|:--------------:|:------------------:|
+| Frontend | main | a13f9d7c51e4d2c7f98ab34e9fba1c2d6f7a901 | chore: initialize Angular frontend architecture and base configuration | 13/05/2026 |
+| Frontend | develop | b24e8f1d72a5f9e1c3ad72be4c9f1a5e8d2c7431 | fix: integrate shared layout, routing and responsive navigation | 13/05/2026 |
+| Frontend | feature/auth | c35d7a2b84d6e1f3b4ca81de9f2b6d3a7e8f5124 | feat: develop login, session handling and authentication guards | 08/05/2026 |
+| Frontend | feature/dashboard | d46e8c3f95a7b2d4c5eb92fa1d3c7e4b8f9a6235 | feat: implement dashboard metrics, charts and overview components | 09/05/2026 |
+| Frontend | feature/animals | e57f9d4a16b8c3e5d6fc03ab2e4d8f5c9a1b7346 | feat: add animal registration, profile management and status views | 09/05/2026 |
+| Frontend | feature/devices | f68a1e5b27c9d4f6e7ad14bc3f5e9a6d1b2c8457 | feat: implement IoT device management and connection monitoring | 10/05/2026 |
+| Frontend | feature/monitoring | a79b2f6c38d1e5a7f8be25cd4a6f1b7e2c3d9568 | feat: develop real-time monitoring panels and alert visualization | 10/05/2026 |
+| Frontend | feature/feeding | b81c3a7d49e2f6b8a9cf36de5b7a2c8f3d4e0679 | feat: implement automated feeding schedules and tracking interface | 11/05/2026 |
+| Frontend | feature/reports | c92d4b8e51f3a7c9bad47ef6c8b3d9a4e5f1780a | feat: add reports module with statistics and export functionality | 11/05/2026 |
+| Frontend | feature/settings | d03e5c9f62a4b8da0ce58fa7d9c4e1b5f6a2891b | feat: implement user settings and platform configuration screens | 12/05/2026 |
+| Frontend | feature/veterinarians | e14f6da073b5c9eb1df69ab08e1d5f2c6a7b3902 | feat: develop veterinarians management and assignment interface | 12/05/2026 |
+| Frontend | feature/alerts | f25a7eb184c6da0f2eg70bc19f2e6a3d7b8c4013 | feat: implement notifications center and emergency alert components | 13/05/2026 |
+
+#### 6.2.2.5. Execution Evidence for Sprint Review
+Al concluir el primer sprint, se logró establecer la base estructural del proyecto frontend, implementando la arquitectura inicial de la aplicación y las principales secciones de navegación. Se definió la estructura general de la landing page, asegurando una organización clara de los componentes y una correcta separación por secciones funcionales.
+
+Se incorporó una primera versión de la interfaz visual, incluyendo el layout principal, la barra de navegación y la sección hero, sentando las bases para una experiencia de usuario coherente y escalable. Asimismo, se aplicaron principios básicos de usabilidad y buenas prácticas de desarrollo UI para garantizar una navegación intuitiva desde el inicio del proyecto.
+
+Este sprint permitió consolidar la estructura inicial del sistema, facilitando la integración progresiva de nuevas funcionalidades en los siguientes ciclos de desarrollo.
+
+#### A continuación, se presentan capturas de pantalla que ilustran los avances y detalles de la interfaz.
+
+
+
+#### 6.2.2.6. Services Documentation Evidence for Sprint Review
+
+#### 6.2.2.7. Software Deployment Evidence for Sprint Review
+En este Sprint, se realizó el despliegue inicial de la landing Page y la aplicación web del proyecto BluePatitas, marcando el comienzo del proceso de publicación gradual de los componentes del sistema. Esta acción tuvo como propósito principal validar visualmente los avances en diseño e interacción, tanto con el cliente como con el equipo docente.
+
+- URL de la aplicación web desplegada: 
+[appWeb-Bluepatittas](https://ejemplo.com)
+
+- URL de el landing page desplegada:
+[Landing-page](https://ejemplo.com)
+
+Para realizar el despliegue, accedimos a la configuración del repositorio y usamos netlify.
+
+- Evidencia del deploy
+
+
+
+#### 6.2.2.7. Team Collaboration Insights during Sprint
+
+Se muestra la colaboracion del equipo
+
 ## 6.3. Validation Interviews
 
 
