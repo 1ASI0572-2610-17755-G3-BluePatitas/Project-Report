@@ -2659,6 +2659,9 @@ Se muestra la colaboracion del equipo
 
 ### 6.3.2. Registro de Entrevistas
 
+
+Segmento: Administrador de refugios
+
 | **Número de registro** | **Datos del entrevistado** |
 | ----- | ----- |
 | 01 | **Nombre:** Marcelo Binda <br>**Edad:** 20 <br>**Profesión:** Ayudante admin  **Distrito:** Santiago de Surco  <br>**Inicio - Duración:** 00:00 - 07:15 <br>  |
@@ -2667,7 +2670,16 @@ Se muestra la colaboracion del equipo
 
 | **Número de registro** | **Datos del entrevistado** |
 | ----- | ----- |
-| 02 | **Nombre:** Briseth Hurtado <br>**Edad:** 26 <br>**Profesión:** Veterinaria  **Distrito:** Santiago de Surco  <br>**Inicio - Duración:** 00:00 - 08:12 <br>  |
+| 02 | **Nombre:** Estefano Montufar <br>**Edad:** 23 <br>**Profesión:** Ayudante admin  **Distrito:** Miraflores  <br>**Inicio - Duración:** 00:00 - 05:35 <br>  |
+|  | **Resumen:** Estefano Montufar señala que la plataforma le generó una impresión positiva debido a las funcionalidades relacionadas con el monitoreo de animales, especialmente la capacidad de rastrear su ubicación mediante GPS y visualizar la información de manera clara en el mapa. Asimismo, considera que la propuesta tiene potencial y aporta una solución innovadora. Como sugerencia de mejora, menciona que algunas páginas podrían incluir más imágenes o elementos visuales para complementar la información presentada. En general, expresa interés en utilizar la plataforma una vez que su desarrollo esté concluido.| [https://drive.google.com/drive/folders/119PNnbQMbYG8X_yOzoB_imwyIEkwOUlp?usp=sharing](https://drive.google.com/drive/folders/119PNnbQMbYG8X_yOzoB_imwyIEkwOUlp?usp=sharing) |
+
+
+
+Segmento: Veterinario
+
+| **Número de registro** | **Datos del entrevistado** |
+| ----- | ----- |
+| 03 | **Nombre:** Briseth Hurtado <br>**Edad:** 26 <br>**Profesión:** Veterinaria  **Distrito:** Santiago de Surco  <br>**Inicio - Duración:** 00:00 - 08:12 <br>  |
 |  | **Resumen:** Briseth comenta que la página le parece una propuesta innovadora y fácil de entender. Lo que más llamó su atención fue la opción de monitorear a los animales y visualizar la ubicación de los collares GPS en el mapa, ya que considera que es una función muy útil para los dueños de mascotas. También mencionó que algunas secciones podrían incluir más imágenes para hacer la experiencia más atractiva, aunque esto no afecta su opinión positiva sobre el proyecto. En general, considera que tiene mucho potencial y le gustaría probarlo cuando esté completamente terminado|
 | Link de la entrevista | [https://drive.google.com/drive/folders/119PNnbQMbYG8X_yOzoB_imwyIEkwOUlp?usp=sharing](https://drive.google.com/drive/folders/119PNnbQMbYG8X_yOzoB_imwyIEkwOUlp?usp=sharing) |
 
