@@ -2308,8 +2308,6 @@ Se muestra la colaboracion del equipo
 ![Footer](./img/evidencia_sprint1/Insights2.jpg)
 ![Footer](./img/evidencia_sprint1/Insights3.jpg)
 
-
-
 ### 6.2.2. Sprint 2
 
 #### 6.2.2.1. Sprint Planning 2
@@ -2613,6 +2611,21 @@ A continuación, se evidencian los *commits* realizados durante la implementaci�
 
 #### 6.2.2.7. Team Collaboration Insights during Sprint
 
+#### FRONTEND WEB
+![FrontWebS2](./img/InsightsS2/FrontWebS2.PNG)
+
+#### FRONTEND MOBILE
+![FrontMobileS2](./img/InsightsS2/FrontMobileS2.PNG)
+
+#### BACKEND
+![BackendS2](./img/InsightsS2/BackendS2.PNG)
+
+#### EMBEDDED APPS
+![EmbeddedS2](./img/InsightsS2/EmbeddedS2.PNG)
+
+#### EDGE GATEWAY
+![EdgeGatewayS2](./img/InsightsS2/EdgeGatewayS2.PNG)
+
 Se muestra la colaboracion del equipo
 
 ## 6.3. Validation Interviews
@@ -2650,7 +2663,7 @@ Se muestra la colaboracion del equipo
 | ----- | ----- |
 | 01 | **Nombre:** Marcelo Binda <br>**Edad:** 20 <br>**Profesión:** Ayudante admin  **Distrito:** Santiago de Surco  <br>**Inicio - Duración:** 00:00 - 07:15 <br>  |
 |  | **Resumen:** Marcelo comenta que la página en sí le parece interesante, el cómo puede monitorear a los animales y ver las diferentes ubicaciones de los collares GPS en el mapa le parece lo mejor que tenemos, pero a su vez ve también como que en algunas partes faltaban imágenes. Por otra parte mencionaba que aunque faltara eso la idea se le hacía innovadora y que le gustaría probarlo cuando esté completa. |
-| Link de la entrevista |  |
+| Link de la entrevista | [https://drive.google.com/drive/folders/119PNnbQMbYG8X_yOzoB_imwyIEkwOUlp?usp=sharing](https://drive.google.com/drive/folders/119PNnbQMbYG8X_yOzoB_imwyIEkwOUlp?usp=sharing) |
 
 ### 6.3.3. Evaluaciones según heurísticas
 
@@ -2752,9 +2765,6 @@ Al momento en que el administrador intenta crear o editar una zona de monitoreo,
 
 Añadir íconos de ayuda o *tooltips* al lado de cada campo técnico que, al pasar el cursor, indiquen instrucciones breves al usuario (por ejemplo: "Ingresa la dirección IP de la cámara asignada, ej: 192.168.1.15"). Además, se sugiere incorporar *placeholders* dentro del input que orienten sobre la estructura de la MAC o IP esperada
 
-
-
-
 ## 6.4. Video About-the-Product
 
 <div style="page-break-after: always;"></div>
@@ -2804,11 +2814,17 @@ Añadir íconos de ayuda o *tooltips* al lado de cada campo técnico que, al pas
 
 # Anexos
 
-## Anexo A: Links importantes:
+#### Anexo A: Links importantes
 
-Link del Repositorio del Informe: <br>
-Link del Repositorio del Backend: <br>
-Link del Repositorio del Frontend Aplicación Web: <br> 
-Link del Repositorio del Frontend Aplicación Móvil: <br>
+**Enlaces de Despliegue (Producción):**
+* **Aplicación Web (Frontend desplegado en Netlify):** [https://flowtrack-frontend.netlify.app/](https://flowtrack-frontend.netlify.app/)
+* **Documentación Interactiva de la API (Swagger UI en Render):** [https://backend-bluepatitas.onrender.com/swagger-ui/index.html#/](https://backend-bluepatitas.onrender.com/swagger-ui/index.html#/)
 
+**Herramientas de Gestión y Colaboración:**
+* **Jira - Product Backlog:** [[Tablero ágil de BluePatitas](https://matthewpro17-17770197508.atlassian.net/jira/software/projects/BLUEP/boards/2/backlog)](https://matthewpro17-17770197508.atlassian.net/jira/software/projects/BLUEP/boards/2/backlog) 
+* **Jira - Invitación al espacio de trabajo:** [[Enlace de acceso al equipo](https://id.atlassian.com/invite/p/jira-software?id=rR0gURm_RNOyBBhY-xMvrQ)](https://id.atlassian.com/invite/p/jira-software?id=rR0gURm_RNOyBBhY-xMvrQ) 
+* **Figma - Prototipos y Diseño UI/UX Web:** [Ingresa tu link de Figma aquí](https://www.figma.com/proto/Q634gqNxe8N4Pm06IPDAJT/BluePatitas?node-id=206-14895&p=f&t=GpXs2gYVCwmZnnxm-1&scaling=min-zoom&content-scaling=fixed&page-id=206%3A1054)
+* **Figma - Prototipos y Diseño UI/UX Movil:** [https://www.figma.com/proto/Q634gqNxe8N4Pm06IPDAJT/BluePatitas?node-id=206-14895&p=f&t=GpXs2gYVCwmZnnxm-1&scaling=min-zoom&content-scaling=fixed&page-id=206%3A1054](https://www.figma.com/proto/Q634gqNxe8N4Pm06IPDAJT/BluePatitas?node-id=206-14895&p=f&t=GpXs2gYVCwmZnnxm-1&scaling=min-zoom&content-scaling=fixed&page-id=206%3A1054)
+
+  
 ## Anexo B: Exposiciones:
