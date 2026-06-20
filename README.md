@@ -2668,10 +2668,12 @@ Segmento: Administrador de refugios
 |  | **Resumen:** Marcelo comenta que la página en sí le parece interesante, el cómo puede monitorear a los animales y ver las diferentes ubicaciones de los collares GPS en el mapa le parece lo mejor que tenemos, pero a su vez ve también como que en algunas partes faltaban imágenes. Por otra parte mencionaba que aunque faltara eso la idea se le hacía innovadora y que le gustaría probarlo cuando esté completa. |
 | Link de la entrevista | [https://drive.google.com/drive/folders/119PNnbQMbYG8X_yOzoB_imwyIEkwOUlp?usp=sharing](https://drive.google.com/drive/folders/119PNnbQMbYG8X_yOzoB_imwyIEkwOUlp?usp=sharing) |
 
+
 | **Número de registro** | **Datos del entrevistado** |
 | ----- | ----- |
 | 02 | **Nombre:** Estefano Montufar <br>**Edad:** 23 <br>**Profesión:** Ayudante admin  **Distrito:** Miraflores  <br>**Inicio - Duración:** 00:00 - 05:35 <br>  |
-|  | **Resumen:** Estefano Montufar señala que la plataforma le generó una impresión positiva debido a las funcionalidades relacionadas con el monitoreo de animales, especialmente la capacidad de rastrear su ubicación mediante GPS y visualizar la información de manera clara en el mapa. Asimismo, considera que la propuesta tiene potencial y aporta una solución innovadora. Como sugerencia de mejora, menciona que algunas páginas podrían incluir más imágenes o elementos visuales para complementar la información presentada. En general, expresa interés en utilizar la plataforma una vez que su desarrollo esté concluido.| [https://drive.google.com/drive/folders/119PNnbQMbYG8X_yOzoB_imwyIEkwOUlp?usp=sharing](https://drive.google.com/drive/folders/119PNnbQMbYG8X_yOzoB_imwyIEkwOUlp?usp=sharing) |
+|  | **Resumen:** Estefano Montufar señala que la plataforma le generó una impresión positiva debido a las funcionalidades relacionadas con el monitoreo de animales, especialmente la capacidad de rastrear su ubicación mediante GPS y visualizar la información de manera clara en el mapa. Asimismo, considera que la propuesta tiene potencial y aporta una solución innovadora. Como sugerencia de mejora, menciona que algunas páginas podrían incluir más imágenes o elementos visuales para complementar la información presentada. En general, expresa interés en utilizar la plataforma una vez que su desarrollo esté concluido. | 
+| Link de la entrevista | [https://drive.google.com/drive/folders/119PNnbQMbYG8X_yOzoB_imwyIEkwOUlp?usp=sharing](https://drive.google.com/drive/folders/119PNnbQMbYG8X_yOzoB_imwyIEkwOUlp?usp=sharing) |
 
 
 
