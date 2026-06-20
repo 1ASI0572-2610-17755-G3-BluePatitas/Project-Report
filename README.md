@@ -63,21 +63,37 @@
         <td>0</td>
         <td>11/04/2026</td>
         <td>María Hernández</td>
-        <td>Creación del reporte</td>
+        <td>Creación del reporte.</td>
     </tr>
     <tr>
-      <td>0.1</td>
-      <td>23/04/2026</td>
-      <td>Carlos Gonzales</td>
-      <td>Actualización del Capítulo I: descripción de la startup, solution profile, antecedentes y problemática, Lean UX Process, Student Outcome, bibliografía y segmentos objetivo.</td>
-    
-  </tr>
-
-  <tr>
+        <td>0.1</td>
+        <td>23/04/2026</td>
+        <td>Carlos Gonzales</td>
+        <td>Actualización del Capítulo I: descripción de la startup, solution profile, antecedentes y problemática, Lean UX Process, Student Outcome, bibliografía y segmentos objetivo.</td>
+    </tr>
+    <tr>
         <td>0.2</td>
         <td>23/04/2026</td>
         <td>Ronald Peralta</td>
-        <td>Mejora del Capítulo I: descripción de la startup, solution profile, antecedentes y problemática, segmento objetivo, User Task Matrix, User Journey Mapping, Mapa de Empatía, Tactical-Level Domain-Driven Design, Diagramas de clases de dominio y diagramas entidad-relación</td>
+        <td>Mejora del Capítulo I: descripción de la startup, solution profile, antecedentes y problemática, segmento objetivo, User Task Matrix, User Journey Mapping, Mapa de Empatía, Tactical-Level Domain-Driven Design, Diagramas de clases de dominio y diagramas entidad-relación.</td>
+    </tr>
+    <tr>
+        <td><strong>0.3</strong></td>
+        <td><strong>05/05/2026</strong></td>
+        <td><strong>Carlos Gonzales</strong></td>
+        <td><strong>Inicio de TB1: Definición de Style Guidelines (General, Web, IoT) y Arquitectura de Información (Sistemas de organización, etiquetado y navegación).</strong></td>
+    </tr>
+    <tr>
+        <td><strong>0.4</strong></td>
+        <td><strong>10/05/2026</strong></td>
+        <td><strong>Luciana Choquehuanca</strong></td>
+        <td><strong>Diseño UX/UI de TB1: Elaboración de Wireframes, Mockups, Wireflows y User Flows para Landing Page y Web App. Documentación del diseño físico del dispositivo IoT.</strong></td>
+    </tr>
+    <tr>
+        <td><strong>1.0</strong></td>
+        <td><strong>13/05/2026</strong></td>
+        <td><strong>Giancarlo Castañeda</strong></td>
+        <td><strong>Consolidación final de TB1: Implementación y despliegue de Landing Page v1 y Frontend Web App v1. Documentación de SCM, Sprint 1 y evidencias de despliegue.</strong></td>
     </tr>
 </table>
 
