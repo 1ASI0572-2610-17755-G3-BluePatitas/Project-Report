@@ -2442,6 +2442,30 @@ A continuaci√≥n, se evidencian los *commits* realizados durante la implementaci√
 
 #### **WEB SERVICE**
 
+![ExeBackAnimalsProfile](./img/ExecutionSprint2/ExeBackAnimalsProfile.PNG)
+
+![ExeBackAuth](./img/ExecutionSprint2/ExeBackAuth.PNG)
+
+![ExeBackFeedingPlans](./img/ExecutionSprint2/ExeBackFeedingPlans.PNG)
+
+![ExeBackHome](./img/ExecutionSprint2/ExeBackHome.PNG)
+
+![ExeBackMedia](./img/ExecutionSprint2/ExeBackMedia.PNG)
+
+![ExeBackMonitoringAlerts](./img/ExecutionSprint2/ExeBackMonitoringAlerts.PNG)
+
+![ExeBackMonitoringShelter](./img/ExecutionSprint2/ExeBackMonitoringShelter.PNG)
+
+![ExeBackRoles](./img/ExecutionSprint2/ExeBackRoles.PNG)
+
+![ExeBackS2](./img/ExecutionSprint2/ExeBackS2.PNG)
+
+![ExeBackTelemetry](./img/ExecutionSprint2/ExeBackTelemetry.PNG)
+
+![ExeBackUsers](./img/ExecutionSprint2/ExeBackUsers.PNG)
+
+![ExeBackVeterinaryObs](./img/ExecutionSprint2/ExeBackVeterinaryObs.PNG)
+
 #### 6.2.2.6. Services Documentation Evidence for Sprint Review
 
 ####  IAM (Identity & Access Management)
@@ -2563,8 +2587,6 @@ A continuaci√≥n, se evidencian los *commits* realizados durante la implementaci√
 
 #### 6.2.2.7. Software Deployment Evidence for Sprint Review
 
--
-
 #### Landing Page
 
 - URL de el landing page desplegada:
@@ -2579,16 +2601,21 @@ A continuaci√≥n, se evidencian los *commits* realizados durante la implementaci√
 
 #### Web Service
 
- URL del webservice desplegado:
+- URL del webservice desplegado:
 [Backend](https://backend-bluepatitas.onrender.com/swagger-ui/index.html#/)
+
+![BackDeploy](./img/Deployment/BackDeploy.PNG)
+
+#### DataBase
+
+![DBDeploy](./img/Deployment/DBDeploy.PNG)
+- URL del webservice desplegado:
 
 #### 6.2.2.7. Team Collaboration Insights during Sprint
 
 Se muestra la colaboracion del equipo
 
 ## 6.3. Validation Interviews
-
-
 
 ### 6.3.1. Dise√±o de Entrevistas
 
