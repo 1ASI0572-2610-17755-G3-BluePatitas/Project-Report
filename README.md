@@ -2667,7 +2667,7 @@ Se muestra la colaboracion del equipo
 
 | **Número de registro** | **Datos del entrevistado** |
 | ----- | ----- |
-| 01 | **Nombre:** Briseth Hurtado <br>**Edad:** 26 <br>**Profesión:** Veterinaria  **Distrito:** Santiago de Surco  <br>**Inicio - Duración:** 00:00 - 08:12 <br>  |
+| 02 | **Nombre:** Briseth Hurtado <br>**Edad:** 26 <br>**Profesión:** Veterinaria  **Distrito:** Santiago de Surco  <br>**Inicio - Duración:** 00:00 - 08:12 <br>  |
 |  | **Resumen:** Briseth comenta que la página le parece una propuesta innovadora y fácil de entender. Lo que más llamó su atención fue la opción de monitorear a los animales y visualizar la ubicación de los collares GPS en el mapa, ya que considera que es una función muy útil para los dueños de mascotas. También mencionó que algunas secciones podrían incluir más imágenes para hacer la experiencia más atractiva, aunque esto no afecta su opinión positiva sobre el proyecto. En general, considera que tiene mucho potencial y le gustaría probarlo cuando esté completamente terminado|
 | Link de la entrevista | [https://drive.google.com/drive/folders/119PNnbQMbYG8X_yOzoB_imwyIEkwOUlp?usp=sharing](https://drive.google.com/drive/folders/119PNnbQMbYG8X_yOzoB_imwyIEkwOUlp?usp=sharing) |
 
