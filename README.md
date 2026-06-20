@@ -2922,12 +2922,482 @@ Se muestra la colaboracion del equipo
 ![Footer](./img/evidencia_sprint1/Insights2.jpg)
 ![Footer](./img/evidencia_sprint1/Insights3.jpg)
 
+### 6.2.2. Sprint 2
+
+#### 6.2.2.1. Sprint Planning 2
+
+| Sprint # | Sprint 2 |
+| :--- | :--- |
+| **Sprint Planning Background** | Planificación enfocada en el desarrollo de la arquitectura backend, la construcción de la App Móvil y la integración base con hardware IoT (ESP32). |
+| **Date** | 15/05/2026 |
+| **Time** | 8:00 pm |
+| **Location** | Virtual (Discord) |
+| **Prepared by** | Peralta Chipa Ronald Joel |
+| **Attendees (to planning meeting)** | Peralta Chipa Ronald Joel<br>Castañeda Guimas Giancarlo Santiago<br>Choquehuanca Nuñez Luciana Carolina<br>Gonzales Valverde Carlos Matthew<br>Hernández Uchuya María Patricia |
+| **Sprint n - 1 Review Summary** | Se completó con éxito la base estructural del proyecto frontend web, el enrutamiento y el despliegue del Landing Page. |
+| **Sprint n - 1 Retrospective Summary** | El equipo notó la necesidad de avanzar en paralelo con el backend, la aplicación móvil y las pruebas de los dispositivos físicos para no retrasar la integración final. |
+| **Sprint 2 Goal** | Levantar la API REST base, modelar la base de datos completa (incluyendo dominio veterinario y telemetría), construir la UI principal de la App Móvil y habilitar la comunicación ESP32 - Edge API. |
+| **Sprint 2 Velocity** | Para esta entrega permitiremos 50 User Story Points|
+| **Sum of Story Points** | 48 User Stories |
+
+#### 6.2.2.2. Aspect Leaders and Collaborators
+
+| Team Member (Last Name, First Name) | GitHub Username | API REST y Backend (L/C) | Base de Datos (L/C) | App Móvil (L/C) | Integración IoT / ESP32 (L/C) |
+|-------------------------------------|----------------|--------------------------|---------------------|-----------------|-------------------------------|
+| Peralta, Ronald | RooDev10 | L | L | C | C |
+| Guimas, Giancarlo | Darksens01 | C | C | C | L |
+| Choquehuanca Nuñez, Luciana | Lucianxaaa | L | C | L | C |
+| Gonzales Valverde, Carlos | Carlos12324 | C | C | L | C |
+| Hernández Uchuya, María | Bal2220 | C | L | C | C |
+
+#### 6.2.2.3. Sprint Backlog 2
+
+El objetivo principal de este Sprint fue implementar el núcleo tecnológico de BluePatitas, abarcando la creación de la API RESTful (Backend), la configuración del Edge API Gateway para la ingesta de telemetría, la programación de los microcontroladores (Embedded Apps para ESP32) y la integración de estas capacidades tanto en la aplicación Web como en la Móvil. Para la gestión de tareas se utilizó Jira, asegurando el seguimiento ágil de cada actividad.
+
+| User Story Id | User Story Title | Task Id | Task Title | Description | Estimation (Hours) | Assigned To | Status (To-do / In-Process / To-Review / Done) |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **TS06** | API REST y control de acceso | T01 | Implementar seguridad JWT y roles | Desarrollar la configuración de seguridad, filtros y emisión de tokens JWT para los roles Admin y Veterinario. | 5 | Ronald Peralta | Done |
+| **TS06** | API REST y control de acceso | T02 | Desarrollar endpoints del perfilamiento | Crear los endpoints GET/POST/PUT para la gestión de usuarios y perfiles de animales en el contexto de Animals. | 6 | Ronald Peralta | Done |
+| **TS06** | API REST y control de acceso | T03 | Integrar autorización en controladores | Proteger los endpoints existentes con validaciones de rol (ej. Solo veterinario puede crear historial clínico). | 4 | Giancarlo Castañeda | Done |
+| **TS02** | Integración del Edge API / ESP32 Gateway | T04 | Desarrollar Edge API para ingesta | Crear servidor intermedio (Python/Flask) para recibir y validar paquetes JSON provenientes de los microcontroladores. | 6 | Carlos Gonzales | Done |
+| **TS02** | Integración del Edge API / ESP32 Gateway | T05 | Configurar protocolo de mensajería | Implementar y configurar el broker MQTT para la comunicación asíncrona entre el Edge y el Backend. | 4 | Carlos Gonzales | Done |
+| **TS02** | Integración del Edge API / ESP32 Gateway | T06 | Recepción de telemetría en Backend | Desarrollar los handlers en Java Spring Boot para procesar y persistir la data que envía el Edge API. | 5 | Ronald Peralta | Done |
+| **US02** | Monitoreo de temperatura y humedad | T07 | Programar lectura de sensor DHT11 | Escribir código embebido (C++) en el ESP32 para leer datos del sensor y enviarlos por WiFi/MQTT. | 5 | Luciana Choquehuanca | Done |
+| **US02** | Monitoreo de temperatura y humedad | T08 | Endpoints de historial ambiental | Desarrollar la lógica en el backend para almacenar en base de datos y proveer el historial de temperatura/humedad. | 4 | María Hernández | Done |
+| **US02** | Monitoreo de temperatura y humedad | T09 | Dashboard climático en Web/Mobile | Integrar el consumo de los endpoints ambientales y mostrar gráficos en las aplicaciones Frontend. | 6 | Giancarlo Castañeda | Done |
+| **US12** | Ejecución automática de alimentación | T10 | Programar accionamiento del motor | Escribir código en el ESP32 para controlar el servomotor del dispensador automático al recibir el comando. | 6 | Luciana Choquehuanca | Done |
+| **US12** | Ejecución automática de alimentación | T11 | Desarrollar Cronjob de dietas | Implementar una tarea programada en el backend que revise los horarios de alimentación (Feeding Context) y dispare la orden. | 5 | Carlos Gonzales | Done |
+| **US12** | Ejecución automática de alimentación | T12 | UI de programación de dietas | Crear los formularios en la Web App para que el veterinario registre los horarios y cantidades de alimento. | 5 | María Hernández | Done |
+| **US14** | Dashboard de alertas del refugio | T13 | Desarrollar UI del Dashboard Web | Maquetar y conectar los componentes de alertas en React/Angular para la vista del administrador del refugio. | 6 | Giancarlo Castañeda | Done |
+| **US14** | Dashboard de alertas del refugio | T14 | Desarrollar UI del Dashboard Móvil | Crear la interfaz de alertas activas en la aplicación móvil (Kotlin/Flutter) con diseño responsive. | 6 | María Hernández | Done |
+| **US14** | Dashboard de alertas del refugio | T15 | Integración en tiempo real de alertas | Conectar ambas aplicaciones (Web y Móvil) a los endpoints del backend para actualizar el estado de las alertas en tiempo real. | 4 | Luciana Choquehuanca | Done |
+| **US10** | Alerta por salida de geocerca | T16 | Ingesta de coordenadas del GPS | Configurar la recepción y mapeo de latitud/longitud proveniente del collar GPS en el Edge API. | 5 | Ronald Peralta | Done |
+| **US10** | Alerta por salida de geocerca | T17 | Lógica de evaluación de límites (Backend) | Desarrollar el algoritmo en el backend que cruce la ubicación actual del GPS contra los límites del perímetro seguro. | 6 | Carlos Gonzales | Done |
+| **US10** | Alerta por salida de geocerca | T18 | Notificaciones Push de escapes | Implementar el servicio en el backend y la recepción en el frontend móvil para disparar la alerta push por salida de perímetro. | 5 | Giancarlo Castañeda | Done |
+
+
+#### 6.2.2.4. Development Evidence for Sprint Review
+
+A continuación, se evidencian los *commits* realizados durante la implementación técnica del presente Sprint, divididos por cada repositorio clave de la solución (Backend, Frontend Web, Frontend Móvil, Edge y Embedded).
+
+- **Repositorio Backend:** [backend-BluePatitas](https://github.com/1ASI0572-2610-17755-G3-BluePatitas/backend-BluePatitas)
+
+| Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
+|:----------:|:------:|:---------:|:--------------:|:------------------:|
+| Backend | feature/integration | 3866de1 | feat: add public health check home controller and permit endpoints in spring security | 18/06/2026 |
+| Backend | feature/integration | 9095b9e | fix: more fixes | 18/06/2026 |
+| Backend | feature/integration | bc25172 | chore: add Dockerfile for Render deployment | 18/06/2026 |
+| Backend | feature/monitoring | f6361cf | fix: monitoring | 18/06/2026 |
+| Backend | feature/monitoring | 5716ec0 | feat: avances en modulos de animales, iam y monitoreo | 17/06/2026 |
+| Backend | feature/monitoring | 205457b | Merge branch origin/feature/iam and resolve conflicts | 16/06/2026 |
+| Backend | feature/monitoring | e977cba | feat: bc added | 16/06/2026 |
+| Backend | feature/iam | 5b5ea1c | fix: open api configuration | 15/06/2026 |
+| Backend | feature/iam | e606d6f | feat: add interfaces for iam context and fix documentation | 15/06/2026 |
+| Backend | feature/iam | 712e795 | feat: add application for iam context | 14/06/2026 |
+| Backend | feature/iam | 9021de2 | feat: add infrastructure for iam context | 14/06/2026 |
+| Backend | feature/iam | 796cf78 | feat: add domain services for IAM context | 14/06/2026 |
+| Backend | feature/iam | 2e79295 | feat: add domain model for IAM context | 14/06/2026 |
+| Backend | feature/iam | 0a08fc7 | feat: update shared bounded context | 12/06/2026 |
+| Backend | feature/iam | d2d160e | chore: add spring profiles | 12/06/2026 |
+| Backend | feature/iam | ce2d735 | chore: update blue patitas backend application file | 12/06/2026 |
+| Backend | feature/iam | bfb9e85 | chore: initial commit | 12/06/2026 |
+
+
+- **Repositorio Frontend Web:** [frontend-BluePatitas](https://github.com/1ASI0572-2610-17755-G3-BluePatitas/frontend-BluePatitas)
+
+| Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
+|:----------:|:------:|:---------:|:--------------:|:------------------:|
+| Front Web | feature/integration | 269ac23 | Fixes | 18/06/2026 |
+| Front Web | feature/integration | ca70c95 | chore: point production API base URL to Render backend | 18/06/2026 |
+| Front Web | feature/integration | 6d98035 | feat: fixes | 18/06/2026 |
+| Front Web | feature/integration | 0bdca8f | feat: integration | 18/06/2026 |
+| Front Web | feature/integration | dfa256f | Commit inicial: Respaldo de código local | 16/06/2026 |
+
+
+- **Repositorio Frontend Móvil:** [frontend-mobile-BluePatitas](https://github.com/1ASI0572-2610-17755-G3-BluePatitas/frontend-mobile-BluePatitas)
+
+| Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
+|:----------:|:------:|:---------:|:--------------:|:------------------:|
+| Front Mobile | feature/design-polish | 0136be4 | fix: backend integration | 18/06/2026 |
+| Front Mobile | feature/design-polish | 04f4b11 | design(mobile): improve visual aesthetics, card styling, and icons across admin & veterinarian dashboards | 18/06/2026 |
+| Front Mobile | feature/design-polish | 8533c72 | feat(mobile): integrate backend auth and monitoring presentation | 18/06/2026 |
+| Front Mobile | feature/design-polish | d21b848 | fix(mobile): polish auth forms and demo onboarding flow | 17/06/2026 |
+| Front Mobile | feature/mobile-auth-onboarding| 8533c72 | feat(mobile): integrate backend auth and monitoring presentation | 18/06/2026 |
+| Front Mobile | feature/mobile-auth-onboarding| d21b848 | fix(mobile): polish auth forms and demo onboarding flow | 17/06/2026 |
+| Front Mobile | feature/mobile-auth-onboarding| ac4ba6b | feat(mobile): add auth and shelter onboarding flow | 17/06/2026 |
+| Front Mobile | feature/mobile-auth-onboarding| 681f337 | chore(mobile): initialize Android Compose foundation | 15/06/2026 |
+
+
+- **Repositorio Edge Gateway:** [Edge-Gateway](https://github.com/1ASI0572-2610-17755-G3-BluePatitas/Edge-Gateway)
+
+| Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
+|:----------:|:------:|:---------:|:--------------:|:------------------:|
+| Edge Gateway | main | 99343bd | feat: upload edge gateway | 18/06/2026 |
+
+
+- **Repositorio Embedded Application:** [Embedded-Application](https://github.com/1ASI0572-2610-17755-G3-BluePatitas/Embedded-Application)
+
+| Repository | Branch | Commit Id | Commit Message | Committed on (Date) |
+|:----------:|:------:|:---------:|:--------------:|:------------------:|
+| Embedded App | main | 1f499e2 | chore: upload embedded app | 18/06/2026 |
+
+
+#### 6.2.2.5. Execution Evidence for Sprint Review
+
+#### **FRONTWEB**
+ 
+![Footer](./img/evidencia_sprint1/avance4.png)
+
+![Footer](./img/evidencia_sprint1/avance5.png)
+
+![Footer](./img/evidencia_sprint1/avance6.png)
+
+#### **WEB SERVICE**
+
+![ExeBackAnimalsProfile](./img/ExecutionSprint2/ExeBackAnimalsProfile.PNG)
+
+![ExeBackAuth](./img/ExecutionSprint2/ExeBackAuth.PNG)
+
+![ExeBackFeedingPlans](./img/ExecutionSprint2/ExeBackFeedingPlans.PNG)
+
+![ExeBackHome](./img/ExecutionSprint2/ExeBackHome.PNG)
+
+![ExeBackMedia](./img/ExecutionSprint2/ExeBackMedia.PNG)
+
+![ExeBackMonitoringAlerts](./img/ExecutionSprint2/ExeBackMonitoringAlerts.PNG)
+
+![ExeBackMonitoringShelter](./img/ExecutionSprint2/ExeBackMonitoringShelter.PNG)
+
+![ExeBackRoles](./img/ExecutionSprint2/ExeBackRoles.PNG)
+
+![ExeBackS2](./img/ExecutionSprint2/ExeBackS2.PNG)
+
+![ExeBackTelemetry](./img/ExecutionSprint2/ExeBackTelemetry.PNG)
+
+![ExeBackUsers](./img/ExecutionSprint2/ExeBackUsers.PNG)
+
+![ExeBackVeterinaryObs](./img/ExecutionSprint2/ExeBackVeterinaryObs.PNG)
+
+#### 6.2.2.6. Services Documentation Evidence for Sprint Review
+
+####  IAM (Identity & Access Management)
+
+**Controller: AuthenticationController**
+
+| Ruta | Método | Descripción |
+| :--- | :--- | :--- |
+| `/api/v1/authentication/sign-up` | POST | Registra un nuevo usuario con credenciales y roles. |
+| `/api/v1/authentication/sign-in` | POST | Inicia sesión y retorna los detalles del usuario con su token. |
+
+**Controller: UsersController**
+
+| Ruta | Método | Descripción |
+| :--- | :--- | :--- |
+| `/api/v1/users` | GET | Retorna la lista de todos los usuarios registrados. |
+| `/api/v1/users/{userId}` | GET | Obtiene los detalles de un usuario específico según su ID. |
+
+**Controller: RolesController**
+
+| Ruta | Método | Descripción |
+| :--- | :--- | :--- |
+| `/api/v1/roles` | GET | Retorna todos los roles definidos en el sistema. |
+
+---
+
+#### Animals (Perfiles de Animales)
+
+**Controller: AnimalProfileController**
+
+| Ruta | Método | Descripción |
+| :--- | :--- | :--- |
+| `/api/animals` | POST | Registra un nuevo perfil de animal en la plataforma. |
+| `/api/animals` | GET | Lista todos los perfiles de animales registrados. |
+| `/api/animals/{id}` | GET | Obtiene la información completa de un animal específico mediante su UUID. |
+| `/api/animals/{id}` | PUT | Actualiza los detalles generales del perfil (nombre, raza, peso, foto, edad estimada). |
+| `/api/animals/{id}/health` | PUT | Actualiza el estado de salud de un animal (ej. HEALTHY, IN_TREATMENT, CRITICAL, UNDER_OBSERVATION). |
+| `/api/animals/{id}/perimeter` | PUT | Asigna o reubica a un animal en una zona perimetral de monitoreo. |
+| `/api/animals/{id}` | DELETE | Elimina el perfil de un animal del sistema. |
+
+---
+
+####  Monitoring (Monitoreo e IoT)
+
+**Controller: ShelterMonitoringController**
+
+| Ruta | Método | Descripción |
+| :--- | :--- | :--- |
+| `/api/monitoring/shelter` | GET | Obtiene la configuración activa del albergue (nombre, dirección, administrador, etc.). |
+| `/api/monitoring/shelter` | POST | Registra la configuración inicial del albergue. |
+| `/api/monitoring/shelter` | PUT | Actualiza los detalles del albergue. |
+| `/api/monitoring/zones` | GET | Obtiene la lista de todas las zonas de monitoreo registradas. |
+| `/api/monitoring/zones/public-list` | GET | Listado público de zonas sin requerir token de autenticación (para consumo de dispositivos de red local/IoT). |
+| `/api/monitoring/zones` | POST | Registra una nueva zona de monitoreo (incluyendo parámetros de geocerca, límites de temperatura y humedad). |
+| `/api/monitoring/zones/{id}` | PUT | Actualiza los datos de una zona de monitoreo existente. |
+| `/api/monitoring/zones/{id}` | DELETE | Elimina una zona del sistema. |
+
+**Controller: TelemetryController**
+
+| Ruta | Método | Descripción |
+| :--- | :--- | :--- |
+| `/api/monitoring/telemetry` | POST | Ingesta de lectura de sensores ambientales y datos visuales (cámaras/IoT). |
+| `/api/monitoring/telemetry/{targetId}` | GET | Retorna el historial cronológico de telemetría de un objetivo monitoreado (UUID). |
+
+**Controller: AlertController**
+
+| Ruta | Método | Descripción |
+| :--- | :--- | :--- |
+| `/api/monitoring/alerts` | GET | Lista todas las alertas de escape o brecha perimetral registradas. |
+| `/api/monitoring/alerts/evaluate` | POST | Evalúa coordenadas de un sensor y genera una alerta activa si el objetivo ha cruzado el límite de su geocerca asignada. |
+| `/api/monitoring/alerts/{targetId}/tracking` | POST | Habilita el rastreo de ubicación en tiempo real sobre una alerta de brecha perimetral activa. |
+| `/api/monitoring/alerts/{id}/resolve` | PUT | Resuelve (cierra) una alerta perimetral una vez se ha recuperado el animal. |
+| `/api/monitoring/alerts/{id}` | DELETE | Descarta o elimina permanentemente una alerta. |
+
+---
+
+#### Veterinary (Veterinaria)
+
+**Controller: VeterinaryObservationsController**
+
+| Ruta | Método | Descripción |
+| :--- | :--- | :--- |
+| `/api/veterinary/observations` | POST | Crea una nueva observación clínica para un animal (inicialmente sin recomendación). |
+| `/api/veterinary/observations/{id}/recommendation` | POST | Adjunta una recomendación médica o dietética a una observación existente (esta acción dispara un evento de dominio que crea automáticamente un plan de alimentación en el contexto de Feeding). |
+| `/api/veterinary/observations/{id}` | GET | Obtiene el detalle de una observación específica. |
+| `/api/veterinary/animals/{id}` | GET | Lista todas las observaciones clínicas asociadas a un animal en particular. |
+
+---
+
+####  Feeding (Alimentación)
+
+**Controller: FeedingPlansController**
+
+| Ruta | Método | Descripción |
+| :--- | :--- | :--- |
+| `/api/feeding/plans` | POST | Registra un nuevo plan de alimentación en estado de borrador (DRAFT). |
+| `/api/feeding/plans` | GET | Retorna la lista de todos los planes de alimentación registrados. |
+| `/api/feeding/plans/{animalId}` | GET | Obtiene todos los planes de alimentación asignados a un animal específico. |
+| `/api/feeding/plans/{id}` | PUT | Actualiza los parámetros del plan (cantidad de comida, raciones, tolerancia en minutos, horas programadas). |
+| `/api/feeding/plans/{id}/activate` | PUT | Activa un plan de alimentación, habilitando los triggers en el dispensador de comida. |
+| `/api/feeding/plans/{id}/deactivate` | PUT | Pausa un plan de alimentación activo, deteniendo las dispensaciones programadas. |
+
+---
+
+#### Shared
+
+**Controller: HomeController**
+
+| Ruta | Método | Descripción |
+| :--- | :--- | :--- |
+| `/` | GET | Redirección temporal (HTTP 302) hacia la documentación interactiva de la API en Swagger UI (/swagger-ui/index.html). |
+
+**Controller: MediaController**
+
+| Ruta | Método | Descripción |
+| :--- | :--- | :--- |
+| `/api/v1/media/upload` | POST | Sube un archivo o imagen raw al albergue. Retorna un objeto JSON con la URL interna del archivo guardado en el servidor (ej. {"url": "/uploads/uuid.jpg"}). |
+
+
+#### 6.2.2.7. Software Deployment Evidence for Sprint Review
+
+#### Landing Page
+
+- URL de el landing page desplegada:
+[Landing-page](https://ejemplo.com)
+
+#### FrontEnd
+
+- URL de la aplicación web desplegada: 
+[appWeb-Bluepatittas](https://flowtrack-frontend.netlify.app/)
+
+![Footer](./img/evidencia_sprint1/deployEvi.jpg)
+
+#### Web Service
+
+- URL del webservice desplegado:
+[Backend](https://backend-bluepatitas.onrender.com/swagger-ui/index.html#/)
+
+![BackDeploy](./img/Deployment/BackDeploy.PNG)
+
+#### DataBase
+
+![DBDeploy](./img/Deployment/DBDeploy.PNG)
+- URL del webservice desplegado:
+
+#### 6.2.2.7. Team Collaboration Insights during Sprint
+
+#### FRONTEND WEB
+![FrontWebS2](./img/InsightsS2/FrontWebS2.PNG)
+
+#### FRONTEND MOBILE
+![FrontMobileS2](./img/InsightsS2/FrontMobileS2.PNG)
+
+#### BACKEND
+![BackendS2](./img/InsightsS2/BackendS2.PNG)
+
+#### EMBEDDED APPS
+![EmbeddedS2](./img/InsightsS2/EmbeddedS2.PNG)
+
+#### EDGE GATEWAY
+![EdgeGatewayS2](./img/InsightsS2/EdgeGatewayS2.PNG)
+
+Se muestra la colaboracion del equipo
+
 ## 6.3. Validation Interviews
 
-
 ### 6.3.1. Diseño de Entrevistas
+
+**Generales:**
+- ¿En qué parte harías clic primero?
+- ¿Te queda claro lo que hace la aplicación? ¿Hay algo que no entiendas?
+- ¿Te parece que los segmentos objetivos (Administradores de refugio y Veterinarios) están bien definidos en la interfaz?
+- ¿Sientes que esta app te sería útil para la gestión y monitoreo del refugio? ¿Por qué?
+
+#### **Administradores de Refugio:**
+- ¿Te gustaría implementar este sistema de monitoreo IoT (collares GPS y sensores de ambiente) en tu refugio?
+- ¿Qué tan seguido crees que revisarías las alertas de los sensores en la aplicación?
+- ¿Te parece útil poder registrar y verificar el cumplimiento de la alimentación de forma automática?
+- ¿Te daría más tranquilidad contar con la función de geocerca para evitar que los animales se pierdan?
+- ¿Crees que esto te ayudaría a reaccionar más rápido ante una emergencia en el refugio?
+- ¿Te parece más cómodo y seguro que el monitoreo manual que realizan actualmente?
+- ¿Qué es lo que más te gusta de la plataforma? ¿Y qué mejorarías?
+
+#### **Veterinarios:**
+- ¿Te parece útil esta app para dar seguimiento al bienestar y la salud de los animales del refugio?
+- ¿Sientes que tener acceso al perfil del animal, su dieta y eventos recientes agiliza tu trabajo?
+- ¿Qué opinas de recibir notificaciones críticas sobre el ambiente (temperatura y humedad fuera de rango)?
+- ¿Sientes que el historial ambiental te ayudaría a evaluar posibles riesgos de salud en los animales?
+- ¿Qué tan seguro te parece el registro de la información médica? ¿Qué le mejorarías?
+- ¿Te animarías a usar el sistema para actualizar de forma remota las observaciones de un animal?
+
+---
+
 ### 6.3.2. Registro de Entrevistas
+
+
+Segmento: Administrador de refugios
+
+| **Número de registro** | **Datos del entrevistado** |
+| ----- | ----- |
+| 01 | **Nombre:** Marcelo Binda <br>**Edad:** 20 <br>**Profesión:** Ayudante admin  **Distrito:** Santiago de Surco  <br>**Inicio - Duración:** 00:00 - 07:15 <br>  |
+|  | **Resumen:** Marcelo comenta que la página en sí le parece interesante, el cómo puede monitorear a los animales y ver las diferentes ubicaciones de los collares GPS en el mapa le parece lo mejor que tenemos, pero a su vez ve también como que en algunas partes faltaban imágenes. Por otra parte mencionaba que aunque faltara eso la idea se le hacía innovadora y que le gustaría probarlo cuando esté completa. |
+| Link de la entrevista | [https://drive.google.com/drive/folders/119PNnbQMbYG8X_yOzoB_imwyIEkwOUlp?usp=sharing](https://drive.google.com/drive/folders/119PNnbQMbYG8X_yOzoB_imwyIEkwOUlp?usp=sharing) |
+
+
+| **Número de registro** | **Datos del entrevistado** |
+| ----- | ----- |
+| 02 | **Nombre:** Estefano Montufar <br>**Edad:** 23 <br>**Profesión:** Ayudante admin  **Distrito:** Miraflores  <br>**Inicio - Duración:** 00:00 - 05:35 <br>  |
+|  | **Resumen:** Estefano Montufar señala que la plataforma le generó una impresión positiva debido a las funcionalidades relacionadas con el monitoreo de animales, especialmente la capacidad de rastrear su ubicación mediante GPS y visualizar la información de manera clara en el mapa. Asimismo, considera que la propuesta tiene potencial y aporta una solución innovadora. Como sugerencia de mejora, menciona que algunas páginas podrían incluir más imágenes o elementos visuales para complementar la información presentada. En general, expresa interés en utilizar la plataforma una vez que su desarrollo esté concluido. | 
+| Link de la entrevista | [https://drive.google.com/drive/folders/119PNnbQMbYG8X_yOzoB_imwyIEkwOUlp?usp=sharing](https://drive.google.com/drive/folders/119PNnbQMbYG8X_yOzoB_imwyIEkwOUlp?usp=sharing) |
+
+
+
+Segmento: Veterinario
+
+| **Número de registro** | **Datos del entrevistado** |
+| ----- | ----- |
+| 03 | **Nombre:** Briseth Hurtado <br>**Edad:** 26 <br>**Profesión:** Veterinaria  **Distrito:** Santiago de Surco  <br>**Inicio - Duración:** 00:00 - 08:12 <br>  |
+|  | **Resumen:** Briseth comenta que la página le parece una propuesta innovadora y fácil de entender. Lo que más llamó su atención fue la opción de monitorear a los animales y visualizar la ubicación de los collares GPS en el mapa, ya que considera que es una función muy útil para los dueños de mascotas. También mencionó que algunas secciones podrían incluir más imágenes para hacer la experiencia más atractiva, aunque esto no afecta su opinión positiva sobre el proyecto. En general, considera que tiene mucho potencial y le gustaría probarlo cuando esté completamente terminado|
+| Link de la entrevista | [https://drive.google.com/drive/folders/119PNnbQMbYG8X_yOzoB_imwyIEkwOUlp?usp=sharing](https://drive.google.com/drive/folders/119PNnbQMbYG8X_yOzoB_imwyIEkwOUlp?usp=sharing) |
+
 ### 6.3.3. Evaluaciones según heurísticas
+
+**UX Heuristics & Principles Evaluation**  
+**Usability – Inclusive Design – Information Architecture**
+
+**CARRERA            	: Ingeniería de Software**  
+**CURSO                	: Aplicaciones Web**  
+**SECCIÓN              	:** 17755
+
+**PROFESORES      	: TODOS** 
+
+**AUDITOR            	:** BluePatitas
+**CLIENTE(S)          	:** Marcelo Binda
+
+
+**SITE o APP A EVALUAR:**
+
+*BluePatitas*
+
+TAREAS A EVALUAR:
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+
+1. Registro de un nuevo albergue
+2. Visualización de las alertas del refugio
+3. Configuración de los rangos de temperatura
+
+*No están incluidas en esta versión de la evaluación las siguientes tareas:*
+1. Modificación de la cartilla de vacunación
+2. Generación del reporte de bienestar en PDF
+
+
+**ESCALA DE SEVERIDAD:**
+
+*Los errores serán puntuados tomando en cuenta la siguiente escala de severidad*  
+ 
+
+| Nivel | Descripción |
+| :---- | :---- |
+| 1 | Problema superficial: puede ser fácilmente superador por el usuario ó ocurre con muy poco frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
+| 2 | Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente reléase |
+| 3 | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta. |
+| 4 | Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+
+
+***TABLA RESUMEN:***
+
+
+| # | Problema | Escala de severidad | Heurística/Principio violada(o) |
+| :---: | :--- | :---: | :--- |
+| 1 | No hay un botón para volver al dashboard tras resolver una alerta | [2] | [Usability: Libertad y control del usuario] |
+| 2 |  Las imágenes de los animales no tienen el atributo "alt" | [2] | [Inclusive Design: Proporciona experiencias comparables] |
+| 3 | Falta información sobre los componentes IoT en el formulario | [3] | [Information Architecture: Is it findable?] |
+
+***DESCRIPCIÓN DE PROBLEMAS:***
+
+*PROBLEMA \#1:* No hay un botón para volver al dashboard tras resolver una alerta
+
+Severidad: 2
+
+Heurística violada: Libertad y control del usuario
+
+**Problema:**
+
+Una vez que el administrador o veterinario hace clic en "Resolver" sobre una advertencia crítica (como una alerta de escape o de temperatura fuera de rango), el sistema muestra un mensaje de éxito pero no proporciona un control o botón claro para regresar rápidamente al panel principal. El usuario se ve obligado a utilizar el botón de retroceso del navegador o buscar la opción en el menú lateral, lo cual incrementa el esfuerzo de navegación y corta la fluidez de sus tareas
+
+**Recomendación:**
+
+Implementar un botón de acción secundario visible debajo del mensaje de confirmación con la etiqueta "Volver al Dashboard", el cual redirija automáticamente a la ruta principal de monitoreo para que el usuario pueda seguir revisando el estado del refugio
+
+*PROBLEMA \#2:* Las imágenes de los animales no tienen el atributo "alt"
+
+Severidad: 3
+
+Heurística violada: Inclusive Design
+
+
+**Problema:**
+
+En la sección del catálogo de animales y en los perfiles individuales, las fotografías se renderizan correctamente visualmente, pero las etiquetas de código carecen del atributo HTML `alt`. Esto impide que los lectores de pantalla puedan leer una descripción de la imagen a usuarios con discapacidades visuales, limitando seriamente la accesibilidad de la plataforma
+
+**Recomendación:**
+
+Modificar el componente del frontend para exigir la creación de un texto alternativo breve de forma automática (por ejemplo, combinando la base de datos para generar: "Fotografía de perfil de [Nombre del Animal], [Raza]"), garantizando que todas las imágenes cuenten con un atributo `alt` válido
+
+
+*PROBLEMA \#3:* Falta información sobre los componentes IoT en el formulario
+
+Severidad: 2
+
+Heurística violada: Information Architecture
+
+
+**Problema:**
+
+Al momento en que el administrador intenta crear o editar una zona de monitoreo, los campos técnicos requeridos como "Cámara IP" o "MAC del Sensor DHT11" no cuentan con ningún tipo de instrucción de soporte o texto de ayuda. Al no explicar qué formato se requiere ni dónde se pueden encontrar estos datos en los dispositivos físicos IoT, el usuario puede experimentar confusión o cometer errores al momento de vincular el hardware
+
+**Recomendación:**
+
+Añadir íconos de ayuda o *tooltips* al lado de cada campo técnico que, al pasar el cursor, indiquen instrucciones breves al usuario (por ejemplo: "Ingresa la dirección IP de la cámara asignada, ej: 192.168.1.15"). Además, se sugiere incorporar *placeholders* dentro del input que orienten sobre la estructura de la MAC o IP esperada
 
 ## 6.4. Video About-the-Product
 
@@ -2978,11 +3448,17 @@ Se muestra la colaboracion del equipo
 
 # Anexos
 
-## Anexo A: Links importantes:
+#### Anexo A: Links importantes
 
-Link del Repositorio del Informe: <br>
-Link del Repositorio del Backend: <br>
-Link del Repositorio del Frontend Aplicación Web: <br> 
-Link del Repositorio del Frontend Aplicación Móvil: <br>
+**Enlaces de Despliegue (Producción):**
+* **Aplicación Web (Frontend desplegado en Netlify):** [https://flowtrack-frontend.netlify.app/](https://flowtrack-frontend.netlify.app/)
+* **Documentación Interactiva de la API (Swagger UI en Render):** [https://backend-bluepatitas.onrender.com/swagger-ui/index.html#/](https://backend-bluepatitas.onrender.com/swagger-ui/index.html#/)
 
+**Herramientas de Gestión y Colaboración:**
+* **Jira - Product Backlog:** [[Tablero ágil de BluePatitas](https://matthewpro17-17770197508.atlassian.net/jira/software/projects/BLUEP/boards/2/backlog)](https://matthewpro17-17770197508.atlassian.net/jira/software/projects/BLUEP/boards/2/backlog) 
+* **Jira - Invitación al espacio de trabajo:** [[Enlace de acceso al equipo](https://id.atlassian.com/invite/p/jira-software?id=rR0gURm_RNOyBBhY-xMvrQ)](https://id.atlassian.com/invite/p/jira-software?id=rR0gURm_RNOyBBhY-xMvrQ) 
+* **Figma - Prototipos y Diseño UI/UX Web:** [Ingresa tu link de Figma aquí](https://www.figma.com/proto/Q634gqNxe8N4Pm06IPDAJT/BluePatitas?node-id=206-14895&p=f&t=GpXs2gYVCwmZnnxm-1&scaling=min-zoom&content-scaling=fixed&page-id=206%3A1054)
+* **Figma - Prototipos y Diseño UI/UX Movil:** [https://www.figma.com/proto/Q634gqNxe8N4Pm06IPDAJT/BluePatitas?node-id=206-14895&p=f&t=GpXs2gYVCwmZnnxm-1&scaling=min-zoom&content-scaling=fixed&page-id=206%3A1054](https://www.figma.com/proto/Q634gqNxe8N4Pm06IPDAJT/BluePatitas?node-id=206-14895&p=f&t=GpXs2gYVCwmZnnxm-1&scaling=min-zoom&content-scaling=fixed&page-id=206%3A1054)
+
+  
 ## Anexo B: Exposiciones:
